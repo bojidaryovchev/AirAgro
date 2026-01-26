@@ -5,28 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ContactFormData, contactFormSchema, serviceOptions } from "@/lib/schemas/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import * as z from "zod";
-
-// Form validation schema
-const contactFormSchema = z.object({
-  firstName: z.string().min(2, "Въведете поне 2 символа"),
-  lastName: z.string().min(2, "Въведете поне 2 символа"),
-  email: z.string().email("Невалиден имейл адрес"),
-  phone: z.string().min(10, "Въведете валиден телефонен номер"),
-  location: z.string().min(3, "Въведете локация"),
-  fieldSize: z.string().min(1, "Въведете площ на имота"),
-  cropType: z.string().min(2, "Въведете тип култура"),
-  serviceType: z.string().min(1, "Изберете услуга"),
-  message: z.string().min(10, "Въведете поне 10 символа"),
-});
-
-type ContactFormData = z.infer<typeof contactFormSchema>;
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -36,12 +21,22 @@ const ContactSection = () => {
   const {
     register,
     handleSubmit,
-    setValue,
-    watch,
+    control,
     reset,
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      location: "",
+      fieldSize: "",
+      cropType: "",
+      serviceType: "",
+      message: "",
+    },
   });
 
   const onSubmit = async (data: ContactFormData) => {
@@ -77,8 +72,6 @@ const ContactSection = () => {
       setIsSubmitting(false);
     }
   };
-
-  const serviceType = watch("serviceType");
 
   return (
     <section id="contact" className="section-padding bg-secondary">
@@ -259,18 +252,24 @@ const ContactSection = () => {
                 <label className="text-foreground mb-2 block text-sm font-medium">
                   {t("contact.serviceType")} <span className="text-destructive">*</span>
                 </label>
-                <Select value={serviceType} onValueChange={(value) => setValue("serviceType", value)}>
-                  <SelectTrigger className="h-12">
-                    <SelectValue placeholder={t("contact.selectService")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="spraying">{t("contact.service.spraying")}</SelectItem>
-                    <SelectItem value="fertilizing">{t("contact.service.fertilizing")}</SelectItem>
-                    <SelectItem value="herbicide">{t("contact.service.herbicide")}</SelectItem>
-                    <SelectItem value="seeding">{t("contact.service.seeding")}</SelectItem>
-                    <SelectItem value="other">{t("contact.service.other")}</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Controller
+                  name="serviceType"
+                  control={control}
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger className="h-12">
+                        <SelectValue placeholder={t("contact.selectService")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {serviceOptions.map((option) => (
+                          <SelectItem key={option.value} value={option.value}>
+                            {t(option.labelKey)}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
                 {errors.serviceType && <p className="text-destructive mt-1 text-xs">{errors.serviceType.message}</p>}
               </div>
 

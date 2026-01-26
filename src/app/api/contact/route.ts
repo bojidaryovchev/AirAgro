@@ -1,18 +1,7 @@
+import { contactFormSchema, serviceNames } from "@/lib/schemas/contact";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
-
-const contactFormSchema = z.object({
-  firstName: z.string().min(2),
-  lastName: z.string().min(2),
-  email: z.string().email(),
-  phone: z.string().min(10),
-  location: z.string().min(3),
-  fieldSize: z.string().min(1),
-  cropType: z.string().min(2),
-  serviceType: z.string().min(1),
-  message: z.string().min(10),
-});
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,14 +17,6 @@ export async function POST(request: NextRequest) {
       console.warn("RESEND_API_KEY not configured. Email will not be sent.");
       console.log("Contact form submission:", validatedData);
     } else {
-      const serviceNames: Record<string, string> = {
-        spraying: "Пръскане",
-        fertilizing: "Торене",
-        herbicide: "Хербициди",
-        seeding: "Сеитба",
-        other: "Друго",
-      };
-
       await resend.emails.send({
         from: "AirAgro <onboarding@resend.dev>", // Use verified domain in production
         to: ["info@agroair.bg"],
