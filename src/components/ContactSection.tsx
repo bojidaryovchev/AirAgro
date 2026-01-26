@@ -58,7 +58,7 @@ const ContactSection = () => {
       setShowSuccess(true);
 
       reset();
-    } catch (error) {
+    } catch {
       toast.error("Грешка при изпращане. Моля, опитайте отново или се свържете директно с нас.", {
         duration: 5000,
         style: {
