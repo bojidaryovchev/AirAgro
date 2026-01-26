@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -12,6 +12,9 @@ const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const isVisibleRef = useRef(true);
   const isTabActiveRef = useRef(true);
+  const [displayedText, setDisplayedText] = useState("");
+
+  const subtitle = t("hero.title2");
 
   useEffect(() => {
     const video = videoRef.current;
@@ -49,6 +52,29 @@ const HeroSection = () => {
       observer.disconnect();
     };
   }, []);
+
+  // Typewriter effect with reset on subtitle change
+  useEffect(() => {
+    if (!subtitle) {
+      setDisplayedText("");
+      return;
+    }
+
+    // Reset and start typewriter
+    setDisplayedText("");
+    let index = 0;
+
+    const interval = setInterval(() => {
+      if (index < subtitle.length) {
+        setDisplayedText(subtitle.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, [subtitle]);
 
   return (
     <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
@@ -91,20 +117,30 @@ const HeroSection = () => {
           className="font-display text-5xl leading-tight font-bold text-white md:text-7xl lg:text-8xl"
         >
           {t("hero.title1")}
-          <br />
-          <span className="bg-linear-to-r from-green-400 to-lime-400 bg-clip-text text-transparent">
-            {t("hero.title2")}
-          </span>
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-6 max-w-2xl text-lg text-white/80 md:text-xl"
-        >
-          {t("hero.description")}
-        </motion.p>
+        {subtitle && (
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-4 bg-linear-to-r from-green-400 to-lime-400 bg-clip-text text-2xl font-semibold text-transparent md:text-3xl"
+          >
+            {displayedText}
+            <span className="animate-pulse">|</span>
+          </motion.p>
+        )}
+
+        {t("hero.description") && t("hero.description") !== "hero.description" && (
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-6 max-w-2xl text-lg text-white/80 md:text-xl"
+          >
+            {t("hero.description")}
+          </motion.p>
+        )}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
