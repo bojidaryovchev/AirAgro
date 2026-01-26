@@ -10,48 +10,18 @@ const HeroSection = () => {
   const { t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
-  const isVisibleRef = useRef(true);
-  const isTabActiveRef = useRef(true);
   const [displayedText, setDisplayedText] = useState("");
+  const [videoReady, setVideoReady] = useState(false);
 
   const subtitle = t("hero.title2");
 
-  useEffect(() => {
-    const video = videoRef.current;
-    const section = sectionRef.current;
-    if (!video || !section) return;
-
-    const updatePlayState = () => {
-      if (isVisibleRef.current && isTabActiveRef.current) {
-        video.play().catch(() => {});
-      } else {
-        video.pause();
-      }
-    };
-
-    // Page Visibility API - pause when tab is hidden
-    const handleVisibilityChange = () => {
-      isTabActiveRef.current = !document.hidden;
-      updatePlayState();
-    };
-
-    // IntersectionObserver - pause when scrolled out of viewport
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        isVisibleRef.current = entry.isIntersecting;
-        updatePlayState();
-      },
-      { threshold: 0.1 },
-    );
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    observer.observe(section);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-      observer.disconnect();
-    };
-  }, []);
+  // Handle video ready state via callback ref pattern
+  const handleVideoRef = (video: HTMLVideoElement | null) => {
+    videoRef.current = video;
+    if (video && video.readyState >= 3) {
+      setVideoReady(true);
+    }
+  };
 
   // Typewriter effect with reset on subtitle change
   useEffect(() => {
@@ -78,24 +48,32 @@ const HeroSection = () => {
 
   return (
     <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Video Background - GPU accelerated layer */}
-      <div className="absolute inset-0 z-0" style={{ contain: "paint" }}>
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 h-full w-full object-cover will-change-transform"
-          style={{ transform: "translateZ(0)" }}
-        >
-          <source src="/videos/drone-bg.webm" type="video/webm" />
-          <source src="/videos/drone-bg.mp4" type="video/mp4" />
-        </video>
-        {/* Dark overlay */}
-        <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
-      </div>
+      {/* Video Background */}
+      {/* Layer 1: Poster image as background (visible while video loads) */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/drone-bg-poster-blurred.jpg')" }}
+      />
+
+      {/* Layer 2: Video */}
+      <video
+        ref={handleVideoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        onCanPlayThrough={() => setVideoReady(true)}
+        className={`absolute inset-0 z-0 h-full w-full object-cover transition-opacity duration-700 ${
+          videoReady ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <source src="/videos/drone-bg.webm" type="video/webm" />
+        <source src="/videos/drone-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Layer 3: Dark overlay */}
+      <div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">

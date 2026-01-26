@@ -3,40 +3,20 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Check, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { useRef, useState } from "react";
 
 const FeaturesSection = () => {
   const { t } = useLanguage();
-  const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const hasLoadedRef = useRef(false);
+  const [videoReady, setVideoReady] = useState(false);
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    const video = videoRef.current;
-    if (!section || !video) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (!hasLoadedRef.current) {
-              video.src = "/videos/drone-spraying.mp4";
-              video.load();
-              hasLoadedRef.current = true;
-            }
-            video.play().catch(() => {});
-          } else {
-            video.pause();
-          }
-        });
-      },
-      { rootMargin: "200px", threshold: 0 },
-    );
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
+  // Handle video ready state via callback ref pattern
+  const handleVideoRef = (video: HTMLVideoElement | null) => {
+    videoRef.current = video;
+    if (video && video.readyState >= 3) {
+      setVideoReady(true);
+    }
+  };
 
   const features = [
     { icon: Check, label: t("features.capacity") },
@@ -49,7 +29,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" ref={sectionRef} className="section-padding bg-background relative overflow-hidden">
+    <section id="features" className="section-padding bg-background relative overflow-hidden">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Content */}
@@ -98,15 +78,24 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl" style={{ paddingTop: "75%" }}>
+            <div
+              className="relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat shadow-2xl"
+              style={{ paddingTop: "75%", backgroundImage: "url('/drone-spraying-poster-blurred.jpg')" }}
+            >
               <video
-                ref={videoRef}
+                ref={handleVideoRef}
+                autoPlay
                 muted
                 loop
                 playsInline
-                preload="none"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+                preload="auto"
+                onCanPlayThrough={() => setVideoReady(true)}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
+                  videoReady ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <source src="/videos/drone-spraying.mp4" type="video/mp4" />
+              </video>
               {/* Dark green glow effect */}
               <div className="bg-primary/40 absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full blur-3xl" />
             </div>

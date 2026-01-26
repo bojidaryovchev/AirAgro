@@ -29,8 +29,10 @@ const StatsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="font-display text-5xl font-bold text-white md:text-6xl whitespace-nowrap">{stat.value}</div>
-              <div className="mt-2 text-lg text-white/80 whitespace-nowrap">{stat.label}</div>
+              <div className="font-display text-5xl font-bold whitespace-nowrap text-white md:text-6xl">
+                {stat.value}
+              </div>
+              <div className="mt-2 text-lg whitespace-nowrap text-white/80">{stat.label}</div>
             </motion.div>
           ))}
         </div>
