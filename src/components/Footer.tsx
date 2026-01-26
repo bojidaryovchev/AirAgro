@@ -13,9 +13,9 @@ const Footer = () => {
             <img
               src="/air-agro-logo.png"
               alt="AgroAir"
-              className="h-10 w-auto"
+              className="h-12 w-auto shrink-0"
             />
-            <span className="font-display text-xl font-bold">AgroAir</span>
+            <span className="font-display text-xl font-bold leading-none">AgroAir</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-background/70">
