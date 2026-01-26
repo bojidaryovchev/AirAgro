@@ -266,6 +266,7 @@ const ContactSection = () => {
                 <Select 
                   value={serviceType} 
                   onValueChange={(value) => setValue("serviceType", value)}
+                  modal={false}
                 >
                   <SelectTrigger className="h-12">
                     <SelectValue placeholder={t('contact.selectService')} />
