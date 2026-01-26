@@ -17,8 +17,7 @@ const VideoShowcaseSection = () => {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/videos/drone-bg.webm" type="video/webm" />
-          <source src="/videos/drone-bg.mp4" type="video/mp4" />
+          <source src="/videos/vid2.webm" type="video/webm" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80" />
       </div>
