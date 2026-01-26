@@ -3,7 +3,7 @@ title: "Дрон обработка на трайни насаждения: сп
 description: "Научете как дроновете революционират третирането на лозя, овощни градини и други трайни насаждения с прецизна обработка и труднодостъпен терен."
 author: "Агр. Елена Георгиева"
 date: "2025-01-22"
-image: "/images/blog/dron-obrabotka-na-traini-nasazdenia.jpg"
+image: "/obrabotka-na-traini-nasazdenia.jpg"
 slug: "dron-obrabotka-na-traini-nasazdenia"
 category: "Технология"
 tags: ["лозя", "овощни градини", "трайни насаждения", "вертикално пръскане"]
