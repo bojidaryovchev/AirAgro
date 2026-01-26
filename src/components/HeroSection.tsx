@@ -4,12 +4,34 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+  const playTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isPlayingRef = useRef(false);
+
+  // Debounced play/pause to prevent rapid state changes during fast scroll
+  const debouncedPlayPause = useCallback((shouldPlay: boolean) => {
+    if (playTimeoutRef.current) {
+      clearTimeout(playTimeoutRef.current);
+    }
+
+    playTimeoutRef.current = setTimeout(() => {
+      const video = videoRef.current;
+      if (!video) return;
+
+      if (shouldPlay && !isPlayingRef.current) {
+        video.play().catch(() => {});
+        isPlayingRef.current = true;
+      } else if (!shouldPlay && isPlayingRef.current) {
+        video.pause();
+        isPlayingRef.current = false;
+      }
+    }, 100); // 100ms debounce
+  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -19,24 +41,25 @@ const HeroSection = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            video.play().catch(() => {});
-          } else {
-            video.pause();
-          }
+          debouncedPlayPause(entry.isIntersecting);
         });
       },
       { threshold: 0.1 },
     );
 
     observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      observer.disconnect();
+      if (playTimeoutRef.current) {
+        clearTimeout(playTimeoutRef.current);
+      }
+    };
+  }, [debouncedPlayPause]);
 
   return (
     <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Video Background - GPU accelerated layer */}
+      <div className="absolute inset-0 z-0" style={{ contain: "paint" }}>
         <video
           ref={videoRef}
           autoPlay
@@ -44,13 +67,14 @@ const HeroSection = () => {
           loop
           playsInline
           preload="metadata"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover will-change-transform"
+          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden" }}
         >
           <source src="/videos/drone-bg.webm" type="video/webm" />
           <source src="/videos/drone-bg.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
       {/* Content */}
