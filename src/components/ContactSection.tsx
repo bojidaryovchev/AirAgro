@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -37,6 +37,7 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 const ContactSection = () => {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const {
     register,
@@ -65,13 +66,7 @@ const ContactSection = () => {
         throw new Error("Failed to send message");
       }
 
-      toast.success("Съобщението е изпратено успешно!", {
-        description: "Ще се свържем с вас скоро.",
-        position: "top-center",
-        duration: 4500,
-        className: "mx-auto w-full max-w-lg rounded-2xl px-6 py-5 text-center text-base md:text-lg",
-        descriptionClassName: "text-center text-sm md:text-base",
-      });
+      setShowSuccess(true);
       
       reset();
     } catch (error) {
@@ -91,6 +86,50 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="section-padding bg-secondary">
+      <AnimatePresence>
+        {showSuccess && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              transition={{ type: "spring", stiffness: 180, damping: 18 }}
+              className="relative mx-6 w-full max-w-xl overflow-hidden rounded-3xl border border-primary/20 bg-primary/20 p-8 text-center shadow-2xl shadow-primary/20"
+            >
+              <div className="absolute inset-0 opacity-40">
+                <div className="absolute left-6 top-6 h-3 w-3 animate-pulse rounded-full bg-primary/70" />
+                <div className="absolute right-10 top-10 h-2.5 w-2.5 animate-pulse rounded-full bg-lime-400/70" />
+                <div className="absolute bottom-10 left-12 h-2 w-2 animate-pulse rounded-full bg-emerald-300/70" />
+                <div className="absolute bottom-12 right-16 h-3 w-3 animate-pulse rounded-full bg-primary/60" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/30">
+                  ✓
+                </div>
+                <h4 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+                  Съобщението е изпратено успешно!
+                </h4>
+                <p className="mt-3 text-base text-foreground/80 md:text-lg">
+                  Ще се свържем с вас скоро.
+                </p>
+                <Button
+                  type="button"
+                  className="hero-gradient mt-6 border-0 px-6 py-3 text-white"
+                  onClick={() => setShowSuccess(false)}
+                >
+                  Добре
+                </Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Contact Info */}
