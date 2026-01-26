@@ -1,4 +1,5 @@
 import BenefitsSection from "@/components/BenefitsSection";
+import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
@@ -18,6 +19,7 @@ export default function Home() {
       <BenefitsSection />
       <StatsSection />
       <ContactSection />
+      <BlogSection />
       <Footer />
       <FloatingCallButton />
     </div>

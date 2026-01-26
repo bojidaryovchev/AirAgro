@@ -42,6 +42,7 @@ const Navbar = () => {
     { label: t("nav.services"), href: "#services" },
     { label: t("nav.features"), href: "#features" },
     { label: t("nav.benefits"), href: "#benefits" },
+    { label: t("nav.blog"), href: "/blog" },
     { label: t("nav.contact"), href: "#contact" },
   ];
 

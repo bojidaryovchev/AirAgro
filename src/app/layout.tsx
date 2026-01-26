@@ -87,12 +87,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="bg" className="scroll-smooth">
+    <html lang="bg" className="scroll-smooth" suppressHydrationWarning>
       <head>
         {/* Preload hero video with high priority */}
         <link rel="preload" href="/videos/drone-bg.webm" as="video" type="video/webm" fetchPriority="high" />
       </head>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning>
         <LanguageProvider>
           {children}
           <Toaster position="top-center" />
