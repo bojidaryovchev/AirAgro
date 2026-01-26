@@ -6,14 +6,14 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground py-12 text-background">
+    <footer className="bg-foreground py-8 text-background">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center">
             <img
               src="/air-agro-logo.png"
               alt="AgroAir"
-              className="h-16 w-auto shrink-0"
+              className="h-[72px] w-auto shrink-0"
             />
           </div>
 
