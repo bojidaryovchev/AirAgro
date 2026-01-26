@@ -9,12 +9,12 @@ const Footer = () => {
     <footer className="bg-foreground py-12 text-background">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-              <span className="font-display text-xl font-bold text-primary-foreground">
-                A
-              </span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/air-agro-logo.png"
+              alt="AgroAir"
+              className="h-10 w-auto"
+            />
             <span className="font-display text-xl font-bold">AgroAir</span>
           </div>
 

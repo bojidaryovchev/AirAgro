@@ -57,12 +57,12 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="font-display text-xl font-bold text-primary-foreground">
-              A
-            </span>
-          </div>
+        <a href="#" className="flex items-center gap-3">
+          <img
+            src="/air-agro-logo.png"
+            alt="AgroAir"
+            className="h-10 w-auto"
+          />
           <span
             className={`font-display text-xl font-bold ${
               isScrolled ? "text-foreground" : "text-white"
