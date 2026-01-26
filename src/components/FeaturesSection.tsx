@@ -85,19 +85,19 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl">
+            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl" style={{ paddingTop: '75%' }}>
               <video
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="h-auto w-full"
+                className="absolute inset-0 h-full w-full object-cover"
               >
                 <source src="/videos/drone-spraying.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              {/* Glow effect */}
-              <div className="absolute -bottom-10 left-1/2 h-32 w-3/4 -translate-x-1/2 rounded-full bg-primary/30 blur-3xl" />
+              {/* Dark green glow effect */}
+              <div className="absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full bg-primary/40 blur-3xl" />
             </div>
           </motion.div>
         </div>
