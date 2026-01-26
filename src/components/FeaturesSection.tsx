@@ -76,7 +76,7 @@ const FeaturesSection = () => {
             </div>
           </motion.div>
 
-          {/* Video/Image with parallax */}
+          {/* Video with parallax */}
           <motion.div
             style={{ y: imageY }}
             initial={{ opacity: 0, x: 30 }}
@@ -85,16 +85,16 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 to-gray-800 p-8">
+            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl">
               <video
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="h-auto w-full animate-float"
+                className="h-auto w-full"
               >
-                <source src="/videos/drone-product.webm" type="video/webm" />
-                <source src="/videos/drone-product.mp4" type="video/mp4" />
+                <source src="/videos/drone-spraying.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
               {/* Glow effect */}
               <div className="absolute -bottom-10 left-1/2 h-32 w-3/4 -translate-x-1/2 rounded-full bg-primary/30 blur-3xl" />
