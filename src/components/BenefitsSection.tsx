@@ -1,16 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion";
-import { 
-  Zap, 
-  Wallet, 
-  CloudRain, 
-  TreePine, 
-  MapPin, 
-  Leaf, 
-  Check
-} from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { motion } from "framer-motion";
+import { Check, CloudRain, Leaf, MapPin, TreePine, Wallet, Zap } from "lucide-react";
 
 const BenefitsSection = () => {
   const { t } = useLanguage();
@@ -18,33 +10,33 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: Zap,
-      title: t('benefits.speed'),
-      description: t('benefits.speed.desc'),
+      title: t("benefits.speed"),
+      description: t("benefits.speed.desc"),
     },
     {
       icon: Wallet,
-      title: t('benefits.savings'),
-      description: t('benefits.savings.desc'),
+      title: t("benefits.savings"),
+      description: t("benefits.savings.desc"),
     },
     {
       icon: CloudRain,
-      title: t('benefits.weather'),
-      description: t('benefits.weather.desc'),
+      title: t("benefits.weather"),
+      description: t("benefits.weather.desc"),
     },
     {
       icon: TreePine,
-      title: t('benefits.height'),
-      description: t('benefits.height.desc'),
+      title: t("benefits.height"),
+      description: t("benefits.height.desc"),
     },
     {
       icon: MapPin,
-      title: t('benefits.precision'),
-      description: t('benefits.precision.desc'),
+      title: t("benefits.precision"),
+      description: t("benefits.precision.desc"),
     },
     {
       icon: Leaf,
-      title: t('benefits.eco'),
-      description: t('benefits.eco.desc'),
+      title: t("benefits.eco"),
+      description: t("benefits.eco.desc"),
     },
   ];
 
@@ -58,15 +50,11 @@ const BenefitsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-            {t('benefits.badge')}
+          <span className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-medium">
+            {t("benefits.badge")}
           </span>
-          <h2 className="font-display text-4xl font-bold text-foreground md:text-5xl">
-            {t('benefits.title')}
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-lg font-semibold text-primary">
-            {t('benefits.subtitle')}
-          </p>
+          <h2 className="font-display text-foreground text-4xl font-bold md:text-5xl">{t("benefits.title")}</h2>
+          <p className="text-primary mx-auto mt-4 max-w-3xl text-lg font-semibold">{t("benefits.subtitle")}</p>
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -77,16 +65,14 @@ const BenefitsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group flex gap-4 rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+              className="group border-border bg-card hover:border-primary/30 hover:shadow-primary/5 flex gap-4 rounded-2xl border p-6 transition-all hover:shadow-lg"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+              <div className="bg-primary text-primary-foreground flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
                 <Check className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="mb-2 font-display text-lg font-semibold text-foreground">
-                  {benefit.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                <h3 className="font-display text-foreground mb-2 text-lg font-semibold">{benefit.title}</h3>
+                <p className="text-muted-foreground text-sm">{benefit.description}</p>
               </div>
             </motion.div>
           ))}

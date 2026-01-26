@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { z } from "zod";
 import { Resend } from "resend";
+import { z } from "zod";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2),
@@ -19,7 +19,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
+
     // Validate the request body
     const validatedData = contactFormSchema.parse(body);
 
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         fertilizing: "Торене",
         herbicide: "Хербициди",
         seeding: "Сеитба",
-        other: "Друго"
+        other: "Друго",
       };
 
       await resend.emails.send({
@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
                   </div>
                   <div class="field">
                     <div class="label">Съобщение:</div>
-                    <div class="value">${validatedData.message.replace(/\n/g, '<br>')}</div>
+                    <div class="value">${validatedData.message.replace(/\n/g, "<br>")}</div>
                   </div>
                 </div>
               </div>
@@ -102,22 +102,13 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    return NextResponse.json(
-      { success: true, message: "Формата е изпратена успешно" },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true, message: "Формата е изпратена успешно" }, { status: 200 });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json(
-        { success: false, errors: error.issues },
-        { status: 400 }
-      );
+      return NextResponse.json({ success: false, errors: error.issues }, { status: 400 });
     }
 
     console.error("Contact form error:", error);
-    return NextResponse.json(
-      { success: false, message: "Грешка при обработка на формата" },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: "Грешка при обработка на формата" }, { status: 500 });
   }
 }

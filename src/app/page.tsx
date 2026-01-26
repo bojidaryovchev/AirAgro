@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import ContactSection from "@/components/ContactSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import FloatingCallButton from "@/components/FloatingCallButton";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import VideoShowcaseSection from "@/components/VideoShowcaseSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import FloatingCallButton from "@/components/FloatingCallButton";
 
 export default function Home() {
   return (

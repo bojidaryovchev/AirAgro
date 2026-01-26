@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
@@ -38,10 +38,10 @@ const Navbar = () => {
   }, [scrollThreshold]);
 
   const navLinks = [
-    { label: t('nav.services'), href: "#services" },
-    { label: t('nav.features'), href: "#features" },
-    { label: t('nav.benefits'), href: "#benefits" },
-    { label: t('nav.contact'), href: "#contact" },
+    { label: t("nav.services"), href: "#services" },
+    { label: t("nav.features"), href: "#features" },
+    { label: t("nav.benefits"), href: "#benefits" },
+    { label: t("nav.contact"), href: "#contact" },
   ];
 
   return (
@@ -49,20 +49,14 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/45 shadow-lg backdrop-blur-xl"
-          : "bg-transparent"
+      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-background/45 shadow-lg backdrop-blur-xl" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <img
-            src="/air-agro-logo.png"
-            alt="AgroAir"
-            className="h-[80px] w-auto shrink-0"
-          />
+          <img src="/air-agro-logo.png" alt="AgroAir" className="h-[80px] w-auto shrink-0" />
         </a>
 
         {/* Desktop Navigation */}
@@ -71,7 +65,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
+              className={`hover:text-primary text-sm font-medium transition-colors ${
                 isScrolled ? "text-foreground" : "text-white/90"
               }`}
             >
@@ -79,8 +73,8 @@ const Navbar = () => {
             </a>
           ))}
           <LanguageSwitcher isScrolled={isScrolled} />
-          <Button className="hero-gradient border-0 text-white shadow-md shadow-primary/20" asChild>
-            <a href="#contact">{t('nav.getStarted')}</a>
+          <Button className="hero-gradient shadow-primary/20 border-0 text-white shadow-md" asChild>
+            <a href="#contact">{t("nav.getStarted")}</a>
           </Button>
         </div>
 
@@ -91,11 +85,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`${isScrolled ? "text-foreground" : "text-white"}`}
           >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
@@ -106,7 +96,7 @@ const Navbar = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden"
+          className="border-border bg-background/95 border-t backdrop-blur-xl md:hidden"
         >
           <div className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
@@ -114,14 +104,14 @@ const Navbar = () => {
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                className="text-foreground hover:text-primary text-lg font-medium transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <Button className="hero-gradient mt-2 w-full border-0 text-white" asChild>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-                {t('nav.getStarted')}
+                {t("nav.getStarted")}
               </a>
             </Button>
           </div>

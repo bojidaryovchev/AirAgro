@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -6,38 +6,34 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground py-8 text-background">
+    <footer className="bg-foreground text-background py-8">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center">
-            <img
-              src="/air-agro-logo.png"
-              alt="AgroAir"
-              className="h-[72px] w-auto shrink-0"
-            />
+            <img src="/air-agro-logo.png" alt="AgroAir" className="h-[72px] w-auto shrink-0" />
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-background/70">
-            <a href="#services" className="transition-colors hover:text-primary">
-              {t('nav.services')}
+          <div className="text-background/70 flex flex-wrap items-center justify-center gap-6 text-sm">
+            <a href="#services" className="hover:text-primary transition-colors">
+              {t("nav.services")}
             </a>
-            <a href="#features" className="transition-colors hover:text-primary">
-              {t('nav.features')}
+            <a href="#features" className="hover:text-primary transition-colors">
+              {t("nav.features")}
             </a>
-            <a href="#benefits" className="transition-colors hover:text-primary">
-              {t('nav.benefits')}
+            <a href="#benefits" className="hover:text-primary transition-colors">
+              {t("nav.benefits")}
             </a>
-            <a href="#contact" className="transition-colors hover:text-primary">
-              {t('nav.contact')}
+            <a href="#contact" className="hover:text-primary transition-colors">
+              {t("nav.contact")}
             </a>
-            <a href="#" className="transition-colors hover:text-primary">
-              {t('footer.privacy')}
+            <a href="#" className="hover:text-primary transition-colors">
+              {t("footer.privacy")}
             </a>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-background/10 pt-8 text-center text-sm text-background/50">
-          © {new Date().getFullYear()} {t('footer.copyright')}
+        <div className="border-background/10 text-background/50 mt-8 border-t pt-8 text-center text-sm">
+          © {new Date().getFullYear()} {t("footer.copyright")}
         </div>
       </div>
     </footer>

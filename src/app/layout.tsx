@@ -1,9 +1,9 @@
+import { SonnerToaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "@/contexts/LanguageContext";
-import { Toaster } from "@/components/ui/toaster";
-import { SonnerToaster } from "@/components/ui/sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,8 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AgroAir - Професионални Дрон Услуги",
-    description:
-      "Професионални дрон услуги за пръскане и торене с DJI Agras T50",
+    description: "Професионални дрон услуги за пръскане и торене с DJI Agras T50",
     images: ["/air-agro-logo.png"],
   },
   alternates: {
@@ -89,9 +88,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bg" className="scroll-smooth">
-      <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
         <LanguageProvider>
           {children}
           <Toaster />

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const VideoShowcaseSection = () => {
@@ -20,7 +20,7 @@ const VideoShowcaseSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (!hasLoadedRef.current) {
-              video.src = '/videos/vid2.webm';
+              video.src = "/videos/vid2.webm";
               video.load();
               hasLoadedRef.current = true;
             }
@@ -30,7 +30,7 @@ const VideoShowcaseSection = () => {
           }
         });
       },
-      { rootMargin: '200px', threshold: 0 }
+      { rootMargin: "200px", threshold: 0 },
     );
 
     observer.observe(section);
@@ -41,14 +41,7 @@ const VideoShowcaseSection = () => {
     <section ref={sectionRef} id="video" className="relative overflow-hidden py-20 lg:py-32">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <video
-          ref={videoRef}
-          muted
-          loop
-          playsInline
-          preload="none"
-          className="h-full w-full object-cover"
-        />
+        <video ref={videoRef} muted loop playsInline preload="none" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80" />
       </div>
 
@@ -62,14 +55,10 @@ const VideoShowcaseSection = () => {
             className="max-w-3xl"
           >
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
-              {t('video.badge')}
+              {t("video.badge")}
             </span>
-            <h2 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
-              {t('video.title')}
-            </h2>
-            <p className="mt-6 text-lg text-white/90 md:text-xl">
-              {t('video.description')}
-            </p>
+            <h2 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">{t("video.title")}</h2>
+            <p className="mt-6 text-lg text-white/90 md:text-xl">{t("video.description")}</p>
           </motion.div>
         </div>
       </div>

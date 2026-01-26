@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
@@ -26,7 +26,7 @@ const HeroSection = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     observer.observe(section);
@@ -62,7 +62,7 @@ const HeroSection = () => {
           className="mb-6"
         >
           <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
-            {t('hero.badge')}
+            {t("hero.badge")}
           </span>
         </motion.div>
 
@@ -70,12 +70,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display text-5xl font-bold leading-tight text-white md:text-7xl lg:text-8xl"
+          className="font-display text-5xl leading-tight font-bold text-white md:text-7xl lg:text-8xl"
         >
-          {t('hero.title1')}
+          {t("hero.title1")}
           <br />
           <span className="bg-gradient-to-r from-green-400 to-lime-400 bg-clip-text text-transparent">
-            {t('hero.title2')}
+            {t("hero.title2")}
           </span>
         </motion.h1>
 
@@ -85,7 +85,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-6 max-w-2xl text-lg text-white/80 md:text-xl"
         >
-          {t('hero.description')}
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
@@ -96,10 +96,10 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="hero-gradient border-0 px-8 py-6 text-lg font-semibold text-white shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/40"
+            className="hero-gradient shadow-primary/30 hover:shadow-primary/40 border-0 px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl"
             asChild
           >
-            <a href="#contact">{t('hero.getQuote')}</a>
+            <a href="#contact">{t("hero.getQuote")}</a>
           </Button>
         </motion.div>
       </div>
@@ -116,7 +116,7 @@ const HeroSection = () => {
           transition={{ duration: 2, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-white/60"
         >
-          <span className="text-sm">{t('hero.scroll')}</span>
+          <span className="text-sm">{t("hero.scroll")}</span>
           <ChevronDown className="h-5 w-5" />
         </motion.div>
       </motion.div>

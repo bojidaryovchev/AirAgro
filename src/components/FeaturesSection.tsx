@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion";
-import { useRef, useEffect } from "react";
-import { Check, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { motion } from "framer-motion";
+import { Check, ShieldCheck } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const FeaturesSection = () => {
   const { t } = useLanguage();
@@ -21,7 +21,7 @@ const FeaturesSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (!hasLoadedRef.current) {
-              video.src = '/videos/drone-spraying.mp4';
+              video.src = "/videos/drone-spraying.mp4";
               video.load();
               hasLoadedRef.current = true;
             }
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
           }
         });
       },
-      { rootMargin: '200px', threshold: 0 }
+      { rootMargin: "200px", threshold: 0 },
     );
 
     observer.observe(section);
@@ -39,21 +39,17 @@ const FeaturesSection = () => {
   }, []);
 
   const features = [
-    { icon: Check, label: t('features.capacity') },
-    { icon: Check, label: t('features.radar') },
-    { icon: Check, label: t('features.transmission') },
-    { icon: Check, label: t('features.coverage') },
-    { icon: Check, label: t('features.terrain') },
-    { icon: Check, label: t('features.weather') },
-    { icon: ShieldCheck, label: t('benefits.safety') },
+    { icon: Check, label: t("features.capacity") },
+    { icon: Check, label: t("features.radar") },
+    { icon: Check, label: t("features.transmission") },
+    { icon: Check, label: t("features.coverage") },
+    { icon: Check, label: t("features.terrain") },
+    { icon: Check, label: t("features.weather") },
+    { icon: ShieldCheck, label: t("benefits.safety") },
   ];
 
   return (
-    <section
-      id="features"
-      ref={sectionRef}
-      className="section-padding relative overflow-hidden bg-background"
-    >
+    <section id="features" ref={sectionRef} className="section-padding bg-background relative overflow-hidden">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Content */}
@@ -63,19 +59,17 @@ const FeaturesSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-              {t('features.badge')}
+            <span className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-medium">
+              {t("features.badge")}
             </span>
-            <h2 className="font-display text-4xl font-bold text-foreground md:text-5xl">
-              {t('features.title1')}
+            <h2 className="font-display text-foreground text-4xl font-bold md:text-5xl">
+              {t("features.title1")}
               <br />
               <span className="bg-gradient-to-r from-green-500 to-lime-500 bg-clip-text text-transparent">
-                {t('features.title2')}
+                {t("features.title2")}
               </span>
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              {t('features.description')}
-            </p>
+            <p className="text-muted-foreground mt-6 text-lg">{t("features.description")}</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {features.map((feature, index) => (
@@ -87,12 +81,10 @@ const FeaturesSection = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary">
-                    <feature.icon className="h-4 w-4 text-primary-foreground" />
+                  <div className="bg-primary flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <feature.icon className="text-primary-foreground h-4 w-4" />
                   </div>
-                  <span className="text-sm font-medium text-foreground">
-                    {feature.label}
-                  </span>
+                  <span className="text-foreground text-sm font-medium">{feature.label}</span>
                 </motion.div>
               ))}
             </div>
@@ -106,7 +98,7 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl" style={{ paddingTop: '75%' }}>
+            <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl" style={{ paddingTop: "75%" }}>
               <video
                 ref={videoRef}
                 muted
@@ -116,7 +108,7 @@ const FeaturesSection = () => {
                 className="absolute inset-0 h-full w-full object-cover"
               />
               {/* Dark green glow effect */}
-              <div className="absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full bg-primary/40 blur-3xl" />
+              <div className="bg-primary/40 absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full blur-3xl" />
             </div>
           </motion.div>
         </div>
