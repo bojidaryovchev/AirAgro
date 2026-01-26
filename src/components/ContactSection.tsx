@@ -67,12 +67,20 @@ const ContactSection = () => {
 
       toast.success("Съобщението е изпратено успешно!", {
         description: "Ще се свържем с вас скоро.",
+        position: "top-center",
+        duration: 4500,
+        className: "mx-auto w-full max-w-lg rounded-2xl px-6 py-5 text-center text-base md:text-lg",
+        descriptionClassName: "text-center text-sm md:text-base",
       });
       
       reset();
     } catch (error) {
       toast.error("Грешка при изпращане", {
         description: "Моля, опитайте отново или се свържете директно с нас.",
+        position: "top-center",
+        duration: 5000,
+        className: "mx-auto w-full max-w-lg rounded-2xl px-6 py-5 text-center text-base md:text-lg",
+        descriptionClassName: "text-center text-sm md:text-base",
       });
     } finally {
       setIsSubmitting(false);
