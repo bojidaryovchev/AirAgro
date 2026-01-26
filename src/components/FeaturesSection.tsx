@@ -1,20 +1,42 @@
 'use client';
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
 import { Check, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const FeaturesSection = () => {
   const { t } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const hasLoadedRef = useRef(false);
 
-  const imageY = useTransform(scrollYProgress, [0, 1], [100, -100]);
-  const textY = useTransform(scrollYProgress, [0, 1], [50, -50]);
+  useEffect(() => {
+    const section = sectionRef.current;
+    const video = videoRef.current;
+    if (!section || !video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (!hasLoadedRef.current) {
+              video.src = '/videos/drone-spraying.mp4';
+              video.load();
+              hasLoadedRef.current = true;
+            }
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { rootMargin: '200px', threshold: 0 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   const features = [
     { icon: Check, label: t('features.capacity') },
@@ -36,7 +58,6 @@ const FeaturesSection = () => {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Content */}
           <motion.div
-            style={{ y: textY }}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -77,9 +98,8 @@ const FeaturesSection = () => {
             </div>
           </motion.div>
 
-          {/* Video with parallax */}
+          {/* Video - lazy loaded */}
           <motion.div
-            style={{ y: imageY }}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -88,16 +108,13 @@ const FeaturesSection = () => {
           >
             <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl" style={{ paddingTop: '75%' }}>
               <video
-                autoPlay
+                ref={videoRef}
                 muted
                 loop
                 playsInline
-                preload="auto"
+                preload="none"
                 className="absolute inset-0 h-full w-full object-cover"
-              >
-                <source src="/videos/drone-spraying.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              />
               {/* Dark green glow effect */}
               <div className="absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full bg-primary/40 blur-3xl" />
             </div>

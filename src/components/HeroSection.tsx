@@ -4,20 +4,46 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const video = videoRef.current;
+    if (!section || !video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section id="hero" className="relative h-screen w-full overflow-hidden">
+    <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/videos/drone-bg.webm" type="video/webm" />

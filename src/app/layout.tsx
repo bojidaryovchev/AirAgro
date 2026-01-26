@@ -17,7 +17,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "AgroAir - Професионални Дрон Услуги за Третиране | DJI Agras T50",
-  description: "Професионални дрон услуги за пръскане и торене, захранвани от DJI Agras T50. Максимизирайте добива на вашите култури с прецизно въздушно третиране в България.",
+  description:
+    "Професионални дрон услуги за пръскане и торене, захранвани от DJI Agras T50. Максимизирайте добива на вашите култури с прецизно въздушно третиране в България.",
   keywords: [
     "дрон услуги",
     "дрон пръскане",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     "агро услуги България",
     "дрон торене",
     "селско стопанство",
-    "precision agriculture"
+    "precision agriculture",
   ],
   authors: [{ name: "AgroAir" }],
   creator: "AgroAir",
@@ -50,10 +51,11 @@ export const metadata: Metadata = {
     url: "https://agroair.bg",
     siteName: "AgroAir",
     title: "AgroAir - Професионални Дрон Услуги за Третиране",
-    description: "Професионални дрон услуги за пръскане и торене с DJI Agras T50. Прецизно въздушно третиране на земеделски култури в България.",
+    description:
+      "Професионални дрон услуги за пръскане и торене с DJI Agras T50. Прецизно въздушно третиране на земеделски култури в България.",
     images: [
       {
-        url: "/hero-bg.jpg",
+        url: "/air-agro-logo.png",
         width: 1200,
         height: 630,
         alt: "AgroAir Drone Services",
@@ -63,8 +65,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AgroAir - Професионални Дрон Услуги",
-    description: "Професионални дрон услуги за пръскане и торене с DJI Agras T50",
-    images: ["/hero-bg.jpg"],
+    description:
+      "Професионални дрон услуги за пръскане и торене с DJI Agras T50",
+    images: ["/air-agro-logo.png"],
   },
   alternates: {
     canonical: "https://agroair.bg",
