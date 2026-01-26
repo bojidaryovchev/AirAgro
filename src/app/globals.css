@@ -84,12 +84,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* GPU acceleration for video elements to prevent scroll flickering */
-video {
-  -webkit-transform: translateZ(0);
+/* Optimize scroll performance */
+section {
+  contain: layout style paint;
+}
+
+/* Prevent flicker when Framer Motion animations complete */
+section * {
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+}
+
+/* Smooth scrolling with reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 h1,
