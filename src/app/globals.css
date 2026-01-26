@@ -89,6 +89,14 @@ section {
   contain: layout style paint;
 }
 
+/* Disable Framer Motion animations on mobile - use CSS instead */
+@media (max-width: 768px) {
+  [style*="opacity"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* Smooth scrolling with reduced motion preference */
 @media (prefers-reduced-motion: no-preference) {
   html {
