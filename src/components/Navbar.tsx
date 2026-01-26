@@ -55,13 +55,13 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0.5">
         {/* Logo */}
         <a href="#" className="flex items-center">
           <img
             src="/air-agro-logo.png"
             alt="AgroAir"
-            className="h-[72px] w-auto shrink-0"
+            className="h-[80px] w-auto shrink-0"
           />
         </a>
 
