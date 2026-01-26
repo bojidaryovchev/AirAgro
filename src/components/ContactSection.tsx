@@ -8,7 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { ContactFormData, contactFormSchema, serviceOptions } from "@/lib/schemas/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
