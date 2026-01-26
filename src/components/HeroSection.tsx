@@ -17,6 +17,7 @@ const HeroSection = () => {
           muted
           loop
           playsInline
+          preload="auto"
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/videos/drone-bg.webm" type="video/webm" />

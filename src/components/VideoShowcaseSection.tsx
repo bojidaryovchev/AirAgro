@@ -15,6 +15,7 @@ const VideoShowcaseSection = () => {
           muted
           loop
           playsInline
+          preload="auto"
           className="h-full w-full object-cover"
         >
           <source src="/videos/vid2.webm" type="video/webm" />
