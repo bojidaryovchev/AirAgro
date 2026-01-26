@@ -47,15 +47,15 @@ const VideoShowcaseSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative aspect-video overflow-hidden rounded-2xl border border-white/20 shadow-2xl"
+            className="relative aspect-video overflow-hidden rounded-2xl border border-white/20 bg-black shadow-2xl"
           >
             <video
               controls
+              preload="metadata"
               className="h-full w-full object-cover"
-              poster="/videos/drone-spraying-poster.jpg"
             >
               <source src="/videos/drone-spraying.mp4" type="video/mp4" />
-              <source src="/videos/drone-spraying.webm" type="video/webm" />
+              Your browser does not support the video tag.
             </video>
           </motion.div>
         </div>
