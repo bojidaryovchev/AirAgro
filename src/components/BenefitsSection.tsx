@@ -8,7 +8,6 @@ import {
   TreePine, 
   MapPin, 
   Leaf, 
-  ShieldCheck,
   Check
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -46,11 +45,6 @@ const BenefitsSection = () => {
       icon: Leaf,
       title: t('benefits.eco'),
       description: t('benefits.eco.desc'),
-    },
-    {
-      icon: ShieldCheck,
-      title: t('benefits.safety'),
-      description: t('benefits.safety.desc'),
     },
   ];
 

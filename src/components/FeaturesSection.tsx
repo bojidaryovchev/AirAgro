@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Check } from "lucide-react";
+import { Check, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const FeaturesSection = () => {
@@ -17,12 +17,13 @@ const FeaturesSection = () => {
   const textY = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   const features = [
-    t('features.capacity'),
-    t('features.radar'),
-    t('features.transmission'),
-    t('features.coverage'),
-    t('features.terrain'),
-    t('features.weather'),
+    { icon: Check, label: t('features.capacity') },
+    { icon: Check, label: t('features.radar') },
+    { icon: Check, label: t('features.transmission') },
+    { icon: Check, label: t('features.coverage') },
+    { icon: Check, label: t('features.terrain') },
+    { icon: Check, label: t('features.weather') },
+    { icon: ShieldCheck, label: t('benefits.safety') },
   ];
 
   return (
@@ -58,7 +59,7 @@ const FeaturesSection = () => {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {features.map((feature, index) => (
                 <motion.div
-                  key={feature}
+                  key={feature.label}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -66,10 +67,10 @@ const FeaturesSection = () => {
                   className="flex items-center gap-3"
                 >
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary">
-                    <Check className="h-4 w-4 text-primary-foreground" />
+                    <feature.icon className="h-4 w-4 text-primary-foreground" />
                   </div>
                   <span className="text-sm font-medium text-foreground">
-                    {feature}
+                    {feature.label}
                   </span>
                 </motion.div>
               ))}
