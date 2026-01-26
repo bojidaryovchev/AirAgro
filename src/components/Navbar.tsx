@@ -10,15 +10,32 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrollThreshold, setScrollThreshold] = useState(50);
   const { t } = useLanguage();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+    const updateThreshold = () => {
+      const hero = document.getElementById("hero");
+      if (hero) {
+        setScrollThreshold(Math.max(0, hero.offsetHeight - 80));
+      } else {
+        setScrollThreshold(50);
+      }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    updateThreshold();
+    window.addEventListener("resize", updateThreshold);
+    return () => window.removeEventListener("resize", updateThreshold);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > scrollThreshold);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollThreshold]);
 
   const navLinks = [
     { label: t('nav.services'), href: "#services" },
