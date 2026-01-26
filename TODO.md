@@ -98,7 +98,7 @@ AirAgro/
 │   ├── videos/
 │   │   ├── drone-bg.webm
 │   │   └── drone-spraying.mp4
-│   ├── hero-bg.jpg
+│   ├── air-agro-logo.png
 │   └── drone-product.png
 └── package.json
 ```
