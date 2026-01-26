@@ -1,9 +1,9 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { markdownToHtml } from './markdown';
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
+import { markdownToHtml } from "./markdown";
 
-const articlesDirectory = path.join(process.cwd(), 'content/articles');
+const articlesDirectory = path.join(process.cwd(), "content/articles");
 
 export interface ArticleMetadata {
   title: string;
@@ -12,7 +12,7 @@ export interface ArticleMetadata {
   date: string;
   image: string;
   slug: string;
-  category: 'Технология' | 'Съвети' | 'Анализ';
+  category: "Технология" | "Съвети" | "Анализ";
   tags: string[];
   readTime: string;
 }
@@ -24,14 +24,12 @@ export interface Article extends ArticleMetadata {
 
 export function getAllArticleSlugs(): string[] {
   const fileNames = fs.readdirSync(articlesDirectory);
-  return fileNames
-    .filter(fileName => fileName.endsWith('.md'))
-    .map(fileName => fileName.replace(/\.md$/, ''));
+  return fileNames.filter((fileName) => fileName.endsWith(".md")).map((fileName) => fileName.replace(/\.md$/, ""));
 }
 
 export function getArticleBySlug(slug: string): Article {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
   return {
@@ -44,7 +42,7 @@ export function getArticleBySlug(slug: string): Article {
 export async function getArticleWithHtml(slug: string): Promise<Article> {
   const article = getArticleBySlug(slug);
   const contentHtml = await markdownToHtml(article.content);
-  
+
   return {
     ...article,
     contentHtml,
@@ -54,8 +52,8 @@ export async function getArticleWithHtml(slug: string): Promise<Article> {
 export function getAllArticles(): Article[] {
   const slugs = getAllArticleSlugs();
   const articles = slugs
-    .map(slug => getArticleBySlug(slug))
-    .sort((a, b) => (new Date(b.date).getTime() - new Date(a.date).getTime()));
-  
+    .map((slug) => getArticleBySlug(slug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   return articles;
 }

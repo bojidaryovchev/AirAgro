@@ -1,9 +1,9 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { getAllArticleSlugs, getArticleWithHtml } from '@/lib/articles';
-import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
+import { getAllArticleSlugs, getArticleWithHtml } from "@/lib/articles";
+import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -18,19 +18,19 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  
+
   try {
     const article = await getArticleWithHtml(slug);
-    
+
     return {
       title: `${article.title} | AirAgro Blog`,
       description: article.description,
-      keywords: article.tags.join(', '),
+      keywords: article.tags.join(", "),
       authors: [{ name: article.author }],
       openGraph: {
         title: article.title,
         description: article.description,
-        type: 'article',
+        type: "article",
         publishedTime: article.date,
         authors: [article.author],
         images: [
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ],
       },
       twitter: {
-        card: 'summary_large_image',
+        card: "summary_large_image",
         title: article.title,
         description: article.description,
         images: [article.image],
@@ -51,14 +51,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   } catch (error) {
     return {
-      title: 'Статия не е намерена | AirAgro Blog',
+      title: "Статия не е намерена | AirAgro Blog",
     };
   }
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  
+
   let article;
   try {
     article = await getArticleWithHtml(slug);
@@ -68,79 +68,76 @@ export default async function BlogPostPage({ params }: Props) {
 
   // JSON-LD Structured Data
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
+    "@context": "https://schema.org",
+    "@type": "Article",
     headline: article.title,
     description: article.description,
     image: article.image,
     datePublished: article.date,
     author: {
-      '@type': 'Person',
+      "@type": "Person",
       name: article.author,
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'AirAgro',
+      "@type": "Organization",
+      name: "AirAgro",
       logo: {
-        '@type': 'ImageObject',
-        url: 'https://airagro.bg/air-agro-logo.png',
+        "@type": "ImageObject",
+        url: "https://airagro.bg/air-agro-logo.png",
       },
     },
-    keywords: article.tags.join(', '),
+    keywords: article.tags.join(", "),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
       <article className="min-h-screen bg-white pt-20">
         {/* Back Button */}
-        <div className="container mx-auto px-4 py-6 max-w-7xl">
+        <div className="container mx-auto max-w-7xl px-4 py-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 transition-colors font-medium"
+            className="inline-flex items-center gap-2 font-medium text-emerald-600 transition-colors hover:text-emerald-700"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="h-4 w-4" />
             Back to Home
           </Link>
         </div>
 
         {/* Hero Image */}
-        <div className="relative w-full h-[500px] md:h-[600px] mb-12">
-          <Image
-            src={article.image}
-            alt={article.title}
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="relative mb-12 h-[500px] w-full md:h-[600px]">
+          <Image src={article.image} alt={article.title} fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-          
+
           {/* Category Badge */}
-          <div className="absolute top-8 right-8 bg-emerald-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+          <div className="absolute top-8 right-8 rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-lg">
             {article.category}
           </div>
 
           {/* Title Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+          <div className="absolute right-0 bottom-0 left-0 p-8 md:p-16">
             <div className="container mx-auto max-w-4xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+              <h1 className="mb-6 text-4xl leading-tight font-bold text-white drop-shadow-2xl md:text-5xl lg:text-6xl">
                 {article.title}
               </h1>
               <div className="flex flex-wrap items-center gap-6 text-white/90">
                 <div className="flex items-center gap-2">
-                  <User className="w-5 h-5" />
+                  <User className="h-5 w-5" />
                   <span>{article.author}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5" />
-                  <span>{new Date(article.date).toLocaleDateString('bg-BG', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  <Calendar className="h-5 w-5" />
+                  <span>
+                    {new Date(article.date).toLocaleDateString("bg-BG", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5" />
+                  <Clock className="h-5 w-5" />
                   <span>{article.readTime} четене</span>
                 </div>
               </div>
@@ -150,50 +147,43 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Article Content */}
         <div className="container mx-auto px-4 pb-16">
-          <div className="max-w-6xl mx-auto">
+          <div className="mx-auto max-w-6xl">
             {/* Article Lead */}
             <div className="mb-12">
-              <p className="text-2xl leading-relaxed text-gray-700 font-light">
-                {article.description}
-              </p>
+              <p className="text-2xl leading-relaxed font-light text-gray-700">{article.description}</p>
             </div>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-2 mb-12">
+            <div className="mb-12 flex flex-wrap gap-2">
               {article.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium"
-                >
+                <span key={tag} className="rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">
                   #{tag}
                 </span>
               ))}
             </div>
 
             {/* Article Content */}
-            <div 
+            <div
               className="article-content prose prose-lg max-w-none"
-              dangerouslySetInnerHTML={{ __html: article.contentHtml || '' }}
+              dangerouslySetInnerHTML={{ __html: article.contentHtml || "" }}
             />
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl p-8 md:p-12 text-center text-white mt-16 mb-12 shadow-xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Готови да оптимизирате растителната защита?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
+            <div className="mt-16 mb-12 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 p-8 text-center text-white shadow-xl md:p-12">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">Готови да оптимизирате растителната защита?</h2>
+              <p className="mb-8 text-xl opacity-90">
                 Свържете се с нас за професионална консултация и услуги с дронове
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Link
                   href="/#contact"
-                  className="px-10 py-4 bg-white text-emerald-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-lg"
+                  className="rounded-lg bg-white px-10 py-4 text-lg font-semibold text-emerald-600 transition-colors hover:bg-gray-100"
                 >
                   Поръчайте Консултация
                 </Link>
                 <Link
                   href="tel:+359898765432"
-                  className="px-10 py-4 bg-emerald-700 text-white rounded-lg font-semibold hover:bg-emerald-800 transition-colors border-2 border-white/20 text-lg"
+                  className="rounded-lg border-2 border-white/20 bg-emerald-700 px-10 py-4 text-lg font-semibold text-white transition-colors hover:bg-emerald-800"
                 >
                   Обадете се сега
                 </Link>

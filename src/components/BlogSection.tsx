@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import BlogCard from '@/components/BlogCard';
-import { Article } from '@/lib/articles';
-import { useLanguage } from '@/contexts/LanguageContext';
+import BlogCard from "@/components/BlogCard";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Article } from "@/lib/articles";
+import { useEffect, useState } from "react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function BlogSection() {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -18,14 +18,14 @@ export default function BlogSection() {
   const { t } = useLanguage();
 
   useEffect(() => {
-    fetch('/api/articles')
-      .then(res => res.json())
-      .then(data => {
+    fetch("/api/articles")
+      .then((res) => res.json())
+      .then((data) => {
         setArticles(data.slice(0, 6)); // Show only 6 most recent
         setLoading(false);
       })
-      .catch(error => {
-        console.error('Error loading articles:', error);
+      .catch((error) => {
+        console.error("Error loading articles:", error);
         setLoading(false);
       });
   }, []);
@@ -35,16 +35,12 @@ export default function BlogSection() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="bg-gradient-to-b from-white to-gray-50 py-20 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Read Our Blog
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Learn from first hand
-          </p>
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">Read Our Blog</h2>
+          <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-300">Learn from first hand</p>
         </div>
 
         {/* Swiper Carousel */}
@@ -82,13 +78,13 @@ export default function BlogSection() {
         </Swiper>
 
         {/* View All Link */}
-        <div className="text-center mt-8">
+        <div className="mt-8 text-center">
           <a
             href="/blog"
-            className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold text-lg transition-colors"
+            className="inline-flex items-center gap-2 text-lg font-semibold text-emerald-600 transition-colors hover:text-emerald-700"
           >
             Виж всички статии
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
@@ -101,16 +97,16 @@ export default function BlogSection() {
         .swiper-button-prev {
           color: #10b981;
         }
-        
+
         .swiper-button-next:after,
         .swiper-button-prev:after {
           font-size: 32px;
         }
-        
+
         .swiper-pagination-bullet {
           background: #10b981;
         }
-        
+
         .swiper-pagination-bullet-active {
           background: #059669;
         }
