@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -49,14 +50,14 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/45 shadow-lg backdrop-blur-xl" : "bg-transparent"
+      className={`fixed top-0 right-0 left-0 z-50 backdrop-blur-xl transition-all duration-300 ${
+        isScrolled ? "bg-background/45 shadow-lg" : "bg-background/5"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <img src="/air-agro-logo.png" alt="AgroAir" className="h-[80px] w-auto shrink-0" />
+          <Image src="/air-agro-logo.png" alt="AgroAir" width={120} height={80} className="h-20 w-auto shrink-0" />
         </a>
 
         {/* Desktop Navigation */}

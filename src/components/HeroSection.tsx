@@ -50,7 +50,7 @@ const HeroSection = () => {
           <source src="/videos/drone-bg.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
       {/* Content */}
@@ -74,7 +74,7 @@ const HeroSection = () => {
         >
           {t("hero.title1")}
           <br />
-          <span className="bg-gradient-to-r from-green-400 to-lime-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-green-400 to-lime-400 bg-clip-text text-transparent">
             {t("hero.title2")}
           </span>
         </motion.h1>

@@ -10,7 +10,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { toast } from "sonner";
+import toast from "react-hot-toast";
 import * as z from "zod";
 
 // Form validation schema
@@ -64,12 +64,14 @@ const ContactSection = () => {
 
       reset();
     } catch (error) {
-      toast.error("Грешка при изпращане", {
-        description: "Моля, опитайте отново или се свържете директно с нас.",
-        position: "top-center",
+      toast.error("Грешка при изпращане. Моля, опитайте отново или се свържете директно с нас.", {
         duration: 5000,
-        className: "mx-auto w-full max-w-lg rounded-2xl px-6 py-5 text-center text-base md:text-lg",
-        descriptionClassName: "text-center text-sm md:text-base",
+        style: {
+          borderRadius: "16px",
+          padding: "16px 24px",
+          fontSize: "16px",
+          maxWidth: "500px",
+        },
       });
     } finally {
       setIsSubmitting(false);
@@ -86,7 +88,7 @@ const ContactSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 backdrop-blur-sm"
+            className="fixed inset-0 z-60 flex items-center justify-center bg-black/50 backdrop-blur-sm"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -279,7 +281,7 @@ const ContactSection = () => {
                 <Textarea
                   {...register("message")}
                   placeholder={t("contact.messagePlaceholder")}
-                  className="min-h-[100px] resize-none"
+                  className="min-h-25 resize-none"
                 />
                 {errors.message && <p className="text-destructive mt-1 text-xs">{errors.message.message}</p>}
               </div>

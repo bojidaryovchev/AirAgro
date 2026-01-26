@@ -1,8 +1,7 @@
-import { SonnerToaster } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://agroair.bg"),
   title: "AgroAir - Професионални Дрон Услуги за Третиране | DJI Agras T50",
   description:
     "Професионални дрон услуги за пръскане и торене, захранвани от DJI Agras T50. Максимизирайте добива на вашите култури с прецизно въздушно третиране в България.",
@@ -91,8 +91,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
         <LanguageProvider>
           {children}
-          <Toaster />
-          <SonnerToaster />
+          <Toaster position="top-center" />
         </LanguageProvider>
       </body>
     </html>

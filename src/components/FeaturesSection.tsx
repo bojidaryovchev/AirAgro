@@ -65,7 +65,7 @@ const FeaturesSection = () => {
             <h2 className="font-display text-foreground text-4xl font-bold md:text-5xl">
               {t("features.title1")}
               <br />
-              <span className="bg-gradient-to-r from-green-500 to-lime-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-green-500 to-lime-500 bg-clip-text text-transparent">
                 {t("features.title2")}
               </span>
             </h2>

@@ -42,7 +42,7 @@ const VideoShowcaseSection = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video ref={videoRef} muted loop playsInline preload="none" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/80" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
