@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Droplets, Leaf, Map, Shield, Sprout, Zap } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   const { t } = useLanguage();

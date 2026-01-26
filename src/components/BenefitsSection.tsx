@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Check, CloudRain, Leaf, MapPin, TreePine, Wallet, Zap } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const BenefitsSection = () => {
   const { t } = useLanguage();

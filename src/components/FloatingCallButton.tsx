@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const FloatingCallButton = () => {
   const { scrollYProgress } = useScroll();

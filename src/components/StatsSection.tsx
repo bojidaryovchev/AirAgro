@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const StatsSection = () => {
   const { t } = useLanguage();
