@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import VideoCanvas from "@/components/VideoCanvas";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
@@ -8,20 +9,10 @@ import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
-  const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [displayedText, setDisplayedText] = useState("");
-  const [videoReady, setVideoReady] = useState(false);
 
   const subtitle = t("hero.title2");
-
-  // Handle video ready state via callback ref pattern
-  const handleVideoRef = (video: HTMLVideoElement | null) => {
-    videoRef.current = video;
-    if (video && video.readyState >= 3) {
-      setVideoReady(true);
-    }
-  };
 
   // Typewriter effect with reset on subtitle change
   useEffect(() => {
@@ -30,7 +21,6 @@ const HeroSection = () => {
       return;
     }
 
-    // Reset and start typewriter
     setDisplayedText("");
     let index = 0;
 
@@ -49,30 +39,14 @@ const HeroSection = () => {
   return (
     <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      {/* Layer 1: Poster image as background (visible while video loads) */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/drone-bg-poster-blurred.jpg')" }}
+      <VideoCanvas
+        src="/videos/drone-bg.webm"
+        poster="/drone-bg-poster-blurred.jpg"
+        className="absolute inset-0 z-0"
+        fps={24}
       />
 
-      {/* Layer 2: Video */}
-      <video
-        ref={handleVideoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        onCanPlayThrough={() => setVideoReady(true)}
-        className={`absolute inset-0 z-0 h-full w-full object-cover transition-opacity duration-700 ${
-          videoReady ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <source src="/videos/drone-bg.webm" type="video/webm" />
-        <source src="/videos/drone-bg.mp4" type="video/mp4" />
-      </video>
-
-      {/* Layer 3: Dark overlay */}
+      {/* Dark overlay */}
       <div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
 
       {/* Content */}

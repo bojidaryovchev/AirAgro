@@ -1,22 +1,12 @@
 "use client";
 
+import VideoCanvas from "@/components/VideoCanvas";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Check, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react";
-import { useRef, useState } from "react";
 
 const FeaturesSection = () => {
   const { t } = useLanguage();
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoReady, setVideoReady] = useState(false);
-
-  // Handle video ready state via callback ref pattern
-  const handleVideoRef = (video: HTMLVideoElement | null) => {
-    videoRef.current = video;
-    if (video && video.readyState >= 3) {
-      setVideoReady(true);
-    }
-  };
 
   const features = [
     { icon: Check, label: t("features.capacity") },
@@ -70,7 +60,7 @@ const FeaturesSection = () => {
             </div>
           </motion.div>
 
-          {/* Video - lazy loaded */}
+          {/* Video */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -78,24 +68,13 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div
-              className="relative overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat shadow-2xl"
-              style={{ paddingTop: "75%", backgroundImage: "url('/drone-spraying-poster-blurred.jpg')" }}
-            >
-              <video
-                ref={handleVideoRef}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                onCanPlayThrough={() => setVideoReady(true)}
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
-                  videoReady ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <source src="/videos/drone-spraying.mp4" type="video/mp4" />
-              </video>
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl" style={{ aspectRatio: "4/3" }}>
+              <VideoCanvas
+                src="/videos/drone-spraying.mp4"
+                poster="/drone-spraying-poster-blurred.jpg"
+                className="absolute inset-0"
+                fps={24}
+              />
               {/* Dark green glow effect */}
               <div className="bg-primary/40 absolute -bottom-10 left-1/2 h-40 w-4/5 -translate-x-1/2 rounded-full blur-3xl" />
             </div>
