@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";

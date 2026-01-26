@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -11,7 +11,13 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center">
-            <Image src="/air-agro-logo.png" alt="AgroAir" width={120} height={72} className="h-[72px] w-auto shrink-0" />
+            <Image
+              src="/air-agro-logo.png"
+              alt="AgroAir"
+              width={120}
+              height={72}
+              className="h-[72px] w-auto shrink-0"
+            />
           </div>
 
           <div className="text-background/70 flex flex-wrap items-center justify-center gap-6 text-sm">

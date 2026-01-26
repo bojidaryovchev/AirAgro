@@ -2,8 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { motion } from "motion/react";
 import { useEffect, useRef } from "react";
 
 const HeroSection = () => {

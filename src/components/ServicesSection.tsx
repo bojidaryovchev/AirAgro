@@ -1,8 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
-import { motion } from "framer-motion";
 import { Droplets, Leaf, Map, Shield, Sprout, Zap } from "lucide-react";
+import { motion } from "motion/react";
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -46,7 +46,7 @@ const ServicesSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
@@ -63,7 +63,7 @@ const ServicesSection = () => {
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group border-border bg-card hover:border-primary/30 hover:shadow-primary/5 rounded-2xl border p-8 transition-all hover:shadow-xl"
             >

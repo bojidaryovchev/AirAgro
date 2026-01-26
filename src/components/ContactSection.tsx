@@ -7,8 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ContactFormData, contactFormSchema, serviceOptions } from "@/lib/schemas/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { AnimatePresence, motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -123,7 +123,7 @@ const ContactSection = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
           >
             <span className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-medium">
@@ -183,7 +183,7 @@ const ContactSection = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
             className="border-border bg-card rounded-3xl border p-8 shadow-xl md:p-10"
           >

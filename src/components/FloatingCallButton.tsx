@@ -1,8 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { Phone } from "lucide-react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 const FloatingCallButton = () => {
   const { scrollYProgress } = useScroll();
