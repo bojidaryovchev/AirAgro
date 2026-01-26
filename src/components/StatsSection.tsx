@@ -9,7 +9,7 @@ const StatsSection = () => {
   const stats = [
     { value: "40kg", label: t("stats.spray") },
     { value: "21ha/h", label: t("stats.coverage") },
-    { value: "24L/min", label: t("stats.flow") },
+    { value: "4ha/h", label: t("stats.orchard") },
     { value: "50kg", label: t("stats.spread") },
   ];
 
