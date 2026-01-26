@@ -24,23 +24,39 @@ const VideoShowcaseSection = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="flex items-center justify-center text-center">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl"
           >
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
               {t('video.badge')}
             </span>
-            <h2 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+            <h2 className="font-display text-4xl font-bold text-white md:text-5xl">
               {t('video.title')}
             </h2>
-            <p className="mt-6 text-lg text-white/90 md:text-xl">
+            <p className="mt-6 text-lg text-white/90">
               {t('video.description')}
             </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative aspect-video overflow-hidden rounded-2xl border border-white/20 bg-black shadow-2xl"
+          >
+            <video
+              controls
+              className="h-full w-full object-cover"
+              preload="metadata"
+            >
+              <source src="/videos/drone-spraying.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </motion.div>
         </div>
       </div>
