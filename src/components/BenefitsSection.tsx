@@ -45,7 +45,7 @@ const BenefitsSection = () => {
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0, translateZ: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
@@ -62,7 +62,7 @@ const BenefitsSection = () => {
             <motion.div
               key={benefit.title}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0, translateZ: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group border-border bg-card hover:border-primary/30 hover:shadow-primary/5 flex gap-4 rounded-2xl border p-6 transition-all hover:shadow-lg"

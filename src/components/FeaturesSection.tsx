@@ -25,7 +25,7 @@ const FeaturesSection = () => {
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, translateZ: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
           >
@@ -46,7 +46,7 @@ const FeaturesSection = () => {
                 <motion.div
                   key={feature.label}
                   initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, x: 0, translateZ: 0 }}
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-center gap-3"
@@ -63,7 +63,7 @@ const FeaturesSection = () => {
           {/* Video */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, translateZ: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
             className="relative"

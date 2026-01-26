@@ -89,11 +89,6 @@ section {
   contain: layout style paint;
 }
 
-/* Prevent flicker when Framer Motion animations complete */
-section * {
-  transform: translateZ(0);
-}
-
 /* Smooth scrolling with reduced motion preference */
 @media (prefers-reduced-motion: no-preference) {
   html {

@@ -122,7 +122,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, translateZ: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
           >
@@ -182,7 +182,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, translateZ: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
             className="border-border bg-card rounded-3xl border p-8 shadow-xl md:p-10"
