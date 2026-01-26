@@ -7,7 +7,6 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
-import VideoShowcaseSection from "@/components/VideoShowcaseSection";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <FeaturesSection />
       <BenefitsSection />
       <StatsSection />
-      <VideoShowcaseSection />
       <ContactSection />
       <Footer />
       <FloatingCallButton />

@@ -4,57 +4,51 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useCallback, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
-  const playTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const isPlayingRef = useRef(false);
-
-  // Debounced play/pause to prevent rapid state changes during fast scroll
-  const debouncedPlayPause = useCallback((shouldPlay: boolean) => {
-    if (playTimeoutRef.current) {
-      clearTimeout(playTimeoutRef.current);
-    }
-
-    playTimeoutRef.current = setTimeout(() => {
-      const video = videoRef.current;
-      if (!video) return;
-
-      if (shouldPlay && !isPlayingRef.current) {
-        video.play().catch(() => {});
-        isPlayingRef.current = true;
-      } else if (!shouldPlay && isPlayingRef.current) {
-        video.pause();
-        isPlayingRef.current = false;
-      }
-    }, 100); // 100ms debounce
-  }, []);
+  const isVisibleRef = useRef(true);
+  const isTabActiveRef = useRef(true);
 
   useEffect(() => {
-    const section = sectionRef.current;
     const video = videoRef.current;
-    if (!section || !video) return;
+    const section = sectionRef.current;
+    if (!video || !section) return;
 
+    const updatePlayState = () => {
+      if (isVisibleRef.current && isTabActiveRef.current) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    };
+
+    // Page Visibility API - pause when tab is hidden
+    const handleVisibilityChange = () => {
+      isTabActiveRef.current = !document.hidden;
+      updatePlayState();
+    };
+
+    // IntersectionObserver - pause when scrolled out of viewport
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          debouncedPlayPause(entry.isIntersecting);
-        });
+      ([entry]) => {
+        isVisibleRef.current = entry.isIntersecting;
+        updatePlayState();
       },
       { threshold: 0.1 },
     );
 
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     observer.observe(section);
+
     return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       observer.disconnect();
-      if (playTimeoutRef.current) {
-        clearTimeout(playTimeoutRef.current);
-      }
     };
-  }, [debouncedPlayPause]);
+  }, []);
 
   return (
     <section ref={sectionRef} id="hero" className="relative h-screen w-full overflow-hidden">
@@ -66,9 +60,9 @@ const HeroSection = () => {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           className="absolute inset-0 h-full w-full object-cover will-change-transform"
-          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden" }}
+          style={{ transform: "translateZ(0)" }}
         >
           <source src="/videos/drone-bg.webm" type="video/webm" />
           <source src="/videos/drone-bg.mp4" type="video/mp4" />
