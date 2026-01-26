@@ -7,10 +7,10 @@ const StatsSection = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { value: "40kg", label: t("stats.spray") },
-    { value: "21ha/h", label: t("stats.coverage") },
-    { value: "4ha/h", label: t("stats.orchard") },
-    { value: "50kg", label: t("stats.spread") },
+    { value: t("stats.spray.value"), label: t("stats.spray.label") },
+    { value: t("stats.coverage.value"), label: t("stats.coverage.label") },
+    { value: t("stats.orchard.value"), label: t("stats.orchard.label") },
+    { value: t("stats.spread.value"), label: t("stats.spread.label") },
   ];
 
   return (
@@ -19,7 +19,7 @@ const StatsSection = () => {
       <div className="hero-gradient absolute inset-0 opacity-95" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-16 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -29,8 +29,8 @@ const StatsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="font-display text-5xl font-bold text-white md:text-6xl">{stat.value}</div>
-              <div className="mt-2 text-lg text-white/80">{stat.label}</div>
+              <div className="font-display text-5xl font-bold text-white md:text-6xl whitespace-nowrap">{stat.value}</div>
+              <div className="mt-2 text-lg text-white/80 whitespace-nowrap">{stat.label}</div>
             </motion.div>
           ))}
         </div>

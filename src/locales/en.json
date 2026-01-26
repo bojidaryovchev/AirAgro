@@ -59,10 +59,14 @@
   "benefits.safety": "Operator Safety",
   "benefits.safety.desc": "Drones minimize human risk by eliminating the need for direct contact with chemicals and work in hazardous conditions",
 
-  "stats.spray": "Spray Capacity",
-  "stats.coverage": "Fields per Hour",
-  "stats.orchard": "Orchards per Hour",
-  "stats.spread": "Fertilizer Capacity",
+  "stats.spray.value": "90%",
+  "stats.spray.label": "Less water consumption",
+  "stats.coverage.value": "30%",
+  "stats.coverage.label": "Savings on chemicals",
+  "stats.orchard.value": "10x",
+  "stats.orchard.label": "Faster compared to ground equipment",
+  "stats.spread.value": "0%",
+  "stats.spread.label": "Soil compaction",
 
   "video.badge": "See It In Action",
   "video.title": "Drone Spraying in Action",

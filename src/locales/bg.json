@@ -59,10 +59,14 @@
   "benefits.safety": "Безопасност за Оператора",
   "benefits.safety.desc": "Дроновете минимизират риска за хората, защото елиминират нуждата от директен контакт с химикалите и труд в опасни условия",
 
-  "stats.spray": "Капацитет Пръскане",
-  "stats.coverage": "Полета на Час",
-  "stats.orchard": "Овощни Градини",
-  "stats.spread": "Капацитет Торене",
+  "stats.spray.value": "90%",
+  "stats.spray.label": "По-малко разход на вода",
+  "stats.coverage.value": "30%",
+  "stats.coverage.label": "Икономия на препарати",
+  "stats.orchard.value": "10x",
+  "stats.orchard.label": "По-бързо от наземна техника",
+  "stats.spread.value": "0%",
+  "stats.spread.label": "Уплътняване на почвата",
 
   "video.badge": "Вижте в Действие",
   "video.title": "Дрон Пръскане в Действие",
