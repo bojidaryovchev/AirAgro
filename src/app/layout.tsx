@@ -95,7 +95,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning>
         <LanguageProvider>
           {children}
-          <Toaster position="top-center" />
+          <Toaster />
         </LanguageProvider>
       </body>
     </html>

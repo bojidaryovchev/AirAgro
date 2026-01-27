@@ -59,15 +59,7 @@ const ContactSection = () => {
 
       reset();
     } catch {
-      toast.error("Грешка при изпращане. Моля, опитайте отново или се свържете директно с нас.", {
-        duration: 5000,
-        style: {
-          borderRadius: "16px",
-          padding: "16px 24px",
-          fontSize: "16px",
-          maxWidth: "500px",
-        },
-      });
+      toast.error("Грешка при изпращане. Моля, опитайте отново или се свържете директно с нас.");
     } finally {
       setIsSubmitting(false);
     }
