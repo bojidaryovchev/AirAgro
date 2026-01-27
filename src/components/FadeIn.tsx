@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type HTMLMotionProps } from "motion/react";
-import { useEffect, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
 
 interface FadeInProps extends HTMLMotionProps<"div"> {
   delay?: number;
@@ -10,21 +10,18 @@ interface FadeInProps extends HTMLMotionProps<"div"> {
   children: React.ReactNode;
 }
 
-// Detect mobile/tablet via user agent
-function getIsMobileDevice(): boolean {
+// Subscribe function (no-op since user agent doesn't change)
+const subscribe = () => () => {};
+
+// Check if device is mobile
+const getSnapshot = () => {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   );
-}
+};
 
-// Use useSyncExternalStore to safely read client-only values
-function useIsMobileDevice() {
-  return useSyncExternalStore(
-    () => () => {}, // no-op subscribe
-    () => getIsMobileDevice(), // client snapshot
-    () => false // server snapshot - assume desktop, animate
-  );
-}
+// Server always returns false (will animate, but content visible via CSS)
+const getServerSnapshot = () => false;
 
 export function FadeIn({
   delay = 0,
@@ -34,7 +31,7 @@ export function FadeIn({
   className,
   ...props
 }: FadeInProps) {
-  const isMobile = useIsMobileDevice();
+  const isMobile = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const directionOffset = {
     up: { y: distance },
@@ -44,15 +41,14 @@ export function FadeIn({
     none: {},
   };
 
-  // On mobile: render with final state (no animation)
-  // On desktop: animate in
   return (
     <motion.div
-      initial={isMobile ? false : { opacity: 0, ...directionOffset[direction] }}
-      whileInView={isMobile ? undefined : { opacity: 1, x: 0, y: 0 }}
+      initial={isMobile ? { opacity: 1 } : { opacity: 0, ...directionOffset[direction] }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, delay }}
       className={className}
+      style={isMobile ? { opacity: 1 } : undefined}
       {...props}
     >
       {children}
