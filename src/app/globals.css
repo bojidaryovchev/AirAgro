@@ -89,12 +89,6 @@ section {
   contain: layout style paint;
 }
 
-/* Fix Framer Motion flicker on Android - isolate shadows from opacity animation */
-.motion-safe {
-  isolation: isolate;
-  will-change: transform, opacity;
-}
-
 /* Smooth scrolling with reduced motion preference */
 @media (prefers-reduced-motion: no-preference) {
   html {
