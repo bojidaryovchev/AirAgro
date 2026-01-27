@@ -1,36 +1,20 @@
 "use client";
 
 import BlogCard from "@/components/BlogCard";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { Article } from "@/lib/articles";
-import { useEffect, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function BlogSection() {
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
-  const { t } = useLanguage();
+interface BlogSectionProps {
+  articles: Article[];
+}
 
-  useEffect(() => {
-    fetch("/api/articles")
-      .then((res) => res.json())
-      .then((data) => {
-        setArticles(data.slice(0, 6)); // Show only 6 most recent
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error loading articles:", error);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading || articles.length === 0) {
+export default function BlogSection({ articles }: BlogSectionProps) {
+  if (articles.length === 0) {
     return null;
   }
 
@@ -45,10 +29,9 @@ export default function BlogSection() {
 
         {/* Swiper Carousel */}
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation
           pagination={{ clickable: true }}
           autoplay={{
             delay: 5000,
@@ -93,16 +76,6 @@ export default function BlogSection() {
 
       {/* Swiper Custom Styles */}
       <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: #10b981;
-        }
-
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-          font-size: 32px;
-        }
-
         .swiper-pagination-bullet {
           background: #10b981;
         }

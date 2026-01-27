@@ -41,12 +41,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             alt: article.title,
           },
         ],
+        url: `https://agroair.bg/blog/${slug}`,
       },
       twitter: {
         card: "summary_large_image",
         title: article.title,
         description: article.description,
         images: [article.image],
+      },
+      alternates: {
+        canonical: `https://agroair.bg/blog/${slug}`,
       },
     };
   } catch (error) {
