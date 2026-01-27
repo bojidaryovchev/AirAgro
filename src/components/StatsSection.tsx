@@ -27,7 +27,7 @@ const StatsSection = () => {
               whileInView={{ opacity: 1, y: 0, translateZ: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className="motion-safe text-center"
             >
               <div className="font-display text-5xl font-bold whitespace-nowrap text-white md:text-6xl">
                 {stat.value}

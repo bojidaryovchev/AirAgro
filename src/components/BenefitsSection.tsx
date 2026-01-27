@@ -65,7 +65,7 @@ const BenefitsSection = () => {
               whileInView={{ opacity: 1, y: 0, translateZ: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group border-border bg-card hover:border-primary/30 hover:shadow-primary/5 flex gap-4 rounded-2xl border p-6 transition-all hover:shadow-lg"
+              className="motion-safe group border-border bg-card hover:border-primary/30 hover:shadow-primary/5 flex gap-4 rounded-2xl border p-6 transition-all hover:shadow-lg"
             >
               <div className="bg-primary text-primary-foreground flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
                 <Check className="h-6 w-6" />

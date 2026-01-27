@@ -89,12 +89,10 @@ section {
   contain: layout style paint;
 }
 
-/* Disable Framer Motion animations on mobile - use CSS instead */
-@media (max-width: 768px) {
-  [style*="opacity"] {
-    opacity: 1 !important;
-    transform: none !important;
-  }
+/* Fix Framer Motion flicker on Android - isolate shadows from opacity animation */
+.motion-safe {
+  isolation: isolate;
+  will-change: transform, opacity;
 }
 
 /* Smooth scrolling with reduced motion preference */
