@@ -1,57 +1,46 @@
 "use client";
 
-import { motion, type HTMLMotionProps } from "motion/react";
-import { useSyncExternalStore } from "react";
+import { useEffect, useRef, useState } from "react";
 
-interface FadeInProps extends HTMLMotionProps<"div"> {
+interface FadeInProps {
   delay?: number;
-  direction?: "up" | "down" | "left" | "right" | "none";
-  distance?: number;
   children: React.ReactNode;
+  className?: string;
 }
 
-// Subscribe function (no-op since user agent doesn't change)
-const subscribe = () => () => {};
+export function FadeIn({ delay = 0, children, className = "" }: FadeInProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-// Check if device is mobile
-const getSnapshot = () => {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
-};
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
 
-// Server always returns false (will animate, but content visible via CSS)
-const getServerSnapshot = () => false;
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
-export function FadeIn({
-  delay = 0,
-  direction = "up",
-  distance = 30,
-  children,
-  className,
-  ...props
-}: FadeInProps) {
-  const isMobile = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-
-  const directionOffset = {
-    up: { y: distance },
-    down: { y: -distance },
-    left: { x: distance },
-    right: { x: -distance },
-    none: {},
-  };
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
-      initial={isMobile ? { opacity: 1 } : { opacity: 0, ...directionOffset[direction] }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.5, delay }}
+    <div
+      ref={ref}
       className={className}
-      style={isMobile ? { opacity: 1 } : undefined}
-      {...props}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(20px)",
+        transition: `opacity 0.5s ease-out ${delay}s, transform 0.5s ease-out ${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
