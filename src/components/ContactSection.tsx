@@ -8,7 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { ContactFormData, contactFormSchema, serviceOptions } from "@/lib/schemas/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -16,7 +16,6 @@ import toast from "react-hot-toast";
 const ContactSection = () => {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
 
   const {
     register,
@@ -55,7 +54,7 @@ const ContactSection = () => {
         throw new Error("Failed to send message");
       }
 
-      setShowSuccess(true);
+      toast.success("Съобщението е изпратено успешно! Ще се свържем с вас скоро.");
 
       reset();
     } catch {
@@ -67,48 +66,6 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="section-padding bg-secondary">
-      <AnimatePresence>
-        {showSuccess && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-60 flex items-center justify-center bg-black/50 backdrop-blur-sm"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 10 }}
-              transition={{ type: "spring", stiffness: 180, damping: 18 }}
-              className="border-primary/20 bg-primary/20 shadow-primary/20 relative mx-6 w-full max-w-xl overflow-hidden rounded-3xl border p-8 text-center shadow-2xl"
-            >
-              <div className="absolute inset-0 opacity-40">
-                <div className="bg-primary/70 absolute top-6 left-6 h-3 w-3 animate-pulse rounded-full" />
-                <div className="absolute top-10 right-10 h-2.5 w-2.5 animate-pulse rounded-full bg-lime-400/70" />
-                <div className="absolute bottom-10 left-12 h-2 w-2 animate-pulse rounded-full bg-emerald-300/70" />
-                <div className="bg-primary/60 absolute right-16 bottom-12 h-3 w-3 animate-pulse rounded-full" />
-              </div>
-
-              <div className="relative z-10">
-                <div className="bg-primary text-primary-foreground shadow-primary/30 mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl shadow-lg">
-                  ✓
-                </div>
-                <h4 className="font-display text-foreground text-2xl font-bold md:text-3xl">
-                  Съобщението е изпратено успешно!
-                </h4>
-                <p className="text-foreground/80 mt-3 text-base md:text-lg">Ще се свържем с вас скоро.</p>
-                <Button
-                  type="button"
-                  className="hero-gradient mt-6 border-0 px-6 py-3 text-white"
-                  onClick={() => setShowSuccess(false)}
-                >
-                  Добре
-                </Button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Contact Info */}
