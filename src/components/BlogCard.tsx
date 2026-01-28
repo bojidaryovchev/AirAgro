@@ -6,9 +6,10 @@ import Link from "next/link";
 
 interface BlogCardProps {
   article: Article;
+  priority?: boolean;
 }
 
-export default function BlogCard({ article }: BlogCardProps) {
+export default function BlogCard({ article, priority = false }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${article.slug}`}
@@ -19,6 +20,7 @@ export default function BlogCard({ article }: BlogCardProps) {
           src={article.image}
           alt={article.title}
           fill
+          priority={priority}
           className="object-cover transition-transform duration-300 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

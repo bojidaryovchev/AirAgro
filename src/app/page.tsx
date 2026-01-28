@@ -13,6 +13,9 @@ import { getAllArticles } from "@/lib/articles";
 export default function Home() {
   // Fetch articles at build time (SSG)
   const articles = getAllArticles().slice(0, 6); // Get 6 most recent articles
+  
+  // Get first 3 blog images for preloading
+  const preloadBlogImages = articles.slice(0, 3).map(article => article.image);
 
   // JSON-LD structured data for homepage
   const jsonLd = {
@@ -48,6 +51,19 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      
+      {/* Preload first 3 blog images */}
+      {preloadBlogImages.map((image, index) => (
+        <link
+          key={image}
+          rel="preload"
+          as="image"
+          href={image}
+          // @ts-ignore
+          fetchpriority={index === 0 ? "high" : "low"}
+        />
+      ))}
+      
       <div className="min-h-screen">
       <Navbar />
       <HeroSection />

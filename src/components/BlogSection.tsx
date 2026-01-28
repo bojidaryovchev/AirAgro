@@ -2,12 +2,11 @@
 
 import BlogCard from "@/components/BlogCard";
 import { Article } from "@/lib/articles";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 
 interface BlogSectionProps {
   articles: Article[];
@@ -29,10 +28,9 @@ export default function BlogSection({ articles }: BlogSectionProps) {
 
         {/* Swiper Carousel */}
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          pagination={{ clickable: true }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -53,9 +51,9 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           }}
           className="pb-12"
         >
-          {articles.map((article) => (
+          {articles.map((article, index) => (
             <SwiperSlide key={article.slug}>
-              <BlogCard article={article} />
+              <BlogCard article={article} priority={index < 3} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -73,17 +71,6 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           </a>
         </div>
       </div>
-
-      {/* Swiper Custom Styles */}
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          background: #10b981;
-        }
-
-        .swiper-pagination-bullet-active {
-          background: #059669;
-        }
-      `}</style>
     </section>
   );
 }

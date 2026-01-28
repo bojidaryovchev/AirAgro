@@ -34,9 +34,25 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   // Fetch articles at build time (SSG)
   const articles = getAllArticles();
+  
+  // Get first 3 article images for preloading (visible in carousel initially)
+  const preloadImages = articles.slice(0, 3).map(article => article.image);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16 dark:from-gray-900 dark:to-gray-800">
+    <>
+      {/* Preload first 3 blog images */}
+      {preloadImages.map((image, index) => (
+        <link
+          key={image}
+          rel="preload"
+          as="image"
+          href={image}
+          // @ts-ignore
+          fetchpriority={index === 0 ? "high" : "low"}
+        />
+      ))}
+      
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -55,6 +71,6 @@ export default function BlogPage() {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
