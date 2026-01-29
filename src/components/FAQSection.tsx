@@ -101,6 +101,20 @@ export default function FAQSection() {
   const { language } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  // FAQ Schema for SEO (always use Bulgarian for schema)
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.bg.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   const content = {
     bg: {
       title: "Често Задавани Въпроси",
@@ -120,8 +134,15 @@ export default function FAQSection() {
   const faqList = faqs[language as keyof typeof faqs];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-emerald-50/30">
-      <div className="container mx-auto px-4">
+    <>
+      {/* FAQ Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
+      <section className="py-20 bg-gradient-to-b from-white to-emerald-50/30">
+        <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -199,7 +220,8 @@ export default function FAQSection() {
             📞 {t.ctaButton}
           </a>
         </motion.div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

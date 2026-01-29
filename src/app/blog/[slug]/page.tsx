@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   // JSON-LD Structured Data
-  const jsonLd = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
@@ -94,6 +94,37 @@ export default async function BlogPostPage({ params }: Props) {
       },
     },
     keywords: article.tags.join(", "),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://airagro.bg/blog/${slug}`
+    },
+    url: `https://airagro.bg/blog/${slug}`
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://airagro.bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Блог",
+        "item": "https://airagro.bg/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://airagro.bg/blog/${slug}`
+      }
+    ]
   };
 
   // Get related articles
@@ -101,7 +132,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Navbar />
 
       <article className="min-h-screen bg-white pt-20">

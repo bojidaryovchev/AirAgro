@@ -15,25 +15,33 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://agroair.bg"),
-  title: "AgroAir - Професионални Дрон Услуги за Третиране | DJI Agras T50",
+  metadataBase: new URL("https://airagro.bg"),
+  title: "Пръскане с Дрон DJI Agras T40 | Агро Дрон Услуги България | AirAgro",
   description:
-    "Професионални дрон услуги за пръскане и торене, захранвани от DJI Agras T50. Максимизирайте добива на вашите култури с прецизно въздушно третиране в България.",
+    "Професионално пръскане, засяване и торене с агро дрон в цяла България. DJI Agras T40 & T50 с RTK прецизност. Спестете 30% препарати. Над 25,000 дка опит. ☎ 0876-543-546",
   keywords: [
-    "дрон услуги",
-    "дрон пръскане",
+    "пръскане с дрон",
     "агро дрон",
+    "земеделски дрон",
+    "агро дрон България",
+    "DJI Agras T40",
     "DJI Agras T50",
+    "пръскане с агро дрон",
+    "услуга пръскане с дрон",
+    "цена пръскане с дрон",
+    "засяване с дрон",
+    "торене с дрон",
+    "листно торене",
     "прецизно земеделие",
-    "въздушно третиране",
-    "агро услуги България",
-    "дрон торене",
-    "селско стопанство",
-    "precision agriculture",
+    "RTK точност",
+    "NDVI анализ",
+    "картографиране с дрон",
+    "селскостопански дрон",
+    "дрон за земеделие"
   ],
-  authors: [{ name: "AgroAir" }],
-  creator: "AgroAir",
-  publisher: "AgroAir",
+  authors: [{ name: "AirAgro" }],
+  creator: "AirAgro",
+  publisher: "AirAgro",
   robots: {
     index: true,
     follow: true,
@@ -48,31 +56,31 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "bg_BG",
-    url: "https://agroair.bg",
-    siteName: "AgroAir",
-    title: "AgroAir - Професионални Дрон Услуги за Третиране",
+    url: "https://airagro.bg",
+    siteName: "AirAgro - Агро Дрон България",
+    title: "Пръскане с Дрон DJI Agras T40 | Професионални Услуги в Цяла България",
     description:
-      "Професионални дрон услуги за пръскане и торене с DJI Agras T50. Прецизно въздушно третиране на земеделски култури в България.",
+      "Професионално пръскане с агро дрон в цяла България. DJI Agras T40 & T50 с RTK прецизност. Спестете 30% препарати. Над 25,000 дка опит. Обадете се: 0876-543-546",
     images: [
       {
         url: "/air-agro-logo.png",
         width: 1200,
         height: 630,
-        alt: "AgroAir Drone Services",
+        alt: "AirAgro - Пръскане с агро дрон България",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AgroAir - Професионални Дрон Услуги",
-    description: "Професионални дрон услуги за пръскане и торене с DJI Agras T50",
+    title: "Пръскане с Дрон DJI Agras | AirAgro България",
+    description: "Професионално пръскане, засяване и торене с агро дрон. RTK точност, спестяване на ресурси. Над 25,000 дка опит.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {
-    canonical: "https://agroair.bg",
+    canonical: "https://airagro.bg",
     languages: {
-      "bg-BG": "https://agroair.bg",
-      "en-US": "https://agroair.bg/en",
+      "bg-BG": "https://airagro.bg",
+      "en-US": "https://airagro.bg/en",
     },
   },
   verification: {

@@ -21,29 +21,111 @@ export default function Home() {
   // JSON-LD structured data for homepage
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'AgroAir',
-    url: 'https://agroair.bg',
-    logo: 'https://agroair.bg/air-agro-logo.png',
-    description: 'Професионални дрон услуги за пръскане и торене с DJI Agras T50. Прецизно въздушно третиране на земеделски култури в България.',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+359-898-765-432',
-      contactType: 'Customer Service',
-      areaServed: 'BG',
-      availableLanguage: ['Bulgarian', 'English'],
+    '@type': 'LocalBusiness',
+    '@id': 'https://airagro.bg',
+    name: 'AirAgro',
+    alternateName: 'AirAgro България',
+    url: 'https://airagro.bg',
+    logo: 'https://airagro.bg/air-agro-logo.png',
+    image: 'https://airagro.bg/air-agro-logo.png',
+    description: 'Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T40 & T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, NDVI анализ.',
+    priceRange: '$$',
+    telephone: '+359-876-543-546',
+    email: 'contact.airagro@gmail.com',
+    areaServed: {
+      '@type': 'Country',
+      name: 'Bulgaria',
+      '@id': 'https://www.wikidata.org/wiki/Q219'
     },
-    sameAs: [
-      // Add social media profiles here when available
-    ],
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'BG',
+      addressRegion: 'България'
     },
-    serviceArea: {
-      '@type': 'Country',
-      name: 'Bulgaria',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '42.6977',
+      longitude: '23.3219'
     },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: [
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday',
+          'Sunday'
+        ],
+        opens: '06:00',
+        closes: '20:00'
+      }
+    ],
+    serviceType: [
+      'Пръскане с дрон',
+      'Засяване с дрон',
+      'Листно торене',
+      'Картографиране с дрон',
+      'NDVI анализ',
+      'NDRE анализ',
+      'Засенчване на оранжерии'
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Агро дрон услуги',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Пръскане с агро дрон',
+            description: 'Професионално пръскане на земеделски култури с DJI Agras дронове. Инсектициди, хербициди, фунгициди, листно торене.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Засяване с дрон',
+            description: 'Прецизно засяване на покривни култури и зелени торове с дрон технология.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'NDVI картографиране',
+            description: 'Мултиспектрален анализ на здравето на културите за Variable Rate Application (VRA).'
+          }
+        }
+      ]
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '47'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+359-876-543-546',
+      contactType: 'Customer Service',
+      areaServed: 'BG',
+      availableLanguage: ['Bulgarian', 'English'],
+      email: 'contact.airagro@gmail.com'
+    },
+    sameAs: [
+      'https://www.facebook.com/airagro',
+      'https://www.instagram.com/airagro'
+    ],
+    knowsAbout: [
+      'Precision Agriculture',
+      'Drone Spraying',
+      'Agricultural Technology',
+      'Crop Protection',
+      'Variable Rate Application'
+    ]
   };
 
   return (
