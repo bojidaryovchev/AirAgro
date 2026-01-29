@@ -1,6 +1,7 @@
 import BenefitsSection from "@/components/BenefitsSection";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
+import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import Footer from "@/components/Footer";
@@ -72,6 +73,7 @@ export default function Home() {
       <StatsSection />
       <ContactSection />
       <BlogSection articles={articles} />
+      <FAQSection />
       <Footer />
       <FloatingCallButton />
       </div>
