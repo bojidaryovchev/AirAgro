@@ -12,11 +12,13 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollThreshold, setScrollThreshold] = useState(50);
+  const [hasHeroSection, setHasHeroSection] = useState(true);
   const { t } = useLanguage();
 
   useEffect(() => {
     const updateThreshold = () => {
       const hero = document.getElementById("hero");
+      setHasHeroSection(!!hero);
       if (hero) {
         setScrollThreshold(Math.max(0, hero.offsetHeight - 80));
       } else {
@@ -52,7 +54,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 right-0 left-0 z-50 backdrop-blur-xl transition-all duration-300 ${
-        isScrolled ? "bg-background/45 shadow-lg" : "bg-background/5"
+        isScrolled || !hasHeroSection ? "bg-background/45 shadow-lg" : "bg-background/5"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
@@ -68,13 +70,13 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               className={`hover:text-primary text-sm font-medium transition-colors ${
-                isScrolled ? "text-foreground" : "text-white/90"
+                isScrolled || !hasHeroSection ? "text-foreground" : "text-white/90"
               }`}
             >
               {link.label}
             </a>
           ))}
-          <LanguageSwitcher isScrolled={isScrolled} />
+          <LanguageSwitcher isScrolled={isScrolled || !hasHeroSection} />
           <Button className="hero-gradient shadow-primary/20 border-0 text-white shadow-md" asChild>
             <a href="#contact">{t("nav.getStarted")}</a>
           </Button>
@@ -82,10 +84,10 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-4 md:hidden">
-          <LanguageSwitcher isScrolled={isScrolled} />
+          <LanguageSwitcher isScrolled={isScrolled || !hasHeroSection} />
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`${isScrolled ? "text-foreground" : "text-white"}`}
+            className={`${isScrolled || !hasHeroSection ? "text-foreground" : "text-white"}`}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>

@@ -37,10 +37,11 @@ export default function BlogCarousel({ articles }: BlogCarouselProps) {
             spaceBetween: 30,
           },
         }}
-        className="pb-12"
+        className="!pb-20"
+        style={{ paddingBottom: '80px' }}
       >
         {articles.map((article, index) => (
-          <SwiperSlide key={article.slug}>
+          <SwiperSlide key={article.slug} className="pb-4">
             <BlogCard article={article} priority={index < 3} />
           </SwiperSlide>
         ))}

@@ -1,9 +1,12 @@
-import { getAllArticleSlugs, getArticleWithHtml } from "@/lib/articles";
+import { getAllArticleSlugs, getArticleWithHtml, getRelatedArticles } from "@/lib/articles";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import BlogCarousel from "../BlogCarousel";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -93,9 +96,13 @@ export default async function BlogPostPage({ params }: Props) {
     keywords: article.tags.join(", "),
   };
 
+  // Get related articles
+  const relatedArticles = getRelatedArticles(slug, 6);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Navbar />
 
       <article className="min-h-screen bg-white pt-20">
         {/* Back Button */}
@@ -195,7 +202,22 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* Related Articles Section */}
+        {relatedArticles.length > 0 && (
+          <div className="border-t border-gray-200 bg-gray-50 py-16">
+            <div className="container mx-auto px-4">
+              <div className="mb-8 text-center">
+                <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">Свързани статии</h2>
+                <p className="mt-2 text-lg text-gray-600">Научете повече за агро дроновете</p>
+              </div>
+              <BlogCarousel articles={relatedArticles} />
+            </div>
+          </div>
+        )}
       </article>
+
+      <Footer />
     </>
   );
 }

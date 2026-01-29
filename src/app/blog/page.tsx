@@ -49,8 +49,7 @@ export default function BlogPage() {
           rel="preload"
           as="image"
           href={image}
-          // @ts-ignore
-          fetchpriority={index < 3 ? "high" : "low"}
+          fetchPriority={index < 3 ? "high" : "low"}
         />
       ))}
       

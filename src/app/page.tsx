@@ -59,8 +59,7 @@ export default function Home() {
           rel="preload"
           as="image"
           href={image}
-          // @ts-ignore
-          fetchpriority={index === 0 ? "high" : "low"}
+          fetchPriority={index === 0 ? "high" : "low"}
         />
       ))}
       

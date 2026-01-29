@@ -57,3 +57,30 @@ export function getAllArticles(): Article[] {
 
   return articles;
 }
+
+export function getRelatedArticles(currentSlug: string, limit: number = 6): Article[] {
+  const currentArticle = getArticleBySlug(currentSlug);
+  const allArticles = getAllArticles().filter((article) => article.slug !== currentSlug);
+
+  // Score articles based on matching tags and category
+  const scoredArticles = allArticles.map((article) => {
+    let score = 0;
+    
+    // Same category gets higher score
+    if (article.category === currentArticle.category) {
+      score += 10;
+    }
+    
+    // Count matching tags
+    const matchingTags = article.tags.filter((tag) => currentArticle.tags.includes(tag));
+    score += matchingTags.length * 5;
+    
+    return { article, score };
+  });
+
+  // Sort by score (descending) and return top articles
+  return scoredArticles
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.article);
+}
