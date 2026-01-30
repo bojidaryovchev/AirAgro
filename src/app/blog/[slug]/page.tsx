@@ -150,7 +150,13 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Hero Image */}
         <div className="relative mb-12 h-[500px] w-full md:h-[600px]">
-          <Image src={article.image} alt={article.title} fill className="object-cover" priority />
+          <Image 
+            src={article.image} 
+            alt={`${article.title} - Пръскане с дрон, агро дрон услуги България`} 
+            fill 
+            className="object-cover" 
+            priority 
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           {/* Category Badge */}

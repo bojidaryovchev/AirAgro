@@ -215,7 +215,7 @@ export default function FAQSection() {
           </p>
           <a
             href="tel:+359876543546"
-            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 hero-gradient shadow-primary/20 border-0 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105"
           >
             📞 {t.ctaButton}
           </a>
