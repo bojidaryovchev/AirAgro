@@ -5,6 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -14,6 +15,8 @@ const Navbar = () => {
   const [scrollThreshold, setScrollThreshold] = useState(50);
   const [hasHeroSection, setHasHeroSection] = useState(true);
   const { t } = useLanguage();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const updateThreshold = () => {
@@ -46,7 +49,12 @@ const Navbar = () => {
     { label: t("nav.benefits"), href: "#benefits" },
     { label: t("nav.blog"), href: "/blog" },
     { label: t("nav.contact"), href: "#contact" },
-  ];
+  ].map((link) => {
+    if (link.href.startsWith("#")) {
+      return { ...link, href: isHome ? link.href : `/${link.href}` };
+    }
+    return link;
+  });
 
   return (
     <motion.nav
@@ -59,7 +67,7 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <Image src="/air-agro-logo.png" alt="AgroAir" width={120} height={80} className="h-20 w-auto shrink-0" />
         </a>
 
@@ -78,7 +86,7 @@ const Navbar = () => {
           ))}
           <LanguageSwitcher isScrolled={isScrolled || !hasHeroSection} />
           <Button className="hero-gradient shadow-primary/20 border-0 text-white shadow-md" asChild>
-            <a href="#contact">{t("nav.getStarted")}</a>
+            <a href={isHome ? "#contact" : "/#contact"}>{t("nav.getStarted")}</a>
           </Button>
         </div>
 
@@ -114,7 +122,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button className="hero-gradient mt-2 w-full border-0 text-white" asChild>
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <a href={isHome ? "#contact" : "/#contact"} onClick={() => setIsMobileMenuOpen(false)}>
                 {t("nav.getStarted")}
               </a>
             </Button>

@@ -171,7 +171,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-left group"
+                className="w-full bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 text-left group cursor-pointer"
               >
                 <div className="flex items-start justify-between gap-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors flex-1">
