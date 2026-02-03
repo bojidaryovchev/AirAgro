@@ -2,6 +2,7 @@
 
 import BlogCard from "@/components/BlogCard";
 import { Article } from "@/lib/articles";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,6 +14,8 @@ interface BlogSectionProps {
 }
 
 export default function BlogSection({ articles }: BlogSectionProps) {
+  const { t } = useLanguage();
+
   if (articles.length === 0) {
     return null;
   }
@@ -22,8 +25,10 @@ export default function BlogSection({ articles }: BlogSectionProps) {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">Read Our Blog</h2>
-          <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-300">Learn from first hand</p>
+          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
+            {t("blog.sectionTitle")}
+          </h2>
+          <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-300">{t("blog.sectionSubtitle")}</p>
         </div>
 
         {/* Swiper Carousel */}
