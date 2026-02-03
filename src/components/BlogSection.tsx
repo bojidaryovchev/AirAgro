@@ -31,10 +31,10 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 5000,
+          //   disableOnInteraction: false,
+          // }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -53,7 +53,7 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           style={{ paddingBottom: '80px' }}
         >
           {articles.map((article, index) => (
-            <SwiperSlide key={article.slug} className="pb-4">
+            <SwiperSlide key={article.slug} className="flex h-auto pb-4">
               <BlogCard article={article} priority={index < 3} />
             </SwiperSlide>
           ))}
