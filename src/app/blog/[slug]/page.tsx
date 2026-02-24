@@ -1,9 +1,12 @@
-import { getAllArticleSlugs, getArticleWithHtml } from "@/lib/articles";
+import { getAllArticleSlugs, getArticleWithHtml, getRelatedArticles } from "@/lib/articles";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import BlogCarousel from "../BlogCarousel";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -41,12 +44,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             alt: article.title,
           },
         ],
+        url: `https://agroair.bg/blog/${slug}`,
       },
       twitter: {
         card: "summary_large_image",
         title: article.title,
         description: article.description,
         images: [article.image],
+      },
+      alternates: {
+        canonical: `https://agroair.bg/blog/${slug}`,
       },
     };
   } catch (error) {
@@ -67,7 +74,7 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   // JSON-LD Structured Data
-  const jsonLd = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
@@ -87,11 +94,47 @@ export default async function BlogPostPage({ params }: Props) {
       },
     },
     keywords: article.tags.join(", "),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://airagro.bg/blog/${slug}`
+    },
+    url: `https://airagro.bg/blog/${slug}`
   };
+
+  // Breadcrumb Schema
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://airagro.bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Блог",
+        "item": "https://airagro.bg/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://airagro.bg/blog/${slug}`
+      }
+    ]
+  };
+
+  // Get related articles
+  const relatedArticles = getRelatedArticles(slug, 6);
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <Navbar />
 
       <article className="min-h-screen bg-white pt-20">
         {/* Back Button */}
@@ -107,7 +150,13 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Hero Image */}
         <div className="relative mb-12 h-[500px] w-full md:h-[600px]">
-          <Image src={article.image} alt={article.title} fill className="object-cover" priority />
+          <Image 
+            src={article.image} 
+            alt={`${article.title} - Пръскане с дрон, агро дрон услуги България`} 
+            fill 
+            className="object-cover" 
+            priority 
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           {/* Category Badge */}
@@ -191,7 +240,22 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* Related Articles Section */}
+        {relatedArticles.length > 0 && (
+          <div className="border-t border-gray-200 bg-gray-50 py-16">
+            <div className="container mx-auto px-4">
+              <div className="mb-8 text-center">
+                <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">Свързани статии</h2>
+                <p className="mt-2 text-lg text-gray-600">Научете повече за агро дроновете</p>
+              </div>
+              <BlogCarousel articles={relatedArticles} />
+            </div>
+          </div>
+        )}
       </article>
+
+      <Footer />
     </>
   );
 }

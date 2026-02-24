@@ -22,8 +22,8 @@ const LanguageSwitcher = ({ isScrolled = false }: LanguageSwitcherProps) => {
           language === "en"
             ? "bg-primary text-primary-foreground hover:bg-primary/90"
             : isScrolled
-              ? "text-foreground hover:bg-muted"
-              : "text-white/80 hover:bg-white/10 hover:text-white",
+              ? "text-foreground hover:bg-muted hover:text-black"
+              : "text-white/80 hover:bg-white/10 hover:text-black",
         )}
       >
         EN
@@ -37,8 +37,8 @@ const LanguageSwitcher = ({ isScrolled = false }: LanguageSwitcherProps) => {
           language === "bg"
             ? "bg-primary text-primary-foreground hover:bg-primary/90"
             : isScrolled
-              ? "text-foreground hover:bg-muted"
-              : "text-white/80 hover:bg-white/10 hover:text-white",
+              ? "text-foreground hover:bg-muted hover:text-black"
+              : "text-white/80 hover:bg-white/10 hover:text-black",
         )}
       >
         BG

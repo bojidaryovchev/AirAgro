@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     } else {
       await resend.emails.send({
         from: "AirAgro <onboarding@resend.dev>", // Use verified domain in production
-        to: ["info@agroair.bg"],
+        to: ["contact.airagro@gmail.com"],
         replyTo: validatedData.email,
         subject: `Ново запитване от ${validatedData.firstName} ${validatedData.lastName}`,
         html: `

@@ -1,36 +1,22 @@
 "use client";
 
 import BlogCard from "@/components/BlogCard";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { Article } from "@/lib/articles";
-import { useEffect, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
-export default function BlogSection() {
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
+interface BlogSectionProps {
+  articles: Article[];
+}
+
+export default function BlogSection({ articles }: BlogSectionProps) {
   const { t } = useLanguage();
 
-  useEffect(() => {
-    fetch("/api/articles")
-      .then((res) => res.json())
-      .then((data) => {
-        setArticles(data.slice(0, 6)); // Show only 6 most recent
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error loading articles:", error);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading || articles.length === 0) {
+  if (articles.length === 0) {
     return null;
   }
 
@@ -39,21 +25,21 @@ export default function BlogSection() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">Read Our Blog</h2>
-          <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-300">Learn from first hand</p>
+          <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
+            {t("blog.sectionTitle")}
+          </h2>
+          <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-300">{t("blog.sectionSubtitle")}</p>
         </div>
 
         {/* Swiper Carousel */}
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 5000,
+          //   disableOnInteraction: false,
+          // }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -68,11 +54,12 @@ export default function BlogSection() {
               spaceBetween: 30,
             },
           }}
-          className="pb-12"
+          className="!pb-20"
+          style={{ paddingBottom: '80px' }}
         >
-          {articles.map((article) => (
-            <SwiperSlide key={article.slug}>
-              <BlogCard article={article} />
+          {articles.map((article, index) => (
+            <SwiperSlide key={article.slug} className="flex h-auto pb-4">
+              <BlogCard article={article} priority={index < 3} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -90,27 +77,6 @@ export default function BlogSection() {
           </a>
         </div>
       </div>
-
-      {/* Swiper Custom Styles */}
-      <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: #10b981;
-        }
-
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-          font-size: 32px;
-        }
-
-        .swiper-pagination-bullet {
-          background: #10b981;
-        }
-
-        .swiper-pagination-bullet-active {
-          background: #059669;
-        }
-      `}</style>
     </section>
   );
 }
