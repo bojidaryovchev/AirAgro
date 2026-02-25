@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ContactFormData, contactFormSchema, serviceOptions } from "@/lib/schemas/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
@@ -93,10 +93,10 @@ const ContactSection = () => {
                 <div>
                   <div className="text-muted-foreground text-sm">{t("contact.call")}</div>
                   <a
-                    href="tel:+359888123456"
+                    href="tel:+359884242406"
                     className="text-foreground hover:text-primary font-semibold transition-colors"
                   >
-                    +359 888 123 456
+                    +359 884 242 406
                   </a>
                 </div>
               </div>
@@ -108,21 +108,11 @@ const ContactSection = () => {
                 <div>
                   <div className="text-muted-foreground text-sm">{t("contact.email")}</div>
                   <a
-                    href="mailto:info@agroair.bg"
+                    href="mailto:contact.airagro@gmail.com"
                     className="text-foreground hover:text-primary font-semibold transition-colors"
                   >
-                    info@agroair.bg
+                    contact.airagro@gmail.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 text-primary flex h-12 w-12 items-center justify-center rounded-xl">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <div>
-                  <div className="text-muted-foreground text-sm">{t("contact.visit")}</div>
-                  <div className="text-foreground font-semibold">София, България</div>
                 </div>
               </div>
             </div>
