@@ -12,7 +12,6 @@ const FeaturesSection = () => {
     { icon: Check, label: t("features.capacity") },
     { icon: Check, label: t("features.radar") },
     { icon: Check, label: t("features.transmission") },
-    { icon: Check, label: t("features.coverage") },
     { icon: Check, label: t("features.terrain") },
     { icon: Check, label: t("features.weather") },
     { icon: ShieldCheck, label: t("benefits.safety") },

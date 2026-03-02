@@ -38,7 +38,6 @@
   "features.capacity": "Голям капацитет за по-малко презареждания",
   "features.radar": "Автоматично избягване на препятствия",
   "features.transmission": "Работи на разстояние до 2 км",
-  "features.coverage": "210 декара на час - бързо покритие",
   "features.terrain": "Следва терена автоматично",
   "features.weather": "Без недостъпни полета",
 
@@ -67,7 +66,7 @@
   "stats.orchard.value": "10x",
   "stats.orchard.label": "По-бързо от наземна техника",
   "stats.spread.value": "0%",
-  "stats.spread.label": "Уплътняване на почвата",
+  "stats.spread.label": "Утъпкване на почвата",
 
   "blog.sectionTitle": "Прочетете нашия блог",
   "blog.sectionSubtitle": "Практични съвети и опит от първа ръка",
