@@ -6,7 +6,7 @@ import { Check, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Цени за Пръскане с Дрон | Агро Дрон Услуги | AirAgro',
-  description: 'Прозрачни цени за пръскане с агро дрон в България. DJI Agras T40 & T50. Специални отстъпки за големи площи. Безплатна оферта за 24 часа. ☎ 0876-543-546',
+  description: 'Прозрачни цени за пръскане с агро дрон в България. DJI Agras T50. Специални отстъпки за големи площи. Безплатна оферта за 24 часа. ☎ 0876-543-546',
   keywords: [
     'цена пръскане с дрон',
     'агро дрон цена',
@@ -38,7 +38,7 @@ export default function PricingPage() {
         "@type": "Offer",
         "position": 1,
         "name": "Еднократно пръскане",
-        "description": "Професионално пръскане с DJI Agras T40",
+        "description": "Професионално пръскане с DJI Agras T50",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "priceCurrency": "BGN",
@@ -81,8 +81,11 @@ export default function PricingPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Цени и Пакети за Агро Дрон Услуги
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
               Прозрачно ценообразуване без скрити такси. Получете индивидуална оферта за вашето стопанство за 24 часа.
+            </p>
+            <p className="text-lg text-emerald-600 font-semibold">
+              ✅ Няма минимална площ – работим от 10 дка до 10,000 дка
             </p>
           </div>
 

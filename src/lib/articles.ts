@@ -5,6 +5,8 @@ import { markdownToHtml } from "./markdown";
 
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 
+export type Language = "bg" | "en";
+
 export interface ArticleMetadata {
   title: string;
   description: string;
@@ -12,7 +14,7 @@ export interface ArticleMetadata {
   date: string;
   image: string;
   slug: string;
-  category: "Технология" | "Съвети" | "Анализ";
+  category: "Технология" | "Съвети" | "Анализ" | "Technology" | "Tips" | "Analysis";
   tags: string[];
   readTime: string;
 }
@@ -22,13 +24,23 @@ export interface Article extends ArticleMetadata {
   contentHtml?: string;
 }
 
-export function getAllArticleSlugs(): string[] {
-  const fileNames = fs.readdirSync(articlesDirectory);
+function getLanguageDirectory(lang: Language): string {
+  return path.join(articlesDirectory, lang);
+}
+
+export function getAllArticleSlugs(lang: Language = "bg"): string[] {
+  const langDir = getLanguageDirectory(lang);
+  
+  if (!fs.existsSync(langDir)) {
+    return [];
+  }
+  
+  const fileNames = fs.readdirSync(langDir);
   return fileNames.filter((fileName) => fileName.endsWith(".md")).map((fileName) => fileName.replace(/\.md$/, ""));
 }
 
-export function getArticleBySlug(slug: string): Article {
-  const fullPath = path.join(articlesDirectory, `${slug}.md`);
+export function getArticleBySlug(slug: string, lang: Language = "bg"): Article {
+  const fullPath = path.join(getLanguageDirectory(lang), `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -39,8 +51,8 @@ export function getArticleBySlug(slug: string): Article {
   };
 }
 
-export async function getArticleWithHtml(slug: string): Promise<Article> {
-  const article = getArticleBySlug(slug);
+export async function getArticleWithHtml(slug: string, lang: Language = "bg"): Promise<Article> {
+  const article = getArticleBySlug(slug, lang);
   const contentHtml = await markdownToHtml(article.content);
 
   return {
@@ -49,18 +61,18 @@ export async function getArticleWithHtml(slug: string): Promise<Article> {
   };
 }
 
-export function getAllArticles(): Article[] {
-  const slugs = getAllArticleSlugs();
+export function getAllArticles(lang: Language = "bg"): Article[] {
+  const slugs = getAllArticleSlugs(lang);
   const articles = slugs
-    .map((slug) => getArticleBySlug(slug))
+    .map((slug) => getArticleBySlug(slug, lang))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return articles;
 }
 
-export function getRelatedArticles(currentSlug: string, limit: number = 6): Article[] {
-  const currentArticle = getArticleBySlug(currentSlug);
-  const allArticles = getAllArticles().filter((article) => article.slug !== currentSlug);
+export function getRelatedArticles(currentSlug: string, limit: number = 6, lang: Language = "bg"): Article[] {
+  const currentArticle = getArticleBySlug(currentSlug, lang);
+  const allArticles = getAllArticles(lang).filter((article) => article.slug !== currentSlug);
 
   // Score articles based on matching tags and category
   const scoredArticles = allArticles.map((article) => {
@@ -83,4 +95,8 @@ export function getRelatedArticles(currentSlug: string, limit: number = 6): Arti
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map((item) => item.article);
+}
+
+export function getSupportedLanguages(): Language[] {
+  return ["bg", "en"];
 }

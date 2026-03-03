@@ -6,7 +6,7 @@ import { Check, Droplet, Target, TrendingUp, Clock, Shield, Leaf, Zap } from 'lu
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Пръскане с Дрон DJI Agras T40 & T50 | Професионална Услуга | AirAgro',
+  title: 'Пръскане с Дрон DJI Agras T50 | Професионална Услуга | AirAgro',
   description: 'Професионално пръскане на земеделски култури с агро дрон. RTK прецизност ±10 см. Спестете 30% препарати. Инсектициди, хербициди, фунгициди, листно торене. Цяла България. ☎ 0876-543-546',
   keywords: [
     'пръскане с дрон',
@@ -136,7 +136,7 @@ export default function SprayingServicePage() {
                 Пръскане с Агро Дрон
               </h1>
               <p className="text-2xl md:text-3xl text-emerald-100 leading-relaxed mb-8">
-                Професионално третиране на земеделски култури с DJI Agras T40 & T50. RTK прецизност, спестяване на ресурси, максимална ефективност.
+                Професионално третиране на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси, максимална ефективност.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -159,22 +159,26 @@ export default function SprayingServicePage() {
         {/* Key Stats Bar */}
         <div className="bg-gray-900 text-white py-8">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">±10 см</div>
                 <div className="text-gray-300">RTK Точност</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">20-28 ха/ч</div>
-                <div className="text-gray-300">Скорост</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">1000 дка</div>
+                <div className="text-gray-300">На ден</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">30-40%</div>
                 <div className="text-gray-300">По-малко препарати</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">0%</div>
-                <div className="text-gray-300">Утъпкване</div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">2 часа</div>
+                <div className="text-gray-300">Сухо време след</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">5-35°C</div>
+                <div className="text-gray-300">Работна температура</div>
               </div>
             </div>
           </div>

@@ -454,7 +454,7 @@ readTime: "7 мин"
 </thead>
 <tbody>
 <tr>
-<td>🚁 DJI Agras T40</td>
+<td>🚁 DJI Agras T50</td>
 <td>150,000 лв</td>
 </tr>
 <tr>

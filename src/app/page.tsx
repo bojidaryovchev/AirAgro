@@ -28,7 +28,7 @@ export default function Home() {
     url: 'https://airagro.bg',
     logo: 'https://airagro.bg/air-agro-logo.png',
     image: 'https://airagro.bg/air-agro-logo.png',
-    description: 'Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T40 & T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, NDVI анализ.',
+    description: 'Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, NDVI анализ.',
     priceRange: '$$',
     telephone: '+359-876-543-546',
     email: 'contact.airagro@gmail.com',
@@ -154,8 +154,8 @@ export default function Home() {
       <BenefitsSection />
       <StatsSection />
       <ContactSection />
-      <BlogSection articles={articles} />
       <FAQSection />
+      <BlogSection articles={articles} />
       <Footer />
       <FloatingCallButton />
       </div>

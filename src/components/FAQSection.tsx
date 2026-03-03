@@ -22,7 +22,7 @@ const faqs: Record<string, FAQItem[]> = {
     },
     {
       question: "Колко бързо можете да обработите полето ми?",
-      answer: "С DJI Agras T40 обработваме до 20-28 хектара (200-280 дка) на час, в зависимост от културата и терена. За 100 дка време за обработка е около 30-45 минути. Работим бързо, за да спазим оптималните агрономически срокове."
+      answer: "С DJI Agras T50 обработваме до 700-1000 декара на ден, в зависимост от културата и терена. За 100 дка време за обработка е около 30-45 минути. Работим бързо, за да спазим оптималните агрономически срокове."
     },
     {
       question: "При какви метеорологични условия можете да работите?",
@@ -51,6 +51,10 @@ const faqs: Record<string, FAQItem[]> = {
     {
       question: "Колко предварително трябва да резервирам дата?",
       answer: "При спешни случаи можем да реагираме за 24-48 часа. За планови обработки препоръчваме резервация 5-7 дни предварително, особено през пиковите месеци (май-юли). За сезонни пакети предлагаме приоритетно обслужване."
+    },
+    {
+      question: "Има ли минимална площ за обработка?",
+      answer: "Не, няма минимална площ. Работим както с малки стопанства от 10-20 дка, така и с големи ферми над 1000 дка. Всяка заявка получава индивидуална оферта според площта и културата."
     }
   ],
   en: [
@@ -64,7 +68,7 @@ const faqs: Record<string, FAQItem[]> = {
     },
     {
       question: "How quickly can you treat my field?",
-      answer: "With the DJI Agras T40, we treat up to 20-28 hectares (200-280 decares) per hour, depending on the crop and terrain. For 100 decares, treatment time is about 30-45 minutes. We work quickly to meet optimal agronomic timing."
+      answer: "With the DJI Agras T50, we treat up to 700-1000 decares per day, depending on the crop and terrain. For 100 decares, treatment time is about 30-45 minutes. We work quickly to meet optimal agronomic timing."
     },
     {
       question: "What weather conditions can you work in?",
@@ -93,6 +97,10 @@ const faqs: Record<string, FAQItem[]> = {
     {
       question: "How far in advance should I book?",
       answer: "For emergencies, we can respond within 24-48 hours. For planned treatments, we recommend booking 5-7 days in advance, especially during peak months (May-July). Seasonal packages offer priority service."
+    },
+    {
+      question: "Is there a minimum area for treatment?",
+      answer: "No, there is no minimum area. We work with small farms from 10-20 decares as well as large farms over 1000 decares. Every request receives an individual quote based on the area and crop type."
     }
   ]
 };
@@ -217,7 +225,7 @@ export default function FAQSection() {
             href="tel:+359876543546"
             className="inline-flex items-center gap-2 hero-gradient shadow-primary/20 border-0 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105"
           >
-            📞 {t.ctaButton}
+            {t.ctaButton}
           </a>
         </motion.div>
         </div>

@@ -146,7 +146,7 @@ export default function AboutPage() {
                   Започнахме с един DJI Agras T30 и 500 дка пилотен проект при един приятел фермер. Резултатите бяха впечатляващи - спестихме 35% препарати, обработихме площта 3 пъти по-бързо от тракторна техника и без капка утъпкване на културата.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Днес, след над 25,000 дка обработени площи и 47+ доволни клиенти, продължаваме да растем и да усъвършенстваме услугите си. Инвестирахме в най-новия DJI Agras T40, RTK системи и обучение в Европа.
+                  Днес, след над 25,000 дка обработени площи и 47+ доволни клиенти, продължаваме да растем и да усъвършенстваме услугите си. Инвестирахме в DJI Agras T50, RTK системи и обучение.
                 </p>
                 <p className="text-lg leading-relaxed font-semibold text-emerald-700">
                   Нашата мисия е проста: да направим прецизното земеделие достъпно, разбираемо и изгодно за всеки българински земеделец.
@@ -184,9 +184,9 @@ export default function AboutPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
-                <h3 className="text-3xl font-bold mb-4">DJI Agras T40</h3>
+                <h3 className="text-3xl font-bold mb-4">DJI Agras T50</h3>
                 <p className="text-gray-300 mb-6 text-lg">
-                  Най-новият професионален агро дрон от DJI с капацитет 40 л и активна система за следване на терена.
+                  Професионален агро дрон от DJI с капацитет 40 л и активна система за следване на терена.
                 </p>
                 <ul className="space-y-3 text-gray-200">
                   <li className="flex items-center gap-3">
