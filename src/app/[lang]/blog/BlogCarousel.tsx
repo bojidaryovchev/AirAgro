@@ -43,7 +43,7 @@ export default function BlogCarousel({ articles, lang = "bg" }: BlogCarouselProp
       >
         {articles.map((article, index) => (
           <SwiperSlide key={article.slug} className="pb-4">
-            <BlogCard article={article} priority={index < 3} lang={lang} />
+            <BlogCard article={article} lang={lang} />
           </SwiperSlide>
         ))}
       </Swiper>

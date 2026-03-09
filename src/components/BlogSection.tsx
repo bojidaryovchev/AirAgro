@@ -60,7 +60,7 @@ export default function BlogSection({ articles }: BlogSectionProps) {
         >
           {articles.map((article, index) => (
             <SwiperSlide key={article.slug} className="flex h-auto pb-4">
-              <BlogCard article={article} priority={index < 3} lang={lang} />
+              <BlogCard article={article} lang={lang} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -85,16 +85,8 @@ export default async function BlogPage({ params }: Props) {
   // Fetch articles for this language
   const articles = getAllArticles(language);
 
-  // Get first 6 article images for preloading
-  const preloadImages = articles.slice(0, 6).map((article) => article.image);
-
   return (
     <>
-      {/* Preload first 6 blog images */}
-      {preloadImages.map((image, index) => (
-        <link key={image} rel="preload" as="image" href={image} fetchPriority={index < 3 ? "high" : "low"} />
-      ))}
-
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
         <Navbar />
 
@@ -110,7 +102,7 @@ export default async function BlogPage({ params }: Props) {
             {articles.length > 0 ? (
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {articles.map((article, index) => (
-                  <BlogCard key={article.slug} article={article} priority={index < 6} lang={language} />
+                  <BlogCard key={article.slug} article={article} lang={language} />
                 ))}
               </div>
             ) : (

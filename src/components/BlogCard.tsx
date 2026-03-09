@@ -6,11 +6,10 @@ import Link from "next/link";
 
 interface BlogCardProps {
   article: Article;
-  priority?: boolean;
   lang?: Language;
 }
 
-export default function BlogCard({ article, priority = false, lang = "bg" }: BlogCardProps) {
+export default function BlogCard({ article, lang = "bg" }: BlogCardProps) {
   return (
     <Link
       href={`/${lang}/blog/${article.slug}`}
@@ -21,7 +20,7 @@ export default function BlogCard({ article, priority = false, lang = "bg" }: Blo
           src={article.image}
           alt={article.title}
           fill
-          priority={priority}
+          loading="lazy"
           placeholder={article.blurDataURL ? "blur" : "empty"}
           blurDataURL={article.blurDataURL}
           className="object-cover transition-transform duration-300 group-hover:scale-110"
