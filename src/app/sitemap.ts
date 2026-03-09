@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllArticleSlugs } from '@/lib/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://agroair.bg';
+  const baseUrl = 'https://airagro.bg';
   
   // Get all blog article slugs
   const articleSlugs = getAllArticleSlugs();

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://agroair.bg/sitemap.xml',
+    sitemap: 'https://airagro.bg/sitemap.xml',
   };
 }
