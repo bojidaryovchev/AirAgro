@@ -3,7 +3,7 @@ title: "Засяване на покривни култури с дрон – п
 description: "Засяване на покривни култури с дрон – опазване на почвата, задържане на хранителни вещества и подобряване на структурата. DJI Agras T50."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/pruskane-s-dron-bulgaria.png"
 slug: "zasyavane-na-pokrivni-kulturi-s-dron"
 category: "Технология"
 tags: ["покривни култури", "засяване с дрон", "сеитба с дрон", "опазване на почвата", "регенеративно земеделие"]

@@ -3,7 +3,7 @@ title: "Пръскане на високи култури с дрон – цар
 description: "Дрон пръскане на високи култури – царевица, слънчоглед и рапица в късен стадий. Без газене на посеви, без загуба на реколта."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/pruskane-na-tsarevitsa-s-dron.png"
 slug: "pruskane-na-visoki-kulturi-s-dron"
 category: "Съвети"
 tags: ["пръскане на високи култури", "дрон за високи растения", "царевица дрон", "слънчоглед дрон", "пръскане без газене"]

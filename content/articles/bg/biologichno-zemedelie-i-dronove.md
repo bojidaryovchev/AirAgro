@@ -3,7 +3,7 @@ title: "Биологично земеделие и дронове – преци
 description: "Как дроновете помагат в биологичното земеделие – биопрепарати, прецизно пръскане и намален разход. DJI Agras T50 за био стопанства."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/dron-za-rastitelna-zashtita.png"
 slug: "biologichno-zemedelie-i-dronove"
 category: "Анализ"
 tags: ["биологично земеделие", "био дрон", "органично земеделие", "биопрепарати", "устойчиво земеделие"]

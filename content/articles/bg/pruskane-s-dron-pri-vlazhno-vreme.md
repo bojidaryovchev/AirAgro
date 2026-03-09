@@ -3,7 +3,7 @@ title: "Пръскане с дрон при влажно време – реше
 description: "Пръскане с дрон при влажно време и кал. Дронът лети над мокрото поле без да уврежда почвата. AirAgro предлага спешно третиране 24 часа."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/pruskane-s-dron-uslugi.png"
 slug: "pruskane-s-dron-pri-vlazhno-vreme"
 category: "Съвети"
 tags: ["пръскане с дрон при влажно време", "пръскане след дъжд", "дрон при кал", "мокро поле дрон", "третиране при влажни условия", "спешно пръскане", "DJI Agras T50", "растителна защита"]

@@ -3,7 +3,7 @@ title: "NDVI мониторинг с дрон – карти за здравет
 description: "NDVI мониторинг и картографиране с дрон. Ранно откриване на болести, стрес и хранителен дефицит. Прецизно земеделие с AirAgro."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/kakvo-e-pretsizno-zemedelie.png"
 slug: "ndvi-monitoring-s-dron"
 category: "Технология"
 tags: ["NDVI мониторинг", "картографиране с дрон", "мултиспектрален анализ", "прецизно земеделие", "здраве на посевите"]

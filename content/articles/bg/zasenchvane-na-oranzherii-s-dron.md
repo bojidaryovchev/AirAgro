@@ -3,7 +3,7 @@ title: "Засенчване на оранжерии с дрон – бързо,
 description: "Засенчване на оранжерии с дрон DJI Agras T50 – равномерно нанасяне на засенчваща боя, без скелета и ръчен труд. Научете повече за услугата от AirAgro."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/pruskane-na-zelenchutsi-s-dron.png"
 slug: "zasenchvane-na-oranzherii-s-dron"
 category: "Технология"
 tags: ["засенчване на оранжерии с дрон", "дрон за засенчване", "оранжерийно засенчване", "боядисване на оранжерии с дрон", "засенчваща боя", "DJI Agras T50", "оранжерии", "прецизно земеделие"]

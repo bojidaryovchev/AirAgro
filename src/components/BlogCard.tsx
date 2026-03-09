@@ -22,6 +22,8 @@ export default function BlogCard({ article, priority = false, lang = "bg" }: Blo
           alt={article.title}
           fill
           priority={priority}
+          placeholder={article.blurDataURL ? "blur" : "empty"}
+          blurDataURL={article.blurDataURL}
           className="object-cover transition-transform duration-300 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

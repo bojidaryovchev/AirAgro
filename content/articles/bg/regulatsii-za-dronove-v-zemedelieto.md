@@ -3,7 +3,7 @@ title: "Регулации за дронове в земеделието в Бъ
 description: "Пълен гид за регулациите за земеделски дронове в България – БАБХ, ГВА, EASA и лицензи за пръскане. Какво е нужно за законно третиране."
 author: "Екип AirAgro"
 date: "2025-03-09"
-image: "/images/blog/drone-spraying.jpg"
+image: "/images/blog/kak-rabotyat-zemedeslkite-dronove.png"
 slug: "regulatsii-za-dronove-v-zemedelieto"
 category: "Анализ"
 tags: ["регулации дронове", "БАБХ лиценз", "закон за дронове", "ГВА разрешително", "EASA сертификат"]

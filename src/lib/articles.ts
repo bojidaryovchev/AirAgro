@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { markdownToHtml } from "./markdown";
+import { getBlurDataURL } from "./blur";
 
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 
@@ -13,6 +14,7 @@ export interface ArticleMetadata {
   author: string;
   date: string;
   image: string;
+  blurDataURL?: string;
   slug: string;
   category: "Технология" | "Съвети" | "Анализ" | "Technology" | "Tips" | "Analysis";
   tags: string[];
@@ -44,10 +46,12 @@ export function getArticleBySlug(slug: string, lang: Language = "bg"): Article {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  const metadata = data as ArticleMetadata;
   return {
-    ...(data as ArticleMetadata),
+    ...metadata,
     slug,
     content,
+    blurDataURL: getBlurDataURL(metadata.image),
   };
 }
 
