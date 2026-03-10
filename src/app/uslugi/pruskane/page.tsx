@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Пръскане с Дрон DJI Agras T50 | Професионална Услуга | AirAgro",
   description:
-    "Професионално пръскане на земеделски култури с агро дрон. RTK прецизност ±10 см. Спестете 30% препарати. Инсектициди, хербициди, фунгициди, листно торене. Цяла България. ☎ 0876-543-546",
+    "Професионално пръскане на земеделски култури с агро дрон. RTK прецизност ±10 см. Спестете 30% препарати. Инсектициди, хербициди, фунгициди, листно торене. Цяла България. ☎ 0884-242-406",
   keywords: [
     "пръскане с дрон",
     "агро дрон пръскане",
@@ -61,7 +61,7 @@ export default function SprayingServicePage() {
     provider: {
       "@type": "LocalBusiness",
       name: "AirAgro",
-      telephone: "+359-876-543-546",
+      telephone: "+359-884-242-406",
       url: "https://airagro.bg",
       logo: "https://airagro.bg/air-agro-logo.png",
       image: "https://airagro.bg/air-agro-logo.png",
@@ -200,7 +200,7 @@ export default function SprayingServicePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+359876543546"
+                  href="tel:+359884242406"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
                 >
                   📞 Обади се сега
@@ -372,10 +372,10 @@ export default function SprayingServicePage() {
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <a
-                  href="tel:+359876543546"
+                  href="tel:+359884242406"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-10 py-5 text-xl font-bold text-emerald-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
                 >
-                  📞 0876 543 546
+                  📞 0884 242 406
                 </a>
                 <Link
                   href="/tseni"

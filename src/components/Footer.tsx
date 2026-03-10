@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -15,21 +16,21 @@ const Footer = () => {
           </div>
 
           <div className="text-background/70 flex flex-wrap items-center justify-center gap-6 text-sm">
-            <a href="#services" className="hover:text-primary transition-colors">
+            <Link href="/#services" className="hover:text-primary transition-colors">
               {t("nav.services")}
-            </a>
-            <a href="#features" className="hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#features" className="hover:text-primary transition-colors">
               {t("nav.features")}
-            </a>
-            <a href="#benefits" className="hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#benefits" className="hover:text-primary transition-colors">
               {t("nav.benefits")}
-            </a>
-            <a href="#contact" className="hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#contact" className="hover:text-primary transition-colors">
               {t("nav.contact")}
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="hover:text-primary transition-colors">
               {t("footer.privacy")}
-            </a>
+            </Link>
           </div>
         </div>
 

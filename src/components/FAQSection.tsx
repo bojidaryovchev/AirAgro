@@ -216,7 +216,7 @@ export default function FAQSection() {
           >
             <p className="mb-6 text-xl text-gray-700">{t.cta}</p>
             <a
-              href="tel:+359876543546"
+              href="tel:+359884242406"
               className="hero-gradient shadow-primary/20 inline-flex items-center gap-2 rounded-full border-0 px-8 py-4 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               {t.ctaButton}

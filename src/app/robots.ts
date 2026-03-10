@@ -8,13 +8,21 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/admin/"],
       },
-      // Allow AI search crawlers (ChatGPT browsing, Perplexity search)
+      // Allow AI search crawlers (ChatGPT browsing, Perplexity search, Claude)
       {
         userAgent: "ChatGPT-User",
         allow: "/",
       },
       {
         userAgent: "PerplexityBot",
+        allow: "/",
+      },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
+      {
+        userAgent: "ClaudeBot",
         allow: "/",
       },
       // Block AI training crawlers (model training, not search)
@@ -24,10 +32,6 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Google-Extended",
-        disallow: ["/"],
-      },
-      {
-        userAgent: "ClaudeBot",
         disallow: ["/"],
       },
       {

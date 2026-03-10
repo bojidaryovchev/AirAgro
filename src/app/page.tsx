@@ -28,7 +28,7 @@ export default function Home() {
     description:
       "Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, NDVI анализ.",
     priceRange: "$$",
-    telephone: "+359-876-543-546",
+    telephone: "+359-884-242-406",
     email: "contact.airagro@gmail.com",
     areaServed: {
       "@type": "Country",
@@ -100,7 +100,7 @@ export default function Home() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+359-876-543-546",
+      telephone: "+359-884-242-406",
       contactType: "Customer Service",
       areaServed: "BG",
       availableLanguage: ["Bulgarian", "English"],

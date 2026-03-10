@@ -58,7 +58,7 @@ export default function AboutPage() {
     logo: "https://airagro.bg/air-agro-logo.png",
     foundingDate: "2023",
     email: "contact.airagro@gmail.com",
-    telephone: "+359-876-543-546",
+    telephone: "+359-884-242-406",
     address: {
       "@type": "PostalAddress",
       addressCountry: "BG",
@@ -309,10 +309,10 @@ export default function AboutPage() {
               <h2 className="mb-6 text-3xl font-bold md:text-4xl">Готови сме за вашия проект</h2>
               <p className="mb-8 text-xl text-emerald-100">Свържете се с нас за безплатна консултация и оферта</p>
               <a
-                href="tel:+359876543546"
+                href="tel:+359884242406"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
               >
-                📞 0876 543 546
+                📞 0884 242 406
               </a>
             </div>
           </div>

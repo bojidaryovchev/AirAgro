@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Цени за Пръскане с Дрон | Агро Дрон Услуги | AirAgro",
   description:
-    "Прозрачни цени за пръскане с агро дрон в България. DJI Agras T50. Специални отстъпки за големи площи. Безплатна оферта за 24 часа. ☎ 0876-543-546",
+    "Прозрачни цени за пръскане с агро дрон в България. DJI Agras T50. Специални отстъпки за големи площи. Безплатна оферта за 24 часа. ☎ 0884-242-406",
   keywords: [
     "цена пръскане с дрон",
     "агро дрон цена",
@@ -158,7 +158,7 @@ export default function PricingPage() {
               </ul>
 
               <a
-                href="tel:+359876543546"
+                href="tel:+359884242406"
                 className="block w-full rounded-full bg-emerald-600 py-4 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-emerald-700"
               >
                 Поискай оферта
@@ -208,7 +208,7 @@ export default function PricingPage() {
               </ul>
 
               <a
-                href="tel:+359876543546"
+                href="tel:+359884242406"
                 className="block w-full rounded-full bg-white py-4 text-center font-bold text-emerald-600 transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
               >
                 Запази сега
@@ -251,7 +251,7 @@ export default function PricingPage() {
               </ul>
 
               <a
-                href="tel:+359876543546"
+                href="tel:+359884242406"
                 className="block w-full rounded-full bg-gray-900 py-4 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800"
               >
                 Свържи се с нас
@@ -310,11 +310,11 @@ export default function PricingPage() {
             <p className="mb-8 text-xl text-emerald-100">Обадете се или изпратете запитване. Отговаряме за 2 часа!</p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
-                href="tel:+359876543546"
+                href="tel:+359884242406"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
               >
                 <Phone className="h-5 w-5" />
-                0876 543 546
+                0884 242 406
               </a>
               <a
                 href="mailto:contact.airagro@gmail.com"
