@@ -5,6 +5,7 @@ import VideoCanvas from "@/components/VideoCanvas";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
@@ -105,7 +106,7 @@ const HeroSection = () => {
             className="hero-gradient shadow-primary/30 hover:shadow-primary/40 border-0 px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl"
             asChild
           >
-            <a href="#contact">{t("hero.getQuote")}</a>
+            <Link href="#contact">{t("hero.getQuote")}</Link>
           </Button>
         </motion.div>
       </div>

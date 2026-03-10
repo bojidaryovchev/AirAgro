@@ -98,7 +98,14 @@ export default function SprayingServicePage() {
     },
     offers: {
       "@type": "Offer",
+      price: "6",
       priceCurrency: "BGN",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "6",
+        priceCurrency: "BGN",
+        unitText: "на декар",
+      },
       availability: "https://schema.org/InStock",
     },
     aggregateRating: {

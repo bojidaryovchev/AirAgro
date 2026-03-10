@@ -75,7 +75,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className={`hover:text-primary text-sm font-medium transition-colors ${
@@ -83,11 +83,11 @@ const Navbar = () => {
               }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <LanguageSwitcher isScrolled={isScrolled || !hasHeroSection} />
           <Button className="hero-gradient shadow-primary/20 border-0 text-white shadow-md" asChild>
-            <a href={isHome ? "#contact" : "/#contact"}>{t("nav.getStarted")}</a>
+            <Link href={isHome ? "#contact" : "/#contact"}>{t("nav.getStarted")}</Link>
           </Button>
         </div>
 
@@ -113,19 +113,19 @@ const Navbar = () => {
         >
           <div className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-foreground hover:text-primary text-lg font-medium transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <Button className="hero-gradient mt-2 w-full border-0 text-white" asChild>
-              <a href={isHome ? "#contact" : "/#contact"} onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href={isHome ? "#contact" : "/#contact"} onClick={() => setIsMobileMenuOpen(false)}>
                 {t("nav.getStarted")}
-              </a>
+              </Link>
             </Button>
           </div>
         </motion.div>
