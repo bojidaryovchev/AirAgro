@@ -110,9 +110,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         languages: {
           "bg-BG": `${baseUrl}/bg/blog/${slug}`,
           // Only include EN alternate if the article actually exists in English
-          ...(getAllArticleSlugs("en").includes(slug)
-            ? { "en-US": `${baseUrl}/en/blog/${slug}` }
-            : {}),
+          ...(getAllArticleSlugs("en").includes(slug) ? { "en-US": `${baseUrl}/en/blog/${slug}` } : {}),
           "x-default": `${baseUrl}/bg/blog/${slug}`,
         },
       },

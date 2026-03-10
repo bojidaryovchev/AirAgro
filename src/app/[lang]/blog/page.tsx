@@ -116,7 +116,12 @@ export default async function BlogPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: language === "bg" ? "Начало" : "Home", item: "https://airagro.bg" },
-      { "@type": "ListItem", position: 2, name: language === "bg" ? "Блог" : "Blog", item: `https://airagro.bg/${language}/blog` },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: language === "bg" ? "Блог" : "Blog",
+        item: `https://airagro.bg/${language}/blog`,
+      },
     ],
   };
 
