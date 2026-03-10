@@ -109,20 +109,6 @@ export default function FAQSection() {
   const { language } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  // FAQ Schema for SEO (always use Bulgarian for schema)
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.bg.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
   const content = {
     bg: {
       title: "Често Задавани Въпроси",
@@ -141,6 +127,20 @@ export default function FAQSection() {
   const t = content[language as keyof typeof content];
   const faqList = faqs[language as keyof typeof faqs];
 
+  // FAQ Schema for SEO - use current language FAQs
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqList.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       {/* FAQ Schema for SEO */}
@@ -149,7 +149,7 @@ export default function FAQSection() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
-      <section className="py-20 bg-gradient-to-b from-white to-emerald-50/30">
+      <section className="py-20 bg-linear-to-b from-white to-emerald-50/30">
         <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div

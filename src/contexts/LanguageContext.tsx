@@ -2,7 +2,7 @@
 
 import bg from "@/locales/bg.json";
 import en from "@/locales/en.json";
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 
 type Language = "en" | "bg";
 
@@ -19,8 +19,30 @@ const translations: Record<Language, Record<string, string>> = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+function detectLanguageFromPath(): Language {
+  if (typeof window !== "undefined") {
+    const path = window.location.pathname;
+    if (path.startsWith("/en/") || path === "/en") return "en";
+  }
+  return "bg";
+}
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("bg");
+  const [language, setLanguage] = useState<Language>(detectLanguageFromPath);
+
+  // Sync <html lang="..."> attribute whenever language changes
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  // Detect language from URL on route changes
+  useEffect(() => {
+    const detected = detectLanguageFromPath();
+    if (detected !== language) {
+      setLanguage(detected);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [typeof window !== "undefined" ? window.location.pathname : ""]);
 
   const t = (key: string): string => {
     return translations[language][key] || key;

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingCallButton from '@/components/FloatingCallButton';
-import { Sprout, Target, Clock, TrendingUp, Leaf, Mountain, Wind, Droplets } from 'lucide-react';
+import { Target, Clock, Leaf, Mountain, Wind, Droplets } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -40,17 +40,48 @@ export default function SeedingServicePage() {
       "@type": "LocalBusiness",
       "name": "AirAgro",
       "telephone": "+359-876-543-546",
-      "url": "https://airagro.bg"
+      "url": "https://airagro.bg",
+      "logo": "https://airagro.bg/air-agro-logo.png",
+      "image": "https://airagro.bg/air-agro-logo.png"
     },
     "areaServed": {
       "@type": "Country",
       "name": "Bulgaria"
     },
     "description": "Професионално засяване с дрон за рехабилитация на ливади, укрепване на откоси, биологична рекултивация на промишлени терени.",
+    "image": "https://airagro.bg/air-agro-logo.png",
+    "url": "https://airagro.bg/uslugi/zasyavane",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Видове засяване с дрон",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Рехабилитация на ливади" }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Укрепване на откоси" }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Биологична рекултивация" }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Хидропосев с дрон" }
+        }
+      ]
+    },
     "offers": {
       "@type": "Offer",
       "priceCurrency": "BGN",
       "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47"
     }
   };
 
@@ -114,17 +145,31 @@ export default function SeedingServicePage() {
     }
   ];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Начало", "item": "https://airagro.bg" },
+      { "@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://airagro.bg/uslugi/pruskane" },
+      { "@type": "ListItem", "position": 3, "name": "Засяване с дрон", "item": "https://airagro.bg/uslugi/zasyavane" }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       
       <Navbar />
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section */}
-        <div className="relative h-[600px] bg-gradient-to-br from-amber-600 via-amber-700 to-orange-800">
+        <div className="relative h-[600px] bg-linear-to-br from-amber-600 via-amber-700 to-orange-800">
           <div className="absolute inset-0 bg-[url('/drone-field-pattern.svg')] opacity-10" />
           <div className="relative container mx-auto px-4 h-full flex items-center">
             <div className="max-w-4xl text-white">
@@ -206,7 +251,7 @@ export default function SeedingServicePage() {
         </div>
 
         {/* Applications Section */}
-        <div className="py-20 bg-gradient-to-b from-amber-50 to-white">
+        <div className="py-20 bg-linear-to-b from-amber-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -303,7 +348,7 @@ export default function SeedingServicePage() {
         </div>
 
         {/* CTA Section */}
-        <div className="py-20 bg-gradient-to-r from-amber-600 to-orange-700">
+        <div className="py-20 bg-linear-to-r from-amber-600 to-orange-700">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-white">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">

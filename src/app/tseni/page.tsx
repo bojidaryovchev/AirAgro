@@ -66,15 +66,28 @@ export default function PricingPage() {
     ]
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Начало", "item": "https://airagro.bg" },
+      { "@type": "ListItem", "position": 2, "name": "Цени", "item": "https://airagro.bg/tseni" }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-b from-white via-emerald-50/20 to-white pt-24">
+      <div className="min-h-screen bg-linear-to-b from-white via-emerald-50/20 to-white pt-24">
         <div className="container mx-auto px-4 py-16">
           {/* Header */}
           <div className="text-center mb-16">
@@ -134,7 +147,7 @@ export default function PricingPage() {
             </div>
 
             {/* Seasonal Package - Featured */}
-            <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-3xl shadow-2xl p-8 relative lg:scale-105 text-white">
+            <div className="bg-linear-to-br from-emerald-600 to-emerald-700 rounded-3xl shadow-2xl p-8 relative lg:scale-105 text-white">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-emerald-900 px-6 py-2 rounded-full text-sm font-bold">
                 НАЙ-ПОПУЛЯРЕН
               </div>
@@ -279,7 +292,7 @@ export default function PricingPage() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-3xl p-12 text-center text-white max-w-4xl mx-auto">
+          <div className="bg-linear-to-r from-emerald-600 to-emerald-700 rounded-3xl p-12 text-center text-white max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Получете Вашата Безплатна Оферта
             </h2>

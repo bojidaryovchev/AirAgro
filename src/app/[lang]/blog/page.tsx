@@ -64,8 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://airagro.bg/${lang}/blog`,
       languages: {
-        bg: "/bg/blog",
-        en: "/en/blog",
+        "bg-BG": "/bg/blog",
+        "en-US": "/en/blog",
+        "x-default": "/bg/blog",
       },
     },
   };
@@ -87,7 +88,7 @@ export default async function BlogPage({ params }: Props) {
 
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
         <Navbar />
 
         <div className="pt-24 pb-16">
@@ -101,7 +102,7 @@ export default async function BlogPage({ params }: Props) {
             {/* Blog Grid */}
             {articles.length > 0 ? (
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {articles.map((article, index) => (
+                {articles.map((article) => (
                   <BlogCard key={article.slug} article={article} lang={language} />
                 ))}
               </div>

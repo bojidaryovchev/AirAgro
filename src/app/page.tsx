@@ -127,11 +127,58 @@ export default function Home() {
     ]
   };
 
+  // VideoObject schema for hero video
+  const videoJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'AirAgro - Пръскане с агро дрон в България',
+    description: 'Професионално пръскане на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси, без утъпкване на почвата.',
+    thumbnailUrl: 'https://airagro.bg/air-agro-logo.png',
+    contentUrl: 'https://airagro.bg/videos/drone-bg.webm',
+    uploadDate: '2024-01-01',
+    duration: 'PT1M',
+    inLanguage: 'bg',
+    publisher: {
+      '@type': 'Organization',
+      name: 'AirAgro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://airagro.bg/air-agro-logo.png',
+      },
+    },
+  };
+
+  // WebSite schema with SearchAction for sitelinks searchbox
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'AirAgro',
+    alternateName: 'AirAgro България',
+    url: 'https://airagro.bg',
+    inLanguage: ['bg', 'en'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://airagro.bg/bg/blog?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       
       

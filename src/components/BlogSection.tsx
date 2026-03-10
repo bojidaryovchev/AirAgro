@@ -22,7 +22,7 @@ export default function BlogSection({ articles }: BlogSectionProps) {
   }
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-20 dark:from-gray-900 dark:to-gray-800">
+    <section className="bg-linear-to-b from-white to-gray-50 py-20 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -58,7 +58,7 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           className="!pb-20"
           style={{ paddingBottom: '80px' }}
         >
-          {articles.map((article, index) => (
+          {articles.map((article) => (
             <SwiperSlide key={article.slug} className="flex h-auto pb-4">
               <BlogCard article={article} lang={lang} />
             </SwiperSlide>

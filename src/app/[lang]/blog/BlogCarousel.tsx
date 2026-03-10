@@ -41,7 +41,7 @@ export default function BlogCarousel({ articles, lang = "bg" }: BlogCarouselProp
         className="!pb-20"
         style={{ paddingBottom: "80px" }}
       >
-        {articles.map((article, index) => (
+        {articles.map((article) => (
           <SwiperSlide key={article.slug} className="pb-4">
             <BlogCard article={article} lang={lang} />
           </SwiperSlide>

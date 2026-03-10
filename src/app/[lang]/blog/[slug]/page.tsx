@@ -70,6 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   try {
     const article = await getArticleWithHtml(slug, language);
+    const baseUrl = 'https://airagro.bg';
 
     return {
       title: `${article.title} | AirAgro Blog`,
@@ -84,22 +85,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         authors: [article.author],
         images: [
           {
-            url: article.image,
+            url: `${baseUrl}${article.image}`,
             width: 1200,
             height: 630,
             alt: article.title,
           },
         ],
-        url: `https://airagro.bg/${lang}/blog/${slug}`,
+        url: `${baseUrl}/${lang}/blog/${slug}`,
       },
       twitter: {
         card: "summary_large_image",
         title: article.title,
         description: article.description,
-        images: [article.image],
+        images: [`${baseUrl}${article.image}`],
       },
       alternates: {
-        canonical: `https://airagro.bg/${lang}/blog/${slug}`,
+        canonical: `${baseUrl}/${lang}/blog/${slug}`,
+        languages: {
+          "bg-BG": `${baseUrl}/bg/blog/${slug}`,
+          "en-US": `${baseUrl}/en/blog/${slug}`,
+          "x-default": `${baseUrl}/bg/blog/${slug}`,
+        },
       },
     };
   } catch {
@@ -128,31 +134,35 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   // JSON-LD Structured Data
+  const baseUrl = "https://airagro.bg";
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: article.image,
+    image: `${baseUrl}${article.image}`,
     datePublished: article.date,
+    dateModified: article.date,
+    inLanguage: lang === "bg" ? "bg-BG" : "en-US",
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       name: article.author,
+      url: baseUrl,
     },
     publisher: {
       "@type": "Organization",
       name: "AirAgro",
       logo: {
         "@type": "ImageObject",
-        url: "https://airagro.bg/air-agro-logo.png",
+        url: `${baseUrl}/air-agro-logo.png`,
       },
     },
     keywords: article.tags.join(", "),
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://airagro.bg/${lang}/blog/${slug}`,
+      "@id": `${baseUrl}/${lang}/blog/${slug}`,
     },
-    url: `https://airagro.bg/${lang}/blog/${slug}`,
+    url: `${baseUrl}/${lang}/blog/${slug}`,
   };
 
   // Breadcrumb Schema
@@ -213,7 +223,7 @@ export default async function BlogPostPage({ params }: Props) {
             placeholder={article.blurDataURL ? "blur" : "empty"}
             blurDataURL={article.blurDataURL}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
           {/* Category Badge */}
           <div className="absolute right-8 top-8 rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-lg">
@@ -276,7 +286,7 @@ export default async function BlogPostPage({ params }: Props) {
             />
 
             {/* CTA Section */}
-            <div className="mb-12 mt-16 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 p-8 text-center text-white shadow-xl md:p-12">
+            <div className="mb-12 mt-16 rounded-2xl bg-linear-to-r from-emerald-500 to-emerald-600 p-8 text-center text-white shadow-xl md:p-12">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">{t.cta.title}</h2>
               <p className="mb-8 text-xl opacity-90">{t.cta.subtitle}</p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">

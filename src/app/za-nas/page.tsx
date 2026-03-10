@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingCallButton from '@/components/FloatingCallButton';
 import { Award, Users, Target, Shield, TrendingUp, Heart } from 'lucide-react';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'За Нас | Професионални Оператори на Агро Дрон | AirAgro',
@@ -87,17 +86,30 @@ export default function AboutPage() {
     }
   ];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Начало", "item": "https://airagro.bg" },
+      { "@type": "ListItem", "position": 2, "name": "За нас", "item": "https://airagro.bg/za-nas" }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       
       <Navbar />
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section */}
-        <div className="relative h-[500px] bg-gradient-to-br from-emerald-600 to-emerald-800">
+        <div className="relative h-125 bg-linear-to-br from-emerald-600 to-emerald-800">
           <div className="absolute inset-0 bg-black/20" />
           <div className="relative container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl text-white">
@@ -157,7 +169,7 @@ export default function AboutPage() {
         </div>
 
         {/* Values Section */}
-        <div className="py-20 bg-gradient-to-b from-emerald-50 to-white">
+        <div className="py-20 bg-linear-to-b from-emerald-50 to-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
               Нашите Ценности
@@ -183,7 +195,7 @@ export default function AboutPage() {
               Нашата Техника
             </h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
+              <div className="bg-linear-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
                 <h3 className="text-3xl font-bold mb-4">DJI Agras T50</h3>
                 <p className="text-gray-300 mb-6 text-lg">
                   Професионален агро дрон от DJI с капацитет 40 л и активна система за следване на терена.
@@ -212,7 +224,7 @@ export default function AboutPage() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-3xl p-8 text-white">
+              <div className="bg-linear-to-br from-emerald-600 to-emerald-700 rounded-3xl p-8 text-white">
                 <h3 className="text-3xl font-bold mb-4">D-RTK 2 Базова Станция</h3>
                 <p className="text-emerald-100 mb-6 text-lg">
                   Професионална RTK система за сантиметрова точност при всяка обработка.
@@ -278,7 +290,7 @@ export default function AboutPage() {
         {/* CTA */}
         <div className="py-20">
           <div className="container mx-auto px-4">
-            <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-3xl p-12 text-center text-white max-w-4xl mx-auto">
+            <div className="bg-linear-to-r from-emerald-600 to-emerald-700 rounded-3xl p-12 text-center text-white max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Готови сме за вашия проект
               </h2>
