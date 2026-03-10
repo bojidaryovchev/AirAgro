@@ -38,7 +38,7 @@ export default function BlogCarousel({ articles, lang = "bg" }: BlogCarouselProp
             spaceBetween: 30,
           },
         }}
-        className="!pb-20"
+        className="pb-20!"
         style={{ paddingBottom: "80px" }}
       >
         {articles.map((article) => (

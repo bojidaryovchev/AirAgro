@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Hero Image */}
-        <div className="relative mb-12 h-[500px] w-full md:h-150">
+        <div className="relative mb-12 h-125 w-full md:h-150">
           <Image
             src={article.image}
             alt={`${article.title} - ${language === "bg" ? "Пръскане с дрон, агро дрон услуги България" : "Drone spraying, agro drone services Bulgaria"}`}
