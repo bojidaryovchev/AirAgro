@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://airagro.bg/za-nas",
+    languages: {
+      "bg-BG": "https://airagro.bg/za-nas",
+    },
   },
 };
 

@@ -87,8 +87,43 @@ export default async function BlogPage({ params }: Props) {
   // Fetch articles for this language
   const articles = getAllArticles(language);
 
+  // CollectionPage + ItemList JSON-LD for blog listing
+  const blogListingSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: t.title,
+    description: t.description,
+    url: `https://airagro.bg/${language}/blog`,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "AirAgro",
+      url: "https://airagro.bg",
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: articles.length,
+      itemListElement: articles.map((article, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `https://airagro.bg/${language}/blog/${article.slug}`,
+        name: article.title,
+      })),
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: language === "bg" ? "Начало" : "Home", item: "https://airagro.bg" },
+      { "@type": "ListItem", position: 2, name: language === "bg" ? "Блог" : "Blog", item: `https://airagro.bg/${language}/blog` },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListingSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
         <Navbar />
 

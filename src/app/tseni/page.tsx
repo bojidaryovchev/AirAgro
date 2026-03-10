@@ -41,6 +41,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://airagro.bg/tseni",
+    languages: {
+      "bg-BG": "https://airagro.bg/tseni",
+    },
   },
 };
 
@@ -57,9 +60,13 @@ export default function PricingPage() {
         position: 1,
         name: "Еднократно пръскане",
         description: "Професионално пръскане с DJI Agras T50",
+        price: "6",
+        priceCurrency: "BGN",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
+          price: "6",
           priceCurrency: "BGN",
+          unitText: "на декар",
           referenceQuantity: {
             "@type": "QuantitativeValue",
             value: "1",

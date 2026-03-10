@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://airagro.bg/uslugi/zasyavane",
+    languages: {
+      "bg-BG": "https://airagro.bg/uslugi/zasyavane",
+    },
   },
 };
 
@@ -167,7 +170,7 @@ export default function SeedingServicePage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Начало", item: "https://airagro.bg" },
-      { "@type": "ListItem", position: 2, name: "Услуги", item: "https://airagro.bg/uslugi/pruskane" },
+      { "@type": "ListItem", position: 2, name: "Услуги", item: "https://airagro.bg/uslugi" },
       { "@type": "ListItem", position: 3, name: "Засяване с дрон", item: "https://airagro.bg/uslugi/zasyavane" },
     ],
   };

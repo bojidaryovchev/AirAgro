@@ -109,7 +109,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         canonical: `${baseUrl}/${lang}/blog/${slug}`,
         languages: {
           "bg-BG": `${baseUrl}/bg/blog/${slug}`,
-          "en-US": `${baseUrl}/en/blog/${slug}`,
+          // Only include EN alternate if the article actually exists in English
+          ...(getAllArticleSlugs("en").includes(slug)
+            ? { "en-US": `${baseUrl}/en/blog/${slug}` }
+            : {}),
           "x-default": `${baseUrl}/bg/blog/${slug}`,
         },
       },
@@ -143,7 +146,7 @@ export default async function BlogPostPage({ params }: Props) {
   const baseUrl = "https://airagro.bg";
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: article.title,
     description: article.description,
     image: `${baseUrl}${article.image}`,
