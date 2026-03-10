@@ -49,8 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: "/air-agro-logo.png",
-          width: 1200,
-          height: 630,
+          width: 1024,
+          height: 1024,
+          type: "image/png",
           alt: "AirAgro Blog",
         },
       ],

@@ -149,25 +149,8 @@ export default function FAQSection() {
   const t = content[language as keyof typeof content];
   const faqList = faqs[language as keyof typeof faqs];
 
-  // FAQ Schema for SEO - use current language FAQs
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqList.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
     <>
-      {/* FAQ Schema for SEO */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-
       <section className="bg-linear-to-b from-white to-emerald-50/30 py-20">
         <div className="container mx-auto px-4">
           {/* Header */}

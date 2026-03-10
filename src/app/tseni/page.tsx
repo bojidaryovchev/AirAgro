@@ -22,6 +22,22 @@ export const metadata: Metadata = {
       "Прозрачни цени за агро дрон услуги. Специални отстъпки за големи площи. Получете безплатна оферта за 24 часа.",
     url: "https://airagro.bg/tseni",
     type: "website",
+    images: [
+      {
+        url: "/air-agro-logo.png",
+        width: 1024,
+        height: 1024,
+        type: "image/png",
+        alt: "AirAgro - Цени за пръскане с дрон",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Цени за Пръскане с Дрон | AirAgro България",
+    description:
+      "Прозрачни цени за агро дрон услуги. Специални отстъпки за големи площи. Получете безплатна оферта за 24 часа.",
+    images: ["/air-agro-logo.png"],
   },
   alternates: {
     canonical: "https://airagro.bg/tseni",

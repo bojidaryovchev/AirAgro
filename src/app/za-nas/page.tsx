@@ -21,6 +21,22 @@ export const metadata: Metadata = {
       "Лицензирани оператори с над 25,000 дка опит. Модерна технология и професионален подход към земеделието.",
     url: "https://airagro.bg/za-nas",
     type: "website",
+    images: [
+      {
+        url: "/air-agro-logo.png",
+        width: 1024,
+        height: 1024,
+        type: "image/png",
+        alt: "AirAgro - Агро Дрон Услуги България",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "За Нас | AirAgro - Лидери в Агро Дрон Услугите",
+    description:
+      "Лицензирани оператори с над 25,000 дка опит. Модерна технология и професионален подход към земеделието.",
+    images: ["/air-agro-logo.png"],
   },
   alternates: {
     canonical: "https://airagro.bg/za-nas",

@@ -107,6 +107,7 @@ export default function Home() {
       email: "contact.airagro@gmail.com",
     },
     sameAs: ["https://www.facebook.com/airagro", "https://www.instagram.com/airagro"],
+    foundingDate: "2023",
     knowsAbout: [
       "Precision Agriculture",
       "Drone Spraying",

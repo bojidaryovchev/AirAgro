@@ -1,0 +1,41 @@
+# AirAgro - Професионални Агро Дрон Услуги в България
+
+> AirAgro provides professional agricultural drone services across Bulgaria using DJI Agras T50 with RTK precision.
+
+## About
+
+AirAgro is a Bulgarian agricultural technology company specializing in drone-based crop protection and seeding services. We operate DJI Agras T50 drones equipped with RTK (Real-Time Kinematic) positioning for ±10 cm accuracy. With over 25,000 decares of experience and 47+ satisfied clients, we serve farmers across all regions of Bulgaria.
+
+## Services
+
+- **Drone Spraying** (Пръскане с дрон): Insecticides, herbicides, fungicides, and foliar fertilization with 30-40% savings on chemicals. Capacity: 20-28 ha/hour.
+- **Drone Seeding** (Засяване с дрон): Meadow rehabilitation, slope reinforcement, biological recultivation, and hydroseeding. Access to inaccessible terrains up to 45° slope.
+- **NDVI Mapping** (NDVI картографиране): Multispectral crop health analysis for Variable Rate Application (VRA).
+- **Greenhouse Shading** (Засенчване на оранжерии): Precision application of shading compounds.
+
+## Key Facts
+
+- Location: Bulgaria (nationwide coverage)
+- Drone: DJI Agras T50 with RTK
+- Precision: ±10 cm GPS accuracy
+- Experience: 25,000+ decares treated
+- Clients: 47+ satisfied customers
+- Rating: 5.0/5.0
+- Response time: 24-48 hours
+- Working hours: 06:00-20:00, 7 days/week
+
+## Contact
+
+- Phone: +359 876 543 546
+- Email: contact.airagro@gmail.com
+- Website: https://airagro.bg
+
+## Pages
+
+- Homepage: https://airagro.bg
+- Spraying Service: https://airagro.bg/uslugi/pruskane
+- Seeding Service: https://airagro.bg/uslugi/zasyavane
+- Pricing: https://airagro.bg/tseni
+- About Us: https://airagro.bg/za-nas
+- Blog (BG): https://airagro.bg/bg/blog
+- Blog (EN): https://airagro.bg/en/blog

@@ -27,6 +27,22 @@ export const metadata: Metadata = {
       "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване. Над 25,000 дка опит.",
     url: "https://airagro.bg/uslugi/pruskane",
     type: "website",
+    images: [
+      {
+        url: "/air-agro-logo.png",
+        width: 1024,
+        height: 1024,
+        type: "image/png",
+        alt: "AirAgro - Пръскане с агро дрон",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Пръскане с Дрон | AirAgro България",
+    description:
+      "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване. Над 25,000 дка опит.",
+    images: ["/air-agro-logo.png"],
   },
   alternates: {
     canonical: "https://airagro.bg/uslugi/pruskane",

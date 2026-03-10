@@ -25,6 +25,21 @@ export const metadata: Metadata = {
     description: "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
     url: "https://airagro.bg/uslugi/zasyavane",
     type: "website",
+    images: [
+      {
+        url: "/air-agro-logo.png",
+        width: 1024,
+        height: 1024,
+        type: "image/png",
+        alt: "AirAgro - Засяване с агро дрон",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Засяване с Дрон | AirAgro България",
+    description: "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
+    images: ["/air-agro-logo.png"],
   },
   alternates: {
     canonical: "https://airagro.bg/uslugi/zasyavane",
