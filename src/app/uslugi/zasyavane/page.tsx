@@ -1,33 +1,34 @@
-import { Metadata } from 'next';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingCallButton from '@/components/FloatingCallButton';
-import { Target, Clock, Leaf, Mountain, Wind, Droplets } from 'lucide-react';
-import Link from 'next/link';
+import FloatingCallButton from "@/components/FloatingCallButton";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { Clock, Droplets, Leaf, Mountain, Target, Wind } from "lucide-react";
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Засяване с Дрон | Рехабилитация на Ливади & Промишлени Терени | AirAgro',
-  description: 'Професионално засяване с агро дрон за рехабилитация на ливади, укрепване на откоси, биологична рекултивация. Достъп до недостъпни терени. ☎ 0876-543-546',
+  title: "Засяване с Дрон | Рехабилитация на Ливади & Промишлени Терени | AirAgro",
+  description:
+    "Професионално засяване с агро дрон за рехабилитация на ливади, укрепване на откоси, биологична рекултивация. Достъп до недостъпни терени. ☎ 0876-543-546",
   keywords: [
-    'засяване с дрон',
-    'дрон засяване ливади',
-    'рехабилитация на ливади',
-    'засяване откоси',
-    'биологична рекултивация',
-    'промишлени терени засяване',
-    'хидропосев дрон',
-    'авиозасяване',
-    'трайни треви дрон'
+    "засяване с дрон",
+    "дрон засяване ливади",
+    "рехабилитация на ливади",
+    "засяване откоси",
+    "биологична рекултивация",
+    "промишлени терени засяване",
+    "хидропосев дрон",
+    "авиозасяване",
+    "трайни треви дрон",
   ],
   openGraph: {
-    title: 'Засяване с Дрон | Рехабилитация & Рекултивация',
-    description: 'Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.',
-    url: 'https://airagro.bg/uslugi/zasyavane',
-    type: 'website'
+    title: "Засяване с Дрон | Рехабилитация & Рекултивация",
+    description: "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
+    url: "https://airagro.bg/uslugi/zasyavane",
+    type: "website",
   },
   alternates: {
-    canonical: 'https://airagro.bg/uslugi/zasyavane'
-  }
+    canonical: "https://airagro.bg/uslugi/zasyavane",
+  },
 };
 
 export default function SeedingServicePage() {
@@ -35,163 +36,157 @@ export default function SeedingServicePage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Засяване с агро дрон",
-    "provider": {
+    serviceType: "Засяване с агро дрон",
+    provider: {
       "@type": "LocalBusiness",
-      "name": "AirAgro",
-      "telephone": "+359-876-543-546",
-      "url": "https://airagro.bg",
-      "logo": "https://airagro.bg/air-agro-logo.png",
-      "image": "https://airagro.bg/air-agro-logo.png"
+      name: "AirAgro",
+      telephone: "+359-876-543-546",
+      url: "https://airagro.bg",
+      logo: "https://airagro.bg/air-agro-logo.png",
+      image: "https://airagro.bg/air-agro-logo.png",
     },
-    "areaServed": {
+    areaServed: {
       "@type": "Country",
-      "name": "Bulgaria"
+      name: "Bulgaria",
     },
-    "description": "Професионално засяване с дрон за рехабилитация на ливади, укрепване на откоси, биологична рекултивация на промишлени терени.",
-    "image": "https://airagro.bg/air-agro-logo.png",
-    "url": "https://airagro.bg/uslugi/zasyavane",
-    "hasOfferCatalog": {
+    description:
+      "Професионално засяване с дрон за рехабилитация на ливади, укрепване на откоси, биологична рекултивация на промишлени терени.",
+    image: "https://airagro.bg/air-agro-logo.png",
+    url: "https://airagro.bg/uslugi/zasyavane",
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
-      "name": "Видове засяване с дрон",
-      "itemListElement": [
+      name: "Видове засяване с дрон",
+      itemListElement: [
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Рехабилитация на ливади" }
+          itemOffered: { "@type": "Service", name: "Рехабилитация на ливади" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Укрепване на откоси" }
+          itemOffered: { "@type": "Service", name: "Укрепване на откоси" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Биологична рекултивация" }
+          itemOffered: { "@type": "Service", name: "Биологична рекултивация" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Хидропосев с дрон" }
-        }
-      ]
+          itemOffered: { "@type": "Service", name: "Хидропосев с дрон" },
+        },
+      ],
     },
-    "offers": {
+    offers: {
       "@type": "Offer",
-      "priceCurrency": "BGN",
-      "availability": "https://schema.org/InStock"
+      priceCurrency: "BGN",
+      availability: "https://schema.org/InStock",
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "47"
-    }
+      ratingValue: "5.0",
+      reviewCount: "47",
+    },
   };
 
   const benefits = [
     {
       icon: Mountain,
-      title: 'Недостъпни Терени',
-      description: 'Засяваме откоси, стръмни склонове, терени с камъни където техниката не може да влезе.'
+      title: "Недостъпни Терени",
+      description: "Засяваме откоси, стръмни склонове, терени с камъни където техниката не може да влезе.",
     },
     {
       icon: Target,
-      title: 'Равномерно Разпределение',
-      description: 'RTK прецизност осигурява еднородна норма на сеитба без празнини или свръхзасяване.'
+      title: "Равномерно Разпределение",
+      description: "RTK прецизност осигурява еднородна норма на сеитба без празнини или свръхзасяване.",
     },
     {
       icon: Leaf,
-      title: 'Без Увреждане',
-      description: 'Не уплътняваме почвата, не увреждаме съществуващата растителност при подсяване.'
+      title: "Без Увреждане",
+      description: "Не уплътняваме почвата, не увреждаме съществуващата растителност при подсяване.",
     },
     {
       icon: Clock,
-      title: 'Бързо Изпълнение',
-      description: 'Обработваме големи площи за часове вместо за дни. Улавяме оптималния сезон.'
+      title: "Бързо Изпълнение",
+      description: "Обработваме големи площи за часове вместо за дни. Улавяме оптималния сезон.",
     },
     {
       icon: Wind,
-      title: 'Метеорологичен Контрол',
-      description: 'Избираме точния момент с оптимални условия - влажност, вятър, температура.'
+      title: "Метеорологичен Контрол",
+      description: "Избираме точния момент с оптимални условия - влажност, вятър, температура.",
     },
     {
       icon: Droplets,
-      title: 'Комбиниране с Хидропосев',
-      description: 'Можем да смесваме семена с биостимуланти, хидрогели и адхезиви за по-добро покълване.'
-    }
+      title: "Комбиниране с Хидропосев",
+      description: "Можем да смесваме семена с биостимуланти, хидрогели и адхезиви за по-добро покълване.",
+    },
   ];
 
   const applications = [
     {
-      title: 'Рехабилитация на Ливади',
-      icon: '🌾',
-      description: 'Подсяване на изреждащи или деградирали ливади с трайни треви без преораване',
-      details: ['Люцерна', 'Еспарзет', 'Детелина', 'Тревни смески', 'Многогодишни пасища']
+      title: "Рехабилитация на Ливади",
+      icon: "🌾",
+      description: "Подсяване на изреждащи или деградирали ливади с трайни треви без преораване",
+      details: ["Люцерна", "Еспарзет", "Детелина", "Тревни смески", "Многогодишни пасища"],
     },
     {
-      title: 'Укрепване на Откоси',
-      icon: '⛰️',
-      description: 'Засяване на стръмни терени за ерозионен контрол и стабилизация на почвата',
-      details: ['Пътни откоси', 'Брегови зони', 'Сипеи', 'Язовирни стени', 'Строителни обекти']
+      title: "Укрепване на Откоси",
+      icon: "⛰️",
+      description: "Засяване на стръмни терени за ерозионен контрол и стабилизация на почвата",
+      details: ["Пътни откоси", "Брегови зони", "Сипеи", "Язовирни стени", "Строителни обекти"],
     },
     {
-      title: 'Биологична Рекултивация',
-      icon: '♻️',
-      description: 'Възстановяване на растителност на нарушени или замърсени индустриални терени',
-      details: ['Мини', 'Кариери', 'Депа', 'Строителни площадки', 'Промишлени зони']
+      title: "Биологична Рекултивация",
+      icon: "♻️",
+      description: "Възстановяване на растителност на нарушени или замърсени индустриални терени",
+      details: ["Мини", "Кариери", "Депа", "Строителни площадки", "Промишлени зони"],
     },
     {
-      title: 'Покривно Засяване',
-      icon: '🌱',
-      description: 'Подсяване в съществуващи култури за защита на почвата или зелено торене',
-      details: ['Междуредово в лозя', 'Под овощни дръвчета', 'Покривни култури', 'Зимуващи смески']
-    }
+      title: "Покривно Засяване",
+      icon: "🌱",
+      description: "Подсяване в съществуващи култури за защита на почвата или зелено торене",
+      details: ["Междуредово в лозя", "Под овощни дръвчета", "Покривни култури", "Зимуващи смески"],
+    },
   ];
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Начало", "item": "https://airagro.bg" },
-      { "@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://airagro.bg/uslugi/pruskane" },
-      { "@type": "ListItem", "position": 3, "name": "Засяване с дрон", "item": "https://airagro.bg/uslugi/zasyavane" }
-    ]
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Начало", item: "https://airagro.bg" },
+      { "@type": "ListItem", position: 2, name: "Услуги", item: "https://airagro.bg/uslugi/pruskane" },
+      { "@type": "ListItem", position: 3, name: "Засяване с дрон", item: "https://airagro.bg/uslugi/zasyavane" },
+    ],
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
       <Navbar />
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section */}
-        <div className="relative h-[600px] bg-linear-to-br from-amber-600 via-amber-700 to-orange-800">
+        <div className="relative h-150 bg-linear-to-br from-amber-600 via-amber-700 to-orange-800">
           <div className="absolute inset-0 bg-[url('/drone-field-pattern.svg')] opacity-10" />
-          <div className="relative container mx-auto px-4 h-full flex items-center">
+          <div className="relative container mx-auto flex h-full items-center px-4">
             <div className="max-w-4xl text-white">
-              <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+              <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm">
                 <span className="text-sm font-semibold">🌱 Иновативна Услуга</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Засяване с Агро Дрон
-              </h1>
-              <p className="text-2xl md:text-3xl text-amber-100 leading-relaxed mb-8">
-                Рехабилитация на ливади, укрепване на откоси, биологична рекултивация. Достъп до недостъпни терени с RTK прецизност.
+              <h1 className="mb-6 text-5xl leading-tight font-bold md:text-7xl">Засяване с Агро Дрон</h1>
+              <p className="mb-8 text-2xl leading-relaxed text-amber-100 md:text-3xl">
+                Рехабилитация на ливади, укрепване на откоси, биологична рекултивация. Достъп до недостъпни терени с RTK
+                прецизност.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="tel:+359876543546"
-                  className="inline-flex items-center gap-2 bg-white text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-amber-600 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-amber-50"
                 >
                   📞 Запитай сега
                 </a>
                 <Link
                   href="/uslugi/pruskane"
-                  className="inline-flex items-center gap-2 bg-amber-800 hover:bg-amber-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center gap-2 rounded-full bg-amber-800 px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-amber-900"
                 >
                   Виж пръскане с дрон
                 </Link>
@@ -201,23 +196,23 @@ export default function SeedingServicePage() {
         </div>
 
         {/* Key Stats Bar */}
-        <div className="bg-gray-900 text-white py-8">
+        <div className="bg-gray-900 py-8 text-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="grid grid-cols-2 gap-6 text-center md:grid-cols-4">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">40 кг/мин</div>
+                <div className="mb-2 text-3xl font-bold text-amber-400 md:text-4xl">40 кг/мин</div>
                 <div className="text-gray-300">Капацитет</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">±10 см</div>
+                <div className="mb-2 text-3xl font-bold text-amber-400 md:text-4xl">±10 см</div>
                 <div className="text-gray-300">RTK Точност</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">100%</div>
+                <div className="mb-2 text-3xl font-bold text-amber-400 md:text-4xl">100%</div>
                 <div className="text-gray-300">Покритие</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">45°</div>
+                <div className="mb-2 text-3xl font-bold text-amber-400 md:text-4xl">45°</div>
                 <div className="text-gray-300">Максимален наклон</div>
               </div>
             </div>
@@ -227,23 +222,22 @@ export default function SeedingServicePage() {
         {/* Benefits Section */}
         <div className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Предимства на Дрон Засяването
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Технологията, която прави възможно невъзможното
-              </p>
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Предимства на Дрон Засяването</h2>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600">Технологията, която прави възможно невъзможното</p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {benefits.map((benefit, index) => (
-                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6">
-                    <benefit.icon className="w-8 h-8 text-amber-600" />
+                <div
+                  key={index}
+                  className="rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-amber-100">
+                    <benefit.icon className="h-8 w-8 text-amber-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">{benefit.title}</h3>
+                  <p className="leading-relaxed text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -251,29 +245,27 @@ export default function SeedingServicePage() {
         </div>
 
         {/* Applications Section */}
-        <div className="py-20 bg-linear-to-b from-amber-50 to-white">
+        <div className="bg-linear-to-b from-amber-50 to-white py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Приложения на Услугата
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Приложения на Услугата</h2>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600">
                 Специализирани решения за различни терени и нужди
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
               {applications.map((app, index) => (
-                <div key={index} className="bg-white rounded-3xl p-8 shadow-xl">
-                  <div className="text-5xl mb-4">{app.icon}</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{app.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{app.description}</p>
+                <div key={index} className="rounded-3xl bg-white p-8 shadow-xl">
+                  <div className="mb-4 text-5xl">{app.icon}</div>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">{app.title}</h3>
+                  <p className="mb-6 leading-relaxed text-gray-600">{app.description}</p>
                   <div className="border-t border-gray-200 pt-6">
-                    <div className="text-sm font-semibold text-gray-500 mb-3">ПРИМЕРИ:</div>
+                    <div className="mb-3 text-sm font-semibold text-gray-500">ПРИМЕРИ:</div>
                     <div className="space-y-2">
                       {app.details.map((detail, i) => (
                         <div key={i} className="flex items-center gap-2 text-gray-700">
-                          <div className="w-1.5 h-1.5 bg-amber-500 rounded-full" />
+                          <div className="h-1.5 w-1.5 rounded-full bg-amber-500" />
                           <span>{detail}</span>
                         </div>
                       ))}
@@ -286,28 +278,26 @@ export default function SeedingServicePage() {
         </div>
 
         {/* Technical Specs */}
-        <div className="py-20 bg-gray-50">
+        <div className="bg-gray-50 py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Технически Характеристики
-              </h2>
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Технически Характеристики</h2>
             </div>
 
-            <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8">
+            <div className="mx-auto max-w-4xl rounded-3xl bg-white p-8 shadow-xl md:p-12">
+              <div className="grid gap-8 md:grid-cols-2">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Капацитет</h3>
+                  <h3 className="mb-6 text-2xl font-bold text-gray-900">Капацитет</h3>
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">Резервоар</span>
                       <span className="font-bold text-gray-900">50 л (25-40 кг семена)</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">Разхвърляне</span>
                       <span className="font-bold text-gray-900">До 9 метра ширина</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">Норма на сеитба</span>
                       <span className="font-bold text-gray-900">10-200 кг/ха регулируема</span>
                     </div>
@@ -315,17 +305,17 @@ export default function SeedingServicePage() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Ефективност</h3>
+                  <h3 className="mb-6 text-2xl font-bold text-gray-900">Ефективност</h3>
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">Производителност</span>
                       <span className="font-bold text-gray-900">15-20 ха/час</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">GPS точност</span>
                       <span className="font-bold text-gray-900">±10 см с RTK</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-200">
+                    <div className="flex items-center justify-between border-b border-gray-200 pb-4">
                       <span className="text-gray-600">Работен наклон</span>
                       <span className="font-bold text-gray-900">До 45° склон</span>
                     </div>
@@ -333,11 +323,21 @@ export default function SeedingServicePage() {
                 </div>
               </div>
 
-              <div className="mt-10 pt-10 border-t border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Подходящи Семена</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {['Люцерна', 'Детелина', 'Житни треви', 'Еспарзет', 'Рапица', 'Горчица', 'Ливадни смески', 'Покривни култури', 'Ерозионни смески'].map((seed, i) => (
-                    <div key={i} className="bg-amber-50 text-amber-700 px-4 py-3 rounded-xl text-center font-medium">
+              <div className="mt-10 border-t border-gray-200 pt-10">
+                <h3 className="mb-6 text-2xl font-bold text-gray-900">Подходящи Семена</h3>
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+                  {[
+                    "Люцерна",
+                    "Детелина",
+                    "Житни треви",
+                    "Еспарзет",
+                    "Рапица",
+                    "Горчица",
+                    "Ливадни смески",
+                    "Покривни култури",
+                    "Ерозионни смески",
+                  ].map((seed, i) => (
+                    <div key={i} className="rounded-xl bg-amber-50 px-4 py-3 text-center font-medium text-amber-700">
                       {seed}
                     </div>
                   ))}
@@ -348,25 +348,21 @@ export default function SeedingServicePage() {
         </div>
 
         {/* CTA Section */}
-        <div className="py-20 bg-linear-to-r from-amber-600 to-orange-700">
+        <div className="bg-linear-to-r from-amber-600 to-orange-700 py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center text-white">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Имате Проект за Засяване?
-              </h2>
-              <p className="text-2xl text-amber-100 mb-10">
-                Обадете се за консултация и безплатна оценка на терена
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mx-auto max-w-4xl text-center text-white">
+              <h2 className="mb-6 text-4xl font-bold md:text-5xl">Имате Проект за Засяване?</h2>
+              <p className="mb-10 text-2xl text-amber-100">Обадете се за консултация и безплатна оценка на терена</p>
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <a
                   href="tel:+359876543546"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 hover:bg-amber-50 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-10 py-5 text-xl font-bold text-amber-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-amber-50"
                 >
                   📞 0876 543 546
                 </a>
                 <Link
                   href="/za-nas"
-                  className="inline-flex items-center justify-center gap-2 bg-amber-800 hover:bg-amber-900 text-white px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-800 px-10 py-5 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-amber-900"
                 >
                   Научи повече за нас
                 </Link>

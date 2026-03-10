@@ -13,7 +13,7 @@ export default function BlogCard({ article, lang = "bg" }: BlogCardProps) {
   return (
     <Link
       href={`/${lang}/blog/${article.slug}`}
-      className="group flex h-full flex-col transform overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:bg-gray-800"
+      className="group flex h-full transform flex-col overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:bg-gray-800"
     >
       <div className="relative h-48 w-full shrink-0 overflow-hidden">
         <Image
@@ -33,19 +33,19 @@ export default function BlogCard({ article, lang = "bg" }: BlogCardProps) {
 
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-3 flex w-full flex-wrap items-center gap-2 text-xs font-semibold">
-          <span className="bg-emerald-50 text-emerald-700 rounded-full px-3 py-1 dark:bg-emerald-500/15 dark:text-emerald-200">
+          <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-200">
             {new Date(article.date).toLocaleDateString("bg-BG")}
           </span>
-          <span className="bg-gray-100 text-gray-700 ml-auto rounded-full px-3 py-1 dark:bg-white/10 dark:text-gray-200">
+          <span className="ml-auto rounded-full bg-gray-100 px-3 py-1 text-gray-700 dark:bg-white/10 dark:text-gray-200">
             {article.readTime}
           </span>
         </div>
 
-        <h3 className="mb-3 min-h-[3.5rem] line-clamp-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-emerald-600 dark:text-white">
+        <h3 className="mb-3 line-clamp-2 min-h-14 text-xl font-bold text-gray-900 transition-colors group-hover:text-emerald-600 dark:text-white">
           {article.title}
         </h3>
 
-        <p className="mb-4 flex-1 line-clamp-3 text-gray-600 dark:text-gray-300">{article.description}</p>
+        <p className="mb-4 line-clamp-3 flex-1 text-gray-600 dark:text-gray-300">{article.description}</p>
 
         <div className="mt-auto flex items-center text-sm text-gray-500 dark:text-gray-400">
           <span>{article.author}</span>

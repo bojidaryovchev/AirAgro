@@ -1,8 +1,8 @@
 "use client";
 
 import BlogCard from "@/components/BlogCard";
-import { Article, Language } from "@/lib/articles";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Article, Language } from "@/lib/articles";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -55,8 +55,8 @@ export default function BlogSection({ articles }: BlogSectionProps) {
               spaceBetween: 30,
             },
           }}
-          className="!pb-20"
-          style={{ paddingBottom: '80px' }}
+          className="pb-20!"
+          style={{ paddingBottom: "80px" }}
         >
           {articles.map((article) => (
             <SwiperSlide key={article.slug} className="flex h-auto pb-4">

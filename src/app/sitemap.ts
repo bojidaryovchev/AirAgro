@@ -1,8 +1,8 @@
-import { MetadataRoute } from 'next';
-import { getAllArticleSlugs, getSupportedLanguages } from '@/lib/articles';
+import { getAllArticleSlugs, getSupportedLanguages } from "@/lib/articles";
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://airagro.bg';
+  const baseUrl = "https://airagro.bg";
   const languages = getSupportedLanguages();
 
   // Static pages (Bulgarian-only, no lang prefix)
@@ -10,31 +10,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/uslugi/pruskane`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/zasyavane`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/tseni`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/za-nas`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.7,
     },
   ];
@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogListingUrls: MetadataRoute.Sitemap = languages.map((lang) => ({
     url: `${baseUrl}/${lang}/blog`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
+    changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return slugs.map((slug) => ({
       url: `${baseUrl}/${lang}/blog/${slug}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
   });

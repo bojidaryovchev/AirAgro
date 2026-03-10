@@ -41,7 +41,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     if (detected !== language) {
       setLanguage(detected);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [typeof window !== "undefined" ? window.location.pathname : ""]);
 
   const t = (key: string): string => {

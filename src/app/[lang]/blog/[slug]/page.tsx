@@ -1,12 +1,18 @@
-import { getAllArticleSlugs, getArticleWithHtml, getRelatedArticles, getSupportedLanguages, Language } from "@/lib/articles";
+import BlogCarousel from "@/app/[lang]/blog/BlogCarousel";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import {
+  getAllArticleSlugs,
+  getArticleWithHtml,
+  getRelatedArticles,
+  getSupportedLanguages,
+  Language,
+} from "@/lib/articles";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import BlogCarousel from "@/app/[lang]/blog/BlogCarousel";
 
 interface Props {
   params: Promise<{ lang: string; slug: string }>;
@@ -70,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   try {
     const article = await getArticleWithHtml(slug, language);
-    const baseUrl = 'https://airagro.bg';
+    const baseUrl = "https://airagro.bg";
 
     return {
       title: `${article.title} | AirAgro Blog`,
@@ -213,7 +219,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Hero Image */}
-        <div className="relative mb-12 h-[500px] w-full md:h-[600px]">
+        <div className="relative mb-12 h-[500px] w-full md:h-150">
           <Image
             src={article.image}
             alt={`${article.title} - ${language === "bg" ? "Пръскане с дрон, агро дрон услуги България" : "Drone spraying, agro drone services Bulgaria"}`}
@@ -226,14 +232,14 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
           {/* Category Badge */}
-          <div className="absolute right-8 top-8 rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-lg">
+          <div className="absolute top-8 right-8 rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-lg">
             {article.category}
           </div>
 
           {/* Title Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+          <div className="absolute right-0 bottom-0 left-0 p-8 md:p-16">
             <div className="container mx-auto max-w-4xl">
-              <h1 className="mb-6 text-4xl font-bold leading-tight text-white drop-shadow-2xl md:text-5xl lg:text-6xl">
+              <h1 className="mb-6 text-4xl leading-tight font-bold text-white drop-shadow-2xl md:text-5xl lg:text-6xl">
                 {article.title}
               </h1>
               <div className="flex flex-wrap items-center gap-6 text-white/90">
@@ -267,7 +273,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mx-auto max-w-6xl">
             {/* Article Lead */}
             <div className="mb-12">
-              <p className="text-2xl font-light leading-relaxed text-gray-700">{article.description}</p>
+              <p className="text-2xl leading-relaxed font-light text-gray-700">{article.description}</p>
             </div>
 
             {/* Tags */}
@@ -286,7 +292,7 @@ export default async function BlogPostPage({ params }: Props) {
             />
 
             {/* CTA Section */}
-            <div className="mb-12 mt-16 rounded-2xl bg-linear-to-r from-emerald-500 to-emerald-600 p-8 text-center text-white shadow-xl md:p-12">
+            <div className="mt-16 mb-12 rounded-2xl bg-linear-to-r from-emerald-500 to-emerald-600 p-8 text-center text-white shadow-xl md:p-12">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">{t.cta.title}</h2>
               <p className="mb-8 text-xl opacity-90">{t.cta.subtitle}</p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">

@@ -1,8 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { markdownToHtml } from "./markdown";
 import { getBlurDataURL } from "./blur";
+import { markdownToHtml } from "./markdown";
 
 const articlesDirectory = path.join(process.cwd(), "content/articles");
 
@@ -32,11 +32,11 @@ function getLanguageDirectory(lang: Language): string {
 
 export function getAllArticleSlugs(lang: Language = "bg"): string[] {
   const langDir = getLanguageDirectory(lang);
-  
+
   if (!fs.existsSync(langDir)) {
     return [];
   }
-  
+
   const fileNames = fs.readdirSync(langDir);
   return fileNames.filter((fileName) => fileName.endsWith(".md")).map((fileName) => fileName.replace(/\.md$/, ""));
 }
@@ -81,16 +81,16 @@ export function getRelatedArticles(currentSlug: string, limit: number = 6, lang:
   // Score articles based on matching tags and category
   const scoredArticles = allArticles.map((article) => {
     let score = 0;
-    
+
     // Same category gets higher score
     if (article.category === currentArticle.category) {
       score += 10;
     }
-    
+
     // Count matching tags
     const matchingTags = article.tags.filter((tag) => currentArticle.tags.includes(tag));
     score += matchingTags.length * 5;
-    
+
     return { article, score };
   });
 

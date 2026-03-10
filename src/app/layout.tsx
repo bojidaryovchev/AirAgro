@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "NDVI анализ",
     "картографиране с дрон",
     "селскостопански дрон",
-    "дрон за земеделие"
+    "дрон за земеделие",
   ],
   authors: [{ name: "AirAgro" }],
   creator: "AirAgro",
@@ -73,7 +73,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Пръскане с Дрон DJI Agras | AirAgro България",
-    description: "Професионално пръскане, засяване и торене с агро дрон. RTK точност, спестяване на ресурси. Над 25,000 дка опит.",
+    description:
+      "Професионално пръскане, засяване и торене с агро дрон. RTK точност, спестяване на ресурси. Над 25,000 дка опит.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {

@@ -20,7 +20,7 @@ export function FadeIn({ delay = 0, children, className = "" }: FadeInProps) {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (ref.current) {

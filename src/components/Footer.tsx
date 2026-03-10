@@ -40,8 +40,8 @@ const Footer = () => {
         </div>
 
         <div className="border-background/10 text-background/50 mt-8 border-t pt-8 text-center text-sm">
-          <p className="text-background/70 mb-2 font-medium">📢 Обслужваме цяла България – реакция за 24-48 часа</p>
-          © {new Date().getFullYear()} {t("footer.copyright")}
+          <p className="text-background/70 mb-2 font-medium">📢 Обслужваме цяла България – реакция за 24-48 часа</p>©{" "}
+          {new Date().getFullYear()} {t("footer.copyright")}
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
-import { Metadata } from "next";
-import { getAllArticles, getSupportedLanguages, Language } from "@/lib/articles";
 import BlogCard from "@/components/BlogCard";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { getAllArticles, getSupportedLanguages, Language } from "@/lib/articles";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 interface Props {

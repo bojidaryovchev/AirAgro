@@ -1,34 +1,36 @@
-import { Metadata } from 'next';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import FloatingCallButton from '@/components/FloatingCallButton';
-import { Droplet, Target, TrendingUp, Clock, Shield, Leaf } from 'lucide-react';
-import Link from 'next/link';
+import FloatingCallButton from "@/components/FloatingCallButton";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { Clock, Droplet, Leaf, Shield, Target, TrendingUp } from "lucide-react";
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Пръскане с Дрон DJI Agras T50 | Професионална Услуга | AirAgro',
-  description: 'Професионално пръскане на земеделски култури с агро дрон. RTK прецизност ±10 см. Спестете 30% препарати. Инсектициди, хербициди, фунгициди, листно торене. Цяла България. ☎ 0876-543-546',
+  title: "Пръскане с Дрон DJI Agras T50 | Професионална Услуга | AirAgro",
+  description:
+    "Професионално пръскане на земеделски култури с агро дрон. RTK прецизност ±10 см. Спестете 30% препарати. Инсектициди, хербициди, фунгициди, листно торене. Цяла България. ☎ 0876-543-546",
   keywords: [
-    'пръскане с дрон',
-    'агро дрон пръскане',
-    'земеделски дрон услуга',
-    'DJI Agras пръскане',
-    'инсектицидно пръскане',
-    'хербицидно пръскане',
-    'фунгицидно пръскане',
-    'листно торене с дрон',
-    'RTK пръскане',
-    'прецизно пръскане'
+    "пръскане с дрон",
+    "агро дрон пръскане",
+    "земеделски дрон услуга",
+    "DJI Agras пръскане",
+    "инсектицидно пръскане",
+    "хербицидно пръскане",
+    "фунгицидно пръскане",
+    "листно торене с дрон",
+    "RTK пръскане",
+    "прецизно пръскане",
   ],
   openGraph: {
-    title: 'Пръскане с Дрон | Професионална Услуга в Цяла България',
-    description: 'Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване. Над 25,000 дка опит.',
-    url: 'https://airagro.bg/uslugi/pruskane',
-    type: 'website'
+    title: "Пръскане с Дрон | Професионална Услуга в Цяла България",
+    description:
+      "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване. Над 25,000 дка опит.",
+    url: "https://airagro.bg/uslugi/pruskane",
+    type: "website",
   },
   alternates: {
-    canonical: 'https://airagro.bg/uslugi/pruskane'
-  }
+    canonical: "https://airagro.bg/uslugi/pruskane",
+  },
 };
 
 export default function SprayingServicePage() {
@@ -36,163 +38,157 @@ export default function SprayingServicePage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Пръскане с агро дрон",
-    "provider": {
+    serviceType: "Пръскане с агро дрон",
+    provider: {
       "@type": "LocalBusiness",
-      "name": "AirAgro",
-      "telephone": "+359-876-543-546",
-      "url": "https://airagro.bg",
-      "logo": "https://airagro.bg/air-agro-logo.png",
-      "image": "https://airagro.bg/air-agro-logo.png"
+      name: "AirAgro",
+      telephone: "+359-876-543-546",
+      url: "https://airagro.bg",
+      logo: "https://airagro.bg/air-agro-logo.png",
+      image: "https://airagro.bg/air-agro-logo.png",
     },
-    "areaServed": {
+    areaServed: {
       "@type": "Country",
-      "name": "Bulgaria"
+      name: "Bulgaria",
     },
-    "description": "Професионално пръскане на земеделски култури с DJI Agras дронове. Инсектициди, хербициди, фунгициди и листно торене с RTK прецизност.",
-    "image": "https://airagro.bg/air-agro-logo.png",
-    "url": "https://airagro.bg/uslugi/pruskane",
-    "hasOfferCatalog": {
+    description:
+      "Професионално пръскане на земеделски култури с DJI Agras дронове. Инсектициди, хербициди, фунгициди и листно торене с RTK прецизност.",
+    image: "https://airagro.bg/air-agro-logo.png",
+    url: "https://airagro.bg/uslugi/pruskane",
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
-      "name": "Видове пръскане с дрон",
-      "itemListElement": [
+      name: "Видове пръскане с дрон",
+      itemListElement: [
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Инсектицидно пръскане" }
+          itemOffered: { "@type": "Service", name: "Инсектицидно пръскане" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Хербицидно пръскане" }
+          itemOffered: { "@type": "Service", name: "Хербицидно пръскане" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Фунгицидно пръскане" }
+          itemOffered: { "@type": "Service", name: "Фунгицидно пръскане" },
         },
         {
           "@type": "Offer",
-          "itemOffered": { "@type": "Service", "name": "Листно торене" }
-        }
-      ]
+          itemOffered: { "@type": "Service", name: "Листно торене" },
+        },
+      ],
     },
-    "offers": {
+    offers: {
       "@type": "Offer",
-      "priceCurrency": "BGN",
-      "availability": "https://schema.org/InStock"
+      priceCurrency: "BGN",
+      availability: "https://schema.org/InStock",
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "47"
-    }
+      ratingValue: "5.0",
+      reviewCount: "47",
+    },
   };
 
   const benefits = [
     {
       icon: Target,
-      title: 'RTK Прецизност',
-      description: 'Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.'
+      title: "RTK Прецизност",
+      description: "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
     },
     {
       icon: Droplet,
-      title: 'Спестяване на Ресурси',
-      description: '30-40% по-малко препарати и вода благодарение на ултрамалообемната технология.'
+      title: "Спестяване на Ресурси",
+      description: "30-40% по-малко препарати и вода благодарение на ултрамалообемната технология.",
     },
     {
       icon: Leaf,
-      title: 'Без Утъпкване',
-      description: 'Не увреждаме културата и не уплътняваме почвата - летим над полето.'
+      title: "Без Утъпкване",
+      description: "Не увреждаме културата и не уплътняваме почвата - летим над полето.",
     },
     {
       icon: Clock,
-      title: 'Бързина',
-      description: 'До 20-28 ха/час (200-280 дка). Обработваме 100 дка за 30-45 минути.'
+      title: "Бързина",
+      description: "До 20-28 ха/час (200-280 дка). Обработваме 100 дка за 30-45 минути.",
     },
     {
       icon: TrendingUp,
-      title: 'Високи Култури',
-      description: 'Работим над царевица, слънчоглед до 3-4 м височина. Достигаме всяка зона.'
+      title: "Високи Култури",
+      description: "Работим над царевица, слънчоглед до 3-4 м височина. Достигаме всяка зона.",
     },
     {
       icon: Shield,
-      title: 'Влажна Почва',
-      description: 'Третираме и при кална/мека почва когато тракторът не може да влезе.'
-    }
+      title: "Влажна Почва",
+      description: "Третираме и при кална/мека почва когато тракторът не може да влезе.",
+    },
   ];
 
   const treatments = [
     {
-      title: 'Инсектицидно Пръскане',
-      icon: '🐛',
-      description: 'Ефективен контрол на вредители - листни въшки, гъсеници, трипс, акари',
-      crops: ['Пшеница', 'Царевица', 'Слънчоглед', 'Рапица', 'Соя']
+      title: "Инсектицидно Пръскане",
+      icon: "🐛",
+      description: "Ефективен контрол на вредители - листни въшки, гъсеници, трипс, акари",
+      crops: ["Пшеница", "Царевица", "Слънчоглед", "Рапица", "Соя"],
     },
     {
-      title: 'Хербицидно Пръскане',
-      icon: '🌱',
-      description: 'Защита срещу плевели с прецизно приложение и минимален препаратен стрес',
-      crops: ['Всички зърнени', 'Технически култури', 'Многогодишни']
+      title: "Хербицидно Пръскане",
+      icon: "🌱",
+      description: "Защита срещу плевели с прецизно приложение и минимален препаратен стрес",
+      crops: ["Всички зърнени", "Технически култури", "Многогодишни"],
     },
     {
-      title: 'Фунгицидно Пръскане',
-      icon: '🍄',
-      description: 'Контрол на гъбични заболявания с достигане на долната страна на листата',
-      crops: ['Пшеница', 'Лозя', 'Овошки', 'Зеленчуци']
+      title: "Фунгицидно Пръскане",
+      icon: "🍄",
+      description: "Контрол на гъбични заболявания с достигане на долната страна на листата",
+      crops: ["Пшеница", "Лозя", "Овошки", "Зеленчуци"],
     },
     {
-      title: 'Листно Торене',
-      icon: '💧',
-      description: 'Директно усвояване на хранителни вещества през листната маса',
-      crops: ['Всички култури', 'Оранжерийни', 'Специални']
-    }
+      title: "Листно Торене",
+      icon: "💧",
+      description: "Директно усвояване на хранителни вещества през листната маса",
+      crops: ["Всички култури", "Оранжерийни", "Специални"],
+    },
   ];
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Начало", "item": "https://airagro.bg" },
-      { "@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://airagro.bg/uslugi/pruskane" },
-      { "@type": "ListItem", "position": 3, "name": "Пръскане с дрон", "item": "https://airagro.bg/uslugi/pruskane" }
-    ]
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Начало", item: "https://airagro.bg" },
+      { "@type": "ListItem", position: 2, name: "Услуги", item: "https://airagro.bg/uslugi/pruskane" },
+      { "@type": "ListItem", position: 3, name: "Пръскане с дрон", item: "https://airagro.bg/uslugi/pruskane" },
+    ],
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
       <Navbar />
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section */}
-        <div className="relative h-[600px] bg-linear-to-br from-emerald-600 via-emerald-700 to-emerald-800">
+        <div className="relative h-150 bg-linear-to-br from-emerald-600 via-emerald-700 to-emerald-800">
           <div className="absolute inset-0 bg-[url('/drone-field-pattern.svg')] opacity-10" />
-          <div className="relative container mx-auto px-4 h-full flex items-center">
+          <div className="relative container mx-auto flex h-full items-center px-4">
             <div className="max-w-4xl text-white">
-              <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+              <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm">
                 <span className="text-sm font-semibold">🚁 Водеща Услуга</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Пръскане с Агро Дрон
-              </h1>
-              <p className="text-2xl md:text-3xl text-emerald-100 leading-relaxed mb-8">
-                Професионално третиране на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси, максимална ефективност.
+              <h1 className="mb-6 text-5xl leading-tight font-bold md:text-7xl">Пръскане с Агро Дрон</h1>
+              <p className="mb-8 text-2xl leading-relaxed text-emerald-100 md:text-3xl">
+                Професионално третиране на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси,
+                максимална ефективност.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="tel:+359876543546"
-                  className="inline-flex items-center gap-2 bg-white text-emerald-600 hover:bg-emerald-50 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
                 >
                   📞 Обади се сега
                 </a>
                 <Link
                   href="/tseni"
-                  className="inline-flex items-center gap-2 bg-emerald-800 hover:bg-emerald-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center gap-2 rounded-full bg-emerald-800 px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-emerald-900"
                 >
                   Виж цени
                 </Link>
@@ -202,27 +198,27 @@ export default function SprayingServicePage() {
         </div>
 
         {/* Key Stats Bar */}
-        <div className="bg-gray-900 text-white py-8">
+        <div className="bg-gray-900 py-8 text-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+            <div className="grid grid-cols-2 gap-6 text-center md:grid-cols-5">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">±10 см</div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-4xl">±10 см</div>
                 <div className="text-gray-300">RTK Точност</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">1000 дка</div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-4xl">1000 дка</div>
                 <div className="text-gray-300">На ден</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">30-40%</div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-4xl">30-40%</div>
                 <div className="text-gray-300">По-малко препарати</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">2 часа</div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-4xl">2 часа</div>
                 <div className="text-gray-300">Сухо време след</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">5-35°C</div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-4xl">5-35°C</div>
                 <div className="text-gray-300">Работна температура</div>
               </div>
             </div>
@@ -232,23 +228,24 @@ export default function SprayingServicePage() {
         {/* Benefits Section */}
         <div className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Защо Пръскане с Дрон?
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Защо Пръскане с Дрон?</h2>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600">
                 Модерната технология, която променя начина на работа в земеделието
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {benefits.map((benefit, index) => (
-                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-6">
-                    <benefit.icon className="w-8 h-8 text-emerald-600" />
+                <div
+                  key={index}
+                  className="rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+                    <benefit.icon className="h-8 w-8 text-emerald-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">{benefit.title}</h3>
+                  <p className="leading-relaxed text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -256,28 +253,29 @@ export default function SprayingServicePage() {
         </div>
 
         {/* Treatments Section */}
-        <div className="py-20 bg-linear-to-b from-emerald-50 to-white">
+        <div className="bg-linear-to-b from-emerald-50 to-white py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Видове Третиране
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Видове Третиране</h2>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600">
                 Пълен спектър от растителнозащитни и хранителни третирания
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
               {treatments.map((treatment, index) => (
-                <div key={index} className="bg-white rounded-3xl p-8 shadow-xl">
-                  <div className="text-5xl mb-4">{treatment.icon}</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{treatment.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{treatment.description}</p>
+                <div key={index} className="rounded-3xl bg-white p-8 shadow-xl">
+                  <div className="mb-4 text-5xl">{treatment.icon}</div>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">{treatment.title}</h3>
+                  <p className="mb-6 leading-relaxed text-gray-600">{treatment.description}</p>
                   <div className="border-t border-gray-200 pt-6">
-                    <div className="text-sm font-semibold text-gray-500 mb-3">ПОДХОДЯЩИ КУЛТУРИ:</div>
+                    <div className="mb-3 text-sm font-semibold text-gray-500">ПОДХОДЯЩИ КУЛТУРИ:</div>
                     <div className="flex flex-wrap gap-2">
                       {treatment.crops.map((crop, i) => (
-                        <span key={i} className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">
+                        <span
+                          key={i}
+                          className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-700"
+                        >
                           {crop}
                         </span>
                       ))}
@@ -292,29 +290,51 @@ export default function SprayingServicePage() {
         {/* How It Works */}
         <div className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Как Работи Процесът?
-              </h2>
+            <div className="mb-16 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Как Работи Процесът?</h2>
             </div>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="mx-auto max-w-4xl">
               <div className="space-y-8">
                 {[
-                  { step: '1', title: 'Консултация', desc: 'Обаждате се или изпращате запитване. Обсъждаме площта, културата, фаза на развитие и тип третиране.' },
-                  { step: '2', title: 'Оферта', desc: 'Получавате индивидуална оферта за 2-24 часа с точна цена и срокове за изпълнение.' },
-                  { step: '3', title: 'Планиране', desc: 'Уточняваме дата според метеорологичните условия и вашата агрономическа програма.' },
-                  { step: '4', title: 'Подготовка', desc: 'Вие осигурявате препаратите според етикета. Ние ги разреждаме и зареждаме дрона.' },
-                  { step: '5', title: 'Пръскане', desc: 'Изпълняваме мисията с RTK прецизност. GPS записва всеки сантиметър от обработката.' },
-                  { step: '6', title: 'Документация', desc: 'Получавате KML/KMZ файл с GPS запис и отчет за обработената площ.' }
+                  {
+                    step: "1",
+                    title: "Консултация",
+                    desc: "Обаждате се или изпращате запитване. Обсъждаме площта, културата, фаза на развитие и тип третиране.",
+                  },
+                  {
+                    step: "2",
+                    title: "Оферта",
+                    desc: "Получавате индивидуална оферта за 2-24 часа с точна цена и срокове за изпълнение.",
+                  },
+                  {
+                    step: "3",
+                    title: "Планиране",
+                    desc: "Уточняваме дата според метеорологичните условия и вашата агрономическа програма.",
+                  },
+                  {
+                    step: "4",
+                    title: "Подготовка",
+                    desc: "Вие осигурявате препаратите според етикета. Ние ги разреждаме и зареждаме дрона.",
+                  },
+                  {
+                    step: "5",
+                    title: "Пръскане",
+                    desc: "Изпълняваме мисията с RTK прецизност. GPS записва всеки сантиметър от обработката.",
+                  },
+                  {
+                    step: "6",
+                    title: "Документация",
+                    desc: "Получавате KML/KMZ файл с GPS запис и отчет за обработената площ.",
+                  },
                 ].map((item, index) => (
-                  <div key={index} className="flex gap-6 items-start">
-                    <div className="flex-shrink-0 w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                  <div key={index} className="flex items-start gap-6">
+                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-2xl font-bold text-white shadow-lg">
                       {item.step}
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                      <p className="text-gray-600 leading-relaxed text-lg">{item.desc}</p>
+                      <h3 className="mb-2 text-2xl font-bold text-gray-900">{item.title}</h3>
+                      <p className="text-lg leading-relaxed text-gray-600">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -324,25 +344,23 @@ export default function SprayingServicePage() {
         </div>
 
         {/* CTA Section */}
-        <div className="py-20 bg-linear-to-r from-emerald-600 to-emerald-700">
+        <div className="bg-linear-to-r from-emerald-600 to-emerald-700 py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center text-white">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Готови за Професионално Пръскане?
-              </h2>
-              <p className="text-2xl text-emerald-100 mb-10">
+            <div className="mx-auto max-w-4xl text-center text-white">
+              <h2 className="mb-6 text-4xl font-bold md:text-5xl">Готови за Професионално Пръскане?</h2>
+              <p className="mb-10 text-2xl text-emerald-100">
                 Обадете се сега за безплатна консултация и оферта за 24 часа
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <a
                   href="tel:+359876543546"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 hover:bg-emerald-50 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105 shadow-2xl"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-10 py-5 text-xl font-bold text-emerald-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
                 >
                   📞 0876 543 546
                 </a>
                 <Link
                   href="/tseni"
-                  className="inline-flex items-center justify-center gap-2 bg-emerald-800 hover:bg-emerald-900 text-white px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-800 px-10 py-5 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-emerald-900"
                 >
                   Виж Цени
                 </Link>
