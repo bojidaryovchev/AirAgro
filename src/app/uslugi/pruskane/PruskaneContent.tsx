@@ -117,7 +117,7 @@ export default function PruskaneContent() {
   return (
     <>
       {/* ── Hero ── */}
-      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden">
+      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden pt-20">
         <VideoCanvas
           src="/videos/drone-spraying.mp4"
           poster="/drone-spraying-poster-blurred.jpg"
