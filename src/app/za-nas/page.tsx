@@ -1,7 +1,7 @@
 import FloatingCallButton from "@/components/FloatingCallButton";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { Award, Heart, Shield, Target, TrendingUp, Users } from "lucide-react";
+import { Award, Heart, Phone, Shield, Target, TrendingUp, Users } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -323,7 +323,8 @@ export default function AboutPage() {
                 href="tel:+359884242406"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-600 transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
               >
-                📞 0884 242 406
+                <Phone className="h-5 w-5" />
+                0884 242 406
               </a>
             </div>
           </div>

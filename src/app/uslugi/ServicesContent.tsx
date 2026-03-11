@@ -254,7 +254,7 @@ export default function ServicesContent() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mb-2 text-4xl font-bold text-emerald-400 md:text-5xl">
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">
                   {stat.value}
                 </div>
                 <p className="text-sm text-gray-300">{stat.label}</p>
@@ -289,7 +289,7 @@ export default function ServicesContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                className="group relative flex flex-col overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               >
                 {/* Icon */}
                 <div className="mb-6">
@@ -306,7 +306,7 @@ export default function ServicesContent() {
                 </p>
 
                 {/* Feature checklist */}
-                <div className="mb-6 border-t border-gray-100 pt-5">
+                <div className="mb-6 flex-1 border-t border-gray-100 pt-5">
                   <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
                     Включва:
                   </div>
@@ -407,13 +407,13 @@ export default function ServicesContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
-                className="flex items-start gap-6"
+                className="flex items-start gap-4 sm:gap-6"
               >
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-2xl font-bold text-white shadow-lg">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-xl font-bold text-white shadow-lg sm:h-16 sm:w-16 sm:text-2xl">
                   {step.number}
                 </div>
                 <div className="pt-1">
-                  <h4 className="mb-2 text-xl font-bold text-gray-900 md:text-2xl">
+                  <h4 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">
                     {step.title}
                   </h4>
                   <p className="text-lg leading-relaxed text-gray-600">
