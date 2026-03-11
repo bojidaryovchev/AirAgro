@@ -130,7 +130,7 @@ export default function SprayingServicePage() {
     {
       icon: Clock,
       title: "Бързина",
-      description: "До 20-28 ха/час (200-280 дка). Обработваме 100 дка за 30-45 минути.",
+      description: "До 20-28 ха/час (до 200 дка ефективно). Обработваме 100 дка за 45-60 минути с презареждане.",
     },
     {
       icon: TrendingUp,

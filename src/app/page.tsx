@@ -95,7 +95,7 @@ export default function Home() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
+      ratingValue: "4.9",
       reviewCount: "47",
     },
     contactPoint: {

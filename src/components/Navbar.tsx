@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [scrollThreshold]);
 
   const navLinks = [
-    { label: t("nav.services"), href: "#services" },
+    { label: t("nav.services"), href: "/uslugi" },
     { label: t("nav.features"), href: "#features" },
     { label: t("nav.benefits"), href: "#benefits" },
     { label: t("nav.blog"), href: "/blog" },

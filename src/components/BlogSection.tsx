@@ -37,10 +37,10 @@ export default function BlogSection({ articles }: BlogSectionProps) {
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 5000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             640: {
               slidesPerView: 1,
