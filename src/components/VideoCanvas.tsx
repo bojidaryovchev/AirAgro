@@ -142,7 +142,7 @@ const VideoCanvas = ({ src, poster, className = "", style, fps = 24 }: VideoCanv
           alt=""
           fill
           priority
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
           style={{
             objectFit: "cover",
             opacity: isReady ? 0 : 1,

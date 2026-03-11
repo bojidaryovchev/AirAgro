@@ -97,10 +97,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bg" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        {/* Preload hero video with high priority */}
-        <link rel="preload" href="/videos/drone-bg.webm" as="video" type="video/webm" fetchPriority="high" />
-      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning>
         <LanguageProvider>
           {children}

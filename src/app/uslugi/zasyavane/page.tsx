@@ -176,8 +176,7 @@ export default function SeedingServicePage() {
       <div className="min-h-screen bg-white pt-20">
         {/* Hero Section */}
         <div className="relative h-150 bg-linear-to-br from-amber-600 via-amber-700 to-orange-800">
-          <div className="absolute inset-0 bg-[url('/drone-field-pattern.svg')] opacity-10" />
-          <div className="relative container mx-auto flex h-full items-center px-4">
+          <div className="container mx-auto flex h-full items-center px-4">
             <div className="max-w-4xl text-white">
               <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm">
                 <span className="text-sm font-semibold">🌱 Иновативна Услуга</span>

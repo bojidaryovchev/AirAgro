@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -69,7 +68,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/air-agro-logo.png" alt="AirAgro" width={120} height={80} className="h-20 w-auto shrink-0" />
+          <img src="/air-agro-logo.png" alt="AirAgro" className="h-20 w-auto shrink-0" />
         </Link>
 
         {/* Desktop Navigation */}
