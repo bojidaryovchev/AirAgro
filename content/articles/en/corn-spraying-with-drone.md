@@ -111,6 +111,7 @@ Regular crop inspection helps with early identification of problems. When you no
 ### Consider Meteorological Conditions
 
 Optimal conditions for corn drone spraying are:
+
 - Temperature: 15–28°C
 - Wind: up to 3–4 m/s
 - Humidity: above 50%

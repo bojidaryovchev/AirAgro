@@ -137,14 +137,14 @@ For detailed pricing information, visit our [drone spraying price](/en/blog/dron
 
 ## Seasonal Calendar for Pazardzhik Province
 
-| Period        | Crop                  | Treatment                         |
-| ------------- | --------------------- | --------------------------------- |
-| March         | Orchards              | Winter spray, fungicides          |
-| April–May     | Strawberries, vegetables | Insecticides, fungicides       |
-| May–June      | Tomatoes, peppers     | Fungicides, foliar feeding        |
-| June–July     | Apples, peaches       | Insecticides, fungicides          |
-| July–August   | All crops             | Comprehensive treatments          |
-| September     | Vineyards, late vegetables | Fungicides                   |
+| Period      | Crop                       | Treatment                  |
+| ----------- | -------------------------- | -------------------------- |
+| March       | Orchards                   | Winter spray, fungicides   |
+| April–May   | Strawberries, vegetables   | Insecticides, fungicides   |
+| May–June    | Tomatoes, peppers          | Fungicides, foliar feeding |
+| June–July   | Apples, peaches            | Insecticides, fungicides   |
+| July–August | All crops                  | Comprehensive treatments   |
+| September   | Vineyards, late vegetables | Fungicides                 |
 
 ## How to Request Drone Spraying in Pazardzhik
 

@@ -6,7 +6,14 @@ date: "2025-12-18"
 image: "/images/blog/predimstva-na-dron-v-zemedelieto.png"
 slug: "benefits-of-drone-in-agriculture"
 category: "Analysis"
-tags: ["drone benefits agriculture", "agri drone benefits", "drone spraying advantages", "modern agriculture", "drone technologies"]
+tags:
+  [
+    "drone benefits agriculture",
+    "agri drone benefits",
+    "drone spraying advantages",
+    "modern agriculture",
+    "drone technologies",
+  ]
 readTime: "7 min"
 ---
 
@@ -41,6 +48,7 @@ For comparison, a tractor with a sprayer treats 200–400 decares per day. The d
 Tractor sprayers work with 15–30 litres of water per decare. The drone uses only **1–2 litres per decare** – with concentrated solutions and precision nozzles that provide the optimal droplet size.
 
 What does this mean in practice? For treatment of 1,000 decares:
+
 - **Tractor:** 15,000–30,000 litres of water, water tanker, pump, logistics
 - **Drone:** 1,000–2,000 litres of water, ordinary cans
 
@@ -78,6 +86,7 @@ GPS precision is the foundation of precision agriculture and is significantly be
 ### 9. Environmental Benefits – Cleaner Agriculture
 
 The environmental benefits of drones are multi-layered:
+
 - **Less chemicals** in the environment thanks to precision dosing
 - **Reduced drift** – less contamination of neighbouring areas and water sources
 - **No soil compaction** – tractor ruts disrupt soil structure

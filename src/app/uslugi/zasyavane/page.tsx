@@ -21,8 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Засяване с Дрон | Рехабилитация & Рекултивация",
-    description:
-      "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
+    description: "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
     url: "https://airagro.bg/uslugi/zasyavane",
     type: "website",
     images: [
@@ -38,8 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Засяване с Дрон | AirAgro България",
-    description:
-      "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
+    description: "Професионално засяване с агро дрон за ливади, откоси и промишлени терени. Достъп до недостъпни зони.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {

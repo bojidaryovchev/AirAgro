@@ -6,7 +6,8 @@ date: "2025-11-15"
 image: "/images/blog/koga-se-pruska-slanchoglad.png"
 slug: "when-to-spray-sunflower"
 category: "Tips"
-tags: ["when to spray sunflower", "sunflower spraying", "sunflower crop protection", "herbicides sunflower", "agriculture"]
+tags:
+  ["when to spray sunflower", "sunflower spraying", "sunflower crop protection", "herbicides sunflower", "agriculture"]
 readTime: "7 min"
 ---
 
@@ -46,6 +47,7 @@ Soil herbicides require **moisture in the upper soil layer** to form a herbicida
 With conventional hybrids the opportunities for post-emergence treatment are **limited**. Sunflower is a broad-leaved crop and most broad-leaved herbicides damage it.
 
 **What can be applied:**
+
 - Graminicide (anti-grass) herbicides – against wild oat, barnyard grass, panic grass species
 - Inter-row cultivation – mechanical control
 
@@ -56,11 +58,13 @@ With conventional hybrids the opportunities for post-emergence treatment are **l
 The situation is completely different with resistant hybrids:
 
 **Clearfield (IMI-resistant):**
+
 - Herbicide: imazamox-based products
 - Phase: BBCH 12–18 (2–8 leaves)
 - Controls broad-leaved AND grass weeds
 
 **ExpressSun (SU-resistant):**
+
 - Herbicide: tribenuron-methyl
 - Phase: BBCH 12–16 (2–6 leaves)
 - Mainly against broad-leaved weeds
@@ -82,11 +86,13 @@ Additionally: grey rot (Botrytis) and Alternaria can also be a problem in wet ye
 ### When to Apply Fungicide on Sunflower
 
 **First fungicide treatment:**
+
 - Phase BBCH 51–55 (beginning of bud formation)
 - Usually **end of June – beginning of July**
 - Target: protection against Phomopsis and early Sclerotinia
 
 **Second fungicide treatment:**
+
 - Phase BBCH 61–65 (beginning of flowering)
 - Usually **July**
 - Target: protection of the capitulum against Sclerotinia and grey rot
@@ -96,6 +102,7 @@ In wet and warm summers (increasingly common in Bulgaria) the second treatment i
 ### Why the Drone Is the Ideal Solution for Fungicide Spraying
 
 At the time of fungicide treatment sunflower is **120–180 cm tall**. Ground machinery at this stage:
+
 - Breaks plants when entering the stand
 - Does not provide adequate coverage of the upper part of the capitulum
 - Creates ruts in wet soil (and fungicides are most often applied in wet weather)
@@ -119,13 +126,13 @@ Insecticide spraying of a tall stand is yet another situation where the drone be
 
 ## Practical Sunflower Spraying Calendar for Bulgaria
 
-| Period                    | Treatment              | Product/Type                                | Priority                       |
-| ------------------------- | ---------------------- | ------------------------------------------- | ------------------------------ |
-| April (after sowing)      | Soil herbicide         | Acetochlor, S-metolachlor                   | High                           |
-| May (2–6 leaves)          | Post-emergence herbicide| IMI/SU herbicides (resistant hybrids)      | High                           |
-| End of June               | Fungicide No.1         | Against Phomopsis/Sclerotinia               | Medium–high                    |
-| July (flowering)          | Fungicide No.2         | Against Sclerotinia                         | Very high (in wet conditions)  |
-| July                      | Insecticide            | Against moth/aphids                         | At discretion                  |
+| Period               | Treatment                | Product/Type                          | Priority                      |
+| -------------------- | ------------------------ | ------------------------------------- | ----------------------------- |
+| April (after sowing) | Soil herbicide           | Acetochlor, S-metolachlor             | High                          |
+| May (2–6 leaves)     | Post-emergence herbicide | IMI/SU herbicides (resistant hybrids) | High                          |
+| End of June          | Fungicide No.1           | Against Phomopsis/Sclerotinia         | Medium–high                   |
+| July (flowering)     | Fungicide No.2           | Against Sclerotinia                   | Very high (in wet conditions) |
+| July                 | Insecticide              | Against moth/aphids                   | At discretion                 |
 
 ## Specifics for Bulgarian Conditions
 

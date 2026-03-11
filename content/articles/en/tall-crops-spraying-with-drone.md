@@ -39,6 +39,7 @@ Unlike ground sprayers, the drone does not touch a single stalk. The result is 1
 Corn grows fast and already at the 6–8 leaf stage (BBCH 16–18) reaches a height where the tractor starts causing damage. In the tasselling phase (BBCH 51–59) ground treatment is practically impossible without significant losses.
 
 Typical drone treatments for corn:
+
 - **Herbicide spraying** at the 4–8 leaf stage – [see details on herbicide spraying of corn](/en/blog/herbicide-spraying-corn)
 - **Fungicide treatment** before and during tasselling
 - **Insecticide spraying** against European corn borer
@@ -51,6 +52,7 @@ More about the full cycle of [corn drone spraying](/en/blog/corn-spraying-with-d
 Sunflower is especially vulnerable to trampling, as its stalks break easily. After stage BBCH 30 (above 80 cm) treatment with ground machinery carries serious risk. Fungicide protection against white rot (Sclerotinia) is critical precisely at the start of flowering – a period when sunflower is already over 1.2 m tall.
 
 With a drone we cover:
+
 - **Fungicide spraying** at early flowering (BBCH 61–65)
 - **Insecticide treatment** against sunflower moth
 - **Desiccation** before harvest
@@ -64,6 +66,7 @@ Rapeseed reaches 1–1.5 m during flowering and is extremely sensitive to mechan
 ### Other Tall Crops
 
 Tall crops drone spraying is also applicable for:
+
 - **High-trained vineyards** – drone sprays from above without damaging the vine shoots
 - **Orchards** – effective crown coverage
 - **Tall vegetable crops** – staked tomatoes, late-stage peppers
@@ -72,14 +75,14 @@ Tall crops drone spraying is also applicable for:
 
 At AirAgro we use the **DJI Agras T50** – the leading agricultural drone on the market. Here is why it is ideal for tall crops:
 
-| Characteristic       | Value                            |
-| -------------------- | -------------------------------- |
-| Tank                 | 40 litres                        |
-| Working width        | 6–7.5 m effective strip          |
-| Productivity         | up to 200 dka/hour               |
-| Flight height        | adjustable, 2–3 m above crop     |
-| Navigation           | RTK accuracy ±2 cm               |
-| Spraying system      | 8 nozzles with adjustable flow   |
+| Characteristic  | Value                          |
+| --------------- | ------------------------------ |
+| Tank            | 40 litres                      |
+| Working width   | 6–7.5 m effective strip        |
+| Productivity    | up to 200 dka/hour             |
+| Flight height   | adjustable, 2–3 m above crop   |
+| Navigation      | RTK accuracy ±2 cm             |
+| Spraying system | 8 nozzles with adjustable flow |
 
 The T50 has a **distance-measuring radar** to the crop, meaning it automatically adapts its height to the terrain and plant height. Thus coverage remains uniform even on uneven relief – a common situation in the areas around Plovdiv and Stara Zagora.
 
@@ -87,13 +90,13 @@ The Vortex technology of the T50 generates an airflow at speeds up to **8 m/s**,
 
 ## When to Order Drone Spraying – Seasonal Calendar
 
-| Period              | Crop                          | Treatment                           |
-| ------------------- | ----------------------------- | ----------------------------------- |
-| April – May         | Rapeseed (flowering)          | Fungicide, insecticide              |
-| May – June          | Corn (4–8 leaf)               | Herbicide, foliar fertilization     |
-| June – July         | Corn (tasselling)             | Fungicide, insecticide              |
-| July                | Sunflower (flowering)         | Fungicide against Sclerotinia       |
-| August – September  | Sunflower / Corn              | Desiccation                         |
+| Period             | Crop                  | Treatment                       |
+| ------------------ | --------------------- | ------------------------------- |
+| April – May        | Rapeseed (flowering)  | Fungicide, insecticide          |
+| May – June         | Corn (4–8 leaf)       | Herbicide, foliar fertilization |
+| June – July        | Corn (tasselling)     | Fungicide, insecticide          |
+| July               | Sunflower (flowering) | Fungicide against Sclerotinia   |
+| August – September | Sunflower / Corn      | Desiccation                     |
 
 The critical windows are short – sometimes 5–7 days. With productivity of up to **200 decares per hour**, the drone enables timely response without waiting for machinery or risking delay.
 
@@ -101,13 +104,13 @@ We recommend planning treatments in advance – contact the AirAgro team at leas
 
 ## Comparison: Drone vs Tractor for Tall Crops
 
-| Parameter                  | Tractor               | Drone              |
-| -------------------------- | --------------------- | ------------------ |
-| Crop trampling             | 3–5% losses           | 0% losses          |
-| Access with tall crop      | Limited (above 1 m)   | Unrestricted       |
-| Work on wet terrain        | Risky – getting stuck | No problem         |
-| Speed                      | 80–120 dka/hour       | up to 200 dka/hour |
-| Water per decare           | 20–30 L               | 1–2 L              |
+| Parameter             | Tractor               | Drone              |
+| --------------------- | --------------------- | ------------------ |
+| Crop trampling        | 3–5% losses           | 0% losses          |
+| Access with tall crop | Limited (above 1 m)   | Unrestricted       |
+| Work on wet terrain   | Risky – getting stuck | No problem         |
+| Speed                 | 80–120 dka/hour       | up to 200 dka/hour |
+| Water per decare      | 20–30 L               | 1–2 L              |
 
 For a full comparison between the two methods see our article: [Drone or tractor for spraying – which is more economical?](/en/blog/drone-vs-tractor-spraying)
 

@@ -53,11 +53,13 @@ In **herbicide spraying of corn** there are two main approaches, which can be ap
 Pre-emergence herbicides are applied after sowing but before emergence of corn and weeds. They act through the soil, forming a protective "barrier" layer that prevents germination of weed seeds.
 
 **Advantages of pre-emergence treatment:**
+
 - Weeds are controlled before they can compete with corn
 - Applied in one pass, before the field becomes difficult to access
 - Broad spectrum of action against annual grass and broad-leaved weeds
 
 **Limitations:**
+
 - Effectiveness depends on soil moisture – in a dry spring, action may be weak
 - Does not control perennial weeds from rhizomes
 - Requires an even soil surface for good effect
@@ -71,6 +73,7 @@ Post-emergence herbicides are applied when corn and weeds have already emerged. 
 **Optimal timing:** Corn should be at the 2–6 leaf stage (BBCH 12–16), and weeds should be young – at the 2–4 leaf stage for broad-leaved weeds and up to tillering for grass weeds.
 
 **Active substances for post-emergence treatment:**
+
 - **Against broad-leaved weeds:** nicosulfuron, mesotrione, topramezone, dicamba, tembotrione
 - **Against grass weeds:** nicosulfuron (combined effect), cycloxydim, haloxyfop-R-methyl (only against grass weeds)
 - **Broad-spectrum solutions:** rimsulfuron + nicosulfuron, mesotrione + nicosulfuron

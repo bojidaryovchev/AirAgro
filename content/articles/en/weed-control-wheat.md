@@ -36,6 +36,7 @@ Research shows that **every 10% infestation** of wheat areas reduces yield by ap
 Wild oat is one of the **most dangerous grass weeds** in wheat crops. It is extremely competitive, as it is biologically close to wheat and occupies a similar ecological niche.
 
 **Characteristics:**
+
 - Powerful root system competing with wheat for water
 - Seeds ripen before harvest and scatter into the soil
 - Can maintain viability in soil for up to 7–8 years
@@ -44,6 +45,7 @@ Wild oat is one of the **most dangerous grass weeds** in wheat crops. It is extr
 #### Ryegrass (Lolium spp.)
 
 Ryegrass, especially Lolium rigidum, is a growing problem in Bulgarian agriculture. It is characterised by:
+
 - Rapid development and high competitiveness
 - Development of **herbicide resistance** – a serious problem worldwide
 - Large seed production – one plant produces up to 10,000 seeds
@@ -51,6 +53,7 @@ Ryegrass, especially Lolium rigidum, is a growing problem in Bulgarian agricultu
 #### Loose Silky-Bent (Apera spica-venti)
 
 This is a mass weed in Northern Bulgaria:
+
 - Prefers wetter conditions
 - Highly competitive at dense populations
 - Seeds spread easily by wind
@@ -60,6 +63,7 @@ This is a mass weed in Northern Bulgaria:
 #### Mayweed (Matricaria spp.)
 
 Mayweed (scentless and scented) is a ubiquitous weed in wheat fields:
+
 - Branching plants with many shoots
 - Mass seed production
 - Sensitive to most broad-leaved herbicides, but difficult to control when treated late
@@ -67,6 +71,7 @@ Mayweed (scentless and scented) is a ubiquitous weed in wheat fields:
 #### Field Poppy (Papaver rhoeas)
 
 The field poppy is beautiful but unwelcome in wheat:
+
 - One plant produces up to 50,000 seeds
 - Seeds maintain viability in soil for decades
 - Developing resistance to ALS-inhibiting herbicides in some areas
@@ -91,6 +96,7 @@ The effectiveness of weed control depends critically on the **timing of treatmen
 **When:** November – December (at temperatures above 5 °C)
 
 Autumn herbicide treatment is effective against overwintering broad-leaved weeds that emerge together with wheat:
+
 - Suitable against: mayweed, poppy, speedwell, chickweed
 - Advantage: weeds are in early stages and easily destroyed
 - Limitation: does not effectively control spring weeds and grass weeds
@@ -100,6 +106,7 @@ Autumn herbicide treatment is effective against overwintering broad-leaved weeds
 **When:** end of February – mid-April (tillering stage, BBCH 21–29)
 
 In the Thracian Plain – the Plovdiv, Pazardzhik, Stara Zagora and Haskovo areas – spring herbicide treatment usually begins at the end of February. In Dobrudzha and Northern Bulgaria the optimal window opens 2–3 weeks later. This is **the most important period** for weed control in wheat. In this stage:
+
 - The wheat is hardy enough to tolerate the herbicide
 - Both grass and broad-leaved weeds are in sensitive early stages
 - Temperatures allow preparations to act effectively
@@ -111,6 +118,7 @@ In the Thracian Plain – the Plovdiv, Pazardzhik, Stara Zagora and Haskovo area
 **When:** April – beginning of May (stem elongation phase)
 
 In this phase herbicide treatment is **risky** and is used as a last resort:
+
 - Only with products registered for late application
 - Increased risk of phytotoxicity and ear deformation
 - Broad-leaved weeds are already at an advanced stage and harder to control
@@ -119,21 +127,21 @@ In this phase herbicide treatment is **risky** and is used as a last resort:
 
 ### Against Broad-Leaved Weeds
 
-| Type                   | Active substances (examples)      | Spectrum                            |
-| ---------------------- | --------------------------------- | ----------------------------------- |
-| Sulphonyl urea (ALS)   | Tribenuron-methyl, mesosulfuron   | Broad spectrum broad-leaved         |
-| Hormonal               | 2,4-D, dicamba, fluroxypyr        | Resistant broad-leaved              |
-| Combined               | Amidosulfuron + iodosulfuron      | Maximum spectrum                    |
+| Type                 | Active substances (examples)    | Spectrum                    |
+| -------------------- | ------------------------------- | --------------------------- |
+| Sulphonyl urea (ALS) | Tribenuron-methyl, mesosulfuron | Broad spectrum broad-leaved |
+| Hormonal             | 2,4-D, dicamba, fluroxypyr      | Resistant broad-leaved      |
+| Combined             | Amidosulfuron + iodosulfuron    | Maximum spectrum            |
 
 **Recommendation:** Use combined products or tank mixes for maximum spectrum. When there is a problem with poppy and mayweed resistant to ALS-inhibitors, add a hormonal component.
 
 ### Against Grass Weeds
 
-| Type                   | Active substances (examples)  | Target weeds                  |
-| ---------------------- | ----------------------------- | ----------------------------- |
-| ACCase inhibitors (FOP)| Fenoxaprop, clodinafop        | Wild oat, ryegrass            |
-| ACCase inhibitors (DEN)| Pinoxaden                     | Ryegrass, loose silky-bent    |
-| ALS inhibitors         | Pyroxsulam, mesosulfuron      | Broad spectrum grass weeds    |
+| Type                    | Active substances (examples) | Target weeds               |
+| ----------------------- | ---------------------------- | -------------------------- |
+| ACCase inhibitors (FOP) | Fenoxaprop, clodinafop       | Wild oat, ryegrass         |
+| ACCase inhibitors (DEN) | Pinoxaden                    | Ryegrass, loose silky-bent |
+| ALS inhibitors          | Pyroxsulam, mesosulfuron     | Broad spectrum grass weeds |
 
 **Important about resistance:** Rotate mechanisms of action! If you use the same type of herbicide every year, weeds develop resistance. The poor control of ryegrass in Europe is a direct result of excessive use of ALS inhibitors.
 
@@ -168,6 +176,7 @@ GPS navigation and automatic flow control guarantee that every square metre rece
 ### Precision Application at Low Volume
 
 The drone works at ultra-low volumes (1–3 L/dka solution), which means:
+
 - Less water – easier logistics
 - More concentrated solution – better leaf surface coverage
 - Up to 30% saving on preparation with the same effect
@@ -185,15 +194,18 @@ For more information, see how [wheat drone spraying](/en/blog/wheat-spraying-wit
 ## Weed Control Programme for Wheat – Example Plan
 
 **Option 1: Standard situation**
+
 1. Spring treatment with a combined herbicide (ALS + hormonal) – tillering stage
 2. If needed – grass herbicide together or separately
 
 **Option 2: Heavy infestation (grass + broad-leaved)**
+
 1. Autumn treatment with broad-leaved herbicide – November
 2. Spring treatment with grass herbicide – March
 3. Additional treatment with broad-leaved herbicide (if necessary)
 
 **Option 3: Problem with resistant ryegrass**
+
 1. Pre-sowing cultivation – stimulate germination and destroy
 2. Herbicide with a different mechanism of action (not ALS) – tillering stage
 3. Increased seeding rate for better competition

@@ -107,12 +107,12 @@ Towards the end of the growing season – June and July – crops are tall (whea
 
 For **treatment under wet conditions** to be effective, the following parameters must be observed:
 
-| Parameter             | Optimal Value      | Acceptable Range        |
-| --------------------- | ------------------- | ----------------------- |
-| Wind speed            | up to 3 m/s        | up to 5 m/s (maximum)  |
-| Temperature           | 12–25°C            | 5–30°C                  |
-| Relative humidity     | 50–80%             | 40–90%                  |
-| Precipitation         | no precipitation   | light drizzle (IP67)   |
+| Parameter         | Optimal Value    | Acceptable Range      |
+| ----------------- | ---------------- | --------------------- |
+| Wind speed        | up to 3 m/s      | up to 5 m/s (maximum) |
+| Temperature       | 12–25°C          | 5–30°C                |
+| Relative humidity | 50–80%           | 40–90%                |
+| Precipitation     | no precipitation | light drizzle (IP67)  |
 
 ### Minimum Dry Window After Treatment
 

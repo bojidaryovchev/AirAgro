@@ -20,14 +20,14 @@ If you have seen a small photo drone, you might think an agricultural drone is s
 
 ### Key Differences
 
-| Characteristic       | Hobby drone        | Agricultural drone (DJI Agras T50) |
-| -------------------- | ------------------ | ---------------------------------- |
-| Weight               | 0.5–2 kg           | 50+ kg (with full tank)            |
-| Payload              | Camera             | 40 litres liquid or 50 kg fertiliser|
-| Flight time          | 20–30 min          | 10–15 min (at full load)           |
-| Treatment width      | –                  | 7–11 metres                        |
-| Navigation           | GPS                | RTK GPS (centimetre accuracy)      |
-| Price                | 500–3,000 BGN      | 100,000+ BGN                       |
+| Characteristic  | Hobby drone   | Agricultural drone (DJI Agras T50)   |
+| --------------- | ------------- | ------------------------------------ |
+| Weight          | 0.5–2 kg      | 50+ kg (with full tank)              |
+| Payload         | Camera        | 40 litres liquid or 50 kg fertiliser |
+| Flight time     | 20–30 min     | 10–15 min (at full load)             |
+| Treatment width | –             | 7–11 metres                          |
+| Navigation      | GPS           | RTK GPS (centimetre accuracy)        |
+| Price           | 500–3,000 BGN | 100,000+ BGN                         |
 
 An agricultural drone is a **specialised flying machine** designed to disperse preparations or fertilisers with exceptional precision. Let us examine each component in detail.
 
@@ -60,6 +60,7 @@ The tank is positioned in the centre of the drone for optimal balance. With a vo
 The DJI Agras T50 uses **dual centrifugal nozzles** that differ significantly from the conventional hydraulic nozzles of tractor sprayers.
 
 How they work:
+
 1. Liquid is supplied under pressure to a spinning disc
 2. The disc rotates at **10,000–15,000 revolutions per minute**
 3. Centrifugal force disperses the liquid into fine, uniform droplets
@@ -115,6 +116,7 @@ One of the most impressive features of modern agricultural drones is **autonomou
 ### Step 1: Field Mapping
 
 The operator marks the field boundaries by:
+
 - Flying the drone around the perimeter
 - Entering GPS coordinates
 - Importing a map from an application
@@ -122,6 +124,7 @@ The operator marks the field boundaries by:
 ### Step 2: Route Planning
 
 The software automatically generates the optimal spraying route – parallel lines with precisely defined strip width. The operator sets:
+
 - Flight height
 - Speed
 - Spraying rate (litres/decare)
@@ -130,6 +133,7 @@ The software automatically generates the optimal spraying route – parallel lin
 ### Step 3: Autonomous Execution
 
 The drone takes off and follows the route completely autonomously. It automatically:
+
 - Switches spraying on and off at precise points
 - Regulates speed and flow
 - Avoids obstacles

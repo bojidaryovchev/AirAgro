@@ -28,14 +28,14 @@ Healthy plants absorb red light for photosynthesis and strongly reflect near-inf
 
 ### NDVI Scale of Values
 
-| NDVI value    | What it means                              | Visual colour on map   |
-| ------------- | ------------------------------------------ | ---------------------- |
-| –1.0 to 0.0   | Water, bare soil, rocks                    | Dark blue / brown      |
-| 0.0 to 0.2    | Bare or very poor soil                     | Brown / beige          |
-| 0.2 to 0.4    | Sparse vegetation, early stress            | Yellow / orange        |
-| 0.4 to 0.6    | Moderate vegetation, possible mild stress  | Light green            |
-| 0.6 to 0.8    | Healthy, actively photosynthesising crop   | Green                  |
-| 0.8 to 1.0    | Maximum vegetative activity               | Dark green             |
+| NDVI value  | What it means                             | Visual colour on map |
+| ----------- | ----------------------------------------- | -------------------- |
+| –1.0 to 0.0 | Water, bare soil, rocks                   | Dark blue / brown    |
+| 0.0 to 0.2  | Bare or very poor soil                    | Brown / beige        |
+| 0.2 to 0.4  | Sparse vegetation, early stress           | Yellow / orange      |
+| 0.4 to 0.6  | Moderate vegetation, possible mild stress | Light green          |
+| 0.6 to 0.8  | Healthy, actively photosynthesising crop  | Green                |
+| 0.8 to 1.0  | Maximum vegetative activity               | Dark green           |
 
 Values below **0.4** during a period of active growth are a signal of a problem requiring immediate field inspection.
 
@@ -130,24 +130,24 @@ Result: **30–50% less preparation**, fast response and documented improvement.
 
 ## NDVI Analysis Software
 
-| Software        | Advantages                                                    | Suitable for                   |
-| --------------- | ------------------------------------------------------------- | ------------------------------ |
-| **Pix4Dfields** | Fast processing, offline operation, high-accuracy index maps  | Large farms, agronomists       |
-| **DroneDeploy** | Cloud platform, easy interface, team sharing                  | Medium farms, cooperatives     |
-| **DJI Terra**   | Direct DJI drone integration, automatic calibration           | DJI equipment operators        |
+| Software        | Advantages                                                   | Suitable for               |
+| --------------- | ------------------------------------------------------------ | -------------------------- |
+| **Pix4Dfields** | Fast processing, offline operation, high-accuracy index maps | Large farms, agronomists   |
+| **DroneDeploy** | Cloud platform, easy interface, team sharing                 | Medium farms, cooperatives |
+| **DJI Terra**   | Direct DJI drone integration, automatic calibration          | DJI equipment operators    |
 
 All three platforms generate NDVI, GNDVI, NDRE and other vegetation indices. Pix4Dfields is preferred for offline processing of large areas, while DroneDeploy facilitates result sharing between agronomist, owner and operator.
 
 ## NDVI Monitoring Calendar Through the Season
 
-| Period          | Crop                                   | Monitoring objective                         |
-| --------------- | -------------------------------------- | -------------------------------------------- |
-| March – April   | Winter wheat, rapeseed                 | Post-winter assessment, nutritional status   |
-| April – May     | Wheat (stem elongation)                | Diseases, fungicide need                     |
-| May – June      | Corn, sunflower (early stage)          | Germination, weeds, nitrogen deficiency      |
-| June – July     | All crops                              | Water stress, pests, second fertilization    |
-| July – August   | Sunflower, corn, vineyards             | Maturity, yield forecast                     |
-| Sept. – Oct.    | Autumn crops (after sowing)            | Germination, uniformity                      |
+| Period        | Crop                          | Monitoring objective                       |
+| ------------- | ----------------------------- | ------------------------------------------ |
+| March – April | Winter wheat, rapeseed        | Post-winter assessment, nutritional status |
+| April – May   | Wheat (stem elongation)       | Diseases, fungicide need                   |
+| May – June    | Corn, sunflower (early stage) | Germination, weeds, nitrogen deficiency    |
+| June – July   | All crops                     | Water stress, pests, second fertilization  |
+| July – August | Sunflower, corn, vineyards    | Maturity, yield forecast                   |
+| Sept. – Oct.  | Autumn crops (after sowing)   | Germination, uniformity                    |
 
 We recommend **a minimum of 3 NDVI surveys per season** for full monitoring of each crop.
 

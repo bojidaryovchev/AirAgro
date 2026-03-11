@@ -51,6 +51,7 @@ This is one of the most important differences between the two methods and is oft
 ### Tractor: 3–5% Loss from Trampling
 
 When a tractor with a sprayer passes through the field, **3 to 5% of the area is track** – directly trampled or damaged plants. For cereal crops this means:
+
 - Broken stalks and damaged ears
 - Soil compaction in the tracks
 - Reduced aeration and impeded root system development
@@ -59,6 +60,7 @@ When a tractor with a sprayer passes through the field, **3 to 5% of the area is
 ### Drone: Zero Trampling
 
 The drone flies at 2–3 metres above the crop and **does not touch a single plant**. Zero trampling means:
+
 - 100% of the area yields a harvest
 - No soil compaction
 - Plants experience no mechanical stress
@@ -70,6 +72,7 @@ The drone flies at 2–3 metres above the crop and **does not touch a single pla
 ### Tractor Sprayer
 
 Tractor sprayers rely on pressure and nozzles mounted on a boom. The main challenges are:
+
 - Uneven coverage in wind
 - Overlap or gaps at turns
 - Difficult flow rate calibration
@@ -78,6 +81,7 @@ Tractor sprayers rely on pressure and nozzles mounted on a boom. The main challe
 ### Drone DJI Agras T50
 
 Modern agri drones offer:
+
 - **RTK GPS accuracy** to 1–2 cm
 - Automatic Terrain Following
 - Centrifugal nozzles with adjustable droplet size
@@ -93,6 +97,7 @@ The result is **uniform coverage** of every plant – neither more nor less than
 ### Access to Difficult Terrain
 
 A tractor cannot enter:
+
 - Steep hilly plots
 - Waterlogged or wet fields (after rain)
 - Vineyards, orchards, small plots with irregular shapes
@@ -102,6 +107,7 @@ The drone flies over all of this without problem. It is the only solution for ma
 ### Operation in Various Weather
 
 Tractor treatments are limited by:
+
 - Wet soil after rain (getting stuck, tracks)
 - Strong wind (spray drift)
 - Daylight hours
@@ -112,12 +118,12 @@ The drone can **work at night too**, when the wind is usually weakest. In light 
 
 ## Water Use – Critical Difference
 
-| Parameter                         | Tractor        | Drone          |
-| --------------------------------- | -------------- | -------------- |
-| Water per decare                  | 15–30 litres   | 1–2 litres     |
-| Water needed for 1,000 dka        | 15,000–30,000 L| 1,000–2,000 L  |
-| Water transport                   | Heavy, costly  | Minimal        |
-| Logistics                         | Water tanker, pump | 20-L canisters |
+| Parameter                  | Tractor            | Drone          |
+| -------------------------- | ------------------ | -------------- |
+| Water per decare           | 15–30 litres       | 1–2 litres     |
+| Water needed for 1,000 dka | 15,000–30,000 L    | 1,000–2,000 L  |
+| Water transport            | Heavy, costly      | Minimal        |
+| Logistics                  | Water tanker, pump | 20-L canisters |
 
 In **drought or limited water access** conditions – which is a reality for many farms in Southern Bulgaria, including the **Plovdiv, Stara Zagora, Pazardzhik and Haskovo** areas – the drone is the only practical solution. Farmers in the **Thracian Plain** and **Dobrudzha** increasingly choose drone spraying precisely because of minimal water use. With 5–10 times less water you achieve the same or better coverage.
 
@@ -126,6 +132,7 @@ In **drought or limited water access** conditions – which is a reality for man
 The precision centrifugal nozzles of the DJI Agras T50 create fine droplets of optimal size that uniformly cover the leaf mass. Combined with the airflow from the rotors (downwash effect), the preparation also reaches the **underside of the leaves**.
 
 The result:
+
 - **Up to 30% less chemicals** at the same effectiveness
 - Better penetration in dense stands
 - Reduced contamination of soil and water
@@ -135,6 +142,7 @@ For the Bulgarian farmer who spends thousands of BGN per year on preparations, *
 ## When the Tractor Is Still the Better Choice
 
 Objectivity requires noting the situations in which the tractor retains its advantage:
+
 - **Very large, flat areas** (over 5,000 dka) with established infrastructure – the tractor is familiar and organisationally easier for farms with an existing equipment fleet.
 - **Application of liquid fertilisers** at high doses (over 30 L/dka) – the drone is not suitable for large liquid volumes.
 - **Herbicide treatment before sowing** on bare areas – when there is nothing to trample, the drone's advantage is smaller.
@@ -155,17 +163,17 @@ More about our services with an [agri drone](/en/blog/drone-spraying-services) c
 
 ## Summary Table: Drone vs Tractor
 
-| Criterion              | Drone       | Tractor     |
-| ---------------------- | ----------- | ----------- |
-| Speed                  | ⭐⭐⭐⭐⭐ | ⭐⭐        |
-| Price per decare       | ⭐⭐⭐⭐   | ⭐⭐⭐      |
-| Precision              | ⭐⭐⭐⭐⭐ | ⭐⭐⭐      |
-| No trampling           | ⭐⭐⭐⭐⭐ | ⭐          |
-| Terrain access         | ⭐⭐⭐⭐⭐ | ⭐⭐        |
-| Water use              | ⭐⭐⭐⭐⭐ | ⭐⭐        |
-| Preparation savings    | ⭐⭐⭐⭐⭐ | ⭐⭐⭐      |
-| Large liquid volume    | ⭐⭐        | ⭐⭐⭐⭐⭐ |
-| Night operation        | ⭐⭐⭐⭐⭐ | ⭐          |
+| Criterion           | Drone      | Tractor    |
+| ------------------- | ---------- | ---------- |
+| Speed               | ⭐⭐⭐⭐⭐ | ⭐⭐       |
+| Price per decare    | ⭐⭐⭐⭐   | ⭐⭐⭐     |
+| Precision           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐     |
+| No trampling        | ⭐⭐⭐⭐⭐ | ⭐         |
+| Terrain access      | ⭐⭐⭐⭐⭐ | ⭐⭐       |
+| Water use           | ⭐⭐⭐⭐⭐ | ⭐⭐       |
+| Preparation savings | ⭐⭐⭐⭐⭐ | ⭐⭐⭐     |
+| Large liquid volume | ⭐⭐       | ⭐⭐⭐⭐⭐ |
+| Night operation     | ⭐⭐⭐⭐⭐ | ⭐         |
 
 ## Frequently Asked Questions
 
@@ -202,6 +210,7 @@ Not sure whether the drone is the right choice for your farm? **AirAgro** offers
 We work with the **DJI Agras T50** and serve farms throughout Bulgaria – from the plains of **Dobrudzha** to the fields of the **Thracian Plain**, including the areas of **Plovdiv, Stara Zagora, Pazardzhik and Haskovo**.
 
 **What we offer:**
+
 - 🌾 **Free consultation** – we analyse your needs and areas
 - 🚁 **Drone demonstration** – see the DJI Agras T50 in action on your field
 - 📋 **Individual treatment plan** – we prepare a programme for the entire season

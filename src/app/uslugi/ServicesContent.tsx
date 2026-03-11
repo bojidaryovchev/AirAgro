@@ -38,12 +38,7 @@ const services: Service[] = [
     title: "Растителна Защита",
     description:
       "Прецизно пръскане с пестициди за ефективна защита от болести и вредители. DJI Agras T50 осигурява равномерно покритие дори на труднодостъпни места.",
-    details: [
-      "Фунгициди и инсектициди",
-      "До 200 дка/час ефективно",
-      "Центробежни дюзи",
-      "GPS запис на обработката",
-    ],
+    details: ["Фунгициди и инсектициди", "До 200 дка/час ефективно", "Центробежни дюзи", "GPS запис на обработката"],
     icon: Shield,
     href: "/uslugi/pruskane",
     price: "От 6 лв/дка",
@@ -52,12 +47,7 @@ const services: Service[] = [
     title: "Листно Торене",
     description:
       "Ефективно нанасяне на течни торове за оптимален растеж. Прецизно дозиране осигурява максимална усвояемост от културите.",
-    details: [
-      "Течни и суспензионни торове",
-      "Листно подхранване",
-      "Прецизно дозиране",
-      "За всички култури",
-    ],
+    details: ["Течни и суспензионни торове", "Листно подхранване", "Прецизно дозиране", "За всички култури"],
     icon: Leaf,
     href: "/uslugi/pruskane",
     price: "От 6 лв/дка",
@@ -66,12 +56,7 @@ const services: Service[] = [
     title: "Контрол на Плевели",
     description:
       "Целево пръскане с хербициди за ефективен контрол на плевелите. Минимален разход на препарати при максимална ефективност.",
-    details: [
-      "Всички видове хербициди",
-      "Целево приложение",
-      "По-малко химикали",
-      "Документиране на площта",
-    ],
+    details: ["Всички видове хербициди", "Целево приложение", "По-малко химикали", "Документиране на площта"],
     icon: Bug,
     href: "/uslugi/pruskane",
     price: "От 6 лв/дка",
@@ -80,12 +65,7 @@ const services: Service[] = [
     title: "Засяване с Дрон",
     description:
       "Прецизно разпръскване на семена от въздуха. Идеално за трудни терени и бързо засяване на големи площи.",
-    details: [
-      "Покривни култури и смески",
-      "Равномерно разпределение",
-      "Достъп до влажни терени",
-      "3× по-бързо",
-    ],
+    details: ["Покривни култури и смески", "Равномерно разпределение", "Достъп до влажни терени", "3× по-бързо"],
     icon: Sprout,
     href: "/uslugi/zasyavane",
     price: "По запитване",
@@ -100,14 +80,8 @@ const services: Service[] = [
   },
   {
     title: "Картографиране",
-    description:
-      "Точно 3D картографиране на терена с RTK GPS. Създаваме детайлни карти за планиране на операциите.",
-    details: [
-      "3D модели на терена",
-      "RTK точност ±10 см",
-      "KML/KMZ файлове",
-      "Анализ на релефа",
-    ],
+    description: "Точно 3D картографиране на терена с RTK GPS. Създаваме детайлни карти за планиране на операциите.",
+    details: ["3D модели на терена", "RTK точност ±10 см", "KML/KMZ файлове", "Анализ на релефа"],
     icon: Map,
     price: "По запитване",
   },
@@ -117,26 +91,22 @@ const processSteps = [
   {
     number: "01",
     title: "Свържете се с нас",
-    description:
-      "Обадете се или изпратете запитване. Обсъждаме площта, културата и типа третиране.",
+    description: "Обадете се или изпратете запитване. Обсъждаме площта, културата и типа третиране.",
   },
   {
     number: "02",
     title: "Оглед и планиране",
-    description:
-      "Оценяваме терена и определяме оптималния подход. Индивидуална оферта до 24 часа.",
+    description: "Оценяваме терена и определяме оптималния подход. Индивидуална оферта до 24 часа.",
   },
   {
     number: "03",
     title: "Изпълнение",
-    description:
-      "Професионална обработка с DJI Agras T50. RTK прецизност и GPS запис на мисията.",
+    description: "Професионална обработка с DJI Agras T50. RTK прецизност и GPS запис на мисията.",
   },
   {
     number: "04",
     title: "Отчет и документация",
-    description:
-      "Получавате GPS запис (KML/KMZ) и детайлен отчет за обработената площ.",
+    description: "Получавате GPS запис (KML/KMZ) и детайлен отчет за обработената площ.",
   },
 ];
 
@@ -151,38 +121,32 @@ const whyUs = [
   {
     icon: Target,
     title: "RTK Прецизност",
-    description:
-      "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
+    description: "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
   },
   {
     icon: Clock,
     title: "Бърза Реакция",
-    description:
-      "Оферта до 24 часа. Изпълнение 24–48 часа в целия сезон. Работим и в почивни дни.",
+    description: "Оферта до 24 часа. Изпълнение 24–48 часа в целия сезон. Работим и в почивни дни.",
   },
   {
     icon: MapPin,
     title: "Цяла България",
-    description:
-      "Обслужваме от Видин до Бургас. Без ограничения по район. Мобилен екип.",
+    description: "Обслужваме от Видин до Бургас. Без ограничения по район. Мобилен екип.",
   },
   {
     icon: Droplets,
     title: "Без Утъпкване",
-    description:
-      "Нулево уплътняване на почвата. Не увреждаме културата — летим над полето.",
+    description: "Нулево уплътняване на почвата. Не увреждаме културата — летим над полето.",
   },
   {
     icon: Leaf,
     title: "30–40% Спестяване",
-    description:
-      "Ултрамалообемна технология намалява разхода на препарати и вода.",
+    description: "Ултрамалообемна технология намалява разхода на препарати и вода.",
   },
   {
     icon: CheckCircle,
     title: "Документация",
-    description:
-      "GPS запис + KML/KMZ файл на обработката. Пълна проследимост.",
+    description: "GPS запис + KML/KMZ файл на обработката. Пълна проследимост.",
   },
 ];
 
@@ -194,10 +158,7 @@ export default function ServicesContent() {
   return (
     <>
       {/* ── Hero ── */}
-      <section
-        id="hero"
-        className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden"
-      >
+      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden">
         <VideoCanvas
           src="/videos/drone-spraying.mp4"
           poster="/drone-spraying-poster-blurred.jpg"
@@ -215,12 +176,11 @@ export default function ServicesContent() {
           <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
             ✈️ Професионални услуги с DJI Agras T50
           </span>
-          <h1 className="mb-5 text-4xl font-bold leading-tight text-white md:text-6xl">
+          <h1 className="mb-5 text-4xl leading-tight font-bold text-white md:text-6xl">
             Агро Дрон <span className="text-gradient-green">Услуги</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-emerald-100 md:text-xl">
-            Модерна технология за прецизна защита на вашите култури. Бързо,
-            ефективно и екологично.
+            Модерна технология за прецизна защита на вашите култури. Бързо, ефективно и екологично.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -254,9 +214,7 @@ export default function ServicesContent() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">
-                  {stat.value}
-                </div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">{stat.value}</div>
                 <p className="text-sm text-gray-300">{stat.label}</p>
               </motion.div>
             ))}
@@ -298,24 +256,15 @@ export default function ServicesContent() {
                   </div>
                 </div>
 
-                <h3 className="mb-3 text-2xl font-bold text-gray-900">
-                  {service.title}
-                </h3>
-                <p className="mb-6 leading-relaxed text-gray-600">
-                  {service.description}
-                </p>
+                <h3 className="mb-3 text-2xl font-bold text-gray-900">{service.title}</h3>
+                <p className="mb-6 leading-relaxed text-gray-600">{service.description}</p>
 
                 {/* Feature checklist */}
                 <div className="mb-6 flex-1 border-t border-gray-100 pt-5">
-                  <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Включва:
-                  </div>
+                  <div className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Включва:</div>
                   <ul className="space-y-2">
                     {service.details.map((detail) => (
-                      <li
-                        key={detail}
-                        className="flex items-start gap-2 text-sm text-gray-700"
-                      >
+                      <li key={detail} className="flex items-start gap-2 text-sm text-gray-700">
                         <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
                         {detail}
                       </li>
@@ -352,8 +301,7 @@ export default function ServicesContent() {
               Защо <span className="text-gradient-green">AirAgro</span>?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              Модерна технология, лицензирани оператори и доказан опит в цяла
-              България
+              Модерна технология, лицензирани оператори и доказан опит в цяла България
             </p>
           </motion.div>
 
@@ -370,12 +318,8 @@ export default function ServicesContent() {
                 <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
                   <item.icon className="h-8 w-8 text-emerald-600" />
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900">
-                  {item.title}
-                </h3>
-                <p className="leading-relaxed text-gray-600">
-                  {item.description}
-                </p>
+                <h3 className="mb-3 text-xl font-bold text-gray-900">{item.title}</h3>
+                <p className="leading-relaxed text-gray-600">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -394,9 +338,7 @@ export default function ServicesContent() {
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-5xl">
               Как <span className="text-gradient-green">Работим</span>?
             </h2>
-            <p className="text-lg text-gray-600">
-              Лесен и прозрачен процес от заявка до резултат.
-            </p>
+            <p className="text-lg text-gray-600">Лесен и прозрачен процес от заявка до резултат.</p>
           </motion.div>
 
           <div className="space-y-8">
@@ -413,12 +355,8 @@ export default function ServicesContent() {
                   {step.number}
                 </div>
                 <div className="pt-1">
-                  <h4 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">
-                    {step.title}
-                  </h4>
-                  <p className="text-lg leading-relaxed text-gray-600">
-                    {step.description}
-                  </p>
+                  <h4 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">{step.title}</h4>
+                  <p className="text-lg leading-relaxed text-gray-600">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -434,12 +372,9 @@ export default function ServicesContent() {
           viewport={{ once: true }}
           className="glass-card glow-green mx-auto max-w-3xl rounded-2xl p-10 text-center md:p-14"
         >
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-            Готови ли сте да започнете?
-          </h2>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Готови ли сте да започнете?</h2>
           <p className="mx-auto mb-8 max-w-lg text-lg text-gray-600">
-            Свържете се с нас за безплатна консултация и персонализирана оферта
-            за вашето стопанство.
+            Свържете се с нас за безплатна консултация и персонализирана оферта за вашето стопанство.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a

@@ -21,6 +21,7 @@ In this article we will look at the key technologies behind precision agricultur
 Traditional agriculture works on the principle of "the average value" – the entire field block receives an equal dose of fertiliser, an equal amount of preparation and an equal seeding rate. The problem is that fields are **not** homogeneous.
 
 A field of 1,000 decares may have:
+
 - Areas with different soil acidity
 - Zones with higher or lower moisture
 - Areas with different nutrient content
@@ -45,6 +46,7 @@ For drones like the **DJI Agras T50**, RTK navigation provides accuracy of **1�
 VRA is one of the most powerful technologies in precision agriculture. Instead of applying the same dose of fertiliser or preparation everywhere, the system automatically **changes the dose** in different zones of the field.
 
 How it works:
+
 1. A **prescription map** is created – a visual map showing what dose is needed in each zone
 2. The map is loaded into the controller of the tractor or drone
 3. During operation, the machine automatically regulates the flow
@@ -78,6 +80,7 @@ Drones fulfil **two key roles** in precision agriculture:
 #### Monitoring and Mapping
 
 Drones with multispectral cameras photograph fields and create detailed vegetation maps. Unlike satellite images, drones offer:
+
 - **Higher resolution** – up to 1 cm/pixel
 - **On-demand photography** – without waiting for a satellite pass
 - **Operation in cloudy weather** – when satellites cannot "see" the field
@@ -85,6 +88,7 @@ Drones with multispectral cameras photograph fields and create detailed vegetati
 #### Precision Spraying and Fertilisation
 
 [Agricultural drones like the DJI Agras T50](/en/blog/how-agricultural-drones-work) are the ideal instrument for VRA spraying. They can:
+
 - Fly **only to the problem zone** and treat locally
 - Work according to **prescription maps** with automatic dose regulation
 - Cover up to **530 dka per day** with precision application
@@ -96,6 +100,7 @@ The combination of drone monitoring and subsequent precision treatment is one of
 The latest technology in precision agriculture is **artificial intelligence (AI)**. Machine learning algorithms analyse enormous arrays of data – satellite images, weather data, soil analyses, historical yields – and generate **recommendations for action**.
 
 Examples of AI applications:
+
 - **Yield forecasting** – with accuracy of 5–10%
 - **Early disease detection** – from drone or satellite images
 - **Irrigation schedule optimisation** – according to the forecast and soil moisture
@@ -106,6 +111,7 @@ Examples of AI applications:
 ### Resource Savings
 
 Research shows that precision agriculture provides:
+
 - **10–30% saving on fertilisers** through VRA
 - **15–25% saving on preparations** through targeted treatment
 - **5–15% saving on seeds** through optimised seeding
@@ -120,6 +126,7 @@ When every plant receives exactly what it needs, yields naturally rise. European
 ### Environmental Benefits
 
 Less waste of chemicals means:
+
 - Less contamination of groundwater
 - Preservation of beneficial insects
 - Reduced carbon footprint
@@ -128,6 +135,7 @@ Less waste of chemicals means:
 ### Documentation and Accountability
 
 Precision technologies automatically record every operation – GPS coordinates, date, dose, operator. This documentation is:
+
 - Useful during BFSA inspection
 - Required for certifications (GlobalGAP, etc.)
 - Required when applying for European subsidies
@@ -139,6 +147,7 @@ The European Union actively supports the implementation of precision agriculture
 ### Sub-measure 4.1 – Investments in Agricultural Holdings
 
 Finances the purchase of:
+
 - GPS systems for tractors
 - Drones for monitoring and spraying
 - Soil sensors and stations
@@ -149,6 +158,7 @@ The subsidy covers **up to 50–70% of the investment** (depending on criteria).
 ### Eco-Schemes under CAP 2023–2027
 
 Farmers applying precision agriculture receive **additional payments per decare** for:
+
 - Reduced pesticide use
 - Precision VRA fertilisation
 - Crop monitoring with drones or satellites

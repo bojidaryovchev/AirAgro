@@ -6,7 +6,8 @@ date: "2025-03-09"
 image: "/images/blog/pruskane-na-ovoshtni-gradini-s-dron.png"
 slug: "forest-spraying-with-drone"
 category: "Technology"
-tags: ["forest spraying with drone", "pine processionary", "bark beetles drone", "forest treatment", "drone for forests"]
+tags:
+  ["forest spraying with drone", "pine processionary", "bark beetles drone", "forest treatment", "drone for forests"]
 readTime: "9 min"
 ---
 
@@ -90,15 +91,15 @@ Fungal infections require treatment with copper-containing fungicides (Bordeaux 
 
 ## Advantages of Drone Spraying over Other Methods
 
-| Criterion               | Ground spraying | Helicopter     | Drone (DJI Agras T50)       |
-| ----------------------- | --------------- | -------------- | --------------------------- |
-| Terrain access          | Limited         | Good           | Excellent                   |
-| Minimum area            | 1 dka           | 500+ dka       | 5 dka                       |
-| Precision               | Low             | Medium         | High (GPS/RTK)              |
-| Preparation consumption | High            | Medium         | Low (ULV technology)        |
-| Price per decare        | Medium          | High           | Moderate                    |
-| Environmental impact    | Medium          | High (drift)   | Low                         |
-| Mobilisation speed      | Days            | Weeks          | Hours                       |
+| Criterion               | Ground spraying | Helicopter   | Drone (DJI Agras T50) |
+| ----------------------- | --------------- | ------------ | --------------------- |
+| Terrain access          | Limited         | Good         | Excellent             |
+| Minimum area            | 1 dka           | 500+ dka     | 5 dka                 |
+| Precision               | Low             | Medium       | High (GPS/RTK)        |
+| Preparation consumption | High            | Medium       | Low (ULV technology)  |
+| Price per decare        | Medium          | High         | Moderate              |
+| Environmental impact    | Medium          | High (drift) | Low                   |
+| Mobilisation speed      | Days            | Weeks        | Hours                 |
 
 More about the general [advantages of drones in crop protection](/en/blog/benefits-of-drone-in-agriculture) can be found in our specialised article.
 

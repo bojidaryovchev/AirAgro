@@ -6,7 +6,14 @@ date: "2025-12-28"
 image: "/images/blog/kak-raboti-agraren-dron.png"
 slug: "how-agricultural-drone-works"
 category: "Technology"
-tags: ["how agricultural drone works", "agri drone explanation", "agricultural drone operation", "drone spraying process", "technology"]
+tags:
+  [
+    "how agricultural drone works",
+    "agri drone explanation",
+    "agricultural drone operation",
+    "drone spraying process",
+    "technology",
+  ]
 readTime: "7 min"
 ---
 
@@ -43,6 +50,7 @@ In most cases the plot boundaries are defined **before going to the field**. The
 For new or complex plots the operator walks the boundaries with a GPS device or sends the drone to photograph them from above. Within a few minutes the system creates a **precise map of the plot** with centimetre accuracy.
 
 This map includes:
+
 - Exact field boundaries
 - Obstacles (poles, trees, buildings)
 - No-spray zones (water sources, roads)
@@ -117,6 +125,7 @@ The spray flow control system regulates the spray rate **in real time**. If the 
 When the solution or battery runs out, the drone **returns to the start point by itself** and lands. An message appears on the operator's screen indicating what needs to be done – change the battery, top up the tank, or both.
 
 The procedure is fast:
+
 - **Battery swap:** 2–3 minutes (plug-and-play system)
 - **Tank refill:** 1–2 minutes
 - **Both:** 3–4 minutes
@@ -163,6 +172,7 @@ More about the complete process and what our [drone spraying services](/en/blog/
 ## How Fast Is the Process in Reality
 
 Actual productivity figures:
+
 - **100–150 decares per hour** under average conditions
 - **1,500–2,000 decares per day** under normal operation
 - **Up to 3,000 decares per day** under optimal conditions

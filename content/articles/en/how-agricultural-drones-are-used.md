@@ -6,7 +6,14 @@ date: "2025-10-25"
 image: "/images/blog/kak-se-izpolzvat-agrarni-dronove.png"
 slug: "how-agricultural-drones-are-used"
 category: "Technology"
-tags: ["agricultural drones Bulgaria", "drone agriculture Bulgaria", "agri drone use", "agriculture technologies", "drone regulations"]
+tags:
+  [
+    "agricultural drones Bulgaria",
+    "drone agriculture Bulgaria",
+    "agri drone use",
+    "agriculture technologies",
+    "drone regulations",
+  ]
 readTime: "7 min"
 ---
 
@@ -61,6 +68,7 @@ This information is key for making timely decisions and is the foundation of [pr
 ### 4. Mapping and 3D Model Creation
 
 Specialised drones create:
+
 - **Orthophoto maps** – accurate georeferenced images of fields
 - **Terrain relief maps** – for drainage and irrigation planning
 - **Vegetation cover maps** – for VRA (variable rate application)
@@ -76,6 +84,7 @@ The use of agricultural drones in Bulgaria is subject to regulation by several i
 GD CAA is the main regulator for Unmanned Aircraft Systems (UAS) in Bulgaria. Since 2021 the country has applied **Regulation (EU) 2019/947** of EASA (European Union Aviation Safety Agency).
 
 Key requirements:
+
 - **Operator registration** – every drone operator must register with GD CAA
 - **Competency certificate** – passing a theoretical examination is required
 - **Operation category** – agricultural spraying falls in the **specific category**, requiring operational authorisation

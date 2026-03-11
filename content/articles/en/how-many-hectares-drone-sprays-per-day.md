@@ -6,7 +6,14 @@ date: "2025-12-22"
 image: "/images/blog/kolko-dekara-pruska-dron.png"
 slug: "how-many-hectares-drone-sprays-per-day"
 category: "Technology"
-tags: ["how many decares drone sprays", "drone productivity", "DJI Agras T50 capacity", "drone spraying speed", "agricultural drone"]
+tags:
+  [
+    "how many decares drone sprays",
+    "drone productivity",
+    "DJI Agras T50 capacity",
+    "drone spraying speed",
+    "agricultural drone",
+  ]
 readTime: "6 min"
 ---
 
@@ -20,15 +27,15 @@ In this article we present **real data** on the productivity of the **DJI Agras 
 
 Before discussing daily productivity, let us look at the technical parameters that determine it:
 
-| Parameter                     | Value                                    |
-| ----------------------------- | ---------------------------------------- |
-| Tank volume                   | 40 litres                                |
-| Maximum strip width           | 11 metres                                |
-| Maximum operating speed       | 15 m/s                                   |
-| Theoretical productivity      | up to 210 dka/hour (21 ha/hour)          |
-| Battery swap time             | 2–3 minutes                              |
-| Preparation refill time       | 1–2 minutes                              |
-| Working time per battery      | 8–12 minutes (depending on load)         |
+| Parameter                | Value                            |
+| ------------------------ | -------------------------------- |
+| Tank volume              | 40 litres                        |
+| Maximum strip width      | 11 metres                        |
+| Maximum operating speed  | 15 m/s                           |
+| Theoretical productivity | up to 210 dka/hour (21 ha/hour)  |
+| Battery swap time        | 2–3 minutes                      |
+| Preparation refill time  | 1–2 minutes                      |
+| Working time per battery | 8–12 minutes (depending on load) |
 
 The productivity of **210 decares per hour** is the maximum value under ideal conditions – a large, rectangular field with low dosage. In actual practice the figures are different and depend on many factors.
 
@@ -39,6 +46,7 @@ The productivity of **210 decares per hour** is the maximum value under ideal co
 ### Optimistic Scenario: 2,500–3,000 Decares per Day
 
 This result is achieved with:
+
 - Large, rectangular parcels (over 200 dka each)
 - Low dosage (1–1.5 L/dka working solution)
 - Short distance between parcels
@@ -49,6 +57,7 @@ This result is achieved with:
 ### Realistic Scenario: 1,500–2,000 Decares per Day
 
 The most frequent result under normal field conditions:
+
 - Medium-sized parcels (50–200 dka)
 - Standard dosage (1.5–2 L/dka)
 - Moderate distance between fields
@@ -58,6 +67,7 @@ The most frequent result under normal field conditions:
 ### Conservative Scenario: 800–1,500 Decares per Day
 
 Under more difficult conditions:
+
 - Small or irregular parcels (under 50 dka)
 - High dosage (2–3 L/dka)
 - Parcels spread out (transport time)
@@ -72,6 +82,7 @@ Under more difficult conditions:
 This is the **most important factor**. With large, rectangular fields the drone makes long, uninterrupted strips with a minimum number of turns. With small, irregular parcels the time for turns, manoeuvres and re-configuration increases significantly.
 
 Example:
+
 - Field of 500 dka, rectangular → treatment in ~30 minutes of effective flight
 - 10 parcels of 50 dka each, scattered → treatment in 2–3 hours (including re-configuration)
 
@@ -79,12 +90,12 @@ Example:
 
 Dosage determines how often the drone stops for refilling. At 1 L/dka the 40-litre tank covers 40 decares. At 2 L/dka – 20 decares.
 
-| Dosage     | Decares per fill | Stops per 1,000 dka |
-| ---------- | ---------------- | ------------------- |
-| 1 L/dka    | 40 dka           | 25 times            |
-| 1.5 L/dka  | 27 dka           | 37 times            |
-| 2 L/dka    | 20 dka           | 50 times            |
-| 3 L/dka    | 13 dka           | 77 times            |
+| Dosage    | Decares per fill | Stops per 1,000 dka |
+| --------- | ---------------- | ------------------- |
+| 1 L/dka   | 40 dka           | 25 times            |
+| 1.5 L/dka | 27 dka           | 37 times            |
+| 2 L/dka   | 20 dka           | 50 times            |
+| 3 L/dka   | 13 dka           | 77 times            |
 
 Each refilling stop takes 2–4 minutes. With 50 stops that is **100–200 minutes** just for loading. This is why logistics is so important.
 
@@ -100,6 +111,7 @@ Rain is an absolute contraindication – not because of the drone, but because s
 ### 4. Logistics and Organisation
 
 Good organisation can increase daily productivity by **30–50%**:
+
 - Pre-prepared working solution
 - Sufficient number of charged batteries (minimum 6)
 - Vehicle with close field access
@@ -108,6 +120,7 @@ Good organisation can increase daily productivity by **30–50%**:
 ### 5. Crop Type and Terrain
 
 Different crops require different approaches to **crop protection**:
+
 - **Cereals (wheat, barley)** – standard mode, maximum productivity. Ideal for **fungicide treatment** and **herbicide spraying** of large areas in **Dobrudzha** and the **Thracian Plain**
 - **Corn** – taller crop, slower mode for better penetration during **insecticide treatment**
 - **Vineyards** – special mode, lower height, significantly slower. Popular for **fungicide treatment** of vineyards around **Plovdiv** and **Stara Zagora**
@@ -118,14 +131,14 @@ All these scenarios fall within the realm of **precision agriculture**, where th
 
 ## Comparison with Tractor and Aircraft
 
-| Parameter          | Drone DJI T50  | Tractor with sprayer | Aerial spraying    |
-| ------------------ | -------------- | -------------------- | ------------------ |
-| Daily capacity     | 1,500–3,000 dka| 200–400 dka          | 3,000–8,000 dka    |
-| Precision          | Very high      | Medium               | Low                |
-| Trampling          | None           | 3–5%                 | None               |
-| Minimum area       | 5 dka          | 20 dka               | 500 dka            |
-| Night work         | Yes            | Limited              | No                 |
-| Water per decare   | 1–2 L          | 15–30 L              | 3–5 L              |
+| Parameter        | Drone DJI T50   | Tractor with sprayer | Aerial spraying |
+| ---------------- | --------------- | -------------------- | --------------- |
+| Daily capacity   | 1,500–3,000 dka | 200–400 dka          | 3,000–8,000 dka |
+| Precision        | Very high       | Medium               | Low             |
+| Trampling        | None            | 3–5%                 | None            |
+| Minimum area     | 5 dka           | 20 dka               | 500 dka         |
+| Night work       | Yes             | Limited              | No              |
+| Water per decare | 1–2 L           | 15–30 L              | 3–5 L           |
 
 As you can see, the drone occupies the **middle position by capacity** – significantly faster than the tractor, but slower than aerial chemical spraying. The difference is that the drone combines high speed with **excellent precision** and **zero trampling**.
 

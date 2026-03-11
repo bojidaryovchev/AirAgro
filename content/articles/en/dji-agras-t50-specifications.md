@@ -21,6 +21,7 @@ The DJI Agras T50 is the leading agricultural drone on the market, designed to m
 The DJI Agras T50 features a **40-litre** tank for liquid preparations and the ability to carry **up to 50 kg** for spreading granular fertilisers. These numbers may look modest compared to ground machinery, but they are optimised for efficiency.
 
 **What this means for you:**
+
 - At a standard rate of 1–2 L/dka solution, one full tank covers **20–40 decares**
 - Refilling takes under 2 minutes – the drone loses almost no time on the ground
 - The smaller volume means more passes over the field, but also more precise application
@@ -35,6 +36,7 @@ Learn more about [drone productivity](/en/blog/how-many-hectares-drone-sprays-pe
 The DJI Agras T50 can treat up to **21 hectares (210 decares) per hour** under optimal conditions. This speed is comparable to high-performance self-propelled sprayers, but at significantly lower operating costs.
 
 **What it means in practice:**
+
 - 200 decares of wheat can be treated in approximately **1 hour**
 - 500 decares require approximately **2.5–3 hours**, including refilling
 - The drone works at a constant speed, without fatigue and without stops for breaks
@@ -52,6 +54,7 @@ One of the most innovative features of the DJI Agras T50 is the dual atomisation
 2. **Pressure system** – additionally atomises the solution for uniform coverage
 
 **Why it matters for farmers:**
+
 - **Finer aerosol** – droplets are of optimal size (80–200 microns), ensuring good coverage without drift (being carried by the wind)
 - **Uniform distribution** – every plant receives the same dose of preparation
 - **Better preparation efficiency** – fine droplets adhere better to leaves
@@ -72,6 +75,7 @@ The DJI Agras T50 uses the vortex effect created by the rotors to direct prepara
 RTK (Real-Time Kinematic) navigation is one of the key advantages of the DJI Agras T50. Standard GPS gives accuracy of 2–3 metres, while the RTK system provides accuracy of up to **±2 centimetres**.
 
 **What it means in practice:**
+
 - **No overlap** – the drone follows the route with exceptional accuracy, without spraying twice
 - **No gaps** – no untreated strips between passes
 - **Repeatability** – the drone can fly the exact same route during repeat treatment
@@ -86,12 +90,14 @@ For Bulgarian farmers, RTK navigation means that every decare receives exactly t
 The DJI Agras T50 is equipped with a **dual radar module** that provides two critical types of information:
 
 **1. Terrain Following Radar:**
+
 - Scans the terrain below the drone in real time
 - Automatically maintains a constant height above the plants
 - Adapts on hilly terrain, slopes and uneven ground
 - Ensures uniform spraying regardless of topography
 
 **2. Obstacle Detection Radar:**
+
 - 360° scanning of the surroundings
 - Automatic avoidance of poles, trees, buildings
 - Preventing collisions with power lines
@@ -107,6 +113,7 @@ Many Bulgarian fields are not perfectly flat – there are hills, slopes, isolat
 The DJI Agras T50 operates with intelligent batteries providing **10 to 15 minutes of flight time** at full load. The time varies depending on the load, wind speed and temperature.
 
 **How autonomy is managed:**
+
 - **Rapid battery exchange system** – exchange takes under 30 seconds
 - **Set of several batteries** – while one is working, the rest are charging
 - **Intelligent energy management** – the drone automatically returns for charging before the battery is exhausted
@@ -119,10 +126,12 @@ In practice the battery system does not limit work. With a sufficient number of 
 ### Resilience in Tough Field Conditions
 
 The DJI Agras T50 has a protection rating of **IP67**, which means:
+
 - **IP6X** – complete protection against dust penetration
 - **IPX7** – withstands immersion in water up to 1 metre depth for 30 minutes
 
 **What it means for day-to-day work:**
+
 - The drone operates reliably in dusty conditions – harvesting, work on unpaved roads, windy weather
 - Withstands rain – if the weather deteriorates mid-mission, there is no need for an emergency landing
 - Easy cleaning – can be washed with water after work with chemicals
@@ -137,6 +146,7 @@ For Bulgarian conditions, where fields are dusty in summer and wet in spring, IP
 The DJI Agras T50 features an active phased radar that in real time analyses vegetation density and automatically adjusts the spray flow rate. When the drone passes over dense vegetation, it increases the dose; over sparser vegetation – it decreases it.
 
 **Practical benefit:**
+
 - Every plant receives the optimal dose
 - Saving on preparation in sparse sections
 - Better effect in dense zones
@@ -149,6 +159,7 @@ This function is especially valuable when spraying uneven stands or when treatin
 ### DJI Agras App
 
 The DJI Agras T50 is operated via a specialised application that enables:
+
 - **Field mapping** – marking boundaries via GPS coordinates
 - **Automatic route planning** – the software calculates the optimal path
 - **Parameter settings** – height, speed, strip width, spray rate
@@ -161,15 +172,15 @@ The software is intuitive and does not require special technical knowledge, alth
 
 The DJI Agras T50 is designed for real agricultural conditions and has proven its value worldwide. Here is why it is ideal for Bulgaria:
 
-| Specification              | Benefit for Bulgarian farmers                                      |
-| -------------------------- | ------------------------------------------------------------------ |
-| 40L tank                   | Sufficient for efficient work on medium and large plots            |
-| 21 ha/hour                 | Competes with ground sprayers in speed                             |
-| Daily capacity 700–1000 dka| Treats farms of any scale in 1 day                                 |
-| RTK ±2 cm                  | Precise work without gaps and overlap                              |
-| Dual radar                 | Safe operation on hilly terrain                                    |
-| IP67                       | Reliability in dust and moisture                                   |
-| 8 nozzles                  | Uniform coverage on all crops                                      |
+| Specification               | Benefit for Bulgarian farmers                           |
+| --------------------------- | ------------------------------------------------------- |
+| 40L tank                    | Sufficient for efficient work on medium and large plots |
+| 21 ha/hour                  | Competes with ground sprayers in speed                  |
+| Daily capacity 700–1000 dka | Treats farms of any scale in 1 day                      |
+| RTK ±2 cm                   | Precise work without gaps and overlap                   |
+| Dual radar                  | Safe operation on hilly terrain                         |
+| IP67                        | Reliability in dust and moisture                        |
+| 8 nozzles                   | Uniform coverage on all crops                           |
 
 ### Regions Where the DJI Agras T50 Works Most Effectively
 
@@ -204,6 +215,7 @@ The T50 offers **double the tank size** (40 L vs 20 L), a more powerful dual ato
 There is no need to buy your own drone to benefit from its capabilities. AirAgro offers [professional drone spraying services](/en/blog/drone-spraying-services) in which our certified operators work with the DJI Agras T50 directly on your field in Plovdiv, Stara Zagora, Pazardzhik, Haskovo, Dobrudzha and the entire Thracian Plain.
 
 **What you get:**
+
 - Spraying with the most modern technology, with licences from **BFSA**, permit from **RHI**, training at **DJI Academy** and the status of **Professional PPP User**
 - Certified and experienced operators
 - Full documentation for every treatment

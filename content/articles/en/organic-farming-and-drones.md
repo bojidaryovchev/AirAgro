@@ -133,13 +133,13 @@ This level of documentation is practically impossible with manual or ground spra
 
 ## Economic Effect for Organic Farms
 
-| Indicator                          | Ground spraying     | Drone spraying               |
-| ---------------------------------- | ------------------- | ---------------------------- |
-| Biopesticide consumption           | 100%                | 50–70%                       |
-| Treatment time (100 dka)           | 4–6 hours           | 1.5–2 hours                  |
-| Soil compaction                    | Significant         | Zero                         |
-| Documentation for certification    | Manual              | Automatic (GPS log)          |
-| Access to steep terrain            | Limited             | Full                         |
+| Indicator                       | Ground spraying | Drone spraying      |
+| ------------------------------- | --------------- | ------------------- |
+| Biopesticide consumption        | 100%            | 50–70%              |
+| Treatment time (100 dka)        | 4–6 hours       | 1.5–2 hours         |
+| Soil compaction                 | Significant     | Zero                |
+| Documentation for certification | Manual          | Automatic (GPS log) |
+| Access to steep terrain         | Limited         | Full                |
 
 For a typical organic farm of 300–500 decares with 8–12 treatments per year, **savings from drone spraying reach 3,000–8,000 BGN** from reduced preparation and labour costs alone, not counting the benefits for soil health and produce quality.
 

@@ -6,7 +6,14 @@ date: "2025-12-10"
 image: "/images/blog/listno-torene-pshenitsa.png"
 slug: "foliar-fertilization-wheat"
 category: "Tips"
-tags: ["foliar fertilization wheat", "fertilization with drone", "microelements wheat", "foliar fertilizers", "agriculture yield"]
+tags:
+  [
+    "foliar fertilization wheat",
+    "fertilization with drone",
+    "microelements wheat",
+    "foliar fertilizers",
+    "agriculture yield",
+  ]
 readTime: "7 min"
 ---
 
@@ -34,6 +41,7 @@ In these cases **foliar fertilization of wheat** is not just a supplement – it
 ### Effectiveness of Leaf Absorption
 
 Scientific research shows that foliar application of microelements has significantly higher uptake efficiency compared to soil application:
+
 - Zinc – 5 times more effective with foliar application
 - Manganese – up to 10 times more effective with foliar application
 - Iron – absorbed almost entirely with foliar application, while soil application can be practically useless on carbonate soils
@@ -141,6 +149,7 @@ See the full range of [drone spraying services](/en/blog/drone-spraying-services
 ### Spray Under Suitable Conditions
 
 Optimal conditions for foliar fertilization are:
+
 - Temperature between 15 and 25 °C
 - Without direct strong sunlight (early morning or evening)
 - Relative humidity above 50–60%
@@ -162,6 +171,7 @@ Foliar fertilization should not be "blind". Carry out a soil and/or leaf analysi
 ### Take the Growth Stage into Account
 
 Different elements are most needed in different phases:
+
 - **Tillering to stem elongation:** zinc, manganese, nitrogen
 - **Flag leaf to ear emergence:** manganese, copper, magnesium
 - **Flowering to grain fill:** potassium, boron

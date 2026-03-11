@@ -6,7 +6,14 @@ date: "2026-02-05"
 image: "/images/blog/pruskane-na-zelenchutsi-s-dron.png"
 slug: "vegetable-spraying-with-drone"
 category: "Tips"
-tags: ["vegetable spraying drone", "vegetable garden protection", "drone spraying vegetables", "agri drone", "vegetable production"]
+tags:
+  [
+    "vegetable spraying drone",
+    "vegetable garden protection",
+    "drone spraying vegetables",
+    "agri drone",
+    "vegetable production",
+  ]
 readTime: "7 min"
 ---
 

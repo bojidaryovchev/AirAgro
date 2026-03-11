@@ -124,6 +124,7 @@ Use yellow water traps to monitor rapeseed flea beetle, stem weevil and pollen b
 ### Time Windows for Spraying
 
 Optimal conditions for rapeseed drone spraying are:
+
 - Temperature: 10–25°C
 - Wind: up to 3–4 m/s
 - No rain in the next 2–3 hours

@@ -6,7 +6,8 @@ date: "2026-03-01"
 image: "/images/blog/pruskane-s-dron-plovdiv.png"
 slug: "drone-spraying-plovdiv"
 category: "Tips"
-tags: ["drone spraying Plovdiv", "drone services Plovdiv", "agri drone Plovdiv", "agriculture Plovdiv", "Plovdiv Province"]
+tags:
+  ["drone spraying Plovdiv", "drone services Plovdiv", "agri drone Plovdiv", "agriculture Plovdiv", "Plovdiv Province"]
 readTime: "6 min"
 ---
 

@@ -1,16 +1,7 @@
 "use client";
 
 import VideoCanvas from "@/components/VideoCanvas";
-import {
-  ArrowRight,
-  Clock,
-  Droplet,
-  Leaf,
-  Phone,
-  Shield,
-  Target,
-  TrendingUp,
-} from "lucide-react";
+import { ArrowRight, Clock, Droplet, Leaf, Phone, Shield, Target, TrendingUp } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 
@@ -22,38 +13,32 @@ const benefits = [
   {
     icon: Target,
     title: "RTK Прецизност",
-    description:
-      "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
+    description: "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
   },
   {
     icon: Droplet,
     title: "Спестяване на Ресурси",
-    description:
-      "30-40% по-малко препарати и вода благодарение на ултрамалообемната технология.",
+    description: "30-40% по-малко препарати и вода благодарение на ултрамалообемната технология.",
   },
   {
     icon: Leaf,
     title: "Без Утъпкване",
-    description:
-      "Не увреждаме културата и не уплътняваме почвата — летим над полето.",
+    description: "Не увреждаме културата и не уплътняваме почвата — летим над полето.",
   },
   {
     icon: Clock,
     title: "Бързина",
-    description:
-      "До 200 дка/час ефективно. Обработваме 100 дка за 45–60 минути с презареждане.",
+    description: "До 200 дка/час ефективно. Обработваме 100 дка за 45–60 минути с презареждане.",
   },
   {
     icon: TrendingUp,
     title: "Високи Култури",
-    description:
-      "Работим над царевица, слънчоглед до 3–4 м височина. Достигаме всяка зона.",
+    description: "Работим над царевица, слънчоглед до 3–4 м височина. Достигаме всяка зона.",
   },
   {
     icon: Shield,
     title: "Влажна Почва",
-    description:
-      "Третираме и при кална/мека почва, когато тракторът не може да влезе.",
+    description: "Третираме и при кална/мека почва, когато тракторът не може да влезе.",
   },
 ];
 
@@ -61,29 +46,25 @@ const treatments = [
   {
     title: "Инсектицидно Пръскане",
     icon: "🐛",
-    description:
-      "Ефективен контрол на вредители — листни въшки, гъсеници, трипс, акари",
+    description: "Ефективен контрол на вредители — листни въшки, гъсеници, трипс, акари",
     crops: ["Пшеница", "Царевица", "Слънчоглед", "Рапица", "Соя"],
   },
   {
     title: "Хербицидно Пръскане",
     icon: "🌱",
-    description:
-      "Защита срещу плевели с прецизно приложение и минимален препаратен стрес",
+    description: "Защита срещу плевели с прецизно приложение и минимален препаратен стрес",
     crops: ["Всички зърнени", "Технически култури", "Многогодишни"],
   },
   {
     title: "Фунгицидно Пръскане",
     icon: "🍄",
-    description:
-      "Контрол на гъбични заболявания с достигане на долната страна на листата",
+    description: "Контрол на гъбични заболявания с достигане на долната страна на листата",
     crops: ["Пшеница", "Лозя", "Овошки", "Зеленчуци"],
   },
   {
     title: "Листно Торене",
     icon: "💧",
-    description:
-      "Директно усвояване на хранителни вещества през листната маса",
+    description: "Директно усвояване на хранителни вещества през листната маса",
     crops: ["Всички култури", "Оранжерийни", "Специални"],
   },
 ];
@@ -136,10 +117,7 @@ export default function PruskaneContent() {
   return (
     <>
       {/* ── Hero ── */}
-      <section
-        id="hero"
-        className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden"
-      >
+      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden">
         <VideoCanvas
           src="/videos/drone-spraying.mp4"
           poster="/drone-spraying-poster-blurred.jpg"
@@ -157,13 +135,12 @@ export default function PruskaneContent() {
           <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
             🚁 Водеща Услуга
           </span>
-          <h1 className="mb-5 text-4xl font-bold leading-tight text-white md:text-6xl">
-            Пръскане с{" "}
-            <span className="text-gradient-green">Агро Дрон</span>
+          <h1 className="mb-5 text-4xl leading-tight font-bold text-white md:text-6xl">
+            Пръскане с <span className="text-gradient-green">Агро Дрон</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-emerald-100 md:text-xl">
-            Професионално третиране на земеделски култури с DJI Agras T50.
-            RTK прецизност, спестяване на ресурси, максимална ефективност.
+            Професионално третиране на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси,
+            максимална ефективност.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -197,9 +174,7 @@ export default function PruskaneContent() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">
-                  {stat.value}
-                </div>
+                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">{stat.value}</div>
                 <p className="text-sm text-gray-300">{stat.label}</p>
               </motion.div>
             ))}
@@ -216,12 +191,9 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Защо Пръскане с Дрон?
-            </h2>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Защо Пръскане с Дрон?</h2>
             <p className="mx-auto max-w-3xl text-xl text-gray-600">
-              Модерната технология, която променя начина на работа в
-              земеделието
+              Модерната технология, която променя начина на работа в земеделието
             </p>
           </motion.div>
 
@@ -238,12 +210,8 @@ export default function PruskaneContent() {
                 <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 sm:h-16 sm:w-16">
                   <benefit.icon className="h-7 w-7 text-emerald-600 sm:h-8 sm:w-8" />
                 </div>
-                <h3 className="mb-4 text-xl font-bold text-gray-900 sm:text-2xl">
-                  {benefit.title}
-                </h3>
-                <p className="leading-relaxed text-gray-600">
-                  {benefit.description}
-                </p>
+                <h3 className="mb-4 text-xl font-bold text-gray-900 sm:text-2xl">{benefit.title}</h3>
+                <p className="leading-relaxed text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -259,9 +227,7 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Видове Третиране
-            </h2>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Видове Третиране</h2>
             <p className="mx-auto max-w-3xl text-xl text-gray-600">
               Пълен спектър от растителнозащитни и хранителни третирания
             </p>
@@ -278,16 +244,10 @@ export default function PruskaneContent() {
                 className="rounded-3xl bg-white p-8 shadow-xl"
               >
                 <div className="mb-4 text-5xl">{treatment.icon}</div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                  {treatment.title}
-                </h3>
-                <p className="mb-6 leading-relaxed text-gray-600">
-                  {treatment.description}
-                </p>
+                <h3 className="mb-4 text-2xl font-bold text-gray-900">{treatment.title}</h3>
+                <p className="mb-6 leading-relaxed text-gray-600">{treatment.description}</p>
                 <div className="border-t border-gray-200 pt-6">
-                  <div className="mb-3 text-sm font-semibold text-gray-500">
-                    ПОДХОДЯЩИ КУЛТУРИ:
-                  </div>
+                  <div className="mb-3 text-sm font-semibold text-gray-500">ПОДХОДЯЩИ КУЛТУРИ:</div>
                   <div className="flex flex-wrap gap-2">
                     {treatment.crops.map((crop) => (
                       <span
@@ -314,9 +274,7 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Как Работи Процесът?
-            </h2>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Как Работи Процесът?</h2>
           </motion.div>
 
           <div className="mx-auto max-w-4xl space-y-8">
@@ -333,12 +291,8 @@ export default function PruskaneContent() {
                   {item.step}
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-bold text-gray-900 sm:text-2xl">
-                    {item.title}
-                  </h3>
-                  <p className="text-base leading-relaxed text-gray-600 sm:text-lg">
-                    {item.desc}
-                  </p>
+                  <h3 className="mb-2 text-xl font-bold text-gray-900 sm:text-2xl">{item.title}</h3>
+                  <p className="text-base leading-relaxed text-gray-600 sm:text-lg">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -355,9 +309,7 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-4xl text-center text-white"
           >
-            <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-              Готови за Професионално Пръскане?
-            </h2>
+            <h2 className="mb-6 text-4xl font-bold md:text-5xl">Готови за Професионално Пръскане?</h2>
             <p className="mb-10 text-2xl text-emerald-100">
               Обадете се сега за безплатна консултация и оферта за 24 часа
             </p>

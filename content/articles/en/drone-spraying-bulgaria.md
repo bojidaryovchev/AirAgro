@@ -6,7 +6,14 @@ date: "2026-03-08"
 image: "/images/blog/pruskane-s-dron-bulgaria.png"
 slug: "drone-spraying-bulgaria"
 category: "Tips"
-tags: ["drone spraying Bulgaria", "drone services Bulgaria", "agri drone Bulgaria", "agriculture Bulgaria", "national coverage"]
+tags:
+  [
+    "drone spraying Bulgaria",
+    "drone services Bulgaria",
+    "agri drone Bulgaria",
+    "agriculture Bulgaria",
+    "national coverage",
+  ]
 readTime: "7 min"
 ---
 

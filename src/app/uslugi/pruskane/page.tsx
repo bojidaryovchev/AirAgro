@@ -22,8 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Пръскане с Дрон | Професионална Услуга в Цяла България",
-    description:
-      "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване.",
+    description: "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване.",
     url: "https://airagro.bg/uslugi/pruskane",
     type: "website",
     images: [
@@ -39,8 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Пръскане с Дрон | AirAgro България",
-    description:
-      "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване.",
+    description: "Професионално пръскане с DJI Agras дронове. RTK прецизност, спестяване на ресурси, без утъпкване.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {

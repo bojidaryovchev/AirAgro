@@ -56,14 +56,14 @@ With a drone like the **DJI Agras T50**, shading paint is applied **from top to 
 
 The DJI Agras T50 is DJI's flagship in the agri-drone segment and is ideal for **painting greenhouses with a drone**. Here are its main features that make the service possible:
 
-| Parameter            | Value                        |
-| -------------------- | ---------------------------- |
-| Tank                 | 40 litres                    |
-| Working width        | up to 11 metres              |
-| Flow rate            | 6–12 L/min (adjustable)      |
-| Precision            | RTK positioning (±2 cm)      |
-| Autonomy             | up to 20 min per flight      |
-| Spraying system      | Dual centrifugal nozzles     |
+| Parameter       | Value                    |
+| --------------- | ------------------------ |
+| Tank            | 40 litres                |
+| Working width   | up to 11 metres          |
+| Flow rate       | 6–12 L/min (adjustable)  |
+| Precision       | RTK positioning (±2 cm)  |
+| Autonomy        | up to 20 min per flight  |
+| Spraying system | Dual centrifugal nozzles |
 
 ### Process Steps
 

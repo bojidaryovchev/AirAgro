@@ -6,7 +6,8 @@ date: "2025-11-10"
 image: "/images/blog/koga-se-pruska-pshenitsa.png"
 slug: "when-to-spray-wheat"
 category: "Tips"
-tags: ["when to spray wheat", "wheat spraying calendar", "wheat crop protection", "herbicides wheat", "fungicides wheat"]
+tags:
+  ["when to spray wheat", "wheat spraying calendar", "wheat crop protection", "herbicides wheat", "fungicides wheat"]
 readTime: "8 min"
 ---
 
@@ -29,6 +30,7 @@ Climatic conditions in Bulgaria also play a role. Spring in the Thracian Plain �
 Tillering is the critical window for **herbicide treatment** of wheat. In this stage weeds are in early phases and are most sensitive to herbicides, while the wheat itself is sufficiently hardy.
 
 **What is done:**
+
 - Herbicide spraying against broad-leaved weeds (chamomile, poppy, speedwell, charlock)
 - Herbicide spraying against grass weeds (wild oat, ryegrass, loose silky-bent)
 - First foliar fertilisation (if needed)
@@ -42,6 +44,7 @@ For more information on weed control, see our detailed article on [weed control 
 Stem elongation is a transition period. Herbicides are **not recommended** anymore, unless specifically registered for later application. In this stage the focus shifts to fungicide protection and foliar fertilisation.
 
 **What is done:**
+
 - First fungicide treatment (when symptoms appear or in rainy conditions)
 - Foliar fertilisation with nitrogen and microelements
 - Observation for leaf diseases – powdery mildew, rusts, septoria
@@ -55,6 +58,7 @@ Learn more about [fungicide spraying of wheat](/en/blog/fungicide-spraying-wheat
 This is the **most important moment for fungicide protection**. The flag leaf provides up to 45% of the photosynthesis that fills the grain. Protecting it is directly linked to yield.
 
 **What is done:**
+
 - Second (main) fungicide treatment – flag leaf protection
 - Foliar fertilisation (boosting before flowering)
 - Insecticide treatment when grain bug or aphids appear
@@ -68,6 +72,7 @@ This is the time when treatment precision is decisive. More about [wheat drone s
 Flowering is a critical stage for control of **fusarium head blight** (Fusarium Head Blight). This disease not only reduces yield but also contaminates grain with mycotoxins (DON, zearalenone), which can render it unfit for food or feed.
 
 **What is done:**
+
 - Fungicide treatment against fusarium (in wet weather during flowering)
 - Insecticide treatment if needed (grain bug)
 
@@ -78,6 +83,7 @@ Flowering is a critical stage for control of **fusarium head blight** (Fusarium 
 In this stage chemical treatment is rarely justified. The leaf mass decreases and the crop completes its growing season. In case of extremely strong grain bug attack, insecticide spraying may be necessary, but this is more the exception.
 
 **What is done:**
+
 - Desiccation (if needed, before harvest)
 - Monitoring for grain bug
 
@@ -90,6 +96,7 @@ Foliar fertilisation is a supplement to basic and pre-sowing fertilisation, not 
 - Visible nutrient deficiency
 
 **Optimal stages for foliar fertilisation:**
+
 1. Tillering (BBCH 25–29) – nitrogen foliar fertilisation
 2. Stem elongation (BBCH 31–37) – nitrogen + microelements (manganese, copper, zinc)
 3. Before ear emergence (BBCH 39–49) – potassium, boron + amino acids
@@ -98,13 +105,13 @@ Learn more about techniques for [foliar fertilisation of wheat](/en/blog/foliar-
 
 ## Practical Wheat Spraying Calendar for Bulgaria
 
-| Period              | Growth stage (BBCH)              | Treatment                          | Priority                  |
-| ------------------- | -------------------------------- | ---------------------------------- | ------------------------- |
-| February – March    | Tillering (21–29)                | Herbicides, foliar fertilisation   | High                      |
-| April               | Stem elongation (30–37)          | Fungicide No.1, foliar fertilisation| Medium–high              |
-| Late April – May    | Flag leaf – ear emergence (37–59)| Fungicide No.2 (main), insecticides| Very high                |
-| May                 | Flowering (61–69)                | Fungicide against fusarium         | High (in wet conditions)  |
-| June                | Grain filling (70–89)            | Desiccation (if needed)            | Low                       |
+| Period           | Growth stage (BBCH)               | Treatment                            | Priority                 |
+| ---------------- | --------------------------------- | ------------------------------------ | ------------------------ |
+| February – March | Tillering (21–29)                 | Herbicides, foliar fertilisation     | High                     |
+| April            | Stem elongation (30–37)           | Fungicide No.1, foliar fertilisation | Medium–high              |
+| Late April – May | Flag leaf – ear emergence (37–59) | Fungicide No.2 (main), insecticides  | Very high                |
+| May              | Flowering (61–69)                 | Fungicide against fusarium           | High (in wet conditions) |
+| June             | Grain filling (70–89)             | Desiccation (if needed)              | Low                      |
 
 _Note: Timing is indicative. In the Thracian Plain (Plovdiv, Pazardzhik, Stara Zagora, Haskovo) growth stages occur 2–3 weeks earlier compared to Dobrudzha and Northern Bulgaria._
 

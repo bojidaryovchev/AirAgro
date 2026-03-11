@@ -111,6 +111,7 @@ Do not wait for disease to develop massively. Prophylactic fungicide spraying in
 ### Choose the Right Moment
 
 Spray in early morning hours or in the evening when:
+
 - Temperature is between 15°C and 28°C
 - Wind is up to 3–4 m/s
 - Humidity is above 50%

@@ -6,7 +6,8 @@ date: "2026-01-05"
 image: "/images/blog/dron-sreshtu-traktor-sravnenie.png"
 slug: "drone-vs-tractor-cost-comparison"
 category: "Analysis"
-tags: ["drone vs tractor", "spraying cost comparison", "drone spraying economics", "tractor spraying price", "agriculture"]
+tags:
+  ["drone vs tractor", "spraying cost comparison", "drone spraying economics", "tractor spraying price", "agriculture"]
 readTime: "7 min"
 ---
 
@@ -25,6 +26,7 @@ When comparing **drone vs tractor**, we must account not only for direct costs b
 ### Tractor
 
 A standard tractor with a spray boom (12–24 m) consumes an average of **1.2–1.8 litres of diesel per decare** when spraying. At a price of approximately 2.80 BGN/L, this means:
+
 - **Fuel cost: 3.36–5.04 BGN/dka**
 
 To this are added the costs of transport to the field (especially for remote plots) and operation of the pumping system.
@@ -32,6 +34,7 @@ To this are added the costs of transport to the field (especially for remote plo
 ### Drone (DJI Agras T50)
 
 The DJI Agras T50 operates on rechargeable batteries. One charge allows treatment of approximately 20–25 dka. The electricity cost is minimal – approximately **0.15–0.25 BGN/dka**.
+
 - **Energy cost: 0.15–0.25 BGN/dka**
 
 The difference in energy costs is **over 15 times** in favour of the drone.
@@ -41,11 +44,13 @@ The difference in energy costs is **over 15 times** in favour of the drone.
 Here the drone demonstrates one of its most significant [advantages over the tractor](/en/blog/drone-vs-tractor-spraying). Thanks to the centrifugal nozzles and precise flow control, agricultural drones achieve considerably more effective coverage with less working solution.
 
 ### Tractor
+
 - Working solution: **20–40 litres per decare**
 - Greater water use means more preparation for dilution
 - Uneven application at turns and strip overlaps
 
 ### Drone
+
 - Working solution: **1–2 litres per decare** (ULV technology)
 - Precision centrifugal nozzles with controlled droplet size
 - Uniform coverage thanks to RTK GPS navigation
@@ -55,6 +60,7 @@ Here the drone demonstrates one of its most significant [advantages over the tra
 ## Losses from Crop Trampling
 
 This is the **hidden cost** that most farmers underestimate. When a tractor with a sprayer passes through the field, the wheels trample strips of the crop. Research shows that:
+
 - The tractor **tramples 3–5% of the area** with every pass
 - With 3–4 sprayings per season, the cumulative loss is significant
 - Trampled plants yield **30–50% lower** in the affected zones
@@ -62,6 +68,7 @@ This is the **hidden cost** that most farmers underestimate. When a tractor with
 ### Calculating the Losses
 
 For wheat with a yield of 500 kg/dka and a price of 0.40 BGN/kg:
+
 - **Yield loss from trampling: 6–10 BGN/dka per season**
 
 With a drone, these losses are **zero** – the drone flies at 2–3 metres above the crop and does not touch a single plant. This is especially important for [wheat spraying](/en/blog/wheat-spraying-with-drone), rapeseed and other crops sensitive to mechanical damage.
@@ -69,12 +76,14 @@ With a drone, these losses are **zero** – the drone flies at 2–3 metres abov
 ## Labour and Manpower
 
 ### Tractor
+
 - A qualified tractor operator is required
 - Average salary: 80–120 BGN/day
 - Productivity: 200–400 dka/day (depending on boom width)
 - **Labour cost: 0.20–0.60 BGN/dka**
 
 ### Drone
+
 - A trained operator is required
 - One operator manages the DJI Agras T50 with [productivity of up to 530 dka/day](/en/blog/how-many-hectares-drone-sprays-per-day)
 - When hiring a service – labour is included in the price
@@ -84,21 +93,21 @@ With a drone, these losses are **zero** – the drone flies at 2–3 metres abov
 
 ### Tractor with Sprayer
 
-| Component                  | Value                   |
-| -------------------------- | ----------------------- |
-| Tractor (used)             | 40,000–80,000 BGN       |
-| Mounted sprayer (18 m)     | 8,000–15,000 BGN        |
-| Annual maintenance         | 3,000–6,000 BGN         |
-| Depreciation (10 years)    | 4,800–9,500 BGN/year    |
+| Component               | Value                |
+| ----------------------- | -------------------- |
+| Tractor (used)          | 40,000–80,000 BGN    |
+| Mounted sprayer (18 m)  | 8,000–15,000 BGN     |
+| Annual maintenance      | 3,000–6,000 BGN      |
+| Depreciation (10 years) | 4,800–9,500 BGN/year |
 
 ### Drone (DJI Agras T50)
 
-| Component                  | Value                   |
-| -------------------------- | ----------------------- |
-| DJI Agras T50 drone        | ~120,000 BGN            |
-| Batteries and chargers     | 15,000–25,000 BGN       |
-| Annual maintenance         | 5,000–10,000 BGN        |
-| Depreciation (5 years)     | 27,000–35,000 BGN/year  |
+| Component              | Value                  |
+| ---------------------- | ---------------------- |
+| DJI Agras T50 drone    | ~120,000 BGN           |
+| Batteries and chargers | 15,000–25,000 BGN      |
+| Annual maintenance     | 5,000–10,000 BGN       |
+| Depreciation (5 years) | 27,000–35,000 BGN/year |
 
 At first glance the drone appears more expensive as an investment. But here comes the key question – **what is the farm's scale** and whether to hire a service rather than buy a drone.
 
@@ -106,43 +115,43 @@ At first glance the drone appears more expensive as an investment. But here come
 
 ### Farm of 500 Decares
 
-| Indicator                          | Tractor       | Drone (service)  |
-| ---------------------------------- | ------------- | ---------------- |
-| Fuel/Energy                        | 2,100 BGN     | 100 BGN          |
-| Preparations (saving)              | –             | -1,500 BGN       |
-| Trampling losses                   | 4,000 BGN     | 0 BGN            |
-| Labour                             | 200 BGN       | included         |
-| Service price (4 sprayings)        | –             | 12,000 BGN       |
-| Depreciation                       | 4,800 BGN     | –                |
-| **TOTAL per season**               | **~11,100 BGN**| **~10,600 BGN** |
+| Indicator                   | Tractor         | Drone (service) |
+| --------------------------- | --------------- | --------------- |
+| Fuel/Energy                 | 2,100 BGN       | 100 BGN         |
+| Preparations (saving)       | –               | -1,500 BGN      |
+| Trampling losses            | 4,000 BGN       | 0 BGN           |
+| Labour                      | 200 BGN         | included        |
+| Service price (4 sprayings) | –               | 12,000 BGN      |
+| Depreciation                | 4,800 BGN       | –               |
+| **TOTAL per season**        | **~11,100 BGN** | **~10,600 BGN** |
 
 For 500 dka, **the drone service is comparable** to the tractor, but with the advantage of zero trampling and better spraying quality.
 
 ### Farm of 1,000 Decares
 
-| Indicator                          | Tractor       | Drone (service)  |
-| ---------------------------------- | ------------- | ---------------- |
-| Fuel/Energy                        | 4,200 BGN     | 200 BGN          |
-| Preparations (saving)              | –             | -3,000 BGN       |
-| Trampling losses                   | 8,000 BGN     | 0 BGN            |
-| Labour                             | 400 BGN       | included         |
-| Service price (4 sprayings)        | –             | 24,000 BGN       |
-| Depreciation                       | 4,800 BGN     | –                |
-| **TOTAL per season**               | **~17,400 BGN**| **~21,200 BGN** |
+| Indicator                   | Tractor         | Drone (service) |
+| --------------------------- | --------------- | --------------- |
+| Fuel/Energy                 | 4,200 BGN       | 200 BGN         |
+| Preparations (saving)       | –               | -3,000 BGN      |
+| Trampling losses            | 8,000 BGN       | 0 BGN           |
+| Labour                      | 400 BGN         | included        |
+| Service price (4 sprayings) | –               | 24,000 BGN      |
+| Depreciation                | 4,800 BGN       | –               |
+| **TOTAL per season**        | **~17,400 BGN** | **~21,200 BGN** |
 
 For 1,000 dka the tractor comes out cheaper in absolute amount, **but** when we include qualitative differences – better coverage, fewer chemicals in the soil and higher yield due to no trampling – [the drone is a competitive option](/en/blog/benefits-of-drone-in-agriculture).
 
 ### Farm of 5,000 Decares
 
-| Indicator            | Tractor        | Drone (own)     |
-| -------------------- | -------------- | --------------- |
-| Fuel/Energy          | 21,000 BGN     | 1,000 BGN       |
-| Preparations (saving)| –              | -12,000 BGN     |
-| Trampling losses     | 40,000 BGN     | 0 BGN           |
-| Labour               | 2,000 BGN      | 8,000 BGN       |
-| Depreciation         | 9,500 BGN      | 35,000 BGN      |
-| Maintenance          | 6,000 BGN      | 10,000 BGN      |
-| **TOTAL per season** | **~78,500 BGN**| **~42,000 BGN** |
+| Indicator             | Tractor         | Drone (own)     |
+| --------------------- | --------------- | --------------- |
+| Fuel/Energy           | 21,000 BGN      | 1,000 BGN       |
+| Preparations (saving) | –               | -12,000 BGN     |
+| Trampling losses      | 40,000 BGN      | 0 BGN           |
+| Labour                | 2,000 BGN       | 8,000 BGN       |
+| Depreciation          | 9,500 BGN       | 35,000 BGN      |
+| Maintenance           | 6,000 BGN       | 10,000 BGN      |
+| **TOTAL per season**  | **~78,500 BGN** | **~42,000 BGN** |
 
 For 5,000 dka **the drone saves over 35,000 BGN per year** – primarily from prevented trampling losses and preparation savings.
 
@@ -167,6 +176,7 @@ For vineyards, orchards and hilly terrain, the tractor is severely limited. The 
 ## When Is the Tractor the Better Choice?
 
 Honesty requires us to say that the tractor still has its advantages:
+
 - **Very large flat areas** (over 10,000 dka) with existing machinery
 - **Fertiliser incorporation** – the tractor can combine spraying with mechanical cultivation
 - **Low initial investment** with already available machinery

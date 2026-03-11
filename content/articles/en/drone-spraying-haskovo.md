@@ -6,7 +6,14 @@ date: "2026-03-04"
 image: "/images/blog/pruskane-s-dron-haskovo.png"
 slug: "drone-spraying-haskovo"
 category: "Tips"
-tags: ["drone spraying Haskovo", "drone services Haskovo", "agri drone Haskovo", "agriculture Haskovo", "Thrace drone spraying"]
+tags:
+  [
+    "drone spraying Haskovo",
+    "drone services Haskovo",
+    "agri drone Haskovo",
+    "agriculture Haskovo",
+    "Thrace drone spraying",
+  ]
 readTime: "6 min"
 ---
 

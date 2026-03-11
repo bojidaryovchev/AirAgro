@@ -6,7 +6,14 @@ date: "2026-03-05"
 image: "/images/blog/pruskane-s-dron-dobrudja.png"
 slug: "drone-spraying-dobrudja"
 category: "Tips"
-tags: ["drone spraying Dobrudja", "drone services Dobrudja", "agri drone Dobrudja", "agriculture Dobrudja", "grain production Dobrudja"]
+tags:
+  [
+    "drone spraying Dobrudja",
+    "drone services Dobrudja",
+    "agri drone Dobrudja",
+    "agriculture Dobrudja",
+    "grain production Dobrudja",
+  ]
 readTime: "6 min"
 ---
 
@@ -127,13 +134,13 @@ See details on our [drone spraying prices](/en/blog/drone-spraying-price) page o
 
 ## Seasonal Calendar for Drone Spraying in Dobrudzha
 
-| Month        | Crop                    | Treatment                      |
-| ------------ | ----------------------- | ------------------------------ |
-| March–April  | Wheat, barley           | Herbicide, foliar fertilization|
-| April–May    | Rapeseed                | Fungicide, insecticide         |
-| May–June     | Wheat                   | Fungicide, insecticide         |
-| June–July    | Corn                    | Herbicide, insecticide         |
-| July–August  | Sunflower               | Fungicide, insecticide         |
+| Month       | Crop          | Treatment                       |
+| ----------- | ------------- | ------------------------------- |
+| March–April | Wheat, barley | Herbicide, foliar fertilization |
+| April–May   | Rapeseed      | Fungicide, insecticide          |
+| May–June    | Wheat         | Fungicide, insecticide          |
+| June–July   | Corn          | Herbicide, insecticide          |
+| July–August | Sunflower     | Fungicide, insecticide          |
 
 ## Frequently Asked Questions
 

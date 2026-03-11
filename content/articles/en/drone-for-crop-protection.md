@@ -39,6 +39,7 @@ It is not enough simply to spray a preparation – it is important that it reach
 The DJI Agras T50 features 8 centrifugal nozzles that disperse the preparation into controlled droplets of 50 to 500 microns. Droplet size can be adjusted depending on the type of preparation and meteorological conditions.
 
 The powerful rotors of the drone create a downwash airflow that:
+
 - **Directs droplets downward** towards plants, minimising wind drift
 - **Lifts leaves**, allowing the preparation to reach their underside
 - **Creates turbulence** in the plant canopy, improving coverage
@@ -50,6 +51,7 @@ The result is coverage that is **uniform and reaches all parts of the plant** �
 One of the most significant advantages of the **drone for crop protection** is reduced preparation consumption. The standard spraying rate with a drone is 1–3 litres of solution per decare, compared to 15–30 litres with ground spraying.
 
 This means:
+
 - **More concentrated solution** – the active substance is more concentrated, but the total quantity is optimal
 - **Less water** – significant saving, especially in areas with water deficit
 - **Less residual solution** – less contamination when rinsing
@@ -58,6 +60,7 @@ This means:
 ### Rapid Response in Crisis Situations
 
 When a mass pest infestation or aggressive disease appears, every hour counts. The **drone for crop protection** offers a unique advantage:
+
 - **Mobilisation within hours** – days of organisation are not needed
 - **Treatment of up to 200 decares per hour** – rapid coverage of affected areas
 - **Operation on wet soil** – when the tractor cannot enter
@@ -70,6 +73,7 @@ For detailed information on how operators manage the process, see our article on
 ### Wheat
 
 Wheat is Bulgaria's main cereal crop and is subject to numerous diseases and pests. The drone is especially effective for:
+
 - **Fungicide treatment** against powdery mildew, rusts and septoria – usually in the stem elongation to early flowering stage
 - **Herbicide treatment** – early in spring, when weeds are young
 - **Insecticide treatment** against grain aphid and other pests
@@ -80,6 +84,7 @@ Drone spraying of wheat is especially effective in a wet spring, when fields are
 ### Maize
 
 For maize, the drone is indispensable in the later development stages when plants reach 1.5–2 metres in height. The tractor cannot enter without causing significant damage, and aviation is expensive. The **drone for crop protection** is the perfect solution:
+
 - **Treatment against European corn borer** – timely insecticide spraying is critical
 - **Fungicide treatment** against Helminthosporium and other leaf diseases
 - **Foliar fertilisation** to maximise yield
@@ -89,6 +94,7 @@ For more information, read our article on [corn drone spraying](/en/blog/corn-sp
 ### Sunflower
 
 Sunflower is another important crop for Bulgarian agriculture. Drone treatment is suitable for:
+
 - **Fungicide spraying** against white stem rot (Sclerotinia) and phoma
 - **Desiccation** before harvest for uniform ripening
 - **Insecticide treatment** upon infestation by aphids or cotton bollworm
@@ -96,6 +102,7 @@ Sunflower is another important crop for Bulgarian agriculture. Drone treatment i
 ### Rapeseed
 
 Rapeseed is a delicate crop that benefits greatly from the non-contact application of the drone:
+
 - **Autumn treatment** with growth regulators to prevent stretching
 - **Spring fungicide treatment** against Phoma and Sclerotinia
 - **Insecticide treatment** against pollen beetles
@@ -103,6 +110,7 @@ Rapeseed is a delicate crop that benefits greatly from the non-contact applicati
 ### Vineyards and Orchards
 
 The specialised modes of the DJI Agras T50 enable effective treatment of permanent plantings too:
+
 - Slower flight speed for better coverage
 - Adapted height relative to the canopy
 - Small droplet size for better penetration
@@ -167,6 +175,7 @@ Remove or mark obstacles (temporary poles, irrigation hoses), ensure field acces
 ## The Future of Crop Protection
 
 Technologies in drone crop protection are developing rapidly:
+
 - **AI disease recognition** – the drone will identify problem zones and treat only those
 - **Biological crop protection** – drones for dispersing beneficial insects (Trichogramma) and biopesticides
 - **Multispectral monitoring** – early detection of stress factors before visible symptoms
@@ -175,6 +184,7 @@ Technologies in drone crop protection are developing rapidly:
 ## Regions Where We Offer Crop Protection with a Drone
 
 AirAgro serves agricultural farms in key regions of Bulgaria:
+
 - **Plovdiv and the Thracian Plain** – cereal, vegetable and fruit farms requiring fungicide and herbicide treatment
 - **Stara Zagora** – intensive crop protection for wheat, barley and sunflower
 - **Pazardzhik** – diverse crops including vegetables and orchards
@@ -211,6 +221,7 @@ Yes, we offer **seasonal subscriptions** with an individual treatment plan – f
 Crop protection is an investment, not a cost. The right treatment at the right time can make the difference between a good and an excellent harvest. The **drone for crop protection** gives you the tool to achieve exactly that.
 
 **Request a free consultation and farm inspection:**
+
 - **Free consultation** with our crop protection specialists
 - Personalised **treatment plan** with selection of fungicides, herbicides and insecticides
 - **Drone demonstration** of the DJI Agras T50 on your field

@@ -34,11 +34,13 @@ Each of these risks requires timely intervention. Skipping even one critical tre
 Weed control in rapeseed starts from the moment of sowing. Rapeseed is a slowly developing crop and weeds can easily smother it.
 
 **Pre-emergence herbicides:**
+
 - Applied immediately after sowing
 - Active substances: metazachlor, clomazone, napropamide
 - Period: immediately after sowing (usually **the first half of September**)
 
 **Post-emergence herbicides:**
+
 - Applied at the 2–4 leaf stage of rapeseed
 - Against grass weeds: graminicides (quizalofop, fluazifop, clethodim)
 - Against broad-leaved weeds: metazachlor-based products
@@ -51,11 +53,13 @@ Weed control in rapeseed starts from the moment of sowing. Rapeseed is a slowly 
 The cabbage stem flea beetle (_Psylliodes chrysocephala_) is one of the most dangerous autumn pests of rapeseed in Bulgaria. Adult beetles gnaw cotyledons and young leaves, while larvae penetrate into petioles and the stem.
 
 **When to spray:**
+
 - When the first beetles appear on young plants
 - Usually **end of September – October**
 - Economic threshold: 1–2 beetles per plant at cotyledon stage
 
 **What to use:**
+
 - Pyrethroid insecticides (lambda-cyhalothrin, alpha-cypermethrin)
 - Neonicotinoid insecticides (for more serious attacks)
 
@@ -66,6 +70,7 @@ Timely insecticide treatment is critical – if the beetles damage the growing p
 In years with a warm autumn and abundant rainfall, rapeseed can outgrow – the rosette becomes too large and the stem elongates. This increases the risk of frost damage.
 
 **When to apply:**
+
 - Stage BBCH 14–18 (4–8 true leaves)
 - Usually **mid-October – beginning of November**
 - Active substances: metconazole, tebuconazole (simultaneous fungicidal and regulatory action)
@@ -89,10 +94,12 @@ If losses exceed 40–50%, reseeding or a crop change may be necessary.
 With the resumption of vegetation, rapeseed rapidly enters the stem elongation phase. This is the moment for a combined treatment.
 
 **When:**
+
 - Stage BBCH 30–33 (beginning of stem elongation)
 - Usually **the second half of March** for Southern Bulgaria, **beginning of April** for the North
 
 **What is done:**
+
 - Growth regulator (metconazole, mepiquat chloride) – controls height and strengthens the stem
 - Fungicide – prophylaxis against stem canker (Phoma lingam) and Cylindrosporium
 - Foliar fertilisation with boron – a critical microelement for rapeseed
@@ -104,11 +111,13 @@ With the resumption of vegetation, rapeseed rapidly enters the stem elongation p
 The pollen beetle (_Brassicogethes aeneus_, also known as _Meligethes aeneus_) is the **most dangerous spring pest** of rapeseed. Beetles enter flower buds and feed on pollen; in mass infestation they can destroy a significant proportion of flowers.
 
 **When to spray:**
+
 - Upon reaching economic threshold: 2–4 beetles per plant at green bud stage (BBCH 51–59)
 - Usually **end of March – mid-April**
 - **Do not spray during flowering** – to protect bees!
 
 **What to use:**
+
 - Pyrethroids (for susceptible populations)
 - Organophosphates or oxadiazines (for resistant populations – an increasingly common problem in Europe)
 
@@ -119,11 +128,13 @@ The pollen beetle (_Brassicogethes aeneus_, also known as _Meligethes aeneus_) i
 The main fungicide treatment in rapeseed is directed against **Sclerotinia (white stem rot)** – a disease that can cause losses of up to 40% in wet springs.
 
 **When:**
+
 - Stage BBCH 65–69 (full flowering to end of flowering)
 - Usually **mid-April – beginning of May**
 - Spray when the petals of the first flowers fall (they create an entry point for infection)
 
 **What to use:**
+
 - Boscalid, dimoxystrobin, azoxystrobin – systemic fungicides with protective and curative action
 
 This is the treatment with the highest return on investment in rapeseed. Even under moderate disease pressure, protection against Sclerotinia typically pays for itself.
@@ -131,6 +142,7 @@ This is the treatment with the highest return on investment in rapeseed. Even un
 ### Insecticide Treatment against Pod Midge and Seed Weevil – May
 
 **When:**
+
 - Upon formation of the first pods (BBCH 71–75)
 - Usually **May**
 - Economic threshold: 1 weevil per plant
@@ -139,15 +151,15 @@ These pests pierce the pods, larvae feed on the seeds inside and cause direct yi
 
 ## Practical Rapeseed Spraying Calendar for Bulgaria
 
-| Period           | Growth stage     | Treatment                                       | Priority      |
-| ---------------- | ---------------- | ----------------------------------------------- | ------------- |
-| September        | After sowing     | Pre-emergence herbicide                         | High          |
-| October          | 2–4 leaves       | Post-emergence herbicide + insecticide (flea beetle)| High      |
-| October–November | 4–8 leaves       | Growth regulator + fungicide                    | Medium–high   |
-| March            | Start elongation | Regulator + fungicide + boron                   | High          |
-| March–April      | Green bud        | Insecticide (pollen beetle)                     | Very high     |
-| April–May        | Flowering        | Fungicide (Sclerotinia)                         | Very high     |
-| May              | Pods             | Insecticide (pod midge/seed weevil)             | Medium        |
+| Period           | Growth stage     | Treatment                                            | Priority    |
+| ---------------- | ---------------- | ---------------------------------------------------- | ----------- |
+| September        | After sowing     | Pre-emergence herbicide                              | High        |
+| October          | 2–4 leaves       | Post-emergence herbicide + insecticide (flea beetle) | High        |
+| October–November | 4–8 leaves       | Growth regulator + fungicide                         | Medium–high |
+| March            | Start elongation | Regulator + fungicide + boron                        | High        |
+| March–April      | Green bud        | Insecticide (pollen beetle)                          | Very high   |
+| April–May        | Flowering        | Fungicide (Sclerotinia)                              | Very high   |
+| May              | Pods             | Insecticide (pod midge/seed weevil)                  | Medium      |
 
 _Note: timing for Southern Bulgaria is 1–3 weeks earlier than for the North._
 
@@ -158,6 +170,7 @@ Rapeseed is a crop where drone spraying proves extremely effective for several r
 ### Spring Spraying on Tall Crops
 
 At the time of the Sclerotinia fungicide treatment rapeseed is **100–150 cm tall** and in full flower. Entry of ground machinery:
+
 - Breaks stems and severs flowers
 - Creates tracks that hinder harvesting
 - Can damage up to 8–10% of plants in the tracks
