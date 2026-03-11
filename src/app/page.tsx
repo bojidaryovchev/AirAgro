@@ -19,7 +19,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://airagro.bg",
+    "@id": "https://airagro.bg/#localbusiness",
     name: "AirAgro",
     alternateName: "AirAgro България",
     url: "https://airagro.bg",
@@ -106,8 +106,8 @@ export default function Home() {
       availableLanguage: ["Bulgarian", "English"],
       email: "contact.airagro@gmail.com",
     },
-    sameAs: ["https://www.facebook.com/airagro", "https://www.instagram.com/airagro"],
-    foundingDate: "2023",
+    sameAs: ["https://www.facebook.com/profile.php?id=61587474574865"],
+    foundingDate: "2023-01-01",
     knowsAbout: [
       "Precision Agriculture",
       "Drone Spraying",

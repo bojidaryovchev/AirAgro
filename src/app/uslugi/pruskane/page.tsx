@@ -57,6 +57,7 @@ export default function SprayingServicePage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    name: "Пръскане с агро дрон",
     serviceType: "Пръскане с агро дрон",
     provider: {
       "@type": "LocalBusiness",
@@ -107,11 +108,6 @@ export default function SprayingServicePage() {
         unitText: "на декар",
       },
       availability: "https://schema.org/InStock",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "47",
     },
   };
 

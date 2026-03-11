@@ -51,17 +51,19 @@ export default function AboutPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://airagro.bg/#organization",
     name: "AirAgro",
     alternateName: "AirAgro България",
     description: "Професионални услуги за пръскане с агро дрон в цяла България",
     url: "https://airagro.bg",
     logo: "https://airagro.bg/air-agro-logo.png",
-    foundingDate: "2023",
+    foundingDate: "2023-01-01",
     email: "contact.airagro@gmail.com",
     telephone: "+359-884-242-406",
     address: {
       "@type": "PostalAddress",
       addressCountry: "BG",
+      addressRegion: "България",
     },
     areaServed: {
       "@type": "Country",
@@ -75,6 +77,15 @@ export default function AboutPage() {
       "Agricultural Innovation",
     ],
     slogan: "Прецизно земеделие с дрон технология",
+    sameAs: ["https://www.facebook.com/profile.php?id=61587474574865"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+359-884-242-406",
+      contactType: "Customer Service",
+      areaServed: "BG",
+      availableLanguage: ["Bulgarian", "English"],
+      email: "contact.airagro@gmail.com",
+    },
   };
 
   const stats = [

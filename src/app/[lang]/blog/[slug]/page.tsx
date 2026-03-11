@@ -162,6 +162,8 @@ export default async function BlogPostPage({ params }: Props) {
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/air-agro-logo.png`,
+        width: 1024,
+        height: 1024,
       },
     },
     keywords: article.tags.join(", "),

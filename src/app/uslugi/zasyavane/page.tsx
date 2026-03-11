@@ -54,6 +54,7 @@ export default function SeedingServicePage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    name: "Засяване с агро дрон",
     serviceType: "Засяване с агро дрон",
     provider: {
       "@type": "LocalBusiness",
@@ -93,16 +94,7 @@ export default function SeedingServicePage() {
         },
       ],
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "BGN",
-      availability: "https://schema.org/InStock",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "47",
-    },
+
   };
 
   const benefits = [

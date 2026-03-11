@@ -54,38 +54,47 @@ export default function PricingPage() {
     "@type": "ItemList",
     name: "Цени за агро дрон услуги",
     description: "Пакети и цени за пръскане с агро дрон в България",
+    url: "https://airagro.bg/tseni",
     itemListElement: [
       {
-        "@type": "Offer",
+        "@type": "ListItem",
         position: 1,
         name: "Еднократно пръскане",
-        description: "Професионално пръскане с DJI Agras T50",
-        price: "6",
-        priceCurrency: "BGN",
-        priceSpecification: {
-          "@type": "UnitPriceSpecification",
+        item: {
+          "@type": "Offer",
+          name: "Еднократно пръскане",
+          description: "Професионално пръскане с DJI Agras T50",
           price: "6",
           priceCurrency: "BGN",
-          unitText: "на декар",
-          referenceQuantity: {
-            "@type": "QuantitativeValue",
-            value: "1",
-            unitCode: "DKA",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "6",
+            priceCurrency: "BGN",
+            unitText: "на декар",
+            referenceQuantity: {
+              "@type": "QuantitativeValue",
+              value: "1",
+              unitCode: "DAA",
+            },
           },
-        },
-        seller: {
-          "@type": "Organization",
-          name: "AirAgro",
+          seller: {
+            "@type": "Organization",
+            name: "AirAgro",
+          },
         },
       },
       {
-        "@type": "Offer",
+        "@type": "ListItem",
         position: 2,
         name: "Сезонен пакет",
-        description: "3-4 третирания през сезона с приоритетно обслужване",
-        seller: {
-          "@type": "Organization",
-          name: "AirAgro",
+        item: {
+          "@type": "Offer",
+          name: "Сезонен пакет",
+          description: "3-4 третирания през сезона с приоритетно обслужване",
+          seller: {
+            "@type": "Organization",
+            name: "AirAgro",
+          },
         },
       },
     ],
