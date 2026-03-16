@@ -73,7 +73,6 @@ export default function AboutPage() {
       "Precision Agriculture",
       "Drone Spraying",
       "RTK Technology",
-      "NDVI Analysis",
       "Agricultural Innovation",
     ],
     slogan: "Прецизно земеделие с дрон технология",

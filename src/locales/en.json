@@ -26,10 +26,6 @@
   "services.herbicide.description": "Targeted herbicide spraying for effective weed control.",
   "services.seeding.title": "Drone Seeding",
   "services.seeding.description": "Precise aerial spreading of seeds.",
-  "services.monitoring.title": "NDVI Monitoring",
-  "services.monitoring.description": "Multispectral crop health analysis.",
-  "services.mapping.title": "Mapping",
-  "services.mapping.description": "Accurate 3D terrain mapping for operation planning.",
 
   "features.badge": "DJI Agras T50",
   "features.title1": "Industry-Leading",

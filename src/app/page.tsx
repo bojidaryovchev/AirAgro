@@ -26,7 +26,7 @@ export default function Home() {
     logo: "https://airagro.bg/air-agro-logo.png",
     image: "https://airagro.bg/air-agro-logo.png",
     description:
-      "Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, NDVI анализ.",
+      "Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене.",
     priceRange: "$$",
     telephone: "+359-884-242-406",
     email: "contact.airagro@gmail.com",
@@ -57,9 +57,6 @@ export default function Home() {
       "Пръскане с дрон",
       "Засяване с дрон",
       "Листно торене",
-      "Картографиране с дрон",
-      "NDVI анализ",
-      "NDRE анализ",
       "Засенчване на оранжерии",
     ],
     hasOfferCatalog: {
@@ -81,14 +78,6 @@ export default function Home() {
             "@type": "Service",
             name: "Засяване с дрон",
             description: "Прецизно засяване на покривни култури и зелени торове с дрон технология.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "NDVI картографиране",
-            description: "Мултиспектрален анализ на здравето на културите за Variable Rate Application (VRA).",
           },
         },
       ],

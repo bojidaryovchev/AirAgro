@@ -5,22 +5,21 @@ import { Metadata } from "next";
 import ServicesContent from "./ServicesContent";
 
 export const metadata: Metadata = {
-  title: "Услуги с Агро Дрон | Пръскане, Засяване, NDVI Анализ | AirAgro",
+  title: "Услуги с Агро Дрон | Пръскане и Засяване | AirAgro",
   description:
-    "Пълен списък агро дрон услуги: пръскане с DJI Agras T50, засяване, листно торене, NDVI мониторинг, картографиране. Обслужваме цяла България. ☎ 0884-242-406",
+    "Пълен списък агро дрон услуги: пръскане с DJI Agras T50, засяване, листно торене, контрол на плевели. Обслужваме цяла България. ☎ 0884-242-406",
   keywords: [
     "агро дрон услуги",
     "пръскане с дрон",
     "засяване с дрон",
     "листно торене дрон",
-    "NDVI анализ дрон",
     "дрон услуги земеделие",
     "DJI Agras услуги",
   ],
   openGraph: {
     title: "Агро Дрон Услуги | AirAgro България",
     description:
-      "Пръскане, засяване, листно торене, NDVI мониторинг — пълно портфолио от дрон услуги за земеделие в цяла България.",
+      "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
     url: "https://airagro.bg/uslugi",
     type: "website",
     images: [
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Агро Дрон Услуги | AirAgro България",
     description:
-      "Пръскане, засяване, листно торене, NDVI мониторинг — пълно портфолио от дрон услуги за земеделие в цяла България.",
+      "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {
@@ -55,14 +54,12 @@ export default function ServicesPage() {
     name: "Агро дрон услуги на AirAgro",
     description: "Пълен списък услуги за прецизно земеделие с дрон технология",
     url: "https://airagro.bg/uslugi",
-    numberOfItems: 6,
+    numberOfItems: 4,
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Растителна Защита", url: "https://airagro.bg/uslugi/pruskane" },
       { "@type": "ListItem", position: 2, name: "Листно Торене", url: "https://airagro.bg/uslugi/pruskane" },
       { "@type": "ListItem", position: 3, name: "Контрол на Плевели", url: "https://airagro.bg/uslugi/pruskane" },
       { "@type": "ListItem", position: 4, name: "Засяване с Дрон", url: "https://airagro.bg/uslugi/zasyavane" },
-      { "@type": "ListItem", position: 5, name: "NDVI Мониторинг", url: "https://airagro.bg/uslugi" },
-      { "@type": "ListItem", position: 6, name: "Картографиране", url: "https://airagro.bg/uslugi" },
     ],
   };
 

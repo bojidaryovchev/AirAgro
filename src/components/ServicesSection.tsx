@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/FadeIn";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Droplets, Leaf, Map, Satellite, Shield, Sprout } from "lucide-react";
+import { Droplets, Leaf, Shield, Sprout } from "lucide-react";
 import Link from "next/link";
 
 const ServicesSection = () => {
@@ -32,18 +32,6 @@ const ServicesSection = () => {
       title: t("services.seeding.title"),
       description: t("services.seeding.description"),
       href: "/uslugi/zasyavane",
-    },
-    {
-      icon: Satellite,
-      title: t("services.monitoring.title"),
-      description: t("services.monitoring.description"),
-      href: "/uslugi",
-    },
-    {
-      icon: Map,
-      title: t("services.mapping.title"),
-      description: t("services.mapping.description"),
-      href: "/uslugi",
     },
   ];
 

@@ -26,10 +26,6 @@
   "services.herbicide.description": "Целево пръскане с хербициди за ефективен контрол на плевелите.",
   "services.seeding.title": "Засяване с Дрон",
   "services.seeding.description": "Прецизно разпръскване на семена от въздуха.",
-  "services.monitoring.title": "NDVI Мониторинг",
-  "services.monitoring.description": "Мултиспектрален анализ на здравето на културите.",
-  "services.mapping.title": "Картографиране",
-  "services.mapping.description": "Точно 3D картографиране на терена за планиране на операциите.",
 
   "features.badge": "DJI Agras T50",
   "features.title1": "Технология с Глобално",

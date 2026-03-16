@@ -39,8 +39,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t.metaDescription,
     keywords:
       lang === "bg"
-        ? "дрон технологии, растителна защита, умно земеделие, прецизно земеделие, NDVI мониторинг"
-        : "drone technology, crop protection, smart farming, precision agriculture, NDVI monitoring",
+        ? "дрон технологии, растителна защита, умно земеделие, прецизно земеделие, агро дрон услуги"
+        : "drone technology, crop protection, smart farming, precision agriculture, agricultural drone services",
     openGraph: {
       title: t.metaTitle,
       description: t.metaDescription,
