@@ -109,7 +109,7 @@ export default function ZasyavaneContent() {
   return (
     <>
       {/* ── Hero ── */}
-      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden pt-20">
+      <section id="hero" className="relative flex h-[70vh] min-h-[500px] items-center justify-center overflow-hidden">
         <VideoCanvas
           src="/videos/drone-spraying.mp4"
           poster="/drone-spraying-poster-blurred.jpg"
@@ -276,10 +276,10 @@ export default function ZasyavaneContent() {
                   {techSpecs.capacity.map((spec) => (
                     <div
                       key={spec.label}
-                      className="flex flex-col gap-0.5 border-b border-gray-200 pb-4 sm:flex-row sm:items-center sm:justify-between"
+                      className="flex items-center justify-between gap-4 border-b border-gray-200 pb-4"
                     >
                       <span className="text-gray-600">{spec.label}</span>
-                      <span className="font-bold text-gray-900">{spec.value}</span>
+                      <span className="shrink-0 font-bold text-gray-900">{spec.value}</span>
                     </div>
                   ))}
                 </div>
@@ -291,10 +291,10 @@ export default function ZasyavaneContent() {
                   {techSpecs.efficiency.map((spec) => (
                     <div
                       key={spec.label}
-                      className="flex flex-col gap-0.5 border-b border-gray-200 pb-4 sm:flex-row sm:items-center sm:justify-between"
+                      className="flex items-center justify-between gap-4 border-b border-gray-200 pb-4"
                     >
                       <span className="text-gray-600">{spec.label}</span>
-                      <span className="font-bold text-gray-900">{spec.value}</span>
+                      <span className="shrink-0 font-bold text-gray-900">{spec.value}</span>
                     </div>
                   ))}
                 </div>

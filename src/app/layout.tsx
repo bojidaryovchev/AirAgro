@@ -1,6 +1,7 @@
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
@@ -95,6 +96,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bg" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18017278458"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18017278458');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning>
         <LanguageProvider>
           {children}
