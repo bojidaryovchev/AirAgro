@@ -84,8 +84,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
+    google: "DchfqaojsWa0XUGGWCPyC0hWiOnqzgn3v",
   },
 };
 
@@ -97,10 +96,7 @@ export default function RootLayout({
   return (
     <html lang="bg" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18017278458"
-          strategy="afterInteractive"
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18017278458" strategy="afterInteractive" />
         <Script id="google-ads" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
