@@ -190,9 +190,11 @@ h6 {
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #059669;
+  color: #1e293b;
   font-family: var(--font-display);
   line-height: 1.4;
+  padding-left: 0.75rem;
+  border-left: 3px solid #10b981;
 }
 
 .article-content h4 {
@@ -308,13 +310,17 @@ h6 {
 
 .article-content a {
   color: #059669;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s;
+  border-bottom: 1px solid rgba(5, 150, 105, 0.35);
+  transition:
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .article-content a:hover {
   color: #10b981;
+  border-bottom-color: #10b981;
 }
 
 .article-content table {
@@ -362,5 +368,5 @@ h6 {
 }
 
 .article-content li > strong:first-child {
-  color: #059669;
+  color: #111827;
 }

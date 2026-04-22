@@ -101,7 +101,15 @@ export default function CookieConsent() {
                 <p className="text-sm font-medium text-gray-900">{t("cookies.necessary.title")}</p>
                 <p className="text-xs text-gray-500">{t("cookies.necessary.description")}</p>
               </div>
-              <span className="text-primary mt-0.5 shrink-0 text-xs font-medium">{t("cookies.alwaysOn")}</span>
+              <button
+                role="switch"
+                aria-checked={true}
+                disabled
+                aria-label={t("cookies.alwaysOn")}
+                className="bg-primary relative mt-0.5 h-5 w-9 shrink-0 cursor-not-allowed rounded-full opacity-60"
+              >
+                <span className="absolute top-0.5 left-0.5 h-4 w-4 translate-x-4 rounded-full bg-white shadow" />
+              </button>
             </div>
 
             {/* Analytics */}

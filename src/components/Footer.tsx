@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import Link from "next/link";
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <footer className="bg-foreground text-background py-8">
@@ -27,7 +27,7 @@ const Footer = () => {
             <Link href="/#contact" className="hover:text-primary transition-colors">
               {t("nav.contact")}
             </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href={`/${language}/privacy-policy`} className="hover:text-primary transition-colors">
               {t("footer.privacy")}
             </Link>
           </div>

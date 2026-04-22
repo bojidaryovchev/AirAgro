@@ -133,8 +133,8 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="relative h-125 bg-linear-to-br from-emerald-600 to-emerald-800">
           <div className="absolute inset-0 bg-black/20" />
-          <div className="relative container mx-auto flex h-full items-center px-4">
-            <div className="max-w-3xl text-white">
+          <div className="relative container mx-auto flex h-full items-center justify-center px-4">
+            <div className="max-w-3xl text-center text-white">
               <h1 className="mb-6 text-5xl font-bold md:text-6xl">Лидери в Агро Дрон Технологиите</h1>
               <p className="text-xl leading-relaxed text-emerald-100 md:text-2xl">
                 Професионални оператори с мисия да направим прецизното земеделие достъпно за всеки земеделец в България
