@@ -69,12 +69,7 @@ export default function AboutPage() {
       "@type": "Country",
       name: "Bulgaria",
     },
-    knowsAbout: [
-      "Precision Agriculture",
-      "Drone Spraying",
-      "RTK Technology",
-      "Agricultural Innovation",
-    ],
+    knowsAbout: ["Precision Agriculture", "Drone Spraying", "RTK Technology", "Agricultural Innovation"],
     slogan: "Прецизно земеделие с дрон технология",
     sameAs: ["https://www.facebook.com/profile.php?id=61587474574865"],
     contactPoint: {

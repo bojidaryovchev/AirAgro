@@ -18,8 +18,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Агро Дрон Услуги | AirAgro България",
-    description:
-      "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
+    description: "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
     url: "https://airagro.bg/uslugi",
     type: "website",
     images: [
@@ -35,8 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Агро Дрон Услуги | AirAgro България",
-    description:
-      "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
+    description: "Пръскане, засяване, листно торене — пълно портфолио от дрон услуги за земеделие в цяла България.",
     images: ["/air-agro-logo.png"],
   },
   alternates: {

@@ -7,13 +7,19 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import ReviewsSection from "@/components/ReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import { getAllArticles } from "@/lib/articles";
+import { fetchGoogleReviews } from "@/lib/reviews";
 
-export default function Home() {
+export default async function Home() {
   // Fetch articles at build time (SSG)
   const articles = getAllArticles().slice(0, 6); // Get 6 most recent articles
+
+  // Fetch Google Business Profile reviews (server-side, daily ISR)
+  const reviewsData = await fetchGoogleReviews("bg");
+  const googleMapsUrl = process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL;
 
   // JSON-LD structured data for homepage
   const jsonLd = {
@@ -53,12 +59,7 @@ export default function Home() {
         closes: "20:00",
       },
     ],
-    serviceType: [
-      "Пръскане с дрон",
-      "Засяване с дрон",
-      "Листно торене",
-      "Засенчване на оранжерии",
-    ],
+    serviceType: ["Пръскане с дрон", "Засяване с дрон", "Листно торене", "Засенчване на оранжерии"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Агро дрон услуги",
@@ -159,6 +160,7 @@ export default function Home() {
         <FeaturesSection />
         <BenefitsSection />
         <StatsSection />
+        <ReviewsSection {...reviewsData} googleMapsUrl={googleMapsUrl} />
         <ContactSection />
         <FAQSection />
         <BlogSection articles={articles} />

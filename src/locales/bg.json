@@ -100,6 +100,27 @@
   "contact.messagePlaceholder": "Разкажете ни за вашите нужди...",
   "contact.submit": "Изпрати Заявка",
 
+  "reviews.badge": "Отзиви от клиенти",
+  "reviews.title": "Доволни Клиенти",
+  "reviews.count": "отзива",
+  "reviews.viewAll": "Виж всички отзиви в Google",
+
   "footer.privacy": "Политика за Поверителност",
-  "footer.copyright": "AgroAir Дрон Услуги. Задвижван от DJI Agras T50."
+  "footer.copyright": "AgroAir Дрон Услуги. Задвижван от DJI Agras T50.",
+
+  "cookies.banner.title": "Ние използваме бисквитки",
+  "cookies.banner.description": "Използваме бисквитки за анализ на трафика и персонализирани реклами. Можете да изберете кои категории да разрешите.",
+  "cookies.acceptAll": "Приеми всички",
+  "cookies.rejectAll": "Откажи всички",
+  "cookies.customize": "Настройки",
+  "cookies.save": "Запази настройките",
+  "cookies.necessary.title": "Необходими бисквитки",
+  "cookies.necessary.description": "Задължителни за работата на сайта. Не могат да бъдат изключени.",
+  "cookies.analytics.title": "Аналитични бисквитки",
+  "cookies.analytics.description": "Помагат ни да разберем как посетителите използват сайта (Google Analytics).",
+  "cookies.marketing.title": "Маркетингови бисквитки",
+  "cookies.marketing.description": "Използват се за показване на персонализирани реклами (Google Ads).",
+  "cookies.alwaysOn": "Винаги включени",
+  "cookies.learnMore": "Научи повече",
+  "cookies.privacyPolicy": "Политика за Поверителност"
 }

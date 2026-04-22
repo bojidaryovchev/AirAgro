@@ -100,6 +100,27 @@
   "contact.messagePlaceholder": "Tell us about your needs...",
   "contact.submit": "Send Request",
 
+  "reviews.badge": "Client Reviews",
+  "reviews.title": "Happy Clients",
+  "reviews.count": "reviews",
+  "reviews.viewAll": "See all reviews on Google",
+
   "footer.privacy": "Privacy Policy",
-  "footer.copyright": "AgroAir Drone Services. Powered by DJI Agras T50."
+  "footer.copyright": "AgroAir Drone Services. Powered by DJI Agras T50.",
+
+  "cookies.banner.title": "We use cookies",
+  "cookies.banner.description": "We use cookies for traffic analysis and personalised advertising. You can choose which categories to allow.",
+  "cookies.acceptAll": "Accept All",
+  "cookies.rejectAll": "Reject All",
+  "cookies.customize": "Customise",
+  "cookies.save": "Save Preferences",
+  "cookies.necessary.title": "Necessary Cookies",
+  "cookies.necessary.description": "Required for the website to function. Cannot be disabled.",
+  "cookies.analytics.title": "Analytics Cookies",
+  "cookies.analytics.description": "Help us understand how visitors use the site (Google Analytics).",
+  "cookies.marketing.title": "Marketing Cookies",
+  "cookies.marketing.description": "Used to show personalised advertisements (Google Ads).",
+  "cookies.alwaysOn": "Always on",
+  "cookies.learnMore": "Learn more",
+  "cookies.privacyPolicy": "Privacy Policy"
 }
