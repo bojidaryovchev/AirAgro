@@ -189,7 +189,7 @@ Ready to modernise crop protection on your farm? Contact the AirAgro team:
 
 - **Phone:** +359 884 242 406
 - **Website:** airagro.bg
-- **Email:** info@airagro.bg
+- **Email:** contact.airagro@gmail.com
 
 We offer:
 

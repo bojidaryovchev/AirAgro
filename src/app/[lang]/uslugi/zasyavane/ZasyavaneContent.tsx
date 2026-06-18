@@ -1,111 +1,55 @@
 "use client";
 
 import VideoCanvas from "@/components/VideoCanvas";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath } from "@/lib/routes";
 import { ArrowRight, Clock, Droplets, Leaf, Mountain, Phone, Target, Wind } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 
 /* ------------------------------------------------------------------ */
-/*  Data                                                               */
-/* ------------------------------------------------------------------ */
-
-const benefits = [
-  {
-    icon: Mountain,
-    title: "Недостъпни Терени",
-    description: "Засяваме откоси, стръмни склонове, терени с камъни, където техниката не може да влезе.",
-  },
-  {
-    icon: Target,
-    title: "Равномерно Разпределение",
-    description: "RTK прецизност осигурява еднородна норма на сеитба без празнини или свръхзасяване.",
-  },
-  {
-    icon: Leaf,
-    title: "Без Увреждане",
-    description: "Не уплътняваме почвата, не увреждаме съществуващата растителност при подсяване.",
-  },
-  {
-    icon: Clock,
-    title: "Бързо Изпълнение",
-    description: "Обработваме големи площи за часове вместо за дни. Улавяме оптималния сезон.",
-  },
-  {
-    icon: Wind,
-    title: "Метеорологичен Контрол",
-    description: "Избираме точния момент с оптимални условия — влажност, вятър, температура.",
-  },
-  {
-    icon: Droplets,
-    title: "Комбиниране с Хидропосев",
-    description: "Можем да смесваме семена с биостимуланти, хидрогели и адхезиви за по-добро покълване.",
-  },
-];
-
-const applications = [
-  {
-    title: "Рехабилитация на Ливади",
-    icon: "🌾",
-    description: "Подсяване на изреждащи или деградирали ливади с трайни треви без преораване",
-    details: ["Люцерна", "Еспарзет", "Детелина", "Тревни смески", "Многогодишни пасища"],
-  },
-  {
-    title: "Укрепване на Откоси",
-    icon: "⛰️",
-    description: "Засяване на стръмни терени за ерозионен контрол и стабилизация на почвата",
-    details: ["Пътни откоси", "Брегови зони", "Сипеи", "Язовирни стени", "Строителни обекти"],
-  },
-  {
-    title: "Биологична Рекултивация",
-    icon: "♻️",
-    description: "Възстановяване на растителност на нарушени или замърсени индустриални терени",
-    details: ["Мини", "Кариери", "Депа", "Строителни площадки", "Промишлени зони"],
-  },
-  {
-    title: "Покривно Засяване",
-    icon: "🌱",
-    description: "Подсяване в съществуващи култури за защита на почвата или зелено торене",
-    details: ["Междуредово в лозя", "Под овощни дръвчета", "Покривни култури", "Зимуващи смески"],
-  },
-];
-
-const stats = [
-  { value: "50 л", label: "Резервоар (25-40 кг семена)" },
-  { value: "±10 см", label: "RTK Точност" },
-  { value: "до 9 м", label: "Ширина на разхвърляне" },
-  { value: "до 45°", label: "Максимален наклон" },
-];
-
-const seeds = [
-  "Люцерна",
-  "Детелина",
-  "Житни треви",
-  "Еспарзет",
-  "Рапица",
-  "Горчица",
-  "Ливадни смески",
-  "Покривни култури",
-  "Ерозионни смески",
-];
-
-const techSpecs = {
-  capacity: [
-    { label: "Резервоар", value: "50 л (25-40 кг семена)" },
-    { label: "Разхвърляне", value: "До 9 метра ширина" },
-    { label: "Норма на сеитба", value: "10-200 кг/ха регулируема" },
-  ],
-  efficiency: [
-    { label: "Производителност", value: "До 15 ха/час" },
-    { label: "GPS точност", value: "±10 см с RTK" },
-    { label: "Работен наклон", value: "До 45° склон" },
-  ],
-};
-
-/* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function ZasyavaneContent() {
+export default function ZasyavaneContent({ lang }: { lang: "bg" | "en" }) {
+  const { t } = useLanguage();
+
+  const benefitIcons = [Mountain, Target, Leaf, Clock, Wind, Droplets];
+  const benefits = benefitIcons.map((icon, i) => ({
+    icon,
+    title: t(`seeding.benefits.${i}.title`),
+    description: t(`seeding.benefits.${i}.description`),
+  }));
+
+  const applicationMeta = [
+    { icon: "🌾", detailCount: 5 },
+    { icon: "⛰️", detailCount: 5 },
+    { icon: "♻️", detailCount: 5 },
+    { icon: "🌱", detailCount: 4 },
+  ];
+  const applications = applicationMeta.map(({ icon, detailCount }, i) => ({
+    icon,
+    title: t(`seeding.applications.${i}.title`),
+    description: t(`seeding.applications.${i}.description`),
+    details: Array.from({ length: detailCount }, (_, d) => t(`seeding.applications.${i}.details.${d}`)),
+  }));
+
+  const stats = [0, 1, 2, 3].map((i) => ({
+    value: t(`seeding.stats.${i}.value`),
+    label: t(`seeding.stats.${i}.label`),
+  }));
+
+  const seeds = [0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => t(`seeding.seeds.${i}`));
+
+  const techCapacity = [0, 1, 2].map((i) => ({
+    label: t(`seeding.techSpecs.capacity.${i}.label`),
+    value: t(`seeding.techSpecs.capacity.${i}.value`),
+  }));
+  const techEfficiency = [0, 1, 2].map((i) => ({
+    label: t(`seeding.techSpecs.efficiency.${i}.label`),
+    value: t(`seeding.techSpecs.efficiency.${i}.value`),
+  }));
+
   return (
     <>
       {/* ── Hero ── */}
@@ -125,14 +69,13 @@ export default function ZasyavaneContent() {
           className="relative z-10 mx-auto max-w-3xl px-6 text-center"
         >
           <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
-            🌱 Иновативна Услуга
+            🌱 {t("seeding.hero.badge")}
           </span>
           <h1 className="mb-5 text-4xl leading-tight font-bold text-white md:text-6xl">
-            Засяване с <span className="text-gradient-green">Агро Дрон</span>
+            {t("seeding.hero.title1")} <span className="text-gradient-green">{t("seeding.hero.title2")}</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-emerald-100 md:text-xl">
-            Рехабилитация на ливади, укрепване на откоси, биологична рекултивация. Достъп до недостъпни терени с RTK
-            прецизност.
+            {t("seeding.hero.description")}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -140,13 +83,13 @@ export default function ZasyavaneContent() {
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-emerald-700 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
             >
               <Phone className="h-5 w-5" />
-              Запитай сега
+              {t("seeding.hero.ctaQuote")}
             </a>
             <Link
-              href="/uslugi/pruskane"
+              href={localizedPath("spraying", lang)}
               className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/20"
             >
-              Виж пръскане с дрон
+              {t("seeding.hero.ctaSpraying")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -183,8 +126,8 @@ export default function ZasyavaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Предимства на Дрон Засяването</h2>
-            <p className="mx-auto max-w-3xl text-xl text-gray-600">Технологията, която прави възможно невъзможното</p>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("seeding.benefits.heading")}</h2>
+            <p className="mx-auto max-w-3xl text-xl text-gray-600">{t("seeding.benefits.subheading")}</p>
           </motion.div>
 
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -217,8 +160,8 @@ export default function ZasyavaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Приложения на Услугата</h2>
-            <p className="mx-auto max-w-3xl text-xl text-gray-600">Специализирани решения за различни терени и нужди</p>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("seeding.applications.heading")}</h2>
+            <p className="mx-auto max-w-3xl text-xl text-gray-600">{t("seeding.applications.subheading")}</p>
           </motion.div>
 
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
@@ -235,7 +178,9 @@ export default function ZasyavaneContent() {
                 <h3 className="mb-4 text-2xl font-bold text-gray-900">{app.title}</h3>
                 <p className="mb-6 leading-relaxed text-gray-600">{app.description}</p>
                 <div className="border-t border-gray-200 pt-6">
-                  <div className="mb-3 text-sm font-semibold text-gray-500">ПРИМЕРИ:</div>
+                  <div className="mb-3 text-sm font-semibold text-gray-500">
+                    {t("seeding.applications.examplesLabel")}
+                  </div>
                   <div className="space-y-2">
                     {app.details.map((detail) => (
                       <div key={detail} className="flex items-center gap-2 text-gray-700">
@@ -260,7 +205,7 @@ export default function ZasyavaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Технически Характеристики</h2>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("seeding.techSpecs.heading")}</h2>
           </motion.div>
 
           <motion.div
@@ -271,9 +216,9 @@ export default function ZasyavaneContent() {
           >
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h3 className="mb-6 text-2xl font-bold text-gray-900">Капацитет</h3>
+                <h3 className="mb-6 text-2xl font-bold text-gray-900">{t("seeding.techSpecs.capacityHeading")}</h3>
                 <div className="space-y-4">
-                  {techSpecs.capacity.map((spec) => (
+                  {techCapacity.map((spec) => (
                     <div
                       key={spec.label}
                       className="flex items-center justify-between gap-4 border-b border-gray-200 pb-4"
@@ -286,9 +231,9 @@ export default function ZasyavaneContent() {
               </div>
 
               <div>
-                <h3 className="mb-6 text-2xl font-bold text-gray-900">Ефективност</h3>
+                <h3 className="mb-6 text-2xl font-bold text-gray-900">{t("seeding.techSpecs.efficiencyHeading")}</h3>
                 <div className="space-y-4">
-                  {techSpecs.efficiency.map((spec) => (
+                  {techEfficiency.map((spec) => (
                     <div
                       key={spec.label}
                       className="flex items-center justify-between gap-4 border-b border-gray-200 pb-4"
@@ -302,7 +247,7 @@ export default function ZasyavaneContent() {
             </div>
 
             <div className="mt-10 border-t border-gray-200 pt-10">
-              <h3 className="mb-6 text-2xl font-bold text-gray-900">Подходящи Семена</h3>
+              <h3 className="mb-6 text-2xl font-bold text-gray-900">{t("seeding.techSpecs.seedsHeading")}</h3>
               <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                 {seeds.map((seed) => (
                   <div
@@ -327,8 +272,8 @@ export default function ZasyavaneContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-4xl text-center text-white"
           >
-            <h2 className="mb-6 text-4xl font-bold md:text-5xl">Имате Проект за Засяване?</h2>
-            <p className="mb-10 text-2xl text-emerald-100">Обадете се за консултация и безплатна оценка на терена</p>
+            <h2 className="mb-6 text-4xl font-bold md:text-5xl">{t("seeding.cta.heading")}</h2>
+            <p className="mb-10 text-2xl text-emerald-100">{t("seeding.cta.subheading")}</p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
                 href="tel:+359884242406"
@@ -338,10 +283,10 @@ export default function ZasyavaneContent() {
                 0884 242 406
               </a>
               <Link
-                href="/za-nas"
+                href={localizedPath("about", lang)}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-800 px-10 py-5 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-emerald-900"
               >
-                Научи повече за нас
+                {t("seeding.cta.aboutLink")}
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </div>

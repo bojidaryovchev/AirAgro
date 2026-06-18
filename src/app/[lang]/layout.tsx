@@ -1,4 +1,5 @@
 import { getSupportedLanguages, Language } from "@/lib/articles";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return getSupportedLanguages().map((lang) => ({ lang }));
@@ -12,10 +13,13 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const validLang = (["bg", "en"] as Language[]).includes(lang as Language) ? lang : "bg";
+
+  if (!getSupportedLanguages().includes(lang as Language)) {
+    notFound();
+  }
 
   return (
-    <div lang={validLang} data-lang={validLang}>
+    <div lang={lang} data-lang={lang}>
       {children}
     </div>
   );

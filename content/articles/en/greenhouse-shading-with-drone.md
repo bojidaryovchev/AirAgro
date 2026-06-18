@@ -22,7 +22,7 @@ readTime: "10 min"
 
 ## What Is Greenhouse Shading and Why Is It So Important?
 
-During the summer months, temperatures inside greenhouses can reach **50–60 °C**, leading to leaf burn, cessation of pollination and **30–40% harvest losses**. Greenhouse shading entails applying special shading paint (also known as "shading compound") to the glass or polycarbonate of the structure, which reflects part of the solar radiation and lowers the internal temperature by **8–12 °C**.
+During the summer months, peak temperatures inside greenhouses can exceed **50 °C**, leading to leaf burn, cessation of pollination and significant harvest losses. Greenhouse shading entails applying special shading paint (also known as "shading compound") to the glass or polycarbonate of the structure, which reflects part of the solar radiation and lowers the average greenhouse temperature by **up to 5 °C** (according to manufacturer ReduSystems).
 
 This is an established practice in Western Europe, Turkey and Israel, and in recent years it has been increasingly adopted in Bulgaria too – especially in the regions of **Plovdiv, Pazardzhik, Haskovo and Stara Zagora**, where greenhouse production is concentrated.
 
@@ -69,7 +69,7 @@ The DJI Agras T50 is DJI's flagship in the agri-drone segment and is ideal for *
 
 1. **Survey and planning** – our pilot assesses the area, height and type of roof covering. A flight plan with precise GPS coordinates is prepared.
 2. **Solution preparation** – the shading paint is diluted according to the manufacturer's recommendations and loaded into the drone's tank.
-3. **Automatic application** – the drone follows the pre-set route with RTK precision. Specialised nozzles ensure **uniform droplets with a size of 100–300 µm**.
+3. **Automatic application** – the drone follows the pre-set route with RTK precision. The DJI Agras T50's dual atomising system provides an **adjustable droplet size from 50 to 500 µm** across six levels. The typical application rate is **600–800 litres of spraying solution per hectare** (water + shading product), per ReduSystems' recommendations.
 4. **Quality control** – after application we inspect the coverage and make an additional pass if needed.
 
 The entire process for a greenhouse of **5,000 m²** takes an average of **30–45 minutes** – including preparation and loading. By comparison, the manual method requires **2–3 working days**.
@@ -103,7 +103,7 @@ With **greenhouse drone shading** we can apply all these types of coatings. Our 
 
 ### 1. Dramatic Temperature Reduction
 
-Correctly applied shading paint lowers the internal temperature by **8–12 °C**. At an external temperature of 38 °C, the interior of an unshaded greenhouse reaches 55 °C, while a shaded one remains at around **43–45 °C**. This is within the comfort zone for most vegetable crops.
+Correctly applied shading paint lowers the average greenhouse temperature by **up to 5 °C** (according to ReduSystems), with an even more pronounced effect on directly heated zones during peak hours. This helps keep the internal temperature below the critical thresholds for most vegetable crops.
 
 ### 2. UV Protection for Crops
 
@@ -113,7 +113,7 @@ Excessive UV radiation causes:
 - Chlorophyll breakdown
 - Reduced photosynthesis
 
-Shading paints filter **up to 50% of UV rays**, while preserving sufficient light for photosynthesis.
+Shading paints reflect a broad spectrum of sunlight, reducing both light intensity and heat buildup while preserving sufficient light for photosynthesis. Specialised coatings (e.g. ReduFuse, ReduHeat) allow targeted filtering of specific parts of the spectrum.
 
 ### 3. Better Humidity Control
 
@@ -125,11 +125,13 @@ Lower temperatures mean slower evaporation and **more stable humidity** (60–75
 
 ### 4. Higher Yields
 
-Research shows that proper greenhouse shading increases yields by **15–25%** for tomatoes and peppers, thanks to:
+Shading helps keep the temperature below **~32 °C** — the threshold above which tomatoes and peppers stop setting fruit. This extends the productive season by several weeks and reduces losses from sun scald. The yield benefits come from:
 
 - A longer productive fruiting period
 - Less flower abortion
-- Larger and higher-quality fruits
+- Less sun scald on the fruits
+
+> **Important:** excessive shading (above 50%) can harm growth. That is why we select the shading level according to the specific crop and season.
 
 ### 5. Speed and Efficiency
 
@@ -169,7 +171,7 @@ Tomatoes are extremely sensitive to overheating. At temperatures above 35 °C, p
 
 ### Peppers
 
-Peppers react to excessive light with sunscald on the fruits. **Greenhouse shading** reduces this problem by up to 80%.
+Peppers react to excessive light with sunscald on the fruits. **Greenhouse shading** significantly reduces this problem.
 
 ### Cucumbers
 

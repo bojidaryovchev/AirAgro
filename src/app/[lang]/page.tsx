@@ -10,15 +10,57 @@ import Navbar from "@/components/Navbar";
 import ReviewsSection from "@/components/ReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, getSupportedLanguages, Language } from "@/lib/articles";
+import { getTranslations } from "@/lib/i18n";
 import { fetchGoogleReviews } from "@/lib/reviews";
+import { localizedPath } from "@/lib/routes";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-export default async function Home() {
+interface Props {
+  params: Promise<{ lang: string }>;
+}
+
+export function generateStaticParams() {
+  return getSupportedLanguages().map((lang) => ({ lang }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params;
+  const language = getSupportedLanguages().includes(lang as Language) ? (lang as Language) : "bg";
+  const t = getTranslations(language);
+
+  const canonical = `https://airagro.bg${localizedPath("home", language)}`;
+
+  return {
+    title: t("homePage.meta.title"),
+    description: t("homePage.meta.description"),
+    alternates: {
+      canonical,
+      languages: {
+        "bg-BG": `https://airagro.bg${localizedPath("home", "bg")}`,
+        "en-US": `https://airagro.bg${localizedPath("home", "en")}`,
+        "x-default": `https://airagro.bg${localizedPath("home", "bg")}`,
+      },
+    },
+    openGraph: {
+      url: canonical,
+    },
+  };
+}
+
+export default async function Home({ params }: Props) {
+  const { lang } = await params;
+  if (!getSupportedLanguages().includes(lang as Language)) {
+    notFound();
+  }
+  const language = lang as Language;
+
   // Fetch articles at build time (SSG)
-  const articles = getAllArticles().slice(0, 6); // Get 6 most recent articles
+  const articles = getAllArticles(language).slice(0, 6); // Get 6 most recent articles
 
   // Fetch Google Business Profile reviews (server-side, daily ISR)
-  const reviewsData = await fetchGoogleReviews("bg");
+  const reviewsData = await fetchGoogleReviews(language);
   const googleMapsUrl = process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL;
 
   // JSON-LD structured data for homepage
@@ -32,7 +74,7 @@ export default async function Home() {
     logo: "https://airagro.bg/air-agro-logo.png",
     image: "https://airagro.bg/air-agro-logo.png",
     description:
-      "Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене.",
+      "Професионални услуги за пръскане с агро дрон в цяла България. DJI Agras T50 с RTK прецизност. Над 25,000 дка опит. Пръскане, засяване, листно торене, засенчване на оранжерии.",
     priceRange: "$$",
     telephone: "+359-884-242-406",
     email: "contact.airagro@gmail.com",
@@ -81,6 +123,15 @@ export default async function Home() {
             description: "Прецизно засяване на покривни култури и зелени торове с дрон технология.",
           },
         },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Засенчване на оранжерии",
+            description:
+              "Равномерно нанасяне на засенчваща боя върху оранжерии с дрон. Понижава средната температура с до 5°C, без скелета и ръчен труд.",
+          },
+        },
       ],
     },
     aggregateRating: {
@@ -118,7 +169,7 @@ export default async function Home() {
     contentUrl: "https://airagro.bg/videos/drone-bg.webm",
     uploadDate: "2024-01-01",
     duration: "PT1M",
-    inLanguage: "bg",
+    inLanguage: language,
     publisher: {
       "@type": "Organization",
       name: "AirAgro",
@@ -135,13 +186,13 @@ export default async function Home() {
     "@type": "WebSite",
     name: "AirAgro",
     alternateName: "AirAgro България",
-    url: "https://airagro.bg",
+    url: `https://airagro.bg${localizedPath("home", language)}`,
     inLanguage: ["bg", "en"],
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://airagro.bg/bg/blog?q={search_term_string}",
+        urlTemplate: `https://airagro.bg/${language}/blog?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },

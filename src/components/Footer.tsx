@@ -1,10 +1,12 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath } from "@/lib/routes";
 import Link from "next/link";
 
 const Footer = () => {
   const { t, language } = useLanguage();
+  const home = localizedPath("home", language);
 
   return (
     <footer className="bg-foreground text-background py-8">
@@ -15,26 +17,26 @@ const Footer = () => {
           </div>
 
           <div className="text-background/70 flex flex-wrap items-center justify-center gap-6 text-sm">
-            <Link href="/#services" className="hover:text-primary transition-colors">
+            <Link href={`${home}#services`} className="hover:text-primary transition-colors">
               {t("nav.services")}
             </Link>
-            <Link href="/#features" className="hover:text-primary transition-colors">
+            <Link href={`${home}#features`} className="hover:text-primary transition-colors">
               {t("nav.features")}
             </Link>
-            <Link href="/#benefits" className="hover:text-primary transition-colors">
+            <Link href={`${home}#benefits`} className="hover:text-primary transition-colors">
               {t("nav.benefits")}
             </Link>
-            <Link href="/#contact" className="hover:text-primary transition-colors">
+            <Link href={`${home}#contact`} className="hover:text-primary transition-colors">
               {t("nav.contact")}
             </Link>
-            <Link href={`/${language}/privacy-policy`} className="hover:text-primary transition-colors">
+            <Link href={localizedPath("privacy", language)} className="hover:text-primary transition-colors">
               {t("footer.privacy")}
             </Link>
           </div>
         </div>
 
         <div className="border-background/10 text-background/50 mt-8 border-t pt-8 text-center text-sm">
-          <p className="text-background/70 mb-2 font-medium">📢 Обслужваме цяла България – реакция за 24-48 часа</p>©{" "}
+          <p className="text-background/70 mb-2 font-medium">📢 {t("footer.serviceMessage")}</p>©{" "}
           {new Date().getFullYear()} {t("footer.copyright")}
         </div>
       </div>

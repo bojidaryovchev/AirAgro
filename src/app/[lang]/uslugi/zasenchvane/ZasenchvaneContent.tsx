@@ -1,119 +1,122 @@
 "use client";
 
 import VideoCanvas from "@/components/VideoCanvas";
-import { ArrowRight, Clock, Droplet, Leaf, Phone, Shield, Target, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath } from "@/lib/routes";
+import { ArrowRight, BookOpen, CheckCircle, Clock, Droplet, Phone, ShieldCheck, Sun, Thermometer } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
-
-/* ------------------------------------------------------------------ */
-/*  Data                                                               */
-/* ------------------------------------------------------------------ */
-
-const benefits = [
-  {
-    icon: Target,
-    title: "RTK Прецизност",
-    description: "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
-  },
-  {
-    icon: Droplet,
-    title: "Спестяване на Ресурси",
-    description: "30-40% по-малко препарати и вода благодарение на ултрамалообемната технология.",
-  },
-  {
-    icon: Leaf,
-    title: "Без Утъпкване",
-    description: "Не увреждаме културата и не уплътняваме почвата — летим над полето.",
-  },
-  {
-    icon: Clock,
-    title: "Бързина",
-    description: "До 200 дка/час ефективно. Обработваме 100 дка за 45–60 минути с презареждане.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Високи Култури",
-    description: "Работим над царевица, слънчоглед до 3–4 м височина. Достигаме всяка зона.",
-  },
-  {
-    icon: Shield,
-    title: "Влажна Почва",
-    description: "Третираме и при кална/мека почва, когато тракторът не може да влезе.",
-  },
-];
-
-const treatments = [
-  {
-    title: "Инсектицидно Пръскане",
-    icon: "🐛",
-    description: "Ефективен контрол на вредители — листни въшки, гъсеници, трипс, акари",
-    crops: ["Пшеница", "Царевица", "Слънчоглед", "Рапица", "Соя"],
-  },
-  {
-    title: "Хербицидно Пръскане",
-    icon: "🌱",
-    description: "Защита срещу плевели с прецизно приложение и минимален препаратен стрес",
-    crops: ["Всички зърнени", "Технически култури", "Многогодишни"],
-  },
-  {
-    title: "Фунгицидно Пръскане",
-    icon: "🍄",
-    description: "Контрол на гъбични заболявания с достигане на долната страна на листата",
-    crops: ["Пшеница", "Лозя", "Овошки", "Зеленчуци"],
-  },
-  {
-    title: "Листно Торене",
-    icon: "💧",
-    description: "Директно усвояване на хранителни вещества през листната маса",
-    crops: ["Всички култури", "Оранжерийни", "Специални"],
-  },
-];
-
-const stats = [
-  { value: "±10 см", label: "RTK Точност" },
-  { value: "до 200", label: "дка/час ефективно" },
-  { value: "30-40%", label: "По-малко препарати" },
-  { value: "5-35°C", label: "Работна температура" },
-];
-
-const processSteps = [
-  {
-    step: "1",
-    title: "Консултация",
-    desc: "Обаждате се или изпращате запитване. Обсъждаме площта, културата, фаза на развитие и тип третиране.",
-  },
-  {
-    step: "2",
-    title: "Оферта",
-    desc: "Получавате индивидуална оферта за 2–24 часа с точна цена и срокове за изпълнение.",
-  },
-  {
-    step: "3",
-    title: "Планиране",
-    desc: "Уточняваме дата според метеорологичните условия и вашата агрономическа програма.",
-  },
-  {
-    step: "4",
-    title: "Подготовка",
-    desc: "Вие осигурявате препаратите според етикета. Ние ги разреждаме и зареждаме дрона.",
-  },
-  {
-    step: "5",
-    title: "Пръскане",
-    desc: "Изпълняваме мисията с RTK прецизност. GPS записва всеки сантиметър от обработката.",
-  },
-  {
-    step: "6",
-    title: "Документация",
-    desc: "Получавате KML/KMZ файл с GPS запис и отчет за обработената площ.",
-  },
-];
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function PruskaneContent() {
+export default function ZasenchvaneContent({ lang }: { lang: "bg" | "en" }) {
+  const { t } = useLanguage();
+
+  const blogHref =
+    lang === "en" ? "/en/blog/greenhouse-shading-with-drone" : "/bg/blog/zasenchvane-na-oranzherii-s-dron";
+
+  const benefits = [
+    {
+      icon: Thermometer,
+      title: t("shading.benefits.0.title"),
+      description: t("shading.benefits.0.description"),
+    },
+    {
+      icon: Sun,
+      title: t("shading.benefits.1.title"),
+      description: t("shading.benefits.1.description"),
+    },
+    {
+      icon: Droplet,
+      title: t("shading.benefits.2.title"),
+      description: t("shading.benefits.2.description"),
+    },
+    {
+      icon: Clock,
+      title: t("shading.benefits.3.title"),
+      description: t("shading.benefits.3.description"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("shading.benefits.4.title"),
+      description: t("shading.benefits.4.description"),
+    },
+    {
+      icon: CheckCircle,
+      title: t("shading.benefits.5.title"),
+      description: t("shading.benefits.5.description"),
+    },
+  ];
+
+  const paintTypes = [
+    {
+      title: t("shading.paintTypes.0.title"),
+      icon: "🌤️",
+      description: t("shading.paintTypes.0.description"),
+      crops: [
+        t("shading.paintTypes.0.crops.0"),
+        t("shading.paintTypes.0.crops.1"),
+        t("shading.paintTypes.0.crops.2"),
+        t("shading.paintTypes.0.crops.3"),
+      ],
+    },
+    {
+      title: t("shading.paintTypes.1.title"),
+      icon: "🛡️",
+      description: t("shading.paintTypes.1.description"),
+      crops: [t("shading.paintTypes.1.crops.0"), t("shading.paintTypes.1.crops.1"), t("shading.paintTypes.1.crops.2")],
+    },
+    {
+      title: t("shading.paintTypes.2.title"),
+      icon: "🔆",
+      description: t("shading.paintTypes.2.description"),
+      crops: [t("shading.paintTypes.2.crops.0"), t("shading.paintTypes.2.crops.1"), t("shading.paintTypes.2.crops.2")],
+    },
+    {
+      title: t("shading.paintTypes.3.title"),
+      icon: "❄️",
+      description: t("shading.paintTypes.3.description"),
+      crops: [t("shading.paintTypes.3.crops.0"), t("shading.paintTypes.3.crops.1")],
+    },
+  ];
+
+  const stats = [
+    { value: "5°C", label: t("shading.stats.0.label") },
+    { value: t("shading.stats.1.value"), label: t("shading.stats.1.label") },
+    { value: "5–10×", label: t("shading.stats.2.label") },
+    { value: "±2 см", label: t("shading.stats.3.label") },
+  ];
+
+  const processSteps = [
+    {
+      step: "1",
+      title: t("shading.process.0.title"),
+      desc: t("shading.process.0.desc"),
+    },
+    {
+      step: "2",
+      title: t("shading.process.1.title"),
+      desc: t("shading.process.1.desc"),
+    },
+    {
+      step: "3",
+      title: t("shading.process.2.title"),
+      desc: t("shading.process.2.desc"),
+    },
+    {
+      step: "4",
+      title: t("shading.process.3.title"),
+      desc: t("shading.process.3.desc"),
+    },
+    {
+      step: "5",
+      title: t("shading.process.4.title"),
+      desc: t("shading.process.4.desc"),
+    },
+  ];
+
   return (
     <>
       {/* ── Hero ── */}
@@ -133,14 +136,14 @@ export default function PruskaneContent() {
           className="relative z-10 mx-auto max-w-3xl px-6 text-center"
         >
           <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
-            🚁 Водеща Услуга
+            ☀️ {t("shading.hero.badge")}
           </span>
           <h1 className="mb-5 text-4xl leading-tight font-bold text-white md:text-6xl">
-            Пръскане с <span className="text-gradient-green">Агро Дрон</span>
+            {t("shading.hero.titlePrefix")}{" "}
+            <span className="text-gradient-green">{t("shading.hero.titleHighlight")}</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-emerald-100 md:text-xl">
-            Професионално третиране на земеделски култури с DJI Agras T50. RTK прецизност, спестяване на ресурси,
-            максимална ефективност.
+            {t("shading.hero.subtitle")}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -151,10 +154,10 @@ export default function PruskaneContent() {
               0884 242 406
             </a>
             <Link
-              href="/za-nas"
+              href={blogHref}
               className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/20"
             >
-              Научи повече за нас
+              {t("shading.hero.readMore")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -174,7 +177,9 @@ export default function PruskaneContent() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mb-2 text-3xl font-bold text-emerald-400 md:text-5xl">{stat.value}</div>
+                <div className="mb-2 text-2xl font-bold whitespace-nowrap text-emerald-400 sm:text-3xl md:text-4xl">
+                  {stat.value}
+                </div>
                 <p className="text-sm text-gray-300">{stat.label}</p>
               </motion.div>
             ))}
@@ -191,10 +196,8 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Защо Пръскане с Дрон?</h2>
-            <p className="mx-auto max-w-3xl text-xl text-gray-600">
-              Модерната технология, която променя начина на работа в земеделието
-            </p>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("shading.benefits.heading")}</h2>
+            <p className="mx-auto max-w-3xl text-xl text-gray-600">{t("shading.benefits.subtitle")}</p>
           </motion.div>
 
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -218,7 +221,7 @@ export default function PruskaneContent() {
         </div>
       </section>
 
-      {/* ── Treatments ── */}
+      {/* ── Paint Types ── */}
       <section className="bg-gradient-to-b from-emerald-50 to-white py-20">
         <div className="container mx-auto px-4">
           <motion.div
@@ -227,29 +230,27 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Видове Третиране</h2>
-            <p className="mx-auto max-w-3xl text-xl text-gray-600">
-              Пълен спектър от растителнозащитни и хранителни третирания
-            </p>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("shading.paintTypes.heading")}</h2>
+            <p className="mx-auto max-w-3xl text-xl text-gray-600">{t("shading.paintTypes.subtitle")}</p>
           </motion.div>
 
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
-            {treatments.map((treatment, i) => (
+            {paintTypes.map((paint, i) => (
               <motion.div
-                key={treatment.title}
+                key={paint.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="rounded-3xl bg-white p-8 shadow-xl"
               >
-                <div className="mb-4 text-5xl">{treatment.icon}</div>
-                <h3 className="mb-4 text-2xl font-bold text-gray-900">{treatment.title}</h3>
-                <p className="mb-6 leading-relaxed text-gray-600">{treatment.description}</p>
+                <div className="mb-4 text-5xl">{paint.icon}</div>
+                <h3 className="mb-4 text-2xl font-bold text-gray-900">{paint.title}</h3>
+                <p className="mb-6 leading-relaxed text-gray-600">{paint.description}</p>
                 <div className="border-t border-gray-200 pt-6">
-                  <div className="mb-3 text-sm font-semibold text-gray-500">ПОДХОДЯЩИ КУЛТУРИ:</div>
+                  <div className="mb-3 text-sm font-semibold text-gray-500">{t("shading.paintTypes.suitableFor")}</div>
                   <div className="flex flex-wrap gap-2">
-                    {treatment.crops.map((crop) => (
+                    {paint.crops.map((crop) => (
                       <span
                         key={crop}
                         className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-700"
@@ -274,7 +275,7 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Как Работи Процесът?</h2>
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">{t("shading.process.heading")}</h2>
           </motion.div>
 
           <div className="mx-auto max-w-4xl space-y-8">
@@ -297,6 +298,30 @@ export default function PruskaneContent() {
               </motion.div>
             ))}
           </div>
+
+          {/* Link to in-depth article */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mx-auto mt-12 max-w-4xl"
+          >
+            <Link
+              href={blogHref}
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-emerald-100 bg-emerald-50 p-6 transition-all duration-300 hover:border-emerald-200 hover:shadow-lg"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100">
+                  <BookOpen className="h-6 w-6 text-emerald-600" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-gray-900">{t("shading.article.title")}</div>
+                  <p className="text-gray-600">{t("shading.article.description")}</p>
+                </div>
+              </div>
+              <ArrowRight className="h-5 w-5 shrink-0 text-emerald-600 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
         </div>
       </section>
 
@@ -309,10 +334,8 @@ export default function PruskaneContent() {
             viewport={{ once: true }}
             className="mx-auto max-w-4xl text-center text-white"
           >
-            <h2 className="mb-6 text-4xl font-bold md:text-5xl">Готови за Професионално Пръскане?</h2>
-            <p className="mb-10 text-2xl text-emerald-100">
-              Обадете се сега за безплатна консултация и оферта за 24 часа
-            </p>
+            <h2 className="mb-6 text-4xl font-bold md:text-5xl">{t("shading.cta.heading")}</h2>
+            <p className="mb-10 text-2xl text-emerald-100">{t("shading.cta.subtitle")}</p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
                 href="tel:+359884242406"
@@ -322,10 +345,10 @@ export default function PruskaneContent() {
                 0884 242 406
               </a>
               <Link
-                href="/za-nas"
+                href={localizedPath("about", lang)}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-800 px-10 py-5 text-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:bg-emerald-900"
               >
-                Научи повече за нас
+                {t("shading.cta.aboutLink")}
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </div>

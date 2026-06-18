@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath } from "@/lib/routes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -87,7 +88,7 @@ export default function CookieConsent() {
         <h2 className="mb-2 text-base font-semibold text-gray-900">{t("cookies.banner.title")}</h2>
         <p className="mb-4 text-sm text-gray-600">
           {t("cookies.banner.description")}{" "}
-          <Link href={`/${language}/privacy-policy`} className="text-primary underline underline-offset-2">
+          <Link href={localizedPath("privacy", language)} className="text-primary underline underline-offset-2">
             {t("cookies.privacyPolicy")}
           </Link>
           .

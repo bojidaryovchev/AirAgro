@@ -2,36 +2,43 @@
 
 import { FadeIn } from "@/components/FadeIn";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Droplets, Leaf, Shield, Sprout } from "lucide-react";
+import { localizedPath } from "@/lib/routes";
+import { Droplets, Leaf, Shield, Sprout, Sun } from "lucide-react";
 import Link from "next/link";
 
 const ServicesSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const services = [
     {
       icon: Shield,
       title: t("services.spraying.title"),
       description: t("services.spraying.description"),
-      href: "/uslugi/pruskane",
+      href: localizedPath("spraying", language),
     },
     {
       icon: Leaf,
       title: t("services.fertilization.title"),
       description: t("services.fertilization.description"),
-      href: "/uslugi/pruskane",
+      href: localizedPath("spraying", language),
     },
     {
       icon: Droplets,
       title: t("services.herbicide.title"),
       description: t("services.herbicide.description"),
-      href: "/uslugi/pruskane",
+      href: localizedPath("spraying", language),
     },
     {
       icon: Sprout,
       title: t("services.seeding.title"),
       description: t("services.seeding.description"),
-      href: "/uslugi/zasyavane",
+      href: localizedPath("seeding", language),
+    },
+    {
+      icon: Sun,
+      title: t("services.shading.title"),
+      description: t("services.shading.description"),
+      href: localizedPath("shading", language),
     },
   ];
 
@@ -59,7 +66,7 @@ const ServicesSection = () => {
                 </div>
                 <h3 className="font-display text-foreground mb-3 text-xl font-semibold">{service.title}</h3>
                 <p className="text-muted-foreground flex-1">{service.description}</p>
-                <span className="text-primary mt-4 inline-block text-sm font-medium">Научи повече →</span>
+                <span className="text-primary mt-4 inline-block text-sm font-medium">{t("services.learnMore")} →</span>
               </Link>
             </FadeIn>
           ))}

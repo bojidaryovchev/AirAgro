@@ -21,6 +21,7 @@ export const serviceOptions = [
   { value: "fertilizing", labelKey: "contact.service.fertilizing" },
   { value: "herbicide", labelKey: "contact.service.herbicide" },
   { value: "seeding", labelKey: "contact.service.seeding" },
+  { value: "shading", labelKey: "contact.service.shading" },
   { value: "other", labelKey: "contact.service.other" },
 ] as const;
 
@@ -29,5 +30,6 @@ export const serviceNames: Record<string, string> = {
   fertilizing: "Торене",
   herbicide: "Хербициди",
   seeding: "Сеитба",
+  shading: "Засенчване на оранжерии",
   other: "Друго",
 };

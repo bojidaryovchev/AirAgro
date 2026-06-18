@@ -1,14 +1,13 @@
 "use client";
 
+import { Language } from "@/lib/articles";
 import bg from "@/locales/bg.json";
 import en from "@/locales/en.json";
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
-
-type Language = "en" | "bg";
+import { usePathname } from "next/navigation";
+import { createContext, ReactNode, useContext, useEffect, useMemo } from "react";
 
 interface LanguageContextType {
   language: Language;
-  setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
@@ -19,36 +18,27 @@ const translations: Record<Language, Record<string, string>> = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-function detectLanguageFromPath(): Language {
-  if (typeof window !== "undefined") {
-    const path = window.location.pathname;
-    if (path.startsWith("/en/") || path === "/en") return "en";
-  }
-  return "bg";
+/** Language is derived solely from the URL's first path segment — the URL is the single source of truth. */
+function languageFromPathname(pathname: string): Language {
+  const first = pathname.split("/")[1];
+  return first === "en" ? "en" : "bg";
 }
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>(detectLanguageFromPath);
+  const pathname = usePathname();
+  const language = languageFromPathname(pathname);
 
-  // Sync <html lang="..."> attribute whenever language changes
+  // Keep <html lang="..."> in sync with the active route language.
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
 
-  // Detect language from URL on route changes
-  useEffect(() => {
-    const detected = detectLanguageFromPath();
-    if (detected !== language) {
-      setLanguage(detected);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [typeof window !== "undefined" ? window.location.pathname : ""]);
+  const t = useMemo(() => {
+    const dict = translations[language] ?? translations.bg;
+    return (key: string): string => dict[key] ?? translations.bg[key] ?? key;
+  }, [language]);
 
-  const t = (key: string): string => {
-    return translations[language][key] || key;
-  };
-
-  return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>;
+  return <LanguageContext.Provider value={{ language, t }}>{children}</LanguageContext.Provider>;
 };
 
 export const useLanguage = () => {

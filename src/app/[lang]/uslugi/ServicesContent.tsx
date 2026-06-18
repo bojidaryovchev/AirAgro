@@ -1,6 +1,8 @@
 "use client";
 
 import VideoCanvas from "@/components/VideoCanvas";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath, type Language } from "@/lib/routes";
 import {
   ArrowRight,
   Bug,
@@ -13,13 +15,14 @@ import {
   Phone,
   Shield,
   Sprout,
+  Sun,
   Target,
 } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 
 /* ------------------------------------------------------------------ */
-/*  Data                                                               */
+/*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
 interface Service {
@@ -31,113 +34,140 @@ interface Service {
   price: string;
 }
 
-const services: Service[] = [
-  {
-    title: "Растителна Защита",
-    description:
-      "Прецизно пръскане с пестициди за ефективна защита от болести и вредители. DJI Agras T50 осигурява равномерно покритие дори на труднодостъпни места.",
-    details: ["Фунгициди и инсектициди", "До 200 дка/час ефективно", "Центробежни дюзи", "GPS запис на обработката"],
-    icon: Shield,
-    href: "/uslugi/pruskane",
-    price: "От 6 лв/дка",
-  },
-  {
-    title: "Листно Торене",
-    description:
-      "Ефективно нанасяне на течни торове за оптимален растеж. Прецизно дозиране осигурява максимална усвояемост от културите.",
-    details: ["Течни и суспензионни торове", "Листно подхранване", "Прецизно дозиране", "За всички култури"],
-    icon: Leaf,
-    href: "/uslugi/pruskane",
-    price: "От 6 лв/дка",
-  },
-  {
-    title: "Контрол на Плевели",
-    description:
-      "Целево пръскане с хербициди за ефективен контрол на плевелите. Минимален разход на препарати при максимална ефективност.",
-    details: ["Всички видове хербициди", "Целево приложение", "По-малко химикали", "Документиране на площта"],
-    icon: Bug,
-    href: "/uslugi/pruskane",
-    price: "От 6 лв/дка",
-  },
-  {
-    title: "Засяване с Дрон",
-    description:
-      "Прецизно разпръскване на семена от въздуха. Идеално за трудни терени и бързо засяване на големи площи.",
-    details: ["Покривни култури и смески", "Равномерно разпределение", "Достъп до влажни терени", "3× по-бързо"],
-    icon: Sprout,
-    href: "/uslugi/zasyavane",
-    price: "По запитване",
-  },
-];
+export default function ServicesContent({ lang }: { lang: Language }) {
+  const { t } = useLanguage();
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Свържете се с нас",
-    description: "Обадете се или изпратете запитване. Обсъждаме площта, културата и типа третиране.",
-  },
-  {
-    number: "02",
-    title: "Оглед и планиране",
-    description: "Оценяваме терена и определяме оптималния подход. Индивидуална оферта до 24 часа.",
-  },
-  {
-    number: "03",
-    title: "Изпълнение",
-    description: "Професионална обработка с DJI Agras T50. RTK прецизност и GPS запис на мисията.",
-  },
-  {
-    number: "04",
-    title: "Отчет и документация",
-    description: "Получавате GPS запис (KML/KMZ) и детайлен отчет за обработената площ.",
-  },
-];
+  const services: Service[] = [
+    {
+      title: t("servicesPage.services.0.title"),
+      description: t("servicesPage.services.0.description"),
+      details: [
+        t("servicesPage.services.0.details.0"),
+        t("servicesPage.services.0.details.1"),
+        t("servicesPage.services.0.details.2"),
+        t("servicesPage.services.0.details.3"),
+      ],
+      icon: Shield,
+      href: localizedPath("spraying", lang),
+      price: t("servicesPage.services.0.price"),
+    },
+    {
+      title: t("servicesPage.services.1.title"),
+      description: t("servicesPage.services.1.description"),
+      details: [
+        t("servicesPage.services.1.details.0"),
+        t("servicesPage.services.1.details.1"),
+        t("servicesPage.services.1.details.2"),
+        t("servicesPage.services.1.details.3"),
+      ],
+      icon: Leaf,
+      href: localizedPath("spraying", lang),
+      price: t("servicesPage.services.1.price"),
+    },
+    {
+      title: t("servicesPage.services.2.title"),
+      description: t("servicesPage.services.2.description"),
+      details: [
+        t("servicesPage.services.2.details.0"),
+        t("servicesPage.services.2.details.1"),
+        t("servicesPage.services.2.details.2"),
+        t("servicesPage.services.2.details.3"),
+      ],
+      icon: Bug,
+      href: localizedPath("spraying", lang),
+      price: t("servicesPage.services.2.price"),
+    },
+    {
+      title: t("servicesPage.services.3.title"),
+      description: t("servicesPage.services.3.description"),
+      details: [
+        t("servicesPage.services.3.details.0"),
+        t("servicesPage.services.3.details.1"),
+        t("servicesPage.services.3.details.2"),
+        t("servicesPage.services.3.details.3"),
+      ],
+      icon: Sprout,
+      href: localizedPath("seeding", lang),
+      price: t("servicesPage.services.3.price"),
+    },
+    {
+      title: t("servicesPage.services.4.title"),
+      description: t("servicesPage.services.4.description"),
+      details: [
+        t("servicesPage.services.4.details.0"),
+        t("servicesPage.services.4.details.1"),
+        t("servicesPage.services.4.details.2"),
+        t("servicesPage.services.4.details.3"),
+      ],
+      icon: Sun,
+      href: localizedPath("shading", lang),
+      price: t("servicesPage.services.4.price"),
+    },
+  ];
 
-const stats = [
-  { value: "90%", label: "По-малко разход на вода" },
-  { value: "30%", label: "Икономия на препарати" },
-  { value: "3-5×", label: "По-бързо от наземна техника" },
-  { value: "0%", label: "Утъпкване на почвата" },
-];
+  const processSteps = [
+    {
+      number: "01",
+      title: t("servicesPage.process.0.title"),
+      description: t("servicesPage.process.0.description"),
+    },
+    {
+      number: "02",
+      title: t("servicesPage.process.1.title"),
+      description: t("servicesPage.process.1.description"),
+    },
+    {
+      number: "03",
+      title: t("servicesPage.process.2.title"),
+      description: t("servicesPage.process.2.description"),
+    },
+    {
+      number: "04",
+      title: t("servicesPage.process.3.title"),
+      description: t("servicesPage.process.3.description"),
+    },
+  ];
 
-const whyUs = [
-  {
-    icon: Target,
-    title: "RTK Прецизност",
-    description: "Точност ±10 см елиминира припокривания и пропуски. GPS запис на всяка мисия.",
-  },
-  {
-    icon: Clock,
-    title: "Бърза Реакция",
-    description: "Оферта до 24 часа. Изпълнение 24–48 часа в целия сезон. Работим и в почивни дни.",
-  },
-  {
-    icon: MapPin,
-    title: "Цяла България",
-    description: "Обслужваме от Видин до Бургас. Без ограничения по район. Мобилен екип.",
-  },
-  {
-    icon: Droplets,
-    title: "Без Утъпкване",
-    description: "Нулево уплътняване на почвата. Не увреждаме културата — летим над полето.",
-  },
-  {
-    icon: Leaf,
-    title: "30–40% Спестяване",
-    description: "Ултрамалообемна технология намалява разхода на препарати и вода.",
-  },
-  {
-    icon: CheckCircle,
-    title: "Документация",
-    description: "GPS запис + KML/KMZ файл на обработката. Пълна проследимост.",
-  },
-];
+  const stats = [
+    { value: t("stats.spray.value"), label: t("stats.spray.label") },
+    { value: t("stats.coverage.value"), label: t("stats.coverage.label") },
+    { value: t("stats.orchard.value"), label: t("stats.orchard.label") },
+    { value: t("stats.spread.value"), label: t("stats.spread.label") },
+  ];
 
-/* ------------------------------------------------------------------ */
-/*  Component                                                          */
-/* ------------------------------------------------------------------ */
+  const whyUs = [
+    {
+      icon: Target,
+      title: t("servicesPage.whyUs.0.title"),
+      description: t("servicesPage.whyUs.0.description"),
+    },
+    {
+      icon: Clock,
+      title: t("servicesPage.whyUs.1.title"),
+      description: t("servicesPage.whyUs.1.description"),
+    },
+    {
+      icon: MapPin,
+      title: t("servicesPage.whyUs.2.title"),
+      description: t("servicesPage.whyUs.2.description"),
+    },
+    {
+      icon: Droplets,
+      title: t("servicesPage.whyUs.3.title"),
+      description: t("servicesPage.whyUs.3.description"),
+    },
+    {
+      icon: Leaf,
+      title: t("servicesPage.whyUs.4.title"),
+      description: t("servicesPage.whyUs.4.description"),
+    },
+    {
+      icon: CheckCircle,
+      title: t("servicesPage.whyUs.5.title"),
+      description: t("servicesPage.whyUs.5.description"),
+    },
+  ];
 
-export default function ServicesContent() {
   return (
     <>
       {/* ── Hero ── */}
@@ -157,13 +187,13 @@ export default function ServicesContent() {
           className="relative z-10 mx-auto max-w-3xl px-6 text-center"
         >
           <span className="mb-6 inline-block rounded-full border border-white/20 bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
-            ✈️ Професионални услуги с DJI Agras T50
+            ✈️ {t("hero.badge")}
           </span>
           <h1 className="mb-5 text-4xl leading-tight font-bold text-white md:text-6xl">
-            Агро Дрон <span className="text-gradient-green">Услуги</span>
+            {t("servicesPage.hero.title1")} <span className="text-gradient-green">{t("servicesPage.hero.title2")}</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-emerald-100 md:text-xl">
-            Модерна технология за прецизна защита на вашите култури. Бързо, ефективно и екологично.
+            {t("servicesPage.hero.subtitle")}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -174,10 +204,10 @@ export default function ServicesContent() {
               0884 242 406
             </a>
             <Link
-              href="/za-nas"
+              href={localizedPath("about", lang)}
               className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/20"
             >
-              Научи повече за нас
+              {t("servicesPage.cta.learnMoreAbout")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -215,11 +245,10 @@ export default function ServicesContent() {
             className="mb-16 text-center"
           >
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-5xl">
-              Нашите <span className="text-gradient-green">Услуги</span>
+              {t("servicesPage.grid.title1")}{" "}
+              <span className="text-gradient-green">{t("servicesPage.grid.title2")}</span>
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              Пълно портфолио от дрон решения за всеки етап от земеделския сезон
-            </p>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">{t("servicesPage.grid.subtitle")}</p>
           </motion.div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -244,7 +273,9 @@ export default function ServicesContent() {
 
                 {/* Feature checklist */}
                 <div className="mb-6 flex-1 border-t border-gray-100 pt-5">
-                  <div className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Включва:</div>
+                  <div className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">
+                    {t("servicesPage.grid.includes")}
+                  </div>
                   <ul className="space-y-2">
                     {service.details.map((detail) => (
                       <li key={detail} className="flex items-start gap-2 text-sm text-gray-700">
@@ -261,7 +292,7 @@ export default function ServicesContent() {
                     href={service.href}
                     className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-emerald-700"
                   >
-                    Научете повече
+                    {t("servicesPage.grid.learnMore")}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 )}
@@ -281,11 +312,9 @@ export default function ServicesContent() {
             className="mb-16 text-center"
           >
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-5xl">
-              Защо <span className="text-gradient-green">AirAgro</span>?
+              {t("servicesPage.whyUs.title1")} <span className="text-gradient-green">AirAgro</span>?
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              Модерна технология, лицензирани оператори и доказан опит в цяла България
-            </p>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">{t("servicesPage.whyUs.subtitle")}</p>
           </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -319,9 +348,10 @@ export default function ServicesContent() {
             className="mb-14 text-center"
           >
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-5xl">
-              Как <span className="text-gradient-green">Работим</span>?
+              {t("servicesPage.process.title1")}{" "}
+              <span className="text-gradient-green">{t("servicesPage.process.title2")}</span>
             </h2>
-            <p className="text-lg text-gray-600">Лесен и прозрачен процес от заявка до резултат.</p>
+            <p className="text-lg text-gray-600">{t("servicesPage.process.subtitle")}</p>
           </motion.div>
 
           <div className="space-y-8">
@@ -355,10 +385,8 @@ export default function ServicesContent() {
           viewport={{ once: true }}
           className="glass-card glow-green mx-auto max-w-3xl rounded-2xl p-10 text-center md:p-14"
         >
-          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Готови ли сте да започнете?</h2>
-          <p className="mx-auto mb-8 max-w-lg text-lg text-gray-600">
-            Свържете се с нас за безплатна консултация и персонализирана оферта за вашето стопанство.
-          </p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("servicesPage.cta.title")}</h2>
+          <p className="mx-auto mb-8 max-w-lg text-lg text-gray-600">{t("servicesPage.cta.subtitle")}</p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="tel:+359884242406"
@@ -368,10 +396,10 @@ export default function ServicesContent() {
               0884 242 406
             </a>
             <Link
-              href="/za-nas"
+              href={localizedPath("about", lang)}
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-emerald-600 px-8 py-4 text-lg font-bold text-emerald-700 transition-all duration-300 hover:scale-105 hover:bg-emerald-50"
             >
-              Научи повече за нас
+              {t("servicesPage.cta.learnMoreAbout")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>

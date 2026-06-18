@@ -34,7 +34,7 @@ export default function BlogCard({ article, lang = "bg" }: BlogCardProps) {
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-3 flex w-full flex-wrap items-center gap-2 text-xs font-semibold">
           <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-200">
-            {new Date(article.date).toLocaleDateString("bg-BG")}
+            {new Date(article.date).toLocaleDateString(lang === "en" ? "en-US" : "bg-BG")}
           </span>
           <span className="ml-auto rounded-full bg-gray-100 px-3 py-1 text-gray-700 dark:bg-white/10 dark:text-gray-200">
             {article.readTime}

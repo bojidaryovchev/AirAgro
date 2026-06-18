@@ -8,6 +8,7 @@ import {
   getSupportedLanguages,
   Language,
 } from "@/lib/articles";
+import { localizedPath } from "@/lib/routes";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -213,7 +214,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Back Button */}
         <div className="container mx-auto max-w-7xl px-4 py-6">
           <Link
-            href="/"
+            href={localizedPath("home", language)}
             className="inline-flex items-center gap-2 font-medium text-emerald-600 transition-colors hover:text-emerald-700"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -300,13 +301,13 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="mb-8 text-xl opacity-90">{t.cta.subtitle}</p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Link
-                  href="/#contact"
+                  href={`${localizedPath("home", language)}#contact`}
                   className="rounded-lg bg-white px-10 py-4 text-lg font-semibold text-emerald-600 transition-colors hover:bg-gray-100"
                 >
                   {t.cta.button1}
                 </Link>
                 <Link
-                  href="tel:+359898765432"
+                  href="tel:+359884242406"
                   className="rounded-lg border-2 border-white/20 bg-emerald-700 px-10 py-4 text-lg font-semibold text-white transition-colors hover:bg-emerald-800"
                 >
                   {t.cta.button2}

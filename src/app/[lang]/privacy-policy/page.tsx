@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { getSupportedLanguages, Language } from "@/lib/articles";
+import { localizedPath } from "@/lib/routes";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -21,7 +22,7 @@ const content = {
     sections: [
       {
         heading: "1. За нас",
-        body: "AirAgro е дружество, предоставящо услуги за пръскане, засяване и торене с агро дрон в България. Администратор на личните данни е AirAgro (контакт: office@airagro.bg, тел. 0884-242-406).",
+        body: "AirAgro е дружество, предоставящо услуги за пръскане, засяване и торене с агро дрон в България. Администратор на личните данни е AirAgro (контакт: contact.airagro@gmail.com, тел. 0884-242-406).",
       },
       {
         heading: "2. Какви данни събираме",
@@ -45,7 +46,7 @@ const content = {
       },
       {
         heading: "5. Оттегляне на съгласие",
-        body: "Можете да оттеглите или промените съгласието си по всяко време, като изчистите бисквитките на браузъра си или се свържете с нас на office@airagro.bg. При следващото посещение банерът за бисквитки ще се покаже отново и ще можете да направите нов избор.",
+        body: "Можете да оттеглите или промените съгласието си по всяко време, като изчистите бисквитките на браузъра си или се свържете с нас на contact.airagro@gmail.com. При следващото посещение банерът за бисквитки ще се покаже отново и ще можете да направите нов избор.",
       },
       {
         heading: "6. Съхранение на данните",
@@ -53,7 +54,7 @@ const content = {
       },
       {
         heading: "7. Вашите права",
-        body: "Съгласно GDPR имате право на достъп, коригиране, изтриване, ограничаване на обработката и преносимост на данните, както и право на жалба до Комисията за защита на личните данни (www.cpdp.bg). За упражняване на правата си пишете на office@airagro.bg.",
+        body: "Съгласно GDPR имате право на достъп, коригиране, изтриване, ограничаване на обработката и преносимост на данните, както и право на жалба до Комисията за защита на личните данни (www.cpdp.bg). За упражняване на правата си пишете на contact.airagro@gmail.com.",
       },
       {
         heading: "8. Промени в политиката",
@@ -61,7 +62,7 @@ const content = {
       },
       {
         heading: "9. Контакт",
-        body: "За въпроси относно защитата на личните ви данни: office@airagro.bg | 0884-242-406",
+        body: "За въпроси относно защитата на личните ви данни: contact.airagro@gmail.com | 0884-242-406",
       },
     ],
   },
@@ -73,7 +74,7 @@ const content = {
     sections: [
       {
         heading: "1. About Us",
-        body: "AirAgro is a company providing drone spraying, seeding and fertilisation services across Bulgaria. The data controller is AirAgro (contact: office@airagro.bg, tel. 0884-242-406).",
+        body: "AirAgro is a company providing drone spraying, seeding and fertilisation services across Bulgaria. The data controller is AirAgro (contact: contact.airagro@gmail.com, tel. 0884-242-406).",
       },
       {
         heading: "2. What Data We Collect",
@@ -97,7 +98,7 @@ We implement Google Consent Mode v2 — analytics and marketing cookies are bloc
       },
       {
         heading: "5. Withdrawing Consent",
-        body: "You can withdraw or change your consent at any time by clearing your browser cookies or contacting us at office@airagro.bg. On your next visit the cookie banner will reappear so you can make a new choice.",
+        body: "You can withdraw or change your consent at any time by clearing your browser cookies or contacting us at contact.airagro@gmail.com. On your next visit the cookie banner will reappear so you can make a new choice.",
       },
       {
         heading: "6. Data Retention",
@@ -105,7 +106,7 @@ We implement Google Consent Mode v2 — analytics and marketing cookies are bloc
       },
       {
         heading: "7. Your Rights",
-        body: "Under GDPR you have the right to access, rectify, erase, restrict processing and port your data, as well as the right to lodge a complaint with your national data protection authority. To exercise your rights write to office@airagro.bg.",
+        body: "Under GDPR you have the right to access, rectify, erase, restrict processing and port your data, as well as the right to lodge a complaint with your national data protection authority. To exercise your rights write to contact.airagro@gmail.com.",
       },
       {
         heading: "8. Policy Changes",
@@ -113,7 +114,7 @@ We implement Google Consent Mode v2 — analytics and marketing cookies are bloc
       },
       {
         heading: "9. Contact",
-        body: "For data protection enquiries: office@airagro.bg | 0884-242-406",
+        body: "For data protection enquiries: contact.airagro@gmail.com | 0884-242-406",
       },
     ],
   },
@@ -127,10 +128,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: c.metaDescription,
     robots: { index: false, follow: false },
     alternates: {
-      canonical: `https://airagro.bg/${lang}/privacy-policy`,
+      canonical: `https://airagro.bg${localizedPath("privacy", (lang as Language) ?? "bg")}`,
       languages: {
-        "bg-BG": "https://airagro.bg/bg/privacy-policy",
-        "en-US": "https://airagro.bg/en/privacy-policy",
+        "bg-BG": `https://airagro.bg${localizedPath("privacy", "bg")}`,
+        "en-US": `https://airagro.bg${localizedPath("privacy", "en")}`,
+        "x-default": `https://airagro.bg${localizedPath("privacy", "bg")}`,
       },
     },
   };
@@ -138,7 +140,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function PrivacyPolicyPage({ params }: Props) {
   const { lang } = await params;
-  if (!["bg", "en"].includes(lang)) notFound();
+  if (!getSupportedLanguages().includes(lang as Language)) notFound();
 
   const c = content[lang as Language];
 

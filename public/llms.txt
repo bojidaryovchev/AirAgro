@@ -4,13 +4,13 @@
 
 ## About
 
-AirAgro is a Bulgarian agricultural technology company specializing in drone-based crop protection and seeding services. We operate DJI Agras T50 drones equipped with RTK (Real-Time Kinematic) positioning for ±10 cm accuracy. With over 25,000 decares of experience and 47+ satisfied clients, we serve farmers across all regions of Bulgaria.
+AirAgro is a Bulgarian agricultural technology company specializing in drone-based crop protection and seeding services. We operate DJI Agras T50 drones equipped with RTK (Real-Time Kinematic) positioning for ±10 cm accuracy. With over 25,000 decares of experience and 47+ satisfied clients, we serve farmers across all regions of Bulgaria. The website is bilingual: Bulgarian pages live under /bg and English pages under /en.
 
 ## Services
 
-- **Drone Spraying** (Пръскане с дрон): Insecticides, herbicides, fungicides, and foliar fertilization with 30-40% savings on chemicals. Capacity: 20-28 ha/hour.
+- **Drone Spraying** (Пръскане с дрон): Insecticides, herbicides, fungicides, and foliar fertilization with 30-40% savings on chemicals. Capacity: up to 200 decares/hour (20 ha/hour).
 - **Drone Seeding** (Засяване с дрон): Meadow rehabilitation, slope reinforcement, biological recultivation, and hydroseeding. Access to inaccessible terrains up to 45° slope.
-- **Greenhouse Shading** (Засенчване на оранжерии): Precision application of shading compounds.
+- **Greenhouse Shading** (Засенчване на оранжерии): Drone application of shading paint (e.g. ReduSol/ReduHeat) onto greenhouse roofs. Lowers average greenhouse temperature by up to 5°C, no scaffolding or manual labour. Coverage up to 10,000 m²/hour.
 
 ## Key Facts
 
@@ -19,7 +19,7 @@ AirAgro is a Bulgarian agricultural technology company specializing in drone-bas
 - Precision: ±10 cm GPS accuracy
 - Experience: 25,000+ decares treated
 - Clients: 47+ satisfied customers
-- Rating: 5.0/5.0
+- Rating: 4.9/5.0 (47 reviews)
 - Response time: 24-48 hours
 - Working hours: 06:00-20:00, 7 days/week
 
@@ -31,9 +31,19 @@ AirAgro is a Bulgarian agricultural technology company specializing in drone-bas
 
 ## Pages
 
-- Homepage: https://airagro.bg
-- Spraying Service: https://airagro.bg/uslugi/pruskane
-- Seeding Service: https://airagro.bg/uslugi/zasyavane
-- About Us: https://airagro.bg/za-nas
+- Homepage (BG): https://airagro.bg/bg
+- Homepage (EN): https://airagro.bg/en
+- Services Overview (BG): https://airagro.bg/bg/uslugi
+- Services Overview (EN): https://airagro.bg/en/services
+- Spraying Service (BG): https://airagro.bg/bg/uslugi/pruskane
+- Spraying Service (EN): https://airagro.bg/en/services/spraying
+- Seeding Service (BG): https://airagro.bg/bg/uslugi/zasyavane
+- Seeding Service (EN): https://airagro.bg/en/services/seeding
+- Greenhouse Shading Service (BG): https://airagro.bg/bg/uslugi/zasenchvane
+- Greenhouse Shading Service (EN): https://airagro.bg/en/services/shading
+- About Us (BG): https://airagro.bg/bg/za-nas
+- About Us (EN): https://airagro.bg/en/about
 - Blog (BG): https://airagro.bg/bg/blog
 - Blog (EN): https://airagro.bg/en/blog
+- Privacy Policy (BG): https://airagro.bg/bg/privacy-policy
+- Privacy Policy (EN): https://airagro.bg/en/privacy-policy

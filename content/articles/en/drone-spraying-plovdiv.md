@@ -175,7 +175,7 @@ If you are a farmer in Plovdiv Province and want to take advantage of [AirAgro's
 
 - **Phone:** +359 884 242 406
 - **Website:** airagro.bg
-- **Email:** info@airagro.bg
+- **Email:** contact.airagro@gmail.com
 
 We offer:
 

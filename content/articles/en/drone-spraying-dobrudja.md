@@ -179,7 +179,7 @@ Contact us today:
 
 - **Phone:** +359 884 242 406
 - **Website:** airagro.bg
-- **Email:** info@airagro.bg
+- **Email:** contact.airagro@gmail.com
 
 **Request a free consultation for your farm** – call or fill in the contact form on airagro.bg. Our mobile teams with DJI Agras T50 are ready to serve your farm quickly and professionally.
 

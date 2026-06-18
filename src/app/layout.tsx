@@ -78,10 +78,11 @@ export const metadata: Metadata = {
     images: ["/air-agro-logo.png"],
   },
   alternates: {
-    canonical: "https://airagro.bg",
+    canonical: "https://airagro.bg/bg",
     languages: {
-      "bg-BG": "https://airagro.bg",
+      "bg-BG": "https://airagro.bg/bg",
       "en-US": "https://airagro.bg/en",
+      "x-default": "https://airagro.bg/bg",
     },
   },
   verification: {
@@ -136,7 +137,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <CookieConsent />
-          <Toaster />
+          <Toaster position="top-right" toastOptions={{ duration: 2000 }} />
         </LanguageProvider>
       </body>
     </html>

@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { localizedPath } from "@/lib/routes";
 import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
@@ -14,9 +15,10 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollThreshold, setScrollThreshold] = useState(50);
   const [hasHeroSection, setHasHeroSection] = useState(true);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const home = localizedPath("home", language);
+  const isHome = pathname === home;
 
   useEffect(() => {
     const updateThreshold = () => {
@@ -44,14 +46,14 @@ const Navbar = () => {
   }, [scrollThreshold]);
 
   const navLinks = [
-    { label: t("nav.services"), href: "/uslugi" },
+    { label: t("nav.services"), href: localizedPath("services", language) },
     { label: t("nav.features"), href: "#features" },
     { label: t("nav.benefits"), href: "#benefits" },
-    { label: t("nav.blog"), href: "/blog" },
+    { label: t("nav.blog"), href: localizedPath("blog", language) },
     { label: t("nav.contact"), href: "#contact" },
   ].map((link) => {
     if (link.href.startsWith("#")) {
-      return { ...link, href: isHome ? link.href : `/${link.href}` };
+      return { ...link, href: isHome ? link.href : `${home}${link.href}` };
     }
     return link;
   });
@@ -67,7 +69,7 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href={home} className="flex items-center">
           <img src="/air-agro-logo.png" alt="AirAgro" className="h-20 w-auto shrink-0" />
         </Link>
 
@@ -86,7 +88,7 @@ const Navbar = () => {
           ))}
           <LanguageSwitcher isScrolled={isScrolled || !hasHeroSection} />
           <Button className="hero-gradient shadow-primary/20 border-0 text-white shadow-md" asChild>
-            <Link href={isHome ? "#contact" : "/#contact"}>{t("nav.getStarted")}</Link>
+            <Link href={isHome ? "#contact" : `${home}#contact`}>{t("nav.getStarted")}</Link>
           </Button>
         </div>
 
@@ -122,7 +124,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button className="hero-gradient mt-2 w-full border-0 text-white" asChild>
-              <Link href={isHome ? "#contact" : "/#contact"} onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href={isHome ? "#contact" : `${home}#contact`} onClick={() => setIsMobileMenuOpen(false)}>
                 {t("nav.getStarted")}
               </Link>
             </Button>

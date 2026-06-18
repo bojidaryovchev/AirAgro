@@ -1,58 +1,36 @@
 import { getAllArticleSlugs, getSupportedLanguages } from "@/lib/articles";
+import { localizedPath, STATIC_PAGES } from "@/lib/routes";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://airagro.bg";
   const languages = getSupportedLanguages();
+  const lastModified = new Date();
 
-  // Static pages (Bulgarian-only, no lang prefix)
-  const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/uslugi`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/uslugi/pruskane`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/uslugi/zasyavane`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/za-nas`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
+  // Static marketing pages — localized per language.
+  const staticPages: MetadataRoute.Sitemap = languages.flatMap((lang) =>
+    STATIC_PAGES.map((p) => ({
+      url: `${baseUrl}${localizedPath(p.key, lang)}`,
+      lastModified,
+      changeFrequency: p.changeFrequency,
+      priority: p.priority,
+    })),
+  );
 
-  // Blog listing pages per language
+  // Blog listing pages per language.
   const blogListingUrls: MetadataRoute.Sitemap = languages.map((lang) => ({
-    url: `${baseUrl}/${lang}/blog`,
-    lastModified: new Date(),
+    url: `${baseUrl}${localizedPath("blog", lang)}`,
+    lastModified,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
-  // Blog article pages per language
+  // Blog article pages per language.
   const blogArticleUrls: MetadataRoute.Sitemap = languages.flatMap((lang) => {
     const slugs = getAllArticleSlugs(lang);
     return slugs.map((slug) => ({
       url: `${baseUrl}/${lang}/blog/${slug}`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
