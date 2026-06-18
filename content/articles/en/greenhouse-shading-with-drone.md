@@ -23,7 +23,9 @@ readTime: "10 min"
 
 ## What Is Greenhouse Shading and Why Is It So Important?
 
-During the summer months, peak temperatures inside greenhouses can exceed **50 °C**, leading to leaf burn, cessation of pollination and significant harvest losses. Greenhouse shading entails applying special shading paint (also known as "shading compound") to the glass or polycarbonate of the structure, which reflects part of the solar radiation and lowers the average greenhouse temperature by **up to 5 °C** (according to manufacturer ReduSystems).
+During the summer months, peak temperatures inside greenhouses can exceed **50 °C**, leading to leaf burn, cessation of pollination and significant harvest losses. Greenhouse shading entails applying a special shading paint (also known as "shading compound") to the glass, polycarbonate or polyethylene of the structure, which reflects part of the solar radiation and protects the crop from burning and heat stress.
+
+At AirAgro we apply **COVER X2** – a temporary shading paint that gradually washes off on its own over **3–4 months** and is suitable for glass, polycarbonate and polyethylene greenhouses.
 
 This is an established practice in Western Europe, Turkey and Israel, and in recent years it has been increasingly adopted in Bulgaria too – especially in the regions of **Plovdiv, Pazardzhik, Haskovo and Stara Zagora**, where greenhouse production is concentrated.
 
@@ -69,42 +71,29 @@ The DJI Agras T50 is DJI's flagship in the agri-drone segment and is ideal for *
 ### Process Steps
 
 1. **Survey and planning** – our pilot assesses the area, height and type of roof covering. A flight plan with precise GPS coordinates is prepared.
-2. **Solution preparation** – the shading paint is diluted according to the manufacturer's recommendations and loaded into the drone's tank.
-3. **Automatic application** – the drone follows the pre-set route with RTK precision. The DJI Agras T50's dual atomising system provides an **adjustable droplet size from 50 to 500 µm** across six levels. The typical application rate is **600–800 litres of spraying solution per hectare** (water + shading product), per ReduSystems' recommendations.
+2. **Solution preparation** – the COVER X2 paint is diluted according to the manufacturer's instructions and loaded into the drone's tank. One 22 kg pack of COVER X2 covers approximately **700–1,400 m²**, depending on the desired shading intensity.
+3. **Automatic application** – the drone follows the pre-set route with RTK precision. The DJI Agras T50's dual atomising system provides an **adjustable droplet size from 50 to 500 µm** across six levels, so the coating goes on evenly without clogging the nozzles.
 4. **Quality control** – after application we inspect the coverage and make an additional pass if needed.
 
 The entire process for a greenhouse of **5,000 m²** takes an average of **30–45 minutes** – including preparation and loading. By comparison, the manual method requires **2–3 working days**.
 
-## Types of Shading Paint for Greenhouses
+## The Shading Paint We Use: COVER X2
 
-Choosing the right shading paint is key to the effectiveness of the service. Here are the main categories:
+For greenhouse shading we use **COVER X2** – a temporary shading paint produced by Colorificio Valdecia (Italy). Its key properties:
 
-### Temporary Shading Paint (Seasonal)
+- **Temporary and self-removing** – it gradually washes off on its own over **3–4 months**, so there is no need for a separate removal agent or a second job to clean it off
+- **Universal** – suitable for **glass, polycarbonate and polyethylene** greenhouses
+- **Economical** – one 22 kg pack covers approximately **700–1,400 m²**, depending on the desired shading intensity
+- **Adjustable intensity** – the shading level is controlled by the dilution and the number of passes, so we can tailor it to the crop and the season
+- **Sprayer-friendly** – formulated to be applied with motorised and hand sprayers without clogging, which makes it ideal for drone application
 
-- Applied in spring (April–May), lasts until autumn
-- Gradually washed off by rain or removed mechanically
-- Ideal for **seasonal vegetable cultivation**
-- Examples: ReduSol, Eclipse LD, Transpar
-
-### Semi-Permanent Shading Paint
-
-- Lasts 6–12 months
-- Requires a special removal agent (ReduClean)
-- Suitable for **year-round greenhouses** with heating
-
-### Specialised Coatings
-
-- **UV-blocking** (e.g. ReduFuse) – diffuses direct light without reducing total light levels
-- **NIR-reflecting** (e.g. ReduHeat) – blocks infrared radiation while preserving photosynthetically active light
-- **Anti-condensation** – reduces dripping in winter months
-
-With **greenhouse drone shading** we can apply all these types of coatings. Our operators are trained to adjust flow rate and flight height according to the viscosity and density of the specific product.
+Because the intensity can be regulated, we set the shading level according to the specific crop and the time of season during the on-site inspection.
 
 ## Benefits of Greenhouse Shading with a Drone
 
-### 1. Dramatic Temperature Reduction
+### 1. Protection from Overheating
 
-Correctly applied shading paint lowers the average greenhouse temperature by **up to 5 °C** (according to ReduSystems), with an even more pronounced effect on directly heated zones during peak hours. This helps keep the internal temperature below the critical thresholds for most vegetable crops.
+Correctly applied shading paint reflects part of the solar radiation and protects the crop from **burning and heat stress** during the hottest hours of the day. This helps keep the greenhouse climate closer to the comfort zone for most vegetable crops, with the most noticeable effect in directly heated zones at peak sun.
 
 ### 2. UV Protection for Crops
 
@@ -114,7 +103,7 @@ Excessive UV radiation causes:
 - Chlorophyll breakdown
 - Reduced photosynthesis
 
-Shading paints reflect a broad spectrum of sunlight, reducing both light intensity and heat buildup while preserving sufficient light for photosynthesis. Specialised coatings (e.g. ReduFuse, ReduHeat) allow targeted filtering of specific parts of the spectrum.
+Shading paint reflects part of the sunlight, reducing both light intensity and heat buildup while still letting through enough light for photosynthesis. By adjusting the dilution and the number of passes, we set how much light is held back to match the crop.
 
 ### 3. Better Humidity Control
 
@@ -156,13 +145,9 @@ Although the drone service appears more expensive at first glance, **the total c
 
 The optimal time for applying shading paint is **late April to early May**, when daytime temperatures begin to exceed 25 °C. In the **Plovdiv and Pazardzhik** area this is usually around 20–25 April, while in **Haskovo and Stara Zagora** – early May.
 
-### Autumn Removal (October–November)
+### Natural Removal (Autumn)
 
-Temporary paints wash off naturally with autumn rains. For semi-permanent coatings, cleaning with ReduClean is required – also possible by drone.
-
-### Winter Anti-Condensation Coating
-
-For year-round heated greenhouses, an anti-condensation coating can be applied in **November–December**, which reduces dripping and improves light transmission.
+COVER X2 is a temporary paint – it gradually washes off on its own over **3–4 months**, so there is no separate removal step at the end of the season. By autumn the greenhouse cover is clear again, ready for the lower-light months.
 
 ## Which Crops Benefit Most from Shading?
 
@@ -176,7 +161,7 @@ Peppers react to excessive light with sunscald on the fruits. **Greenhouse shadi
 
 ### Cucumbers
 
-Cucumbers prefer diffused light. Paints such as ReduFuse increase cucumber yields by **up to 20%**, as light penetrates deeper into the plant canopy.
+Cucumbers prefer diffused light rather than harsh direct sun. A shading coating softens the light and reduces heat stress on the canopy, which helps the plants stay productive through the hottest part of the season.
 
 ### Flowers (roses, gerberas, chrysanthemums)
 
@@ -231,7 +216,7 @@ The price depends on the greenhouse area, paint type and site accessibility. We 
 
 ### How often should the greenhouse be shaded?
 
-When using **temporary paint** – once a year, at the beginning of the warm season (April–May). The paint lasts 4–6 months and gradually washes off. For **semi-permanent coatings** – every 1–2 years, depending on climatic conditions and greenhouse exposure.
+Once a year, at the beginning of the warm season (April–May). COVER X2 lasts **3–4 months** and gradually washes off on its own, so a single application covers the hottest part of the growing season.
 
 ## Conclusion – Invest in the Comfort of Your Crops
 

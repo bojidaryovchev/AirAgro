@@ -83,7 +83,7 @@ export default function ZasenchvaneContent({ lang }: { lang: "bg" | "en" }) {
   ];
 
   const stats = [
-    { value: "5°C", label: t("shading.stats.0.label") },
+    { value: t("shading.stats.0.value"), label: t("shading.stats.0.label") },
     { value: t("shading.stats.1.value"), label: t("shading.stats.1.label") },
     { value: "5–10×", label: t("shading.stats.2.label") },
     { value: "±2 см", label: t("shading.stats.3.label") },
