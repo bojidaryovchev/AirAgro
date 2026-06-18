@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/dron-za-rastitelna-zashtita.png"
 slug: "organic-farming-and-drones"
+translationKey: "organic-farming-drones"
 category: "Analysis"
 tags: ["organic farming", "bio drone", "organic agriculture", "biopesticides", "sustainable agriculture"]
 readTime: "8 min"

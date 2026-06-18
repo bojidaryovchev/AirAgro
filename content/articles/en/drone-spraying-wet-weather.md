@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/pruskane-s-dron-uslugi.png"
 slug: "drone-spraying-wet-weather"
+translationKey: "spraying-wet-weather"
 category: "Tips"
 tags:
   [

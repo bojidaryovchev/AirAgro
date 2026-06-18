@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-28"
 image: "/images/blog/pruskane-na-lozya-s-dron.png"
 slug: "vineyard-spraying-with-drone"
+translationKey: "vineyard-spraying"
 category: "Tips"
 tags: ["vineyard spraying drone", "vineyard crop protection", "drone spraying vineyards", "agri drone", "viticulture"]
 readTime: "7 min"

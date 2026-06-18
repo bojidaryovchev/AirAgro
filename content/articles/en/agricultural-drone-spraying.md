@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-03-01"
 image: "/images/blog/zemedeslki-dron-pruskane.png"
 slug: "agricultural-drone-spraying"
+translationKey: "order-spraying-service"
 category: "Tips"
 tags: ["agricultural drone spraying", "drone service order", "agri drone", "drone spraying process", "agriculture"]
 readTime: "6 min"

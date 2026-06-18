@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-15"
 image: "/images/blog/dron-ili-traktor-pruskane.png"
 slug: "drone-vs-tractor-spraying"
+translationKey: "drone-or-tractor"
 category: "Analysis"
 tags: ["drone or tractor", "drone spraying", "drone tractor comparison", "agriculture technology", "crop protection"]
 readTime: "8 min"

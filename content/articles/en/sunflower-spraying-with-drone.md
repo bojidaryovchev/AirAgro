@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-20"
 image: "/images/blog/pruskane-na-slanchoglad-s-dron.png"
 slug: "sunflower-spraying-with-drone"
+translationKey: "sunflower-spraying"
 category: "Tips"
 tags: ["sunflower spraying drone", "sunflower crop protection", "drone spraying", "agri drone", "agriculture"]
 readTime: "7 min"

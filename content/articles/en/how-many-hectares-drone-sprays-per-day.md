@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-22"
 image: "/images/blog/kolko-dekara-pruska-dron.png"
 slug: "how-many-hectares-drone-sprays-per-day"
+translationKey: "hectares-per-day"
 category: "Technology"
 tags:
   [

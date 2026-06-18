@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-11-05"
 image: "/images/blog/dji-agras-t50-harakteristiki.png"
 slug: "dji-agras-t50-specifications"
+translationKey: "dji-agras-t50"
 category: "Technology"
 tags: ["DJI Agras T50", "agricultural drone", "agri-drone specifications", "T50 specs", "DJI agriculture"]
 readTime: "7 min"

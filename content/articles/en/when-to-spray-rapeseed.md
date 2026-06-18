@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-11-20"
 image: "/images/blog/koga-se-pruska-rapitsa.png"
 slug: "when-to-spray-rapeseed"
+translationKey: "when-to-spray-rapeseed"
 category: "Tips"
 tags: ["when to spray rapeseed", "rapeseed spraying", "rapeseed crop protection", "rapeseed phenology", "agriculture"]
 readTime: "7 min"

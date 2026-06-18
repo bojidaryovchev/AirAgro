@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-02-15"
 image: "/images/blog/pruskane-s-dron-tsena.png"
 slug: "drone-spraying-price"
+translationKey: "spraying-price"
 category: "Analysis"
 tags: ["drone spraying price", "price per decare", "drone service price", "agri drone price", "agriculture costs"]
 readTime: "7 min"

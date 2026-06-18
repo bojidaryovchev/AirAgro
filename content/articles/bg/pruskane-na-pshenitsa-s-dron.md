@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-10"
 image: "/images/blog/pruskane-na-pshenitsa-s-dron.png"
 slug: "pruskane-na-pshenitsa-s-dron"
+translationKey: "wheat-spraying"
 category: "Съвети"
 tags: ["пръскане пшеница дрон", "пшеница растителна защита", "дрон пръскане", "агро дрон пшеница", "земеделие"]
 readTime: "7 мин"

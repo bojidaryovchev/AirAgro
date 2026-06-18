@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-02-25"
 image: "/images/blog/dron-za-rastitelna-zashtita.png"
 slug: "drone-for-crop-protection"
+translationKey: "drone-for-crop-protection"
 category: "Technology"
 tags: ["drone crop protection", "agri drone", "drone spraying", "agricultural drone", "modern agriculture"]
 readTime: "7 min"

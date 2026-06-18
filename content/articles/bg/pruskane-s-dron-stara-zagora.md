@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-03-03"
 image: "/images/blog/pruskane-s-dron-stara-zagora.png"
 slug: "pruskane-s-dron-stara-zagora"
+translationKey: "spraying-stara-zagora"
 category: "Съвети"
 tags:
   [

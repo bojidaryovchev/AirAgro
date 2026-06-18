@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-05"
 image: "/images/blog/dron-sreshtu-traktor-sravnenie.png"
 slug: "drone-vs-tractor-cost-comparison"
+translationKey: "drone-vs-tractor-cost"
 category: "Analysis"
 tags:
   ["drone vs tractor", "spraying cost comparison", "drone spraying economics", "tractor spraying price", "agriculture"]

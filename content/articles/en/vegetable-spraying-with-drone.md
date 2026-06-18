@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-02-05"
 image: "/images/blog/pruskane-na-zelenchutsi-s-dron.png"
 slug: "vegetable-spraying-with-drone"
+translationKey: "vegetable-spraying"
 category: "Tips"
 tags:
   [

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/pruskane-s-dron-uslugi.png"
 slug: "pruskane-s-dron-pri-vlazhno-vreme"
+translationKey: "spraying-wet-weather"
 category: "Съвети"
 tags:
   [

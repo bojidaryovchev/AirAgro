@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-03-04"
 image: "/images/blog/pruskane-s-dron-haskovo.png"
 slug: "pruskane-s-dron-haskovo"
+translationKey: "spraying-haskovo"
 category: "Съвети"
 tags:
   ["пръскане с дрон Хасково", "дрон услуги Хасково", "агро дрон Хасково", "земеделие Хасково", "Тракия дрон пръскане"]

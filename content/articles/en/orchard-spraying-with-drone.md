@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-02-01"
 image: "/images/blog/pruskane-na-ovoshtni-gradini-s-dron.png"
 slug: "orchard-spraying-with-drone"
+translationKey: "orchard-spraying"
 category: "Tips"
 tags: ["orchard spraying drone", "fruit tree protection", "drone spraying orchards", "agri drone", "fruit growing"]
 readTime: "7 min"

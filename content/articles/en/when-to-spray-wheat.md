@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-11-10"
 image: "/images/blog/koga-se-pruska-pshenitsa.png"
 slug: "when-to-spray-wheat"
+translationKey: "when-to-spray-wheat"
 category: "Tips"
 tags:
   ["when to spray wheat", "wheat spraying calendar", "wheat crop protection", "herbicides wheat", "fungicides wheat"]

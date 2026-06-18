@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-ovoshtni-gradini-s-dron.png"
 slug: "pruskane-na-gori-s-dron"
+translationKey: "forest-spraying"
 category: "Технология"
 tags: ["пръскане на гори с дрон", "борова процесионка", "корояди дрон", "горско пръскане", "дрон за гори"]
 readTime: "9 мин"

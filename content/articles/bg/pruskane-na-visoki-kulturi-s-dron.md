@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-tsarevitsa-s-dron.png"
 slug: "pruskane-na-visoki-kulturi-s-dron"
+translationKey: "tall-crops-spraying"
 category: "Съвети"
 tags:
   ["пръскане на високи култури", "дрон за високи растения", "царевица дрон", "слънчоглед дрон", "пръскане без газене"]

@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-25"
 image: "/images/blog/pruskane-na-rapitsa-s-dron.png"
 slug: "rapeseed-spraying-with-drone"
+translationKey: "rapeseed-spraying"
 category: "Tips"
 tags: ["rapeseed spraying drone", "rapeseed crop protection", "drone spraying", "agri drone rapeseed", "agriculture"]
 readTime: "7 min"

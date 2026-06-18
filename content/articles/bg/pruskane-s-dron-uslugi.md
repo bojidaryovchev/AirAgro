@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-02-10"
 image: "/images/blog/pruskane-s-dron-uslugi.png"
 slug: "pruskane-s-dron-uslugi"
+translationKey: "spraying-services"
 category: "Съвети"
 tags: ["пръскане с дрон", "агро дрон", "земеделски дрон", "растителна защита", "DJI Agras T50"]
 readTime: "7 мин"

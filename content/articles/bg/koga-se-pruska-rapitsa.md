@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-11-20"
 image: "/images/blog/koga-se-pruska-rapitsa.png"
 slug: "koga-se-pruska-rapitsa"
+translationKey: "when-to-spray-rapeseed"
 category: "Съвети"
 tags: ["кога се пръска рапица", "рапица пръскане", "рапица растителна защита", "рапица фенофази", "земеделие"]
 readTime: "7 мин"

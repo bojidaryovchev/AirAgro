@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-18"
 image: "/images/blog/predimstva-na-dron-v-zemedelieto.png"
 slug: "benefits-of-drone-in-agriculture"
+translationKey: "benefits-of-drones"
 category: "Analysis"
 tags:
   [

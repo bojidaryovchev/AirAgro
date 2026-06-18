@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-11-10"
 image: "/images/blog/koga-se-pruska-pshenitsa.png"
 slug: "koga-se-pruska-pshenitsa"
+translationKey: "when-to-spray-wheat"
 category: "Съвети"
 tags:
   [

@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-02-20"
 image: "/images/blog/uslugi-s-agro-dron.png"
 slug: "agri-drone-services"
+translationKey: "agri-drone-services"
 category: "Tips"
 tags: ["agri-drone services", "drone spraying", "drone fertilising", "drone mapping", "agricultural services"]
 readTime: "7 min"

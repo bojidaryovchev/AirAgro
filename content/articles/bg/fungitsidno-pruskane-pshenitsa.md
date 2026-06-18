@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-01"
 image: "/images/blog/fungitsidno-pruskane-pshenitsa.png"
 slug: "fungitsidno-pruskane-pshenitsa"
+translationKey: "fungicide-spraying-wheat"
 category: "Съвети"
 tags: ["фунгицидно пръскане пшеница", "болести пшеница", "фунгициди пшеница", "септория пшеница", "растителна защита"]
 readTime: "7 мин"

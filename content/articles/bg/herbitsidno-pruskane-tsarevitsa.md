@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-05"
 image: "/images/blog/herbitsidno-pruskane-tsarevitsa.png"
 slug: "herbitsidno-pruskane-tsarevitsa"
+translationKey: "herbicide-spraying-corn"
 category: "Съвети"
 tags:
   ["хербицидно пръскане царевица", "плевели царевица", "хербициди царевица", "растителна защита царевица", "земеделие"]

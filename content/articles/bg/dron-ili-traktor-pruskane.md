@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-15"
 image: "/images/blog/dron-ili-traktor-pruskane.png"
 slug: "dron-ili-traktor-pruskane"
+translationKey: "drone-or-tractor"
 category: "Анализ"
 tags: ["дрон или трактор", "дрон пръскане", "сравнение дрон трактор", "земеделие технологии", "растителна защита"]
 readTime: "8 мин"

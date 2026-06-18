@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-03-08"
 image: "/images/blog/pruskane-s-dron-bulgaria.png"
 slug: "drone-spraying-bulgaria"
+translationKey: "spraying-bulgaria"
 category: "Tips"
 tags:
   [

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-20"
 image: "/images/blog/pruskane-na-slanchoglad-s-dron.png"
 slug: "pruskane-na-slanchoglad-s-dron"
+translationKey: "sunflower-spraying"
 category: "Съвети"
 tags: ["пръскане слънчоглед дрон", "слънчоглед растителна защита", "дрон пръскане", "агро дрон", "земеделие"]
 readTime: "7 мин"

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-15"
 image: "/images/blog/pruskane-na-tsarevitsa-s-dron.png"
 slug: "pruskane-na-tsarevitsa-s-dron"
+translationKey: "corn-spraying"
 category: "Съвети"
 tags: ["пръскане царевица дрон", "царевица растителна защита", "дрон пръскане", "агро дрон царевица", "земеделие"]
 readTime: "7 мин"

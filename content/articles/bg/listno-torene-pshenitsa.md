@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-10"
 image: "/images/blog/listno-torene-pshenitsa.png"
 slug: "listno-torene-pshenitsa"
+translationKey: "foliar-fertilization-wheat"
 category: "Съвети"
 tags: ["листно торене пшеница", "торене с дрон", "микроелементи пшеница", "листни торове", "земеделие добив"]
 readTime: "7 мин"

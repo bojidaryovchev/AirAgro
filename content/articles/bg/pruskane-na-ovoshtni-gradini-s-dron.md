@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-02-01"
 image: "/images/blog/pruskane-na-ovoshtni-gradini-s-dron.png"
 slug: "pruskane-na-ovoshtni-gradini-s-dron"
+translationKey: "orchard-spraying"
 category: "Съвети"
 tags: ["пръскане овощни градини дрон", "плодови дървета защита", "дрон пръскане градини", "агро дрон", "овощарство"]
 readTime: "7 мин"

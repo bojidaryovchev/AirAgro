@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-zelenchutsi-s-dron.png"
 slug: "zasenchvane-na-oranzherii-s-dron"
+translationKey: "greenhouse-shading"
 category: "Технология"
 tags:
   [

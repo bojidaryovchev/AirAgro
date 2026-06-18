@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-28"
 image: "/images/blog/kak-raboti-agraren-dron.png"
 slug: "kak-raboti-agraren-dron"
+translationKey: "how-drone-works"
 category: "Технология"
 tags: ["как работи аграрен дрон", "агро дрон обяснение", "земеделски дрон работа", "дрон пръскане процес", "технология"]
 readTime: "7 мин"

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/dron-za-rastitelna-zashtita.png"
 slug: "biologichno-zemedelie-i-dronove"
+translationKey: "organic-farming-drones"
 category: "Анализ"
 tags: ["биологично земеделие", "био дрон", "органично земеделие", "биопрепарати", "устойчиво земеделие"]
 readTime: "8 мин"

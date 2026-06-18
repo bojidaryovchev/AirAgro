@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-10-20"
 image: "/images/blog/kakvo-e-pretsizno-zemedelie.png"
 slug: "what-is-precision-agriculture"
+translationKey: "what-is-precision-ag"
 category: "Technology"
 tags: ["precision agriculture", "smart farming", "GPS farming", "drone farming", "modern agriculture"]
 readTime: "7 min"

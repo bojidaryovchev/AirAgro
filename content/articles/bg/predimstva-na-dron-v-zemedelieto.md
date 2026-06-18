@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-18"
 image: "/images/blog/predimstva-na-dron-v-zemedelieto.png"
 slug: "predimstva-na-dron-v-zemedelieto"
+translationKey: "benefits-of-drones"
 category: "Анализ"
 tags:
   ["предимства дрон земеделие", "агро дрон ползи", "дрон пръскане предимства", "модерно земеделие", "дрон технологии"]

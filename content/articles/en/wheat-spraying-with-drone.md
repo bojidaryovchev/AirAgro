@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-10"
 image: "/images/blog/pruskane-na-pshenitsa-s-dron.png"
 slug: "wheat-spraying-with-drone"
+translationKey: "wheat-spraying"
 category: "Tips"
 tags: ["wheat spraying drone", "wheat crop protection", "drone spraying", "agri drone wheat", "agriculture"]
 readTime: "7 min"

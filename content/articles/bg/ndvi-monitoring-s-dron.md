@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/kakvo-e-pretsizno-zemedelie.png"
 slug: "ndvi-monitoring-s-dron"
+translationKey: "ndvi-monitoring"
 category: "Технология"
 tags: ["NDVI мониторинг", "картографиране с дрон", "мултиспектрален анализ", "прецизно земеделие", "здраве на посевите"]
 readTime: "9 мин"

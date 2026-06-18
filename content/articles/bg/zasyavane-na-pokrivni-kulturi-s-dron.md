@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/pruskane-s-dron-bulgaria.png"
 slug: "zasyavane-na-pokrivni-kulturi-s-dron"
+translationKey: "cover-crop-seeding"
 category: "Технология"
 tags: ["покривни култури", "засяване с дрон", "сеитба с дрон", "опазване на почвата", "регенеративно земеделие"]
 readTime: "8 мин"

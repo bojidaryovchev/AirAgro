@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-10-20"
 image: "/images/blog/kakvo-e-pretsizno-zemedelie.png"
 slug: "kakvo-e-pretsizno-zemedelie"
+translationKey: "what-is-precision-ag"
 category: "Технология"
 tags: ["прецизно земеделие", "smart farming", "GPS земеделие", "дрон земеделие", "модерно земеделие"]
 readTime: "7 мин"

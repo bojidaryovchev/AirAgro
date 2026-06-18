@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-25"
 image: "/images/blog/pruskane-na-rapitsa-s-dron.png"
 slug: "pruskane-na-rapitsa-s-dron"
+translationKey: "rapeseed-spraying"
 category: "Съвети"
 tags: ["пръскане рапица дрон", "рапица растителна защита", "дрон пръскане", "агро дрон рапица", "земеделие"]
 readTime: "7 мин"

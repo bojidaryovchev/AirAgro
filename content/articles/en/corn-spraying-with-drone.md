@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-01-15"
 image: "/images/blog/pruskane-na-tsarevitsa-s-dron.png"
 slug: "corn-spraying-with-drone"
+translationKey: "corn-spraying"
 category: "Tips"
 tags: ["corn spraying drone", "corn crop protection", "drone spraying", "agri drone corn", "agriculture"]
 readTime: "7 min"

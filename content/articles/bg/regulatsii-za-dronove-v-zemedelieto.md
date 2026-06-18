@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-03-09"
 image: "/images/blog/kak-rabotyat-zemedeslkite-dronove.png"
 slug: "regulatsii-za-dronove-v-zemedelieto"
+translationKey: "drone-regulations"
 category: "Анализ"
 tags: ["регулации дронове", "БАБХ лиценз", "закон за дронове", "ГВА разрешително", "EASA сертификат"]
 readTime: "9 мин"

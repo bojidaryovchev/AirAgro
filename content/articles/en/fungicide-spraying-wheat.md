@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-01"
 image: "/images/blog/fungitsidno-pruskane-pshenitsa.png"
 slug: "fungicide-spraying-wheat"
+translationKey: "fungicide-spraying-wheat"
 category: "Tips"
 tags: ["fungicide spraying wheat", "wheat diseases", "fungicides wheat", "septoria wheat", "crop protection"]
 readTime: "7 min"

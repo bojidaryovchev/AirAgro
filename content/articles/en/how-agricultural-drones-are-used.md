@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-10-25"
 image: "/images/blog/kak-se-izpolzvat-agrarni-dronove.png"
 slug: "how-agricultural-drones-are-used"
+translationKey: "how-drones-used"
 category: "Technology"
 tags:
   [

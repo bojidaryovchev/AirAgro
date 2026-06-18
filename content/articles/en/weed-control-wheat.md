@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-11-25"
 image: "/images/blog/borba-s-pleveli-pshenitsa.png"
 slug: "weed-control-wheat"
+translationKey: "weed-control-wheat"
 category: "Tips"
 tags: ["weed control wheat", "herbicides wheat", "weeds wheat", "crop protection wheat", "agriculture"]
 readTime: "8 min"

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-02-15"
 image: "/images/blog/pruskane-s-dron-tsena.png"
 slug: "pruskane-s-dron-tsena"
+translationKey: "spraying-price"
 category: "Анализ"
 tags: ["пръскане с дрон цена", "цена на декар", "дрон услуги цена", "агро дрон цена", "земеделие разходи"]
 readTime: "7 мин"

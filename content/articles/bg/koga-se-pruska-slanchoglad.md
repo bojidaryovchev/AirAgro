@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-11-15"
 image: "/images/blog/koga-se-pruska-slanchoglad.png"
 slug: "koga-se-pruska-slanchoglad"
+translationKey: "when-to-spray-sunflower"
 category: "Съвети"
 tags:
   [

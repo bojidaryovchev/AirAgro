@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-11-15"
 image: "/images/blog/koga-se-pruska-slanchoglad.png"
 slug: "when-to-spray-sunflower"
+translationKey: "when-to-spray-sunflower"
 category: "Tips"
 tags:
   ["when to spray sunflower", "sunflower spraying", "sunflower crop protection", "herbicides sunflower", "agriculture"]

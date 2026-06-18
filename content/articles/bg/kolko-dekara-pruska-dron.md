@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-12-22"
 image: "/images/blog/kolko-dekara-pruska-dron.png"
 slug: "kolko-dekara-pruska-dron"
+translationKey: "hectares-per-day"
 category: "Технология"
 tags:
   [

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-03-01"
 image: "/images/blog/pruskane-s-dron-plovdiv.png"
 slug: "pruskane-s-dron-plovdiv"
+translationKey: "spraying-plovdiv"
 category: "Съвети"
 tags: ["пръскане с дрон Пловдив", "дрон услуги Пловдив", "агро дрон Пловдив", "земеделие Пловдив", "Пловдивска област"]
 readTime: "6 мин"

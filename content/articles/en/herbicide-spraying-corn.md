@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-05"
 image: "/images/blog/herbitsidno-pruskane-tsarevitsa.png"
 slug: "herbicide-spraying-corn"
+translationKey: "herbicide-spraying-corn"
 category: "Tips"
 tags: ["herbicide spraying corn", "weeds corn", "herbicides corn", "crop protection corn", "agriculture"]
 readTime: "7 min"

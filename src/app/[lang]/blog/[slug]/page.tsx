@@ -6,6 +6,7 @@ import {
   getArticleWithHtml,
   getRelatedArticles,
   getSupportedLanguages,
+  getTranslatedSlug,
   Language,
 } from "@/lib/articles";
 import { localizedPath } from "@/lib/routes";
@@ -79,6 +80,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const article = await getArticleWithHtml(slug, language);
     const baseUrl = "https://airagro.bg";
 
+    // Resolve this article's counterpart slug in each language (slugs differ per language).
+    const bgSlug = getTranslatedSlug(slug, language, "bg");
+    const enSlug = getTranslatedSlug(slug, language, "en");
+    const languageAlternates: Record<string, string> = {};
+    if (bgSlug) {
+      languageAlternates["bg-BG"] = `${baseUrl}/bg/blog/${bgSlug}`;
+      languageAlternates["x-default"] = `${baseUrl}/bg/blog/${bgSlug}`;
+    }
+    if (enSlug) {
+      languageAlternates["en-US"] = `${baseUrl}/en/blog/${enSlug}`;
+    }
+
     return {
       title: `${article.title} | AirAgro Blog`,
       description: article.description,
@@ -108,12 +121,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
       alternates: {
         canonical: `${baseUrl}/${lang}/blog/${slug}`,
-        languages: {
-          "bg-BG": `${baseUrl}/bg/blog/${slug}`,
-          // Only include EN alternate if the article actually exists in English
-          ...(getAllArticleSlugs("en").includes(slug) ? { "en-US": `${baseUrl}/en/blog/${slug}` } : {}),
-          "x-default": `${baseUrl}/bg/blog/${slug}`,
-        },
+        languages: languageAlternates,
       },
     };
   } catch {

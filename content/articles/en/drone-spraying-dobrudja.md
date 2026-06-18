@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-03-05"
 image: "/images/blog/pruskane-s-dron-dobrudja.png"
 slug: "drone-spraying-dobrudja"
+translationKey: "spraying-dobrudja"
 category: "Tips"
 tags:
   [

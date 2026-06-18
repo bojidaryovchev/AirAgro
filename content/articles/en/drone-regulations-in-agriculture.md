@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/kak-rabotyat-zemedeslkite-dronove.png"
 slug: "drone-regulations-in-agriculture"
+translationKey: "drone-regulations"
 category: "Analysis"
 tags: ["drone regulations", "BFSA licence", "drone law", "CAA permit", "EASA certificate"]
 readTime: "9 min"

@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-10-30"
 image: "/images/blog/tehnologii-v-modernoto-zemedelie.png"
 slug: "tehnologii-v-modernoto-zemedelie"
+translationKey: "modern-ag-tech"
 category: "Технология"
 tags: ["модерно земеделие", "технологии земеделие", "smart farming", "дрон земеделие", "иновации в земеделието"]
 readTime: "7 мин"

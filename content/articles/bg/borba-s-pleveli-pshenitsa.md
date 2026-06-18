@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2025-11-25"
 image: "/images/blog/borba-s-pleveli-pshenitsa.png"
 slug: "borba-s-pleveli-pshenitsa"
+translationKey: "weed-control-wheat"
 category: "Съвети"
 tags: ["борба с плевели пшеница", "хербициди пшеница", "плевели пшеница", "растителна защита пшеница", "земеделие"]
 readTime: "8 мин"

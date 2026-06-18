@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-03-06"
 image: "/images/blog/pruskane-s-dron-pazardzhik.png"
 slug: "pruskane-s-dron-pazardzhik"
+translationKey: "spraying-pazardzhik"
 category: "Съвети"
 tags:
   [

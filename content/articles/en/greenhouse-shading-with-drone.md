@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-zelenchutsi-s-dron.png"
 slug: "greenhouse-shading-with-drone"
+translationKey: "greenhouse-shading"
 category: "Technology"
 tags:
   [

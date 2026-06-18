@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-tsarevitsa-s-dron.png"
 slug: "tall-crops-spraying-with-drone"
+translationKey: "tall-crops-spraying"
 category: "Tips"
 tags: ["tall crop spraying", "drone for tall plants", "corn drone", "sunflower drone", "spraying without trampling"]
 readTime: "8 min"

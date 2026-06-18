@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-28"
 image: "/images/blog/pruskane-na-lozya-s-dron.png"
 slug: "pruskane-na-lozya-s-dron"
+translationKey: "vineyard-spraying"
 category: "Съвети"
 tags: ["пръскане лозя дрон", "лозя растителна защита", "дрон пръскане лозя", "агро дрон", "лозарство"]
 readTime: "7 мин"

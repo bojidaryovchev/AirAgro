@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-10-15"
 image: "/images/blog/kak-rabotyat-zemedeslkite-dronove.png"
 slug: "how-agricultural-drones-work"
+translationKey: "how-drones-work"
 category: "Technology"
 tags: ["agricultural drones", "how drones work", "agri drone technology", "drone components", "modern agriculture"]
 readTime: "8 min"

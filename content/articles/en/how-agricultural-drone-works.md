@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-28"
 image: "/images/blog/kak-raboti-agraren-dron.png"
 slug: "how-agricultural-drone-works"
+translationKey: "how-drone-works"
 category: "Technology"
 tags:
   [

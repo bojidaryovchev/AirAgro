@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-12-10"
 image: "/images/blog/listno-torene-pshenitsa.png"
 slug: "foliar-fertilization-wheat"
+translationKey: "foliar-fertilization-wheat"
 category: "Tips"
 tags:
   [

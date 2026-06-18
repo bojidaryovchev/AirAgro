@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/pruskane-na-ovoshtni-gradini-s-dron.png"
 slug: "forest-spraying-with-drone"
+translationKey: "forest-spraying"
 category: "Technology"
 tags:
   ["forest spraying with drone", "pine processionary", "bark beetles drone", "forest treatment", "drone for forests"]

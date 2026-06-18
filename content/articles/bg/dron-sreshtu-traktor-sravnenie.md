@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-01-05"
 image: "/images/blog/dron-sreshtu-traktor-sravnenie.png"
 slug: "dron-sreshtu-traktor-sravnenie"
+translationKey: "drone-vs-tractor-cost"
 category: "Анализ"
 tags:
   ["дрон срещу трактор", "сравнение разходи пръскане", "дрон пръскане икономика", "трактор пръскане цена", "земеделие"]

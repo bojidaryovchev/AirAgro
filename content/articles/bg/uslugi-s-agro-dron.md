@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-02-20"
 image: "/images/blog/uslugi-s-agro-dron.png"
 slug: "uslugi-s-agro-dron"
+translationKey: "agri-drone-services"
 category: "Съвети"
 tags: ["услуги с агро дрон", "дрон пръскане", "дрон торене", "картографиране с дрон", "земеделски услуги"]
 readTime: "7 мин"

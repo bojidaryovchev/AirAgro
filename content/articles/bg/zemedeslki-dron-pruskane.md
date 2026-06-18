@@ -5,6 +5,7 @@ author: "Екип AirAgro"
 date: "2026-03-01"
 image: "/images/blog/zemedeslki-dron-pruskane.png"
 slug: "zemedeslki-dron-pruskane"
+translationKey: "order-spraying-service"
 category: "Съвети"
 tags: ["земеделски дрон пръскане", "поръчка дрон услуга", "агро дрон", "дрон пръскане процес", "земеделие"]
 readTime: "6 мин"

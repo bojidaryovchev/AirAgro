@@ -16,6 +16,11 @@ export interface ArticleMetadata {
   image: string;
   blurDataURL?: string;
   slug: string;
+  /**
+   * Stable identity shared by an article and its translations across languages.
+   * Used to emit cross-language hreflang alternates (BG and EN slugs differ).
+   */
+  translationKey?: string;
   category: "Технология" | "Съвети" | "Анализ" | "Technology" | "Tips" | "Analysis";
   tags: string[];
   readTime: string;
@@ -103,4 +108,39 @@ export function getRelatedArticles(currentSlug: string, limit: number = 6, lang:
 
 export function getSupportedLanguages(): Language[] {
   return ["bg", "en"];
+}
+
+/**
+ * Map of translationKey -> { lang: slug } for every article, built once from the
+ * markdown frontmatter. Lets us resolve an article's counterpart in another language
+ * even though BG and EN slugs differ.
+ */
+function getTranslationIndex(): Map<string, Partial<Record<Language, string>>> {
+  const index = new Map<string, Partial<Record<Language, string>>>();
+  for (const lang of getSupportedLanguages()) {
+    for (const slug of getAllArticleSlugs(lang)) {
+      const { translationKey } = getArticleBySlug(slug, lang);
+      if (!translationKey) continue;
+      const entry = index.get(translationKey) ?? {};
+      entry[lang] = slug;
+      index.set(translationKey, entry);
+    }
+  }
+  return index;
+}
+
+/**
+ * Return the slug of this article's translation in `target` language, or null if
+ * there is no counterpart (article exists in only one language, or has no key).
+ */
+export function getTranslatedSlug(slug: string, fromLang: Language, target: Language): string | null {
+  if (fromLang === target) return slug;
+  let key: string | undefined;
+  try {
+    key = getArticleBySlug(slug, fromLang).translationKey;
+  } catch {
+    return null;
+  }
+  if (!key) return null;
+  return getTranslationIndex().get(key)?.[target] ?? null;
 }

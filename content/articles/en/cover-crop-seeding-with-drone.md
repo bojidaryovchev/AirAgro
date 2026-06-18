@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-03-09"
 image: "/images/blog/pruskane-s-dron-bulgaria.png"
 slug: "cover-crop-seeding-with-drone"
+translationKey: "cover-crop-seeding"
 category: "Technology"
 tags: ["cover crops", "seeding with drone", "drone seeding", "soil protection", "regenerative agriculture"]
 readTime: "8 min"

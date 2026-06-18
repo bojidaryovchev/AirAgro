@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2026-03-04"
 image: "/images/blog/pruskane-s-dron-haskovo.png"
 slug: "drone-spraying-haskovo"
+translationKey: "spraying-haskovo"
 category: "Tips"
 tags:
   [

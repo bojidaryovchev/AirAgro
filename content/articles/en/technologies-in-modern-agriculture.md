@@ -5,6 +5,7 @@ author: "AirAgro Team"
 date: "2025-10-30"
 image: "/images/blog/tehnologii-v-modernoto-zemedelie.png"
 slug: "technologies-in-modern-agriculture"
+translationKey: "modern-ag-tech"
 category: "Technology"
 tags: ["modern agriculture", "agriculture technologies", "smart farming", "drone farming", "innovations in agriculture"]
 readTime: "7 min"
