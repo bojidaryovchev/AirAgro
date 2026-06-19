@@ -185,7 +185,7 @@ AirAgro works with DJI Agras T50 – the leading agricultural drone in the world
 - **Tank:** 40 litres for liquid preparations
 - **Productivity:** up to 200 decares/hour
 - **Nozzles:** 8 centrifugal with controlled droplet size
-- **Positioning:** RTK GNSS with accuracy up to 2 cm
+- **Positioning:** RTK GNSS with accuracy up to 10 cm
 - **Radar:** Dual-beam for height maintenance and obstacle avoidance
 - **Resistance:** Works in wind up to 6 m/s
 

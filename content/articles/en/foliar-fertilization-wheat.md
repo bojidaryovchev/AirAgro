@@ -123,7 +123,7 @@ Drone technology introduces a qualitatively new dimension to foliar fertilizatio
 
 ### Exceptionally Even Coverage
 
-The DJI Agras T50 is equipped with six centrifugal nozzles and a powerful airflow from the rotors that "opens" the canopy and allows penetration of the solution to the lower leaves. RTK GPS navigation guarantees accuracy of ±2 cm on flight strips, meaning perfectly uniform application without gaps and overlaps.
+The DJI Agras T50 is equipped with six centrifugal nozzles and a powerful airflow from the rotors that "opens" the canopy and allows penetration of the solution to the lower leaves. RTK GPS navigation guarantees accuracy of ±10 cm on flight strips, meaning perfectly uniform application without gaps and overlaps.
 
 For foliar fertilization, uniformity is critical – uneven application leads to zones with deficiency and zones with excess, both of which are undesirable.
 

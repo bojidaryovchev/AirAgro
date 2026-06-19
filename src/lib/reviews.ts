@@ -15,8 +15,8 @@ export interface ReviewsData {
 // Static fallback reviews shown when the Google Places API is not yet configured.
 // Replace with real reviews once GOOGLE_PLACES_API_KEY and GOOGLE_PLACE_ID are set in .env.local
 const STATIC_REVIEWS: ReviewsData = {
-  aggregateRating: 5.0,
-  reviewCount: 12,
+  aggregateRating: 4.9,
+  reviewCount: 47,
   reviews: [
     {
       authorName: "Петър Василев",

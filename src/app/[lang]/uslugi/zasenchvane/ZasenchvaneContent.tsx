@@ -12,7 +12,7 @@ import Link from "next/link";
 /* ------------------------------------------------------------------ */
 
 export default function ZasenchvaneContent({ lang }: { lang: "bg" | "en" }) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const blogHref =
     lang === "en" ? "/en/blog/greenhouse-shading-with-drone" : "/bg/blog/zasenchvane-na-oranzherii-s-dron";
@@ -86,7 +86,7 @@ export default function ZasenchvaneContent({ lang }: { lang: "bg" | "en" }) {
     { value: t("shading.stats.0.value"), label: t("shading.stats.0.label") },
     { value: t("shading.stats.1.value"), label: t("shading.stats.1.label") },
     { value: "5–10×", label: t("shading.stats.2.label") },
-    { value: "±2 см", label: t("shading.stats.3.label") },
+    { value: language === "bg" ? "±10 см" : "±10 cm", label: t("shading.stats.3.label") },
   ];
 
   const processSteps = [

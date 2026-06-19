@@ -150,7 +150,7 @@ const ContactSection = () => {
                   <label className="text-foreground mb-2 block text-sm font-medium">
                     {t("contact.emailLabel")} <span className="text-destructive">*</span>
                   </label>
-                  <Input {...register("email")} type="email" placeholder="ivan@example.com" className="h-12" />
+                  <Input {...register("email")} type="email" placeholder="email@example.com" className="h-12" />
                   {errors.email && <p className="text-destructive mt-1 text-xs">{errors.email.message}</p>}
                 </div>
                 <div>

@@ -149,13 +149,7 @@ export default async function Home({ params }: Props) {
     },
     sameAs: ["https://www.facebook.com/profile.php?id=61587474574865"],
     foundingDate: "2023-01-01",
-    knowsAbout: [
-      "Precision Agriculture",
-      "Drone Spraying",
-      "Agricultural Technology",
-      "Crop Protection",
-      "Variable Rate Application",
-    ],
+    knowsAbout: ["Precision Agriculture", "Drone Spraying", "RTK Technology", "Agricultural Innovation"],
   };
 
   // VideoObject schema for hero video

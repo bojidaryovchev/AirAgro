@@ -99,7 +99,7 @@ Spring and early summer months in Bulgaria are often characterised by intense ra
 
 ### Precision and Uniformity
 
-The DJI Agras T50 works with RTK GPS navigation, providing strip accuracy of ±2 cm. In practice this means perfectly uniform coverage without gaps and overlaps. The automatic flow control system regulates the amount of preparation relative to the drone's speed, guaranteeing the correct dose on every square metre.
+The DJI Agras T50 works with RTK GPS navigation, providing strip accuracy of ±10 cm. In practice this means perfectly uniform coverage without gaps and overlaps. The automatic flow control system regulates the amount of preparation relative to the drone's speed, guaranteeing the correct dose on every square metre.
 
 ### High Productivity
 

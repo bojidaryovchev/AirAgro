@@ -113,7 +113,7 @@ The DJI Agras T50 has characteristics ideal for organic farming:
 
 - **40-litre tank** – 15–40 decares per flight
 - **Centrifugal spray system** – uniform fine droplets for optimal coverage
-- **RTK GNSS navigation** – accuracy ±2 cm, without overlap and without gaps
+- **RTK GNSS navigation** – accuracy ±10 cm, without overlap and without gaps
 - **Obstacle avoidance system** – safe operation in orchards and vineyards
 - **Adjustable droplet size** – adapting to the type of biopesticide
 

@@ -30,7 +30,7 @@ GPS technology has fundamentally changed the way agricultural areas are managed.
 
 ### RTK Correction for Maximum Accuracy
 
-Standard GPS signals have an accuracy of around 2–3 metres, which is insufficient for precision operations. RTK (Real-Time Kinematic) correction improves accuracy to ±2 cm. This technology is also used in modern agricultural drones like the DJI Agras T50, providing precise spraying without gaps and overlap.
+Standard GPS signals have an accuracy of around 2–3 metres, which is insufficient for precision operations. RTK (Real-Time Kinematic) correction improves accuracy to ±10 cm. This technology is also used in modern agricultural drones like the DJI Agras T50, providing precise spraying without gaps and overlap.
 
 ## Agricultural Drones – a Revolution in Crop Protection
 

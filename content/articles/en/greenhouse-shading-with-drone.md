@@ -64,7 +64,7 @@ The DJI Agras T50 is DJI's flagship in the agri-drone segment and is ideal for *
 | Tank            | 40 litres                |
 | Working width   | up to 11 metres          |
 | Flow rate       | 6–12 L/min (adjustable)  |
-| Precision       | RTK positioning (±2 cm)  |
+| Precision       | RTK positioning (±10 cm)  |
 | Autonomy        | up to 20 min per flight  |
 | Spraying system | Dual centrifugal nozzles |
 

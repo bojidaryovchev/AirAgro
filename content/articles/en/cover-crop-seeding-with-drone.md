@@ -85,7 +85,7 @@ The DJI Agras T50 is AirAgro's primary tool for [precision agriculture](/en/blog
 - **Hopper capacity:** up to 50 kg of seeds per load
 - **Spreading working width:** 6–7 m
 - **Flight height:** 2–4 m above the plants
-- **GPS accuracy:** ±2 cm with RTK module – guarantees uniform coverage without overlap and gaps
+- **GPS accuracy:** ±10 cm with RTK module – guarantees uniform coverage without overlap and gaps
 - **Autonomous flight:** pre-set route by field map, without manual control
 
 The operator sets the flow rate according to the rate for the specific crop (e.g. 10 kg/decare for vetch or 2 kg/decare for mustard). RTK navigation ensures **uniform distribution** across the entire area – difficult to achieve with manual broadcasting or a centrifugal spreader.

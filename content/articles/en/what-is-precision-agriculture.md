@@ -208,7 +208,7 @@ Through VRA (variable rate application) and targeted treatment, precision agricu
 
 ### What is the role of drones in precision agriculture?
 
-Drones fulfil a **dual role**: monitoring (photography with multispectral cameras for NDVI analysis) and precision treatment (spraying and fertilisation according to VRA maps with RTK accuracy ±2 cm). The [DJI Agras T50](/en/blog/dji-agras-t50-specifications) is ideal for precision spraying of fields in the Thracian Plain and Dobrudzha.
+Drones fulfil a **dual role**: monitoring (photography with multispectral cameras for NDVI analysis) and precision treatment (spraying and fertilisation according to VRA maps with RTK accuracy ±10 cm). The [DJI Agras T50](/en/blog/dji-agras-t50-specifications) is ideal for precision spraying of fields in the Thracian Plain and Dobrudzha.
 
 ### Is precision agriculture suitable for small farms?
 

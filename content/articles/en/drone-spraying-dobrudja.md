@@ -47,7 +47,7 @@ Dobrudzha produces over 40% of Bulgaria's wheat. Winter wheat requires at least 
 The DJI Agras T50 ensures precise distribution thanks to:
 
 - **8 centrifugal nozzles** with controlled droplet size
-- **RTK positioning** with accuracy up to 2 cm
+- **RTK positioning** with accuracy up to 10 cm
 - **Automatic flow control** when speed changes
 - **Terrain radar sensor** – maintains constant height above crops
 

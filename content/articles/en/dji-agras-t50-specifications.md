@@ -69,7 +69,7 @@ The DJI Agras T50 is equipped with **8 spray nozzles** mounted under the drone's
 
 The DJI Agras T50 uses the vortex effect created by the rotors to direct preparation droplets deep into the leaf mass. This ensures uniform coverage even of the lower leaves and the interior of tree canopies. Vortex technology is one of the key advantages of the T50 over competing models – the air vortex "opens" the leaves and allows the preparation to reach places inaccessible to conventional sprayers. The combination of 8 centrifugal nozzles and the Vortex effect makes the DJI Agras T50 the most effective drone for [spraying orchards](/en/blog/orchard-spraying-with-drone) and [vineyards](/en/blog/vineyard-spraying-with-drone), where penetration into dense vegetation is of decisive importance.
 
-## RTK Navigation with Accuracy ±2 cm
+## RTK Navigation with Accuracy ±10 cm
 
 ### Centimetre Precision in the Field
 
@@ -178,7 +178,7 @@ The DJI Agras T50 is designed for real agricultural conditions and has proven it
 | 40L tank                    | Sufficient for efficient work on medium and large plots |
 | 21 ha/hour                  | Competes with ground sprayers in speed                  |
 | Daily capacity 700–1000 dka | Treats farms of any scale in 1 day                      |
-| RTK ±2 cm                   | Precise work without gaps and overlap                   |
+| RTK ±10 cm                   | Precise work without gaps and overlap                   |
 | Dual radar                  | Safe operation on hilly terrain                         |
 | IP67                        | Reliability in dust and moisture                        |
 | 8 nozzles                   | Uniform coverage on all crops                           |
@@ -193,7 +193,7 @@ Learn more about the [advantages of drones in agriculture](/en/blog/benefits-of-
 
 ### What are the main specifications of the DJI Agras T50?
 
-The DJI Agras T50 features a **40-litre tank**, payload of up to 50 kg, 8 centrifugal nozzles, **RTK navigation with ±2 cm accuracy**, dual radar for terrain and obstacle avoidance, IP67 protection and productivity of up to **21 hectares per hour**. This makes it the most powerful agricultural drone on the market.
+The DJI Agras T50 features a **40-litre tank**, payload of up to 50 kg, 8 centrifugal nozzles, **RTK navigation with ±10 cm accuracy**, dual radar for terrain and obstacle avoidance, IP67 protection and productivity of up to **21 hectares per hour**. This makes it the most powerful agricultural drone on the market.
 
 ### What is the spray width of the DJI Agras T50?
 

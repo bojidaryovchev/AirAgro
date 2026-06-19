@@ -82,7 +82,7 @@ The Plovdiv region is subject to sudden pest attacks, especially during the warm
 
 ### Precision at Every Operation
 
-The DJI Agras T50 provides RTK navigation with ±2 cm accuracy, 8 nozzles for uniform coverage and automatic dose adjustment. The result:
+The DJI Agras T50 provides RTK navigation with ±10 cm accuracy, 8 nozzles for uniform coverage and automatic dose adjustment. The result:
 
 - Saving 20–30% on preparations compared to conventional spraying
 - Uniform coverage of every plant

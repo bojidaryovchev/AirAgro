@@ -82,7 +82,7 @@ At AirAgro we use the **DJI Agras T50** – the leading agricultural drone on th
 | Working width   | 6–7.5 m effective strip        |
 | Productivity    | up to 200 dka/hour             |
 | Flight height   | adjustable, 2–3 m above crop   |
-| Navigation      | RTK accuracy ±2 cm             |
+| Navigation      | RTK accuracy ±10 cm             |
 | Spraying system | 8 nozzles with adjustable flow |
 
 The T50 has a **distance-measuring radar** to the crop, meaning it automatically adapts its height to the terrain and plant height. Thus coverage remains uniform even on uneven relief – a common situation in the areas around Plovdiv and Stara Zagora.
