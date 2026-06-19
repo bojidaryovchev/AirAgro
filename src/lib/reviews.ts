@@ -12,54 +12,17 @@ export interface ReviewsData {
   reviewCount: number;
 }
 
-// Static fallback reviews shown when the Google Places API is not yet configured.
-// Replace with real reviews once GOOGLE_PLACES_API_KEY and GOOGLE_PLACE_ID are set in .env.local
-const STATIC_REVIEWS: ReviewsData = {
-  aggregateRating: 4.9,
-  reviewCount: 47,
-  reviews: [
-    {
-      authorName: "Петър Василев",
-      rating: 5,
-      text: "Пръскането на пшеницата беше извършено бързо и прецизно. Резултатите се виждат – по-малко болести, по-добра реколта. Определено ще ги наема пак!",
-      relativeTime: "преди 1 месец",
-    },
-    {
-      authorName: "Мария Стоянова",
-      rating: 5,
-      text: "Отлична работа! Екипът е много професионален и отговорен. Обработиха 200 декара слънчоглед за един ден. Силно препоръчвам услугата.",
-      relativeTime: "преди 2 месеца",
-    },
-    {
-      authorName: "Георги Димитров",
-      rating: 5,
-      text: "Използвах тяхната услуга за торене на лозе. Много доволен от резултата – равномерно покритие дори на труднодостъпни места. Цената е адекватна.",
-      relativeTime: "преди 3 месеца",
-    },
-    {
-      authorName: "Иван Колев",
-      rating: 5,
-      text: "Третирахме рапица при дъждовно и кално поле – дронът влезе там, където тракторът не можеше. Спасена реколта в точния момент. Благодаря на целия екип!",
-      relativeTime: "преди 3 месеца",
-    },
-    {
-      authorName: "Стефка Маринова",
-      rating: 5,
-      text: "Много бърза реакция на запитването и гъвкав график. Пръскането на овощната градина стана перфектно – без повреди по клоните. Препоръчвам!",
-      relativeTime: "преди 4 месеца",
-    },
-    {
-      authorName: "Николай Тодоров",
-      rating: 5,
-      text: "Наехме ги за хербицидно пръскане на царевица. Дронът покри точно зададената площ – получихме GPS отчет. Изключително прецизна и надеждна услуга.",
-      relativeTime: "преди 5 месеца",
-    },
-  ],
+// Returned when credentials are missing or the Google Places API call fails.
+// ReviewsSection renders nothing for an empty list, so the section simply hides.
+const EMPTY_REVIEWS: ReviewsData = {
+  reviews: [],
+  aggregateRating: 0,
+  reviewCount: 0,
 };
 
 /**
  * Fetches reviews from the Google Places API (New v1).
- * Falls back to static placeholder reviews when credentials are missing or the API fails.
+ * Returns empty data when credentials are missing or the API fails.
  *
  * Required .env.local variables:
  *   GOOGLE_PLACES_API_KEY – your Google Cloud API key (Places API enabled)
@@ -70,7 +33,7 @@ export async function fetchGoogleReviews(lang = "bg"): Promise<ReviewsData> {
   const placeId = process.env.GOOGLE_PLACE_ID;
 
   if (!apiKey || !placeId) {
-    return STATIC_REVIEWS;
+    return EMPTY_REVIEWS;
   }
 
   try {
@@ -85,7 +48,7 @@ export async function fetchGoogleReviews(lang = "bg"): Promise<ReviewsData> {
     });
 
     if (!res.ok) {
-      return STATIC_REVIEWS;
+      return EMPTY_REVIEWS;
     }
 
     const data = await res.json();
@@ -108,6 +71,6 @@ export async function fetchGoogleReviews(lang = "bg"): Promise<ReviewsData> {
       reviewCount: typeof data.userRatingCount === "number" ? data.userRatingCount : 0,
     };
   } catch {
-    return STATIC_REVIEWS;
+    return EMPTY_REVIEWS;
   }
 }
